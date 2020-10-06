@@ -32,9 +32,8 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'rst2pdf.pdfbuilder'
 ]
-pdf_documents = [('index', u'WhiteDoc manual', u'WhiteDoc documentation', u'WhiteDoc')]
+# pdf_documents = [('index', u'WhiteDoc manual', u'WhiteDoc documentation', u'WhiteDoc')]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
