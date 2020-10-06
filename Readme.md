@@ -16,7 +16,7 @@ Sphinx cheat sheet
 Here is a quick and dirty cheat sheet for some common stuff you want
 to do in sphinx and ReST.  You can see the literal source for this
 file at :ref:`cheatsheet-literal`.
-
+   
 
 .. _formatting-text:
 
@@ -99,8 +99,3 @@ class :class:`~matplotlib.backend_bases.LocationEvent`, or the method
 
 
 .. _cheatsheet-literal:
-
-This file
-=========
-
-.. literalinclude:: cheatsheet.rst
