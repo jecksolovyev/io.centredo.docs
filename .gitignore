@@ -1,2 +1,6 @@
 .idea/
+docs/_build/
+docs/build/
 
+.DS_Store
+docs/.DS_Store
