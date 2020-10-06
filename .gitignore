@@ -1,6 +1,6 @@
+node_modules/
+/Documentation/docs/build/
+/Documentation/docs/make.bat
+/Documentation/docs/Makefile
+/Documentation/docs/_build/
 .idea/
-docs/_build/
-docs/build/
-
-.DS_Store
-docs/.DS_Store

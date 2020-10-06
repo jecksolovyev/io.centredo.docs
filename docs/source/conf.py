@@ -31,7 +31,8 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc'
+    'sphinx.ext.autodoc',
+    'rst2pdf.pdfbuilder'
 ]
 pdf_documents = [('index', u'WhiteDoc manual', u'WhiteDoc documentation', u'WhiteDoc')]
 

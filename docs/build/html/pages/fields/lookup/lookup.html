@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lookup Field &mdash; WhiteDoc 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/ultra_custom.js"></script>
+        <script src="../../../_static/galaga.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Sign Field" href="../signField/signField.html" />
+    <link rel="prev" title="Dictionary" href="../dictionary/dictionary.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> WhiteDoc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../registration/registration.html">Registration personal/company accounts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../login/login.html">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adminMailboxes/mailboxes.html">Mailboxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adminPanel/adminPanel.html">Admin panel</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../fields.html">Fields</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dictionary/dictionary.html">Dictionary</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lookup Field</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-lookup-field">Create Lookup Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-lookup-field">Edit Lookup Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup-field-template">Lookup Field Template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup-inside-table-field">Lookup Inside Table-field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#missing-column-at-lookup-field">Missing Column At Lookup Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#no-access-to-dictionary">No Access To Dictionary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disabled-lookup-field">Disabled Lookup Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deleting-dictionary-field">Deleting Dictionary Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup-field-envelope">Lookup Field Envelope</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../signField/signField.html">Sign Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../table/table.html">Table Field</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dashboard/recentlyUsedTemplates.html">Recently used templates on dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../userProfile/userProfile.html">User profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dictionary/dictionary.html">Dictionary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">WhiteDoc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Изначально планировалось, как костыльный селектор языка в бредкрамбсе -->
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../fields.html">Fields</a> &raquo;</li>
+        
+      <li>Lookup Field</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/pages/fields/lookup/lookup.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lookup-field">
+<h1><a class="toc-backref" href="#id1">Lookup Field</a><a class="headerlink" href="#lookup-field" title="Permalink to this headline">¶</a></h1>
+<p>Lookup field automatically pull value from field dictionary field from record.
+Lookup field available only when template has one or more dictionaries without allow custom value attribute.</p>
+<div class="contents topic" id="ontent">
+<p class="topic-title">Сontent:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#lookup-field" id="id1">Lookup Field</a></p>
+<ul>
+<li><p><a class="reference internal" href="#create-lookup-field" id="id2">Create Lookup Field</a></p></li>
+<li><p><a class="reference internal" href="#edit-lookup-field" id="id3">Edit Lookup Field</a></p></li>
+<li><p><a class="reference internal" href="#lookup-field-template" id="id4">Lookup Field Template</a></p></li>
+<li><p><a class="reference internal" href="#lookup-inside-table-field" id="id5">Lookup Inside Table-field</a></p></li>
+<li><p><a class="reference internal" href="#missing-column-at-lookup-field" id="id6">Missing Column At Lookup Field</a></p></li>
+<li><p><a class="reference internal" href="#no-access-to-dictionary" id="id7">No Access To Dictionary</a></p></li>
+<li><p><a class="reference internal" href="#disabled-lookup-field" id="id8">Disabled Lookup Field</a></p></li>
+<li><p><a class="reference internal" href="#deleting-dictionary-field" id="id9">Deleting Dictionary Field</a></p></li>
+<li><p><a class="reference internal" href="#lookup-field-envelope" id="id10">Lookup Field Envelope</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="create-lookup-field">
+<h2><a class="toc-backref" href="#id2">Create Lookup Field</a><a class="headerlink" href="#create-lookup-field" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Navigate to <a class="reference external" href="https://staging.whitedoc.space/template/form/editor">https://staging.whitedoc.space/template/form/editor</a></p></li>
+<li><p>Drag and drop lookup-field to the document</p></li>
+<li><p>Form should appear</p></li>
+<li><p>Fill the name of the field (Should be unique per document)</p></li>
+<li><p>Fill the placeholder for this field (Not mandatory, if you won’t fill this field, name will be used as placeholder).</p></li>
+<li><p>Choose document from list of documents with dictionaries without allow custom value attribute.</p></li>
+<li><p>Choose to with dictionary field lookup field will be applied by setting related to attribute.</p></li>
+<li><p>Choose which column (from dictionary column) should use lookup field to set value.</p></li>
+<li><p>Click save.</p></li>
+<li><p>Field added</p></li>
+</ol>
+</div>
+<div class="section" id="edit-lookup-field">
+<h2><a class="toc-backref" href="#id3">Edit Lookup Field</a><a class="headerlink" href="#edit-lookup-field" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Navigate to <a class="reference external" href="https://staging.whitedoc.space/template/form/editor">https://staging.whitedoc.space/template/form/editor</a></p></li>
+<li><p>Click on the lookup field in the document</p></li>
+<li><p>Edit field form should appear on the right side</p></li>
+<li><p>Click on “Delete” button will delete field and close edit form</p></li>
+<li><p>Click on Cancel will close edit form</p></li>
+<li><p>You can change parameters the same way as described in “Create Lookup Field”</p></li>
+<li><p>Click on “Save” will Save all the changes you mad and close edit form</p></li>
+</ol>
+</div>
+<div class="section" id="lookup-field-template">
+<h2><a class="toc-backref" href="#id4">Lookup Field Template</a><a class="headerlink" href="#lookup-field-template" title="Permalink to this headline">¶</a></h2>
+<p>Lookup field at document can use dictionary field from any document in template if they are not inside table-field.</p>
+</div>
+<div class="section" id="lookup-inside-table-field">
+<h2><a class="toc-backref" href="#id5">Lookup Inside Table-field</a><a class="headerlink" href="#lookup-inside-table-field" title="Permalink to this headline">¶</a></h2>
+<p>Lookup field inside table field can use only dictionary field from this table or dictionary field from any document in template.
+Lookup field inside table can’t use dictionary from other table-field.</p>
+</div>
+<div class="section" id="missing-column-at-lookup-field">
+<h2><a class="toc-backref" href="#id6">Missing Column At Lookup Field</a><a class="headerlink" href="#missing-column-at-lookup-field" title="Permalink to this headline">¶</a></h2>
+<p>When lookup field use dictionary column that was deleted - he became invalid and template became invalid too.
+To fix lookup field need to select new column.</p>
+</div>
+<div class="section" id="no-access-to-dictionary">
+<h2><a class="toc-backref" href="#id7">No Access To Dictionary</a><a class="headerlink" href="#no-access-to-dictionary" title="Permalink to this headline">¶</a></h2>
+<p>When dictionary field has no access to dictionary template became invalid and field became invalid and lookup field that was related to this dictionary field became invalid too.
+To fix lookup field need to select new dictionary at dictionary field to which lookup was attached and set new column at every lookup field that was related to this dictionary field.</p>
+</div>
+<div class="section" id="disabled-lookup-field">
+<h2><a class="toc-backref" href="#id8">Disabled Lookup Field</a><a class="headerlink" href="#disabled-lookup-field" title="Permalink to this headline">¶</a></h2>
+<p>Lookup field is disabled when template hasn’t have any dictionary field.</p>
+</div>
+<div class="section" id="deleting-dictionary-field">
+<h2><a class="toc-backref" href="#id9">Deleting Dictionary Field</a><a class="headerlink" href="#deleting-dictionary-field" title="Permalink to this headline">¶</a></h2>
+<p>Deleting dictionary field isn’t available when dictionary has lookup field that is related to him. Need to delete lookup field or set them related to other dictionary field first.</p>
+</div>
+<div class="section" id="lookup-field-envelope">
+<h2><a class="toc-backref" href="#id10">Lookup Field Envelope</a><a class="headerlink" href="#lookup-field-envelope" title="Permalink to this headline">¶</a></h2>
+<p>Lookup field disabled on envelope. For fill in lookup field need select dictionary value, when dictionary value selected all lookup fields which related to this dictionary field will be automatically fill. User can’t fill in lookup fields if he don’t have access to dictionary which used in dictionary field. User can fill in all lookup fields on envelope and save this envelope as a draft and send later. If somebody change dictionary(update records, delete column or delete dictionary) before user send envelope draft with lookup fields, user will observe error message with information about dictionary changes. If dictionary was deleted all lookup fields which related to this dictionary field will be highlighted by red color.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../signField/signField.html" class="btn btn-neutral float-right" title="Sign Field" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../dictionary/dictionary.html" class="btn btn-neutral float-left" title="Dictionary" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, WhiteDoc
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+     
+    <!-- Return to Top -->
+    <a href="javascript:" id="topchik"><i class="icon-chevron-up"></i></a>
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- А це пам"ятник JS-->
+    <script>
+     $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#topchik').fadeIn(200);    // Fade in the arrow
+        } else {
+        $('#topchik').fadeOut(200);   // Else fade out the arrow
+        }
+        });
+        $('#topchik').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+        }, 500);
+        });
+    </script>
+
+
+    <!-- Да это же onesignal - тоже решили убрать (бесполезен)
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+        appId: "7c291f92-d5bd-4792-9f98-545495146fd4",
+        });
+    });
+    </script>
+
+
+</body>
+</html>
