@@ -1,6 +1,8 @@
-.idea/
-docs/_build/
+node_modules/
 docs/build/
-
+docs/make.bat
+docs/Makefile
+docs/_build/
+.idea/
 .DS_Store
 docs/.DS_Store

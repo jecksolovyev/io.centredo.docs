@@ -10,4 +10,3 @@ Fields
    signField/signField.rst
    table/table.rst
    attachment/attachment.rst
-   yesNo/yesNoField.rst
