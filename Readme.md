@@ -12,6 +12,6 @@ https://wiki.edi-n.com/uk/latest/
 
 
 
-##Sphinx cheat sheet
+## Sphinx cheat sheet
 
 https://matplotlib.org/sampledoc/cheatsheet.html#making-a-list
