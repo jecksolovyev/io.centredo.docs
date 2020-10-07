@@ -21,3 +21,4 @@ Welcome to WhiteDoc's documentation!
    pages/envelope/inviteToEnvelope/InviteToEnvelopeByEmail.rst
    pages/envelope/acceptInvitationToEnvelope/acceptInvitationToEnvelope.rst
    pages/notificationSystem/notification.rst
+   pages/adminPanel/integration/integration.rst
