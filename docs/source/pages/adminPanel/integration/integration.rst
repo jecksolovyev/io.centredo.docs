@@ -7,3 +7,4 @@ Integration
 
    ftp.rst
    integrationPage.rst
+   conversionRuleCreation.rst
