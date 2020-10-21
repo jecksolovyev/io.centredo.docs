@@ -33,7 +33,7 @@ Conversion rule creation process for outgoing document:
 Conversion rule creation process for incoming document:
 ========================================================
 
-.. image:: pic_ConversionRuleCard/conversionRulePage_2.jpg
+.. image:: pic_ConversionRuleCard/conversionRulePage_2
    :width: 1000
    :align: center
 
