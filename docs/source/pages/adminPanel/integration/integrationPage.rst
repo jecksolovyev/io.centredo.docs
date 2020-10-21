@@ -45,7 +45,7 @@ Conversion rules list(5)
 =======================
 By default conversion rule list is empty. For create new rule need click on "Add new rule" button, after that we redirect customer to create conversion rule.
 All new rules will be shown on this list. User can turn on/turn off each rules from this list.
-
+Each existed conversion rules can be updated, deleted or cloned, for that customer should open this rule by click on rule name.
 
 When customer finish setting integration and he want to turn on integration he should move toggle (1) to the right position and click on Save(7) button.
 
