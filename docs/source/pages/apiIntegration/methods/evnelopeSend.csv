@@ -1,0 +1,10 @@
+**URL**,
+Method,POST
+Request URL,``/api/v1/envelope/send``
+**Headers**,
+authorization(require),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
+Content-Type,application/json
+**REQUEST**,
+sendEnvelopeDto(require),"{
+   ""data"": ""string""
+}"
