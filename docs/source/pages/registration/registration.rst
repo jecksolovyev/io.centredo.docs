@@ -2,7 +2,7 @@
 Registration personal/company accounts
 ======================================
 
-To be able to use WhiteDoc, you must register and create an account:
+To be able to use Centredo, you must register and create an account:
 
 - Registration personal account.
 
@@ -59,7 +59,7 @@ Personal account registration
    :align: center
 
 8. For finish registration you should confirm your email address. For that go to mailbox which you use for registration,in this mailbox
-open letter from WhiteDoc. Letter contains confirmation link and confirmation code. For finish registration you should use one of them.
+open letter from Centredo. Letter contains confirmation link and confirmation code. For finish registration you should use one of them.
 
 .. image:: pic_registration/personal_registration_8.png
    :width: 400
@@ -149,7 +149,7 @@ and you will redirect to confirmation page.
    :align: center
 
 10. For finish registration you should confirm your email address. For that go to mailbox which you use for registration,in this mailbox
-open letter from WhiteDoc. Letter contains confirmation link and confirmation code. For finish registration you should use one of them.
+open letter from Centredo. Letter contains confirmation link and confirmation code. For finish registration you should use one of them.
 
 .. image:: pic_registration/personal_registration_8.png
    :width: 400
