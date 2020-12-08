@@ -23,3 +23,4 @@ Welcome to Centredo's documentation!
    pages/notificationSystem/notification.rst
    pages/adminPanel/integration/integration.rst
    pages/apiIntegration/apiIntegration.rst
+   pages/digitalSignature/eds.rst

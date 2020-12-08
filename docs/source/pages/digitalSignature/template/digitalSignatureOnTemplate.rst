@@ -7,18 +7,19 @@ Digital signature on template
 
 ---------
 
-Digital signature it's a field with specific role relation which can be added to the document. You may add personal and company signature to the one document 
-for one signer role. Also, you can optionaly add stamp to the company signature or set only stamp without company signature.
+Digital signature it's a field with specific role relation which can be added to the document. You may add one digital signature field to the one document 
+for one signer role.
 
 How to add signer role
 ======================
 
 To add signature role to the template follow the instructions:
+
 1. Press button "Add signer" and new section with "Signers" appeares;
 2. Fill the required field "Role" with role details (f.e.: name of the role);
 3. Confirm addition.
 
-As soon as you did the steps above you can add document and add the field "Signature to the document"
+As soon as you did the steps above you can add document and add the field "EDS to the document"
 
 Which actions we can do with signature roles?
 ============================================
@@ -35,14 +36,13 @@ You can add as many signers as you need but we support only 30 recipients in the
 Digital signature addition to the document
 ==========================================
 
-To use the digital signature on the document you have to add signer role. You may add only two digital signatue for one role on the one document. It should be 
-different types of the digital signature: personal and company. Also, company signature can be with the stamp, this option is optional.
+To use the digital signature on the document you have to add signer role. You may add only one digital signature for one role on the one document.
 
 You can add the field in any place of the document. To do this:
+
 1. Drag and drop the field to the document;
 2. Set unique field name;
 3. Select the role of the signer who has to set a signature;
-4. Set optional or required status for company signature (optional step)
 
 On the template you will watch the element which looks like the button with title: DS - "role name".
 
