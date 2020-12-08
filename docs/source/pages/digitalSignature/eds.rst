@@ -5,6 +5,7 @@ EDS
    :maxdepth: 1
    :caption: Contents:
 
-   envelope/digitalSignatureOnEnvelope.rst
    template/digitalSignatureOnTemplate.rst
+   envelope/digitalSignatureOnEnvelope.rst
+   
    
