@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'WhiteDoc'
-copyright = '2020, WhiteDoc'
-author = 'WhiteDoc'
+project = 'Centredo'
+copyright = '2020, Centredo'
+author = 'Centredo'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
@@ -32,8 +32,9 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    # 'rst2pdf.pdfbuilder'
 ]
-# pdf_documents = [('index', u'WhiteDoc manual', u'WhiteDoc documentation', u'WhiteDoc')]
+# pdf_documents = [('index', u'Centredo manual', u'Centredo documentation', u'Centredo')]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
