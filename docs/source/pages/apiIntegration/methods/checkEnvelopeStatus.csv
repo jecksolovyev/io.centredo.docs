@@ -1,6 +1,6 @@
 **URL**,
 Method,GET
-Request URL,``/api/v1/mailbox/{uuid}?``
+Request URL,``/api/v1/mailbox/{uuid}``
 "uuid(path, require)",mailboxUuid(require): mailbix id
 q – query parameter,"archived -  Archived flag Default value : false  
 
@@ -26,5 +26,5 @@ subject -Subject of envelopes to retrieve
 
 template – UUIDs of Templates"
 **Headers**,
-authorization(require),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
+Authorization(require),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
 Content-Type,application/json
