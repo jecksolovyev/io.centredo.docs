@@ -23,7 +23,7 @@ Template Structure
 
 Template consists of two blocks:
 
-1. Information block.
+1. Template information block.
 
 .. code:: json
 

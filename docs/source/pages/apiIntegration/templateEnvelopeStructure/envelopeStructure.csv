@@ -1,1 +1,6 @@
-Argument ,Format,Description
+,**Envelope**
+uuid,Envelope ID
+receivedAt,Envelope receipt date
+labels,Labels which added to envelope
+total,Count of processing steps
+completed,Finished processing steps
