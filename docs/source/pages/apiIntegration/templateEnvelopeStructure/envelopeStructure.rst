@@ -2,7 +2,7 @@
 Envelope Structure
 ==================
 
-.. code:: xml
+.. code::
 
     {"envelope":{"uuid":"b7754a70-dcf3-4f99-a0fa-7816611a4832","data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
     <envelope templateUuid=\"500afafd-711e-471a-a18f-24a89cd4ede3\" templateVersion=\"63151ef6-05df-47a1-83b1-b3c747c3214b\" created=\"2020-12-11T12:47:50.929Z\">
@@ -49,7 +49,7 @@ Envelope consists of two blocks:
 
 2. Data block
 
-.. code:: xml
+.. code::
 
     {"envelope":{"data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
     <envelope templateUuid=\"500afafd-711e-471a-a18f-24a89cd4ede3\" templateVersion=\"63151ef6-05df-47a1-83b1-b3c747c3214b\" created=\"2020-12-11T12:47:50.929Z\">
