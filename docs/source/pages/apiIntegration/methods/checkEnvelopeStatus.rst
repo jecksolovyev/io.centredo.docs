@@ -13,7 +13,7 @@ Customer can check envelope status by two ways:
 In response customer will get short information about envelopes from this mailbox which match to filter criteria.
 For more information on this request was used filter by template
 
-**Request example URL**
+**Request URL example**
 
 ``https://api.centredo.com/api/v1/mailbox/837bc65e-4818-48f5-a933-2d00b24b6e12?receiveDatePeriod=&``
 ``expireDatePeriod=&params=%5Bobject%20Object%5D&scope=outbox&archived=false&period=null&sender=&subject=&``

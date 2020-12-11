@@ -1,0 +1,15 @@
+Argument ,Format,Description
+access,string,"Template access level, can be: 
+mailbox - available only for mailbox where created; 
+account – available for all mailbox account where created; 
+Public – available for all system by uuid;"
+archive,boolean,Archivetrue – template was deleted and unavailable;  archive:false – template not deleted and available
+categories,Int(10),Digit corresponds to the category ID where template located
+createdAt,string,Template created date
+dataCreatedAt,string,Template version created date
+modifiedAt,string,Template updated date
+dataModifiedAt,string,Template version updated date
+name,string,Name of the template
+description,string,Template descriprion
+uuid, binary(16),Template UUID (Universally Unique Identifier)  
+version, binary(16),Template version UUID (Universally Unique Identifier)  

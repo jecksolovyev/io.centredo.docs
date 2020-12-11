@@ -1,4 +1,4 @@
-Template fields
+Dynamic fields
 ===============
 
 **Text field**
