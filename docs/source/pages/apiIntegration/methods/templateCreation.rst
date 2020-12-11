@@ -11,6 +11,8 @@
 
 **JSON Body**
 
+For create template
+
 .. code:: json
 
     {"access":"mailbox",
@@ -45,9 +47,6 @@
     </template>"}
 
 
-**"access":"mailbox"** - template access level, can be mailbox, account, public, official.
-
-**"categories":[ ]** - category where will be located template.
 
 Depending on the need, customer can add a different type of fields `template fields <../fields/templateFields.html>`__
 

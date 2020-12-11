@@ -1,0 +1,20 @@
+,Envelope
+templateUuid,ID of the template on the basis of which the envelope was created
+templateVersion,ID of the template version on the basis of which the envelope was created
+created,Envelope creation date
+,State
+status,"Envelope status can be: draft, sent, waiting, completed, expired, rejected"
+date,Status change date
+roleId,Role identifier
+,Info
+subject,Envelope subject
+message,Short message about envelope
+expire,Envelope expiration date – through how many days the envelope will be expired 
+,Documents
+document id ,Document identifier 
+dynamic fields,`Dynamic field <../fields/templateFields.html>`__ which filled by current role
+,Flow 
+role id,Role identifier
+mailboxUuid,Role mailboxUUID
+active,Role status – can be true or false.
+completed,Document processing status by role. Can be true or false

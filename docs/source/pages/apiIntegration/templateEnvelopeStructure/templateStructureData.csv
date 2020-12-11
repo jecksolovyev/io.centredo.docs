@@ -1,0 +1,16 @@
+,Info
+name,Template name
+description,Template short description
+subject,"Envelope subject, can be provide in template or envelope"
+message,Envelope short message can be provide in template or envelope
+expire,Envelope expiration date – through how many days the envelope will be expired
+,Document Info
+document id,Document identifier
+title,Document name
+,Body
+,"This block contains static data(text, tables) and `dynamic fields <../fields/templateFields.html>`__"
+,Flow
+role id,Role identifier
+title,Role name in flow
+type,"Type of role, can be sender, assignee, signer"
+order,Role order number
