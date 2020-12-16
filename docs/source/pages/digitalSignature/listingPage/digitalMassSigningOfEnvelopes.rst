@@ -18,4 +18,5 @@ To mass sign the envelopes you have to do the following:
 2. Choose envelopes which you want to sign. You can select only completed envelopes;
 3. Find icon "key". Hover your mouse over the icon and you will see tooltip "Sign envelopes with EDS". Press this button.
 
-As soon as you click on it, the modal window opens. And what is next to do in the modal window, you can read in the topic “Digital signature on envelope”.
+As soon as you click on it, the modal window opens. And what is next to do in the modal window, you can read in the topic
+:ref:`Digital signature on envelope<Digital signature on envelope>`
