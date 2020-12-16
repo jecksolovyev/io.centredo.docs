@@ -20,6 +20,18 @@ To mass sign the envelopes you have to do the following:
 
 As soon as you click on it, the modal window opens.
 
-
-The first steps how to do this you can read in the topic
+4. The first two steps how to do this you can read in the topic
 :ref:`Digital signature on envelope<Digital signature on envelope>`
+
+
+5. In the third step you will see a list of envelopes that will be signed.
+
+.. image:: pic_listingPage/theListOfTheDocuments.png
+   :width: 400
+   :align: center
+
+6. Click on 'Next' button and wait for the envelopes to sign. Next you will see the result of the mass signing.
+
+.. image:: pic_listingPage/resultMassSigning.png
+   :width: 400
+   :align: center
