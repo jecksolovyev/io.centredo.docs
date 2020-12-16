@@ -7,5 +7,5 @@ EDS
 
    template/digitalSignatureOnTemplate.rst
    envelope/digitalSignatureOnEnvelope.rst
-   
+   listingPage/digitalMassSigningOfEnvelopes.rst
    
