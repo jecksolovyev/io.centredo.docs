@@ -12,7 +12,6 @@ Welcome to Centredo's documentation!
 
    pages/registration/registration.rst
    pages/login/login.rst
-   pages/adminMailboxes/mailboxes.rst
    pages/adminPanel/adminPanel.rst
    pages/fields/fields.rst
    pages/dashboard/recentlyUsedTemplates.rst
