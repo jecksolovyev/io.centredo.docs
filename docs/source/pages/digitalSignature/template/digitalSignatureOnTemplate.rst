@@ -22,7 +22,7 @@ To add signature role to the template follow the instructions:
 As soon as you did the steps above you can add document and add the field "EDS to the document"
 
 Which actions we can do with signature roles?
-============================================
+=============================================
 
 Signer flow is definetly similar to the Assignee flow. You can make similar actions with Signer flow as with Asignee flow except set a role as a copy.
 So, you can do the following:
@@ -47,7 +47,7 @@ You can add the field in any place of the document. To do this:
 On the template you will watch the element which looks like the button with title: DS - "role name".
 
 Digital signature removing from the document
-==========================================
+============================================
 
 You can remove digital signature from the document in three ways:
 

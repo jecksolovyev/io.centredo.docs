@@ -75,10 +75,10 @@ appear in the place where button "Digital signature" has been located.
 
 Also, you can set a stamp to the document if needed. You may do this just press on the link "I want to choose stamp" on the second step of the document signing.
 
-How to donwload the signed data
+How to download the signed data
 ===============================
 
-You can donwload the signature(s) of the document(s) when all participant with role "Signer". You're able to download particular document with signatures or 
+You can download the signature(s) of the document(s) when all participant with role "Signer". You're able to download particular document with signatures or
 whole envelope with all the documents inside and all signatures inside.
 
 To do this, just :
