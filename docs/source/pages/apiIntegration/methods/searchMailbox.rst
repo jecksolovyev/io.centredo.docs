@@ -1,7 +1,7 @@
 **Search mailbox**
-=================
+==================
 
-
+.. toctree::
 
 .. csv-table::
   :file: searchMailbox.csv

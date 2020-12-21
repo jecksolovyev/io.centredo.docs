@@ -1,6 +1,8 @@
 **Check envelope status**
 =========================
 
+.. toctree::
+
 Customer can check envelope status by two ways:
 
 1. Request short information about group of envelopes with specific filters.

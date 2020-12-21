@@ -2,6 +2,8 @@
 API methods
 ===========
 
+.. toctree::
+
 .. hint::
     All api requests will be send to: https://api.centredo.com/
 

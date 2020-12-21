@@ -2,6 +2,8 @@
 **Authorization**
 =================
 
+.. toctree::
+
 For working with API, user should authorize on platform.
 
 +---------------+--------------------------------------------------------------+

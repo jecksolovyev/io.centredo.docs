@@ -2,7 +2,7 @@
 **Template creation**
 =====================
 
-
+.. toctree::
 
 
 .. csv-table::
@@ -15,7 +15,8 @@ For create template
 
 .. code:: json
 
-    {"access":"mailbox",
+    {
+    "access":"mailbox",
     "categories":[],
     "data":"<template>
 	<info>
@@ -44,7 +45,8 @@ For create template
 			<role id=\"b811f2b6-1656-42aa-9420-a9b8addb0246\" title=\"Assignee\" type=\"assignee\" order=\"1\"/>
 		</roles>
 	</flow>
-    </template>"}
+    </template>"
+    }
 
 
 
@@ -54,7 +56,8 @@ Depending on the need, customer can add a different type of fields `template fie
 
 .. code:: json
 
-    {"uuid":"56cacd6a-ffe7-4b77-9c0c-f928d9a18cb5",
+    {
+    "uuid":"56cacd6a-ffe7-4b77-9c0c-f928d9a18cb5",
     "name":"Template name",
     "description":"Template description",
     "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
@@ -93,5 +96,6 @@ Depending on the need, customer can add a different type of fields `template fie
     "archive":false,
     "categories":[],
     "createdAt":"2020-12-02T06:30:44.503Z",
-    "modifiedAt":"2020-12-02T06:30:44.503Z"}
+    "modifiedAt":"2020-12-02T06:30:44.503Z"
+    }
 
