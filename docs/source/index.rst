@@ -16,6 +16,7 @@ Welcome to Centredo's documentation!
    pages/fields/fields.rst
    pages/dashboard/recentlyUsedTemplates.rst
    pages/userProfile/userProfile.rst
+   pages/template/template.rst
    pages/dictionary/dictionary.rst
    pages/envelope/inviteToEnvelope/InviteToEnvelopeByEmail.rst
    pages/envelope/acceptInvitationToEnvelope/acceptInvitationToEnvelope.rst
