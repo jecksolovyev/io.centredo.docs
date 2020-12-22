@@ -7,20 +7,7 @@ Welcome to Centredo's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :caption: contents:
 
-   pages/registration/registration.rst
-   pages/login/login.rst
-   pages/adminMailboxes/mailboxes.rst
-   pages/adminPanel/adminPanel.rst
-   pages/fields/fields.rst
-   pages/dashboard/recentlyUsedTemplates.rst
-   pages/userProfile/userProfile.rst
-   pages/dictionary/dictionary.rst
-   pages/envelope/inviteToEnvelope/InviteToEnvelopeByEmail.rst
-   pages/envelope/acceptInvitationToEnvelope/acceptInvitationToEnvelope.rst
-   pages/notificationSystem/notification.rst
-   pages/adminPanel/integration/integration.rst
+   pages/howToWorkWithPlatform/howToWorkWithPlatform.rst
    pages/apiIntegration/apiIntegration.rst
-   pages/digitalSignature/eds.rst

@@ -2,6 +2,8 @@
 Template Structure
 ==================
 
+.. toctree::
+
 .. code:: json
 
     {

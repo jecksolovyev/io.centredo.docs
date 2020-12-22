@@ -32,6 +32,7 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosectionlabel',
     # 'rst2pdf.pdfbuilder'
 ]
 # pdf_documents = [('index', u'Centredo manual', u'Centredo documentation', u'Centredo')]

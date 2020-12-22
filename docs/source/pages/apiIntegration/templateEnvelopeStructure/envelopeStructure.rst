@@ -2,6 +2,8 @@
 Envelope Structure
 ==================
 
+.. toctree::
+
 .. code::
 
     {"envelope":{"uuid":"b7754a70-dcf3-4f99-a0fa-7816611a4832","data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
