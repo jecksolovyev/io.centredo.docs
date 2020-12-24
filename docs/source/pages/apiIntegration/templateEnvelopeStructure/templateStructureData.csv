@@ -4,11 +4,17 @@ description,Template short description
 subject,"Envelope subject, can be provide in template or envelope"
 message,Envelope short message can be provide in template or envelope
 expire,Envelope expiration date – through how many days the envelope will be expired
-,**Document Info**
+,**Structured document Info**
 document id,Document identifier
 title,Document name
-,**Body**
+,*Body*
 ,"This block contains static data(text, tables) and `dynamic fields <../fields/templateFields.html>`__"
+,**External document Info**
+document type,"Type of document, this attribute provided only for external document. Can be  <type=\\""singleAttachment\\”>"
+document id,Document identifier
+title,Document name
+,*Body*
+,This block by default contain `attachment field  <../fields/templateFields.html>`__   and optional can contain `signature field <../fields/templateFields.html>`__
 ,**Flow**
 role id,Role identifier
 title,Role name in flow
