@@ -53,7 +53,7 @@ Envelope consists of two blocks:
 
 .. code::
 
-    {"envelope":{"data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+    "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
     <envelope templateUuid=\"500afafd-711e-471a-a18f-24a89cd4ede3\" templateVersion=\"63151ef6-05df-47a1-83b1-b3c747c3214b\" created=\"2020-12-11T12:47:50.929Z\">
         <state>
             <status>SENT</status>
@@ -76,7 +76,7 @@ Envelope consists of two blocks:
                 <role id=\"3f29b3a8-3baa-4218-80b1-5a0bb85af247\" mailboxUuid=\"3b570b34-335c-4ec2-9307-9a9c9b2900a0\" active=\"true\" completed=\"false\"/>
             </roles>
         </flow>
-    </envelope>"}}
+    </envelope>"
 
 .. csv-table::
   :file: envelopeStructureData.csv

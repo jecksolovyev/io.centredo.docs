@@ -54,7 +54,7 @@ Template consists of two blocks:
 
 .. code:: xml
 
-   { "data": "
+    "data": "
     <template>
         <info>
             <name>TEST TEMPLATE</name>
