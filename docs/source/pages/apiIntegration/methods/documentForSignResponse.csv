@@ -1,0 +1,7 @@
+**Response content**,
+documentId, id of the particular document(s)
+pdf, binary data of the document in fromat .pdf
+pdfName, name of the file in format .pdf
+signatureName, name of the signature field in the document
+xml, structured document in format .xml
+xmlName, name of the structured document
