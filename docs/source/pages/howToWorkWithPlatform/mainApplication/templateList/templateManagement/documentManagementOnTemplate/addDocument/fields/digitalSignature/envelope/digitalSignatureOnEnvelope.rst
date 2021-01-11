@@ -6,7 +6,7 @@ Digital signature on envelope
 
 ---------
 
-On the envelope you can set digital signature and stamp if needed to the document. You can add digital signature using key with your digital signature.
+On the envelope you can set digital signature and stamp to the document if needed. You can add digital signature using key with your digital signature.
 You sign the two documnets type: pdf (human readable format) and xml (structured data of the document). You can download the signature and signed documents.
 
 How to sign the document
@@ -15,7 +15,7 @@ How to sign the document
 If you want to sign document you have to have at least one signature field in the document. How to add digital signature to the document you can read
 in the topic "Digital signature on template". To sign the the document you have to do the following:
 
-1. Click on the button of the digital signature (or click on the "pencil" button to follow to the field and click on it);
+1. Click on the button of the digital signature in "required signatures" block (or click on the "pencil" button to follow to the field and click on it);
 
 As soon as you click on, the modal window opens. In this modal window you will see the instruction related to sign process.
 
@@ -56,21 +56,10 @@ the modal window, if not you will see the error message);
    :width: 400
    :align: center
 
-9. After the step above modal window closes and on the envelope you will see that button changes and in the button shows informtion related to which documents
-has been signed;
-
-.. image:: pic_digitalSignature/afterSign.png
-   :width: 400
-   :align: center
+9. After step above modal window closes and on the envelope in "required signature" block you will see that field changes and it shows information related to 
+whom signed the document. Also you can click on it and detailed information opens. In the detailed information shows who and when sign the document.
 
 10. To finish the signing documents you have to sign all documents related to your role and press on the button "Send"
-
-As soon as you send the document with set signature, the signature will transform to detailed information about who and when signed the document. The note will 
-appear in the place where button "Digital signature" has been located.
-
-.. image:: pic_digitalSignature/afterSign.png
-   :width: 400
-   :align: center
 
 Also, you can set a stamp to the document if needed. You may do this just press on the link "I want to choose stamp" on the second step of the document signing.
 

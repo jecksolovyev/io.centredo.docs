@@ -6,5 +6,5 @@ How to work with platform
    :caption: contents:
 
    notificationSystem/notification.rst
-   mailApplication/mailApplication.rst
+   mainApplication/mainApplication.rst
    adminApplication/adminApplication.rst
