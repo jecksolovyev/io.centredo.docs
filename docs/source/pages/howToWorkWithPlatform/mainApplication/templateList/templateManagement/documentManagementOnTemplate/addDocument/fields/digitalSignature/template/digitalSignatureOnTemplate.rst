@@ -46,6 +46,10 @@ You can add EDS field to any document in envelope. To do this:
 
 On the template new block above document appeares. You will see the block "Required signatures" with signatures.
 
+.. image:: pic_digitalSignature/signatureOnTemplate.png
+   :width: 400
+   :align: center
+
 Digital signature removing from the document
 ============================================
 
