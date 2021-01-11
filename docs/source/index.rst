@@ -11,3 +11,4 @@ Welcome to Centredo's documentation!
 
    pages/howToWorkWithPlatform/howToWorkWithPlatform.rst
    pages/apiIntegration/apiIntegration.rst
+   pages/errorCodes/errorCodes.rst
