@@ -17,6 +17,10 @@ in the topic "Digital signature on template". To sign the the document you have 
 
 1. Click on the button of the digital signature in "required signatures" block (or click on the "pencil" button to follow to the field and click on it);
 
+.. image:: pic_digitalSignature/signatureOneEnvelopeMyTurn.png
+   :width: 400
+   :align: center
+
 As soon as you click on, the modal window opens. In this modal window you will see the instruction related to sign process.
 
 .. image:: pic_digitalSignature/chooseKeyWindow.png
@@ -59,7 +63,15 @@ the modal window, if not you will see the error message);
 9. After step above modal window closes and on the envelope in "required signature" block you will see that field changes and it shows information related to 
 whom signed the document. Also you can click on it and detailed information opens. In the detailed information shows who and when sign the document.
 
+.. image:: pic_digitalSignature/signatureInProcess.png
+   :width: 400
+   :align: center
+
 10. To finish the signing documents you have to sign all documents related to your role and press on the button "Send"
+
+.. image:: pic_digitalSignature/signedDocument.png
+   :width: 400
+   :align: center
 
 Also, you can set a stamp to the document if needed. You may do this just press on the link "I want to choose stamp" on the second step of the document signing.
 
