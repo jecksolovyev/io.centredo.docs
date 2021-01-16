@@ -2,9 +2,7 @@
 Envelope Structure
 ==================
 
-.. toctree::
-
-.. code::
+.. code:: json
 
     {"envelope":{"uuid":"b7754a70-dcf3-4f99-a0fa-7816611a4832","data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
     <envelope templateUuid=\"500afafd-711e-471a-a18f-24a89cd4ede3\" templateVersion=\"63151ef6-05df-47a1-83b1-b3c747c3214b\" created=\"2020-12-11T12:47:50.929Z\">
@@ -69,6 +67,9 @@ Envelope consists of two blocks:
             <document id=\"ef247568-559a-4ec1-9ecc-6b44c9fb8215\">
                 <field name=\"TEST template 1\" value=\"TEST ENVELOPE\">TEST ENVELOPE</field>
             </document>
+            <document id=\"1bb895fc-ab36-47e8-802e-5b39fc02db64\">
+			<field name=\"a1c7eaad-dc3a-4332-a17d-c82bffeea499\" value=\"27509b61-baa2-4a4e-9909-4d2f32597410\">test.txt</field>
+		</document>
         </documents>
         <flow>
             <roles>

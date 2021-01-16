@@ -22,6 +22,7 @@ For more information on this request was used filter by template
 ``template=e5705211-51d1-4c34-9429-c537038b3c44&expireperiod=null&label=&limit=20&offset=0&sort=desc``
 
 **Response example:**
+Status code: 200 OK
 
 .. code:: json
 
@@ -96,6 +97,13 @@ For more information on this request was used filter by template
    ]
    }
 
+**Response status codes**
+
+.. csv-table::
+  :file: checkEnvelopeStatusCode.csv
+  :widths:  10, 41
+
+
 2. Request for full envelope with template.
 
 .. csv-table::
@@ -106,6 +114,7 @@ For more information on this request was used filter by template
 In response customer will get full envelope and template.
 
 **Response example:**
+Status code: 200 OK
 
 .. code:: json
 
@@ -142,6 +151,12 @@ In response customer will get full envelope and template.
       }
     }
 
+
+**Response status codes**
+
+.. csv-table::
+  :file: checkOneEnvelopeStatusCode.csv
+  :widths:  10, 41
 
 
 From both of this request each customers who has access to this envelope can check his status.
