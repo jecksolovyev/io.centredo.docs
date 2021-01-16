@@ -25,10 +25,18 @@ For working with API, user should authorize on platform.
 **RESPONSE**
 In response user got authorization token.
 
-**Приклад відповіді (JSON):**
+**Response example (JSON):**
 
 .. code:: json
 
   {"token":"b16b61fc-4706-4c90-a57d-fe0cd0dcd2f0"}
+
+**Response status codes**
+
+.. csv-table::
+  :file: authorization.csv
+  :widths:  10, 41
+
+
 
 Token will be expired after 12 hours.

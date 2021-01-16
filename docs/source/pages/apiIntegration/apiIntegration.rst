@@ -4,6 +4,7 @@ API
 
 
 .. toctree::
+   :caption: contents:
 
    apiMethods.rst
    templateEnvelopeStructure/templateStructure.rst
