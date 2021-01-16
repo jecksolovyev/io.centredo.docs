@@ -18,7 +18,7 @@ To add signature role to the template follow the instructions:
 2. Fill the required field "Role" with role details (f.e.: name of the role);
 3. Confirm addition.
 
-As soon as you did the steps above you can add document and add the field "EDS to the document"
+As soon as you did the steps above you can add document and add the field "EDS" to the document.
 
 Which actions we can do with signature roles?
 =============================================
@@ -37,22 +37,26 @@ Digital signature addition to the document
 
 To use the digital signature on the document you have to add signer role. You may add only one digital signature for one role on the one document.
 
-You can add the field in any place of the document. To do this:
+You can add EDS field to any document in envelope. To do this:
 
 1. Drag and drop the field to the document;
 2. Set unique field name;
 3. Select the role of the signer who has to set a signature;
+4. Set the placeholder if needed (this placeholder will be shown on the template/envelope)
 
-On the template you will watch the element which looks like the button with title: DS - "role name".
+On the template new block above document appeares. You will see the block "Required signatures" with signatures.
+
+.. image:: pic_digitalSignature/signatureOnTemplate.png
+   :width: 400
+   :align: center
 
 Digital signature removing from the document
 ============================================
 
-You can remove digital signature from the document in three ways:
+You can remove digital signature from the document in two ways:
 
-1. Using "Delete" or  "Backspace" button on your keyboard, just focus on the place of the "Signature" button in the document and press the button on your keyboard;
-2. Using field menu. Click on the button and in the right bottom corner, click on the "Delete" button;
-3. You may delete the role and if it is last role in the flow the signature field deletes automatically with role.
+1. Using field menu. Click on the button and in the right bottom corner, click on the "Delete" button;
+2. You may delete the role and if it is last role in the flow the signature field deletes automatically with role.
 
 If you delete the role with assigned digital signature field(s) you have to re-assign the field to another role if such is presented. If not role will be 
 deleted with fields.
@@ -60,7 +64,7 @@ deleted with fields.
 General view of the digital signature field and signer role
 ===========================================================
 
-In the processing flow roles divided according to the colors palitra. Buttons on the document will be addedaccording to the color in the flow.
+In the processing flow roles divided according to the colors palitra. Signatures on the signature block will be added according to the color in the flow.
 If you change order the color of the button(s) will be changed too.
 
 Common infromation related to signer roles

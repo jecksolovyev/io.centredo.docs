@@ -54,7 +54,9 @@ Template consists of two blocks:
 
 .. code::
 
+
     {"data": "
+
     <template>
 	<info>
 		<name>TEST template</name>

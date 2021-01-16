@@ -1,0 +1,8 @@
+**Custom error code**, **Error detail**, **Error description**
+80001, Integration rule {0} deleted,
+80002, Integration rule {0} not found,
+80003, Integration not found for mailbox {0},
+80004, Name pattern generates empty filename,
+80005, templateUuid doesn't match versionUuid,
+80006, Protocol {0} not supported,
+80007, Matching pattern source is required,
