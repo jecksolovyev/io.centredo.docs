@@ -86,3 +86,36 @@ Check envelope status
 +===========+===============================+=================================================================================================+
 | GET       | ``/api/v1/mailbox/{uuid}``    | `Check envelope status <methods/checkEnvelopeStatus.html>`__                                    |
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
+
+Account
+=====================
+
+.. list-table::
+   :widths: 1 1 98
+   :header-rows: 1
+
+   * - Method
+     - Request URL
+     - Description
+   * - POST
+     - ``/api/v1/account/{accountUuid}/domain``
+     - `Add new account domain <methods/account/domains.html#add-account-domain>`__
+   * - PATCH
+     - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/verify``
+     - `Verify domain <methods/account/domains.html#verify-account-domain>`__
+   * - PATCH
+     - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/activate``
+     - `Activate domain <methods/account/domains.html#activate-account-domain>`__
+   * - PATCH
+     - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/deactivate``
+     - `Deactivate domain <methods/account/domains.html#deactivate-account-domain>`__
+   * - PATCH
+     - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/check``
+     - `Check domain <methods/account/domains.html#check-account-domain>`__
+   * - DELETE
+     - ``/api/v1/account/{accountUuid}/domain/{domainUuid}``
+     - `Delete domain <methods/account/domains.html#delete-account-domain>`__
+   * - GET
+     - ``/api/v1/account/{accountUuid}/domain``
+     - `Search domains <methods/account/domains.html#search-account-domains>`__
+
