@@ -104,6 +104,9 @@ Account
      - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/verify``
      - `Verify domain <methods/account/domains.html#verify-account-domain>`__
    * - PATCH
+     - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/confirm``
+     - `Confirm domain verification <methods/account/domains.html#confirm-account-domain-verification>`__
+   * - PATCH
      - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/activate``
      - `Activate domain <methods/account/domains.html#activate-account-domain>`__
    * - PATCH

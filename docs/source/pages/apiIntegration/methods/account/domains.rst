@@ -87,7 +87,7 @@ Request domain verification
      - Target account UUID
    * - domainUuid :red:`*`
      - Account domain UUID
-   * - Body
+   * - Body :red:`*`
      - .. literalinclude:: verifyAccountDomain.json
 
 **Request example:**
@@ -117,8 +117,55 @@ Request domain verification
         "verifyMethod": "DNS_TXT_RECORD"
     }
 
+3. Confirm account domain verification
+==========================================
 
-3. Activate account domain
+Confirm account domain verification info and method. After that domain will be added to verification queue.
+
+.. list-table::
+   :widths: 1 99
+   :header-rows: 1
+
+   * - Endpoint
+     -
+   * - Method
+     - PATCH
+   * - Request URL
+     - ``/api/v1/account/{accountUuid}/domain/{domainUuid}/confirm``
+   * - **Headers**
+     -
+   * - Authorization :red:`*`
+     - Bearer TOKEN
+   * - Content-Type
+     - application/json
+   * - **Request**
+     -
+   * - accountUuid :red:`*`
+     - Target account UUID
+   * - domainUuid :red:`*`
+     - Account domain UUID
+
+**Response example:**
+
+If domain verification confirmed domain you will get response code **200** and domain info.
+
+.. code-block:: JSON
+
+    {
+        "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "accountUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "domain": "google.com",
+        "status": "UNVERIFIED",
+        "verifyInfo" : {
+            "domain": "_whitedoc-verify",
+            "value": "abc123"
+        },
+        "verifyMethod": "DNS_TXT_RECORD"
+    }
+
+
+
+4. Activate account domain
 ==========================================
 
 Activate account domain
@@ -164,7 +211,7 @@ If domain activated domain status will be `ACTIVE` in response.
         "verifyMethod": "DNS_TXT_RECORD"
     }
 
-4. Deactivate account domain
+5. Deactivate account domain
 ==========================================
 
 Activate account domain
@@ -211,7 +258,7 @@ If domain deactivated domain status will be `INACTIVE` in response.
     }
 
 
-5. Check account domain
+6. Check account domain
 ==========================================
 
 Check account domain ownership. Domain will be verified with verifyInfo & verifyMethod data. Check can only be performed once a minute.
@@ -259,7 +306,7 @@ Response will be returned only if domain was unverified and verification not yet
     }
 
 
-6. Delete account domain
+7. Delete account domain
 ==========================================
 
 Permanently delete account domain
@@ -292,7 +339,7 @@ Permanently delete account domain
 Response code **200** will be returned, if domain was removed
 
 
-7. Search account domains
+8. Search account domains
 ==========================================
 
 Create/add new domain, if it is enabled for adding: domain should be resolvable and should not be assigned to another account.
@@ -360,13 +407,13 @@ Create/add new domain, if it is enabled for adding: domain should be resolvable 
       "totalElements": 2
     }
 
-8. Domain statuses
+9. Domain statuses
 ==========================================
 - **UNVERIFIED**. Domain just listed in account's domain page, ownership of domain not confirmed. This is very first status of domain
 - **ACTIVE**. Domain active and can be used to connect users to account
 - **INACTIVE**. Domain verified (ownership was confirmed), but inactive, so it can't be used to connect users to account
 
-9. Domain verify methods
+10. Domain verify methods
 ==========================================
 - **DNS_CNAME_RECORD**. With this method you should add CNAME record with name `verifyInfo.domain` to your domain. Example: _whitedoc-verify-abc123.google.com
 - **DNS_TXT_RECORD**. With this method you should add TXT record with name `verifyInfo.domain` and content `verifyInfo.value` to your domain. Example: TXT _whitedoc-verify.google.com = abc123
