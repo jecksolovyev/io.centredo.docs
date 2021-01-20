@@ -19,6 +19,13 @@ User profile error codes
 .. csv-table::
    :file: userProfileErrorCodes.csv
    :widths:  10, 40, 50
+
+Account error codes
+========================
+
+.. csv-table::
+   :file: accountErrorCodes.csv
+   :widths:  10, 40, 50
       
 Mailbox error codes
 ===================
