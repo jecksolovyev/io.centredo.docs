@@ -1,0 +1,30 @@
+**Custom error code**, **Error detail**, **Error description**
+20001,Account {0} not found,Account with entered account UUID has not found. Please check request data
+20002,Account {0} deleted,Account with entered account UUID has been deleted.
+20003,Account not found for role {0},"Role doesn't have account. Probably account has been deleted or non-existent"
+20004,Only one mailbox allowed,In this request only one mailbox is allowed
+20005,Role has no account,Account UUID is necessary parameter in request. Please enter valid account UUID to create role
+20006,Role {0} not found,Role with entered UUID in request has not found. Please check request data
+20007,Role with such name already exists,Role with particular name has already existed. Please enter new name or remove existing role
+20008,No role permissions data found,"Role permissions data is required in this request. Please check request data, compare it with documentation and send again"
+20009,No role type found,"Role type isn't correct in request. Supported role types: Account, Mailbox and System. Please check request data, compare it with documentation and send again"
+20010,Unsupported permission set,"Permissions in the request aren't correct. Please check request data, compare it with documentation and send again"
+20011,"Parent category shouldn't have access level higher than subordinated","Parent category shouldn't have access level higher than subordinated"
+20012,"Account '{0}' has no other owners","Account with entered UUID doesn't have other owners. Add at least one more owner ot Account and do the action again"
+20013,Account domain name not found,
+20014,Account domain name size exceeded maximum size 256,
+20015,"Can't resolve domain '{0}'",
+20016,"Can't use domain '{0}'",
+20017,"Domain '{0}' not found",
+20018,Unknown domain verification method,
+20019,Domain already verified,
+20020,Only INACTIVE domains can be activated,
+20021,Only ACTIVE domains can be deactivated,
+20022,Domain verification expired,
+20023,Domain verify info not found,
+20024,"Domain '{0}' already verified by another account",
+20025,"Domain and account don't match",
+20026,Wrong domain {0} for user with email {1},
+20027,Domain has to be verified and active,
+20028,Invitation vs existing permission conflict,User has already have access to the entity and cannot be invited any more to this entity
+20029,Invitations roles & permissions empty,"Roles or permissions are missed in the request. Please check your request, compare with documentation and send again"
