@@ -27,47 +27,32 @@ As soon as you click on, the modal window opens. In this modal window you will s
    :width: 400
    :align: center
 
-2. Click on the button "Choose key" to open folder manager;
-3. Select the key on you computer or flash card;
-4. As soon as file selected you will see the new modal window with password input which relates to choosen key and functionalit ot manage keys or add stamp;
+2. Click on the button "Choose key" and select your type of electronic signature which you want to apply.
 
-.. image:: pic_digitalSignature/afterKeySelected.png
-   :width: 400
-   :align: center
+If sender specify "Qualified" attribute to electronic signature field you could apply only qualified electronic signature.
 
-5. Enter the password of the key and click "Read key" button (if you enter the valid password and key is valid you will see sign details and the next form of 
-the modal window, if not you will see the error message);
+3. Read certificates from your key (`Advanced electronic signature <advancedElectronicSignature.html>`_ , `Qualified electronic signature <qualifiedElectronicSignature.html>`_);
 
-.. image:: pic_digitalSignature/passwordEntered.png
-   :width: 400
-   :align: center
-
-6. As soon as you enter valid data you will see the information related to key with which you want to sign the document;
-
-.. image:: pic_digitalSignature/readedEds.png
-   :width: 400
-   :align: center
-
-7. Press on the button "Next" to watch the information related to documents which you're going to sign (pdf (human readable format) and xml (structured data of the document));
+4. Press on the button "Next" to watch the information related to documents which you're going to sign (pdf (human readable format) and xml (structured data of the document));
 
 .. image:: pic_digitalSignature/theListOfTheDocuments.png
    :width: 400
    :align: center
 
-8. Click on "Next" button you will see the results of the signing the documents (if documents sing successfully you will see success message if not error message)
+5. Click on "Next" button you will see the results of the signing the documents (if documents sing successfully you will see success message if not error message)
 
 .. image:: pic_digitalSignature/successSignedDoc.png
    :width: 400
    :align: center
 
-9. After step above modal window closes and on the envelope in "required signature" block you will see that field changes and it shows information related to 
+6. After step above modal window closes and on the envelope in "required signature" block you will see that field changes and it shows information related to
 whom signed the document. Also you can click on it and detailed information opens. In the detailed information shows who and when sign the document.
 
 .. image:: pic_digitalSignature/signatureInProcess.png
    :width: 400
    :align: center
 
-10. To finish the signing documents you have to sign all documents related to your role and press on the button "Send"
+7. To finish the signing documents you have to sign all documents related to your role and press on the button "Send"
 
 .. image:: pic_digitalSignature/signedDocument.png
    :width: 400
@@ -101,3 +86,6 @@ To check the validity of the signatures that roles did you have to do the follow
 4. Click on "Check" button;
 
 After validation completed you will see results.
+
+.. include:: advancedElectronicSignature.rst
+.. include:: qualifiedElectronicSignature.rst
