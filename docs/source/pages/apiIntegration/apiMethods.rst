@@ -122,3 +122,19 @@ Account
      - ``/api/v1/account/{accountUuid}/domain``
      - `Search domains <methods/account/domains.html#search-account-domains>`__
 
+User/Profile
+=====================
+
+.. list-table::
+   :widths: 1 1 98
+   :header-rows: 1
+
+   * - Method
+     - Request URL
+     - Description
+   * - POST
+     - ``/api/v1/user/domain``
+     - `Create new corporate user <methods/user/userManagement.html#create-corporate-user>`__
+   * - DELETE
+     - ``/api/v1/user/domain``
+     - `Delete corporate users <methods/user/userManagement.html#delete-corporate-users>`__
