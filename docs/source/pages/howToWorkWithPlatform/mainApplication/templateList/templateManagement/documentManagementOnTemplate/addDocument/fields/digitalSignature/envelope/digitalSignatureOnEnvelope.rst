@@ -1,21 +1,21 @@
-=============================
-Digital signature on envelope
-=============================
+================================
+Electronic signature on envelope
+================================
 
 .. toctree::
 
 ---------
 
-On the envelope you can set digital signature and stamp to the document if needed. You can add digital signature using key with your digital signature.
-You sign the two documnets type: pdf (human readable format) and xml (structured data of the document). You can download the signature and signed documents.
+On the envelope you can set electronic signature and stamp to the document if needed. You can add electronic signature using key with your electronic signature.
+You sign the two documents type: pdf (human readable format) and xml (structured data of the document). You can download the signature and signed documents.
 
 How to sign the document
 ========================
 
-If you want to sign document you have to have at least one signature field in the document. How to add digital signature to the document you can read
-in the topic "Digital signature on template". To sign the the document you have to do the following:
+If you want to sign document you have to have at least one signature field in the document. How to add electronic signature to the document you can read
+in the topic "Electronic signature on template". To sign the the document you have to do the following:
 
-1. Click on the button of the digital signature in "required signatures" block (or click on the "pencil" button to follow to the field and click on it);
+1. Click on the button of the electronic signature in "required signatures" block (or click on the "pencil" button to follow to the field and click on it);
 
 .. image:: pic_digitalSignature/signatureOneEnvelopeMyTurn.png
    :width: 400
