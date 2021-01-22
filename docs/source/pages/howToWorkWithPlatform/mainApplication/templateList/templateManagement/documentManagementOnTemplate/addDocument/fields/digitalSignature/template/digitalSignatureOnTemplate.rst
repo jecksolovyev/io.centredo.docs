@@ -1,13 +1,32 @@
-=============================
-Digital signature on template
-=============================
+================================
+Electronic signature on template
+================================
 
 .. toctree::
 
 ---------
 
-Digital signature it's a field with specific role relation which can be added to the document. You may add one digital signature field to the one document 
+Electronic signature it's a field with specific role relation which can be added to the document. You may add one electronic signature field to the one document
 for one signer role.
+
+Electronic signature types
+==========================
+We supports 3 types of electronic signature:
+
+1. Standard electronic signature (E-ink field);
+2. Advanced electronic signature (AES);
+3. Qualified electronic signature (QES);
+
+Qualified Electronic Signature is an Advanced Electronic Signature that meets additional requirements.
+
+With a QES, a qualified certificate is needed to attest to the authenticity of an electronic signature and serve as proof of the identity of the signatory.
+The signature itself must also be created using special hardware and software, known as a Qualified Signature Creation Device (QSCD). This ensures that:
+
+1. The signatory is the only one with control of the key used to create the electronic signature;
+2. The signature data is managed by a Qualified Trust Service Provider (QTSP)
+3. The signature data is unique and protected from forgery.
+
+While Simple Electronic Signatures and Advanced Electronic Signatures both have their place, QES provides the strongest legal evidence when it comes to disputes over digital transactions, for example, and can help to protect both the consumer and the business against fraud.
 
 How to add signer role
 ======================
@@ -32,17 +51,18 @@ So, you can do the following:
 
 You can add as many signers as you need but we support only 30 recipients in the flow, including the assignee roles.
 
-Digital signature addition to the document
-==========================================
+Electronic signature addition to the document
+=============================================
 
-To use the digital signature on the document you have to add signer role. You may add only one digital signature for one role on the one document.
+To use the electronic signature on the document you have to add signer role. You may add only one electronic signature for one role on the one document.
 
 You can add EDS field to any document in envelope. To do this:
 
 1. Drag and drop the field to the document;
 2. Set unique field name;
 3. Select the role of the signer who has to set a signature;
-4. Set the placeholder if needed (this placeholder will be shown on the template/envelope)
+4. Set the placeholder if needed (this placeholder will be shown on the template/envelope);
+5. In case when you need only qualified electronic signature - you should specify "Qualified" attribute
 
 On the template new block above document appeares. You will see the block "Required signatures" with signatures.
 
@@ -50,24 +70,24 @@ On the template new block above document appeares. You will see the block "Requi
    :width: 400
    :align: center
 
-Digital signature removing from the document
-============================================
+Electronic signature removing from the document
+===============================================
 
-You can remove digital signature from the document in two ways:
+You can remove electronic signature from the document in two ways:
 
 1. Using field menu. Click on the button and in the right bottom corner, click on the "Delete" button;
 2. You may delete the role and if it is last role in the flow the signature field deletes automatically with role.
 
-If you delete the role with assigned digital signature field(s) you have to re-assign the field to another role if such is presented. If not role will be 
+If you delete the role with assigned electronic signature field(s) you have to re-assign the field to another role if such is presented. If not role will be
 deleted with fields.
 
-General view of the digital signature field and signer role
-===========================================================
+General view of the electronic signature field and signer role
+==============================================================
 
 In the processing flow roles divided according to the colors palitra. Signatures on the signature block will be added according to the color in the flow.
 If you change order the color of the button(s) will be changed too.
 
-Common infromation related to signer roles
+Common information related to signer roles
 ==========================================
 
 Signers in the processing flow will be able to set signature on the envelope only when all assignees fill the document data.
