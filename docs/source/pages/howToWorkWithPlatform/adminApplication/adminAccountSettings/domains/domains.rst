@@ -1,3 +1,5 @@
+.. _domains-configuration:
+
 =====================
 Domains configuration
 =====================

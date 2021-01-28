@@ -9,8 +9,8 @@ Users
    manageUsers/manageUsers.rst
    filterSearchUsers/filterSearchUsers.rst
 
-
-**Invite users to Account/Mailbox by email**
+Invite users to Account/Mailbox by email
+========================================
 
 Registered user can invite in Account/Mailbox any users if he has necessary permissions . If user accept your invite he will get special permissions which you provide him when send invite.
 By email you're able to invite registered users and users who has not already registered at the Centredo.
@@ -37,7 +37,8 @@ To invite new users in your Account/Mailboxes follow by next steps:
 will be unavailable before you fill in field (2)), after that you will be redirected to user edition page at the account tab where you can select permissions which you want to provide for this user.
 On this page you can select permissions for user to account and user to mailboxes.
 
- **Add permission to account**
+Add permissions to account
+==========================
 
 Select role with permissions from (2)roles list. To add role click on (1)+Add role button. You're able to choose a couple of roles to one user. For you will be available system roles by default. If you want you can create custom roles and these roles will be available here.
 
@@ -53,7 +54,8 @@ you want provide for invited user click on (5)Apply button or if you change your
    :width: 600
    :align: center
 
-**Add permissions to mailbox**:
+Add permissions to mailbox
+==========================
 
 For select permission to mailbox need go to (1)mailbox tab. On this tab presented mailboxes which related to this account.
 
@@ -70,3 +72,53 @@ and invitation letter will be sent to the email which has been provided. The pro
 .. warning:: `Behaviour of invite internal user <usersInviteInternal.html>`_
 
 .. warning:: `Behaviour of invite external user <usersInviteExternal.html>`_
+
+Create user
+===========
+
+As administrator account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users.
+How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`.
+
+To create corporate user you have to do the following:
+
+1. Navigate to https://staging.whitedoc.space/admin/users with administratore access
+
+2. Click on "Create user" button
+
+.. image:: pic_users/usersPage.png
+   :width: 600
+   :align: center
+
+3. Fill required fields on the user creation form, such as: first, last names, first part of email and select domain part
+
+.. image:: pic_users/createUserForm.png
+   :width: 600
+   :align: center
+
+4. Click on "Create" button
+
+5. After this steps user will be created and for admin opens user permissions configuration page. How to add specific permissions to the mailbox and/or account you can find :ref:`Add permissions to account` and :ref:`Add permissions to mailbox`.
+
+6. As soon as permissions defined, click on "Save button" in the header of the page and user permissions will be applied
+
+**How to authorized as corporate user?**
+
+As soon as administrator of the account created users they get email with instructions.
+
+1. Open email "You are registered on the electronic document management platform"
+
+.. image:: pic_users/email.png
+   :width: 600
+   :align: center
+
+2. Follow the link to create password to user profile
+
+.. image:: pic_users/emailFollowLink.png
+   :width: 600
+   :align: center
+
+3. Set password and confirm it
+
+4. Authorize on platform using credentials above
+
+5. Now user can use platform according to the permissions were set
