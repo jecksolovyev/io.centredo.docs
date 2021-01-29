@@ -119,6 +119,10 @@ As soon as administrator of the account created users they get email with instru
 
 3. Set password and confirm it
 
+.. image:: pic_users/createPassword.png
+   :width: 600
+   :align: center
+
 4. Authorize on platform using credentials above
 
 5. Now user can use platform according to the permissions were set
