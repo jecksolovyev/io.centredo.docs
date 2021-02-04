@@ -11,7 +11,7 @@ Account can add/verify/activate/deactivate domains. All unverified domains will 
 All verified domains pass through regular verification once a day. If domain was not verified it will be moved to INACTIVE status.
 
 1. Add account domain
-==========================================
+=====================
 
 Create/add new domain, if it is enabled for adding: domain should be resolvable and should not be assigned to another account.
 
@@ -61,7 +61,7 @@ Create/add new domain, if it is enabled for adding: domain should be resolvable 
     }
 
 2. Verify account domain
-==========================================
+========================
 
 Request domain verification
 
@@ -118,7 +118,7 @@ Request domain verification
     }
 
 3. Confirm account domain verification
-==========================================
+======================================
 
 Confirm account domain verification info and method. After that domain will be added to verification queue.
 
@@ -166,7 +166,7 @@ If domain verification confirmed domain you will get response code **200** and d
 
 
 4. Activate account domain
-==========================================
+==========================
 
 Activate account domain
 
@@ -212,7 +212,7 @@ If domain activated domain status will be `ACTIVE` in response.
     }
 
 5. Deactivate account domain
-==========================================
+============================
 
 Activate account domain
 
@@ -259,7 +259,7 @@ If domain deactivated domain status will be `INACTIVE` in response.
 
 
 6. Check account domain
-==========================================
+=======================
 
 Check account domain ownership. Domain will be verified with verifyInfo & verifyMethod data. Check can only be performed once a minute.
 Only unverified domains can be checked.
@@ -307,7 +307,7 @@ Response will be returned only if domain was unverified and verification not yet
 
 
 7. Delete account domain
-==========================================
+========================
 
 Permanently delete account domain
 
@@ -340,7 +340,7 @@ Response code **200** will be returned, if domain was removed
 
 
 8. Search account domains
-==========================================
+=========================
 
 Create/add new domain, if it is enabled for adding: domain should be resolvable and should not be assigned to another account.
 
@@ -408,13 +408,13 @@ Create/add new domain, if it is enabled for adding: domain should be resolvable 
     }
 
 9. Domain statuses
-==========================================
+==================
 - **UNVERIFIED**. Domain just listed in account's domain page, ownership of domain not confirmed. This is very first status of domain
 - **ACTIVE**. Domain active and can be used to connect users to account
 - **INACTIVE**. Domain verified (ownership was confirmed), but inactive, so it can't be used to connect users to account
 
 10. Domain verify methods
-==========================================
+=========================
 - **DNS_CNAME_RECORD**. With this method you should add CNAME record with name `verifyInfo.domain` to your domain. Example: _whitedoc-verify-abc123.google.com
 - **DNS_TXT_RECORD**. With this method you should add TXT record with name `verifyInfo.domain` and content `verifyInfo.value` to your domain. Example: TXT _whitedoc-verify.google.com = abc123
 
