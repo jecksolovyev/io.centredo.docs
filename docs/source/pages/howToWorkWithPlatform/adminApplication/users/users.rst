@@ -73,10 +73,10 @@ and invitation letter will be sent to the email which has been provided. The pro
 
 .. warning:: `Behaviour of invite external user <usersInviteExternal.html>`_
 
-Create user
-===========
+Create one user
+===============
 
-As administrator account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users.
+As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users.
 How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`.
 
 To create corporate user you have to do the following:
@@ -101,7 +101,10 @@ To create corporate user you have to do the following:
 
 6. As soon as permissions defined, click on "Save button" in the header of the page and user permissions will be applied
 
-**How to authorized as corporate user?**
+.. _howToAuth:
+
+How to authorized as corporate user?
+====================================
 
 As soon as administrator of the account created users they get email with instructions.
 
@@ -126,3 +129,63 @@ As soon as administrator of the account created users they get email with instru
 4. Authorize on platform using credentials above
 
 5. Now user can use platform according to the permissions were set
+
+Create any quantity of users
+============================
+
+As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users.
+How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`.
+
+To create more than one user you can click on "Create" button in header and select recpective option "Create users". Modal window appeares and you will be able 
+to download the example of the file for massive user creation.
+
+You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so don't change extention.
+
+What is the content of the file?
+================================
+
+File contains defferent qunatity of sheets and it depends on qunatity of Mailboxes in the particular account.
+
+.. image:: pic_users/tabs.png
+   :width: 400
+   :align: center
+
+1. First sheet is "Roles". On this sheet are showing all roles which avaliable for particular account. If you want to clarify what exact role does, you can get this
+information using UI or API. Also, roles information optionaly can be used on the Account and Mailbox sheets (we will observe it below).
+
+.. image:: pic_users/roles.png
+   :width: 400
+   :align: center
+
+2. Second sheet is "Permissions". On this sheet are showing permissions which can be used on the Account and Mailbox list.
+
+.. image:: pic_users/permissions.png
+   :width: 400
+   :align: center
+
+3. Third sheet is "Users". There are we have to fill users data (first name, last name and email). According to theese data users would be created.
+
+.. warning:: **Please note!** All users in the list have to have relation to verified domain(s). So if you decided to add user to the list from unverified or inactive domains, all process of users creation will be stoped.
+
+.. image:: pic_users/users.png
+   :width: 400
+   :align: center
+
+4. Fourth sheet is "Account". This sheet is serves to set access levels to account for particular users from the list users. You can set access to account using roles or permissions.
+
+.. warning:: **Please note!** If you add incorrect email to the sheet it will not be added to the platform.
+
+.. image:: pic_users/accountAccess.png
+   :width: 400
+   :align: center
+
+5. Fifth and the next sheets are "Mailboxes". Each sheet has identification of the mailbox in the top of the sheet. You can set access to mailbox using roles or permissions.
+
+.. warning:: **Please note!** If you add incorrect email to the sheet it will not be added to the platform.
+
+.. image:: pic_users/mailboxAccess.png
+   :width: 400
+   :align: center
+
+As soon as you fill the file with data you need you can upload the file and create users. All users get emails 
+and have to follow the instructions as described in the :ref:`How to authorized as corporate user? <howToAuth>`
