@@ -121,6 +121,12 @@ Account
    * - GET
      - ``/api/v1/account/{accountUuid}/domain``
      - `Search domains <methods/account/domains.html#search-account-domains>`__
+   * - GET
+     - ``/api/v1/account/{accountUuid}/users/example``
+     - `Get example file <methods/account/users.html#download-example-file>`__
+   * - POST
+     - ``/api/v1/account/{accountUuid}/users``
+     - `Mass create users <methods/account/users.html#mass-create-users>`__
 
 User/Profile
 =====================
