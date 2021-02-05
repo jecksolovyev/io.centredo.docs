@@ -7,7 +7,6 @@ Welcome to Centredo's documentation!
 ====================================
 
 .. toctree::
-   :caption: contents:
 
    pages/howToWorkWithPlatform/howToWorkWithPlatform.rst
    pages/apiIntegration/apiIntegration.rst
