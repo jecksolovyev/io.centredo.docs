@@ -33,6 +33,7 @@ release = '0.0.1'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosectionlabel',
+    'sphinxcontrib.redoc',
     # 'rst2pdf.pdfbuilder'
 ]
 # pdf_documents = [('index', u'Centredo manual', u'Centredo documentation', u'Centredo')]
@@ -64,3 +65,24 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 master_doc = 'index'
+
+redoc = [
+    {
+        'name': 'Public API',
+        'page': 'pages/apiIntegration/openapi/publicApi',
+        'spec': 'pages/apiIntegration/openapi/swagger_pub.json',
+        'embed': True
+    },
+    {
+        'name': 'Authorized API',
+        'page': 'pages/apiIntegration/openapi/authApi',
+        'spec': 'pages/apiIntegration/openapi/swagger_auth.json',
+        'embed': True,
+        'opts': {
+            'suppress-warnings' : True,
+            'lazy-rendering' : True,
+            'required-props-first' : True,
+            'hide-hostname' : True
+        }
+    }
+]
