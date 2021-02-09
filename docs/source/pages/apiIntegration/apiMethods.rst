@@ -144,19 +144,3 @@ User/Profile
    * - DELETE
      - `/api/v1/account/{accountUuid}/user <openapi/authApi.html#operation/deleteCorporateUsersUsingDELETE>`__
      - Account admin can delete many corporate users at once. In case of exception, no user will be deleted.
-User/Profile
-=====================
-
-.. list-table::
-   :widths: 1 1 98
-   :header-rows: 1
-
-   * - Method
-     - Request URL
-     - Description
-   * - POST
-     - ``/api/v1/user/domain``
-     - `Create new corporate user <methods/user/userManagement.html#create-corporate-user>`__
-   * - DELETE
-     - ``/api/v1/user/domain``
-     - `Delete corporate users <methods/user/userManagement.html#delete-corporate-users>`__
