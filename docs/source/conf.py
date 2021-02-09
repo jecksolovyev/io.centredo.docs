@@ -13,9 +13,6 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sys
-import os
-sys.path.append(os.path.abspath('_ext'))
 
 
 # -- Project information -----------------------------------------------------
@@ -37,6 +34,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosectionlabel',
     'sphinxcontrib.redoc',
+    # 'rst2pdf.pdfbuilder'
 ]
 # pdf_documents = [('index', u'Centredo manual', u'Centredo documentation', u'Centredo')]
 
