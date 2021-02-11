@@ -80,7 +80,7 @@ redoc = [
         'embed': True,
         'opts': {
             'suppress-warnings' : True,
-            'lazy-rendering' : True,
+            'lazy-rendering' : False,
             'required-props-first' : True,
             'hide-hostname' : True
         }
