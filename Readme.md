@@ -10,7 +10,7 @@
 
 3. install theme
 
-`pip3 install sphinx_rtd_theme`
+`pip3 install sphinx_bootstrap_theme`
 
 4. install plugin to generate API based on OpenAPI specs
 
