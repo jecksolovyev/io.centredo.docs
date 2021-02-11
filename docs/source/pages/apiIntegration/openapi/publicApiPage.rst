@@ -2,7 +2,7 @@
 Public API
 ===========
 
-`Full Version <publicApi.html>`__
+`Full Version <newtab::publicApi.html>`__
 
 .. raw:: html
 
