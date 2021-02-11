@@ -2,7 +2,7 @@
 Authorized API
 ===========
 
-`Full Version <authApi.html>`__
+`Full Version <newtab::authApi.html>`__
 
 .. raw:: html
 
