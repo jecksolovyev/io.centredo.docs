@@ -22,7 +22,7 @@ If you select mailbox and click on "Apply" button you will be redirected to the 
 
 If customer has more than one role assigned to his email he will get additional option for accept this envelope. Will be shown additional block with checkbox "Apply mailbox to all roles in envelope"
 which pre-selected by default and if customer select mailbox and click on Apply button this mailbox will be assigned to all roles.
-Also, customer can select different mailbox fow different roles. For that need uncheck "Apply mailbox to all roles in envelope" checkbox and  after that will be shown additional block with all roles.
+Also, customer can select different mailbox for different roles. For that need uncheck "Apply mailbox to all roles in envelope" checkbox and  after that will be shown additional block with all roles.
 In this block customer can provide mailbox address for each role or leave this selection on later.
 
 And now you can take a part at the processing flow as a participant.
