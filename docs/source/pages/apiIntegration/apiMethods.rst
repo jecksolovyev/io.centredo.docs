@@ -154,7 +154,7 @@ User/Profile
      - Description
    * - POST
      - ``/api/v1/account/{accountUuid}/user``
-     - `Create new corporate user in domain which has to be verified and activated. <openapi/authApi.html#operation/createCorporateUserUsingPOST>`__
+     - `Create new corporate user in domain which has to be verified and activated. <newtab::openapi/authApi.html#operation/createCorporateUserUsingPOST>`__
    * - DELETE
      - ``/api/v1/account/{accountUuid}/user``
-     - `Account admin can delete many corporate users at once. In case of exception, no user will be deleted. <openapi/authApi.html#operation/deleteCorporateUsersUsingDELETE>`__
+     - `Account admin can delete many corporate users at once. In case of exception, no user will be deleted. <newtab::openapi/authApi.html#operation/deleteCorporateUsersUsingDELETE>`__

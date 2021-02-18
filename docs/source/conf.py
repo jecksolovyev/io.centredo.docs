@@ -15,15 +15,12 @@ import sphinx_bootstrap_theme
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-# import sys
-# import os
-# sys.path.append(os.path.abspath('_ext'))
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'Centredo'
-copyright = '2020, Centredo'
+copyright = '2021, Centredo'
 author = 'Centredo'
 
 # The full version, including alpha/beta/rc tags
@@ -69,6 +66,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ['custom.css']
+html_js_files = ['custom.js']
 
 master_doc = 'index'
 
