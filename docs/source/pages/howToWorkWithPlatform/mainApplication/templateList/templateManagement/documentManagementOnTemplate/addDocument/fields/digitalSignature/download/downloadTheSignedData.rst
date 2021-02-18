@@ -1,6 +1,6 @@
-========================
-Download the signed data
-========================
+=========================================
+Download or send to print the signed data
+=========================================
 
 .. toctree::
 
@@ -48,8 +48,9 @@ You download the archive with the zip extension.
 
 * If you download a specific document.
 Inside the archive will be a file with the extension .pdf, a file with the extension .xml, files with captions in .p7s format (qunatity of files
-depends on qunatity of signers nultiple twice for each document) and signing certificate with .pdf extension and name: DocumentName.signatures.pdf. 
-Where DocumentName it's name of the document you downloaded.
+depends on qunatity of signers nultiple twice for each document), signing certificate with .pdf extension and name: DocumentName.signatures.pdf. 
+Where DocumentName it's name of the document you downloaded and printable version of the document with .pdf extension which include visual expression of signatures and 
+signing certificate in one file.
 
 * If you download the entire envelope.
 There will be several folders inside the archive (if the envelope consists of several documents).
@@ -99,3 +100,43 @@ you will see stamp icon opposite table block with data):
 .. image:: pic_download/FAQ.png
    :width: 600
    :align: center
+
+Printable version of the document
+=================================
+
+Printable version of the document you can get in two ways. First is described before and you can it download with signed data in archive. The second one is to 
+open document to print from envelope page.
+
+1. As soon as document completed you will see icon "Print" near document.
+
+.. image:: pic_download/printBtn.png
+   :width: 600
+   :align: center
+
+2. You can click on it and document opens for print in PDF format.
+
+*Document structure is:*
+
+1. Document with signatures labels on first page
+
+.. image:: pic_download/signedDocument.png
+   :width: 600
+   :align: center
+
+2. Signing document sertificate without instructions and explanation (described in topic above)
+
+*Signature label contains the following information:*
+
+.. image:: pic_download/signatureLabel.png
+   :width: 600
+   :align: center
+
+1. Legal name of signer
+
+2. Type of signature or stamp (Advanced or qualified)
+
+3. ITN/EDRPOU/DRFO value, according to signature data
+
+4. Data and time of the signature set
+
+5. Sertificate cerial number according to legal data

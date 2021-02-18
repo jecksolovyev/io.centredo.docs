@@ -87,11 +87,25 @@ Check envelope status
 | GET       | ``/api/v1/mailbox/{uuid}``    | `Check envelope status <methods/checkEnvelopeStatus.html>`__                                    |
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 
-Account
-=====================
+Get completed document for print
+================================
 
 .. list-table::
-   :widths: 1 1 98
+   :widths: 1 45 54
+   :header-rows: 1
+
+   * - Method
+     - Request URL
+     - Description
+   * - POST
+     - ``/api/v1/envelope/{envelopeUuid}/for-print``
+     - `Get document for print. Document should be completed. <openapi/authApi.html#operation/getDocumentPrintVersionUsingGET>`__
+
+Account
+=======
+
+.. list-table::
+   :widths: 1 45 54
    :header-rows: 1
 
    * - Method
@@ -129,18 +143,18 @@ Account
      - `Mass create users <methods/account/users.html#mass-create-users>`__
 
 User/Profile
-=====================
+============
 
 .. list-table::
-   :widths: 1 1 98
+   :widths: 1 45 54
    :header-rows: 1
 
    * - Method
      - Request URL
      - Description
    * - POST
-     - `/api/v1/account/{accountUuid}/user <openapi/authApi.html#operation/createCorporateUserUsingPOST>`__
-     - Create new corporate user in domain which has to be verified and activated.
+     - ``/api/v1/account/{accountUuid}/user``
+     - `Create new corporate user in domain which has to be verified and activated. <openapi/authApi.html#operation/createCorporateUserUsingPOST>`__
    * - DELETE
-     - `/api/v1/account/{accountUuid}/user <openapi/authApi.html#operation/deleteCorporateUsersUsingDELETE>`__
-     - Account admin can delete many corporate users at once. In case of exception, no user will be deleted.
+     - ``/api/v1/account/{accountUuid}/user``
+     - `Account admin can delete many corporate users at once. In case of exception, no user will be deleted. <openapi/authApi.html#operation/deleteCorporateUsersUsingDELETE>`__
