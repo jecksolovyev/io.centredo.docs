@@ -65,51 +65,6 @@ Conversion rule info
                             </xsl:when>
                         </xsl:choose>
                         <xsl:apply-templates select="GROUP_2" mode="NAD"/>
-                        <!--                    sender mailboxUuid-->
-                        <!--                    <field name="SENDER"><xsl:value-of select="../UNB/UNB02/UNB0201"/></field>-->
-                        <!--                    recipient mailboxUuid-->
-                        <!--                    <xsl:choose>-->
-                        <!--                        <xsl:when test="boolean(../UNB/UNB03/UNB0301)">-->
-                        <!--                            <xsl:choose>&lt;!&ndash;Uslovie dlia Ukrainskogo Producta&ndash;&gt;-->
-                        <!--                                <xsl:when test="../UNB/UNB03/UNB0301=('9863521009140','9863521009133','9863521009126','9863521009119')">-->
-                        <!--                                    <field name="RECIPIENT">-->
-                        <!--                                        <xsl:apply-templates select="GROUP_2" mode="NADUP"/>-->
-                        <!--                                    </field>-->
-                        <!--                                </xsl:when>-->
-                        <!--                                &lt;!&ndash;Uslovie dlia Kortes&ndash;&gt;-->
-                        <!--                                <xsl:when test="../UNB/UNB03/UNB0301=('9863521016834','9863521016841')">-->
-                        <!--                                    <xsl:variable name="recipient" select="'9863521000680'"/>-->
-                        <!--                                </xsl:when>-->
-                        <!--                                &lt;!&ndash;Uslovie dlia Zevs&ndash;&gt;-->
-                        <!--                                <xsl:when test="../UNB/UNB03/UNB0301='9863526832675'">-->
-                        <!--                                    <xsl:variable name="recipient" select="'9863521000680'"/>-->
-                        <!--                                    <field name="RECIPIENT">4829900004699</field>-->
-                        <!--                                </xsl:when>-->
-                        <!--                                <xsl:otherwise>-->
-                        <!--                                    <xsl:variable name="recipient" select="../UNB/UNB03/UNB0301"/>-->
-                        <!--                                    <field name="RECIPIENT"><xsl:value-of select="../UNB/UNB03/UNB0301"/></field>-->
-                        <!--                                </xsl:otherwise>-->
-                        <!--                            </xsl:choose>-->
-                        <!--                        </xsl:when>-->
-                        <!--                        <xsl:otherwise>-->
-                        <!--                            <xsl:choose>&lt;!&ndash;Uslovie dlia Ukrainskogo Producta&ndash;&gt;-->
-                        <!--                                <xsl:when test="../UNB/UNB03=('9863521009140','9863521009133','9863521009126','9863521009119','9099999104043')">-->
-                        <!--                                    <field name="RECIPIENT">-->
-                        <!--                                        <xsl:apply-templates select="GROUP_2" mode="NADUP"/>-->
-                        <!--                                    </field>-->
-                        <!--                                </xsl:when>-->
-                        <!--                                &lt;!&ndash;Uslovie dlia Kortes&ndash;&gt;-->
-                        <!--                                <xsl:when test="../UNB/UNB03=('9863521016834','9863521016841')">-->
-                        <!--                                    <field name="RECIPIENT">9863521000680</field>-->
-                        <!--                                </xsl:when>-->
-                        <!--                                <xsl:otherwise>-->
-                        <!--                                    <field name="RECIPIENT">-->
-                        <!--                                        <xsl:value-of select="../UNB/UNB03"/>-->
-                        <!--                                    </field>-->
-                        <!--                                </xsl:otherwise>-->
-                        <!--                            </xsl:choose>-->
-                        <!--                        </xsl:otherwise>-->
-                        <!--                    </xsl:choose>-->
                         <fieldgroup name="POSITION">
                             <xsl:choose>
                                 <xsl:when test="../UNB/UNB03/UNB0301='4829900003227'">
@@ -148,10 +103,6 @@ Conversion rule info
                         <field name="DELIVERYDATE">
                             <xsl:value-of select="substring(DTM01/DTM0102, 7, 2)"/>-<xsl:value-of select="substring(DTM01/DTM0102, 5, 2)"/>-<xsl:value-of select="substring(DTM01/DTM0102, 1, 4)"/>
                         </field>
-                        <!--                    uncomment when optional field will be done-->
-                        <!--                    <field name="DELIVERYTIME">-->
-                        <!--                        <xsl:value-of select="substring(DTM01/DTM0102, 9, 2)"/>:<xsl:value-of select="substring(DTM01/DTM0102, 11, 2)"/>-->
-                        <!--                    </field>-->
                     </xsl:if>
                     <xsl:if test="string-length(DTM01/DTM0102) = '8'">
                         <field name="DELIVERYDATE">
@@ -165,14 +116,11 @@ Conversion rule info
         <xsl:template match="GROUP_2" mode="YC1">
             <xsl:choose>
                 <xsl:when test="NAD/NAD01 = 'SU'">
-                    <!-- Для Ашана -->
                     <xsl:if test="NAD/NAD03">
                         <field name="CAMPAIGNNUMBER">
                             <xsl:value-of select="NAD/NAD03"/>
                         </field>
-                    </xsl:if>
-                    <!-- Для Ашана -->
-                    <xsl:apply-templates select="GROUP_3" mode="YC1"/>
+                    </xsl:if> <xsl:apply-templates select="GROUP_3" mode="YC1"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:template>
@@ -449,80 +397,10 @@ Conversion rule info
             </xsl:choose>
         </xsl:template>
 
-
-
-
-
-        <!--Uslovie dlia Ukrainskogo Producta po magazinam Billu-->
         <xsl:template match="GROUP_2" mode="NADUP">
             <xsl:if test="NAD/NAD01='DP'">
                 <xsl:choose>
-
-                    <!--Kharkovskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025093023'">4820020710019</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025093016'">4820020710019</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025083024'">4820020710019</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025083017'">4820020710019</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025003022'">4820020710019</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025003015'">4820020710019</xsl:when>
-
-                    <!--Kherson-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025007211'">4820020710095</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025087213'">4820020710095</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025097212'">4820020710095</xsl:when>
-
-                    <!--Sumskoy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025093115'">9863521009119</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025083116'">9863521009119</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025003114'">9863521009119</xsl:when>
-
-                    <!--Zaporojskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025092217'">4820020710118</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025082218'">4820020710118</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025002216'">4820020710118</xsl:when>
-
-                    <!--Dnepropetrovskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025092118'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025092026'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025092019'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025082119'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025082027'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025082010'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025002117'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025002025'">4820020710064</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025002018'">4820020710064</xsl:when>
-
-                    <!--Kramatorskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025004111'">4820020710187</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025084113'">4820020710187</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025094112'">4820020710187</xsl:when>
-
-                    <!--Yuzovsky-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4820086639774'">4820020710286</xsl:when>
-
-
-                    <!--Krivorogskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025002315'">4820020710170</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025082317'">4820020710170</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025092316'">4820020710170</xsl:when>
-
-                    <!--Mariupolskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025004210'">4820020710033</xsl:when>
-
-                    <!--Odesskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025097021'">4820020710217</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025087022'">4820020710217</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025007020'">4820020710217</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025007013'">4820020710217</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025087015'">4820020710217</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025097014'">4820020710217</xsl:when>
-
-                    <!--Poltavskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025003213'">4820020710163</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025083215'">4820020710163</xsl:when>
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4824025093214'">4820020710163</xsl:when>
-                    <!--Goloseevskiy-->
-                    <xsl:when test="NAD/NAD02/NAD0201 = '4820086639996'">9864044310669</xsl:when>
+                    <xsl:when test="NAD/NAD02/NAD0201 = 'xxxxxxxxxxxxx'">xxxxxxxxxxxxx</xsl:when>
                     <xsl:otherwise>9099999104043</xsl:otherwise>
                 </xsl:choose>
             </xsl:if>
@@ -623,7 +501,6 @@ Conversion rule info
         </xsl:template>
 
         <xsl:template name="KONTRCIFRA_BEZ_ORDEREDQUANTITY">
-            <!--тут напевно  помилка - 2 рази сумується DELIVEREDQUANTITY-->
             <xsl:value-of select="10 +    count(field[@name='DELIVERYNOTENUMBER']) +   count(field[@name='DELIVERYPLACE']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='PRODUCT']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='PRODUCTIDBUYER']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='DELIVEREDQUANTITY']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='DELIVEREDQUANTITY'])   "/>
         </xsl:template>
 
