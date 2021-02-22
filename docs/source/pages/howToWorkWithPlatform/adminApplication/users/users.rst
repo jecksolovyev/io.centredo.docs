@@ -6,6 +6,7 @@ Users
 
    usersInviteExternal.rst
    usersInviteInternal.rst
+   usersDomainUsers.rst
    manageUsers/manageUsers.rst
    filterSearchUsers/filterSearchUsers.rst
 
@@ -72,6 +73,8 @@ and invitation letter will be sent to the email which has been provided. The pro
 .. warning:: `Behaviour of invite internal user <usersInviteInternal.html>`_
 
 .. warning:: `Behaviour of invite external user <usersInviteExternal.html>`_
+
+.. _create-users:
 
 Create one user
 ===============
