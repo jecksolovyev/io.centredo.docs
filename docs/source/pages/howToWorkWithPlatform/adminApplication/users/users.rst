@@ -14,7 +14,7 @@ Invite users to Account/Mailbox by email
 ========================================
 
 Registered user can invite in Account/Mailbox any users if he has necessary permissions . If user accept your invite he will get special permissions which you provide him when send invite.
-By email you're able to invite registered users and users who has not already registered at the Centredo.
+By email you're able to invite registered users and users who has not already registered at the platform.
 
 To invite new users in your Account/Mailboxes follow by next steps:
 

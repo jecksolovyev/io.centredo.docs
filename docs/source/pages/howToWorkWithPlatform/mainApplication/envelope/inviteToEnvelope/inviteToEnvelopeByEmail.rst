@@ -37,7 +37,7 @@ Envelope which has been sent directly to the email could be finished in three ca
 Participants which could be invited to an envelope
 ===================================================
 
-We're able to invite to an envelope such as customers of the Centredo and non-registered users. The one difference is flow of the envelope invitation acceptence.
+We're able to invite to an envelope such as customers of the platform and non-registered users. The one difference is flow of the envelope invitation acceptence.
 
 * If you leave the email address at the input at the processing flow, participant will be invited by email
 * If you select the mailbox from the drop-down list at the processing flow, participant will get envelope as usual

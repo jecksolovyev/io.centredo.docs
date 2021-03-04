@@ -19,9 +19,9 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Centredo'
-copyright = '2021, Centredo'
-author = 'Centredo'
+project = ''
+copyright = '2021, WhiteDoc'
+author = 'WhiteDoc'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
