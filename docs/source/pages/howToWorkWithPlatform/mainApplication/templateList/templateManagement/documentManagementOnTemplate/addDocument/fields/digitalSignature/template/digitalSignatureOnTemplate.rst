@@ -33,7 +33,7 @@ How to add signer role
 
 To add signature role to the template follow the instructions:
 
-1. Press button "Add signer" and new section with "Signers" appeares;
+1. Press button "Add signer" and new section with "Signers" appears;
 2. Fill the required field "Role" with role details (f.e.: name of the role);
 3. Confirm addition.
 
@@ -62,9 +62,12 @@ You can add EDS field to any document in envelope. To do this:
 2. Set unique field name;
 3. Select the role of the signer who has to set a signature;
 4. Set the placeholder if needed (this placeholder will be shown on the template/envelope);
-5. In case when you need only qualified electronic signature - you should specify "Qualified" attribute
+5. In case when you need only qualified electronic signature - you should specify "Qualified" attribute;
+6. Select checkbox TIN if you want specify who should sing;
+    6.1 Checkbox TIN disabled if you don't have at least one required text, dictionary or lookup field;
+    6.2 After select checkbox you should select document where located your matching field and select field (for select field as matching field, this field should be required and only three types: text, dictionary or lookup)
 
-On the template new block above document appeares. You will see the block "Required signatures" with signatures.
+On the template new block above document appears. You will see the block "Required signatures" with signatures.
 
 .. image:: pic_digitalSignature/signatureOnTemplate.png
    :width: 400
