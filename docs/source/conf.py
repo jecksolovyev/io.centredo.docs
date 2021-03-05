@@ -36,6 +36,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosectionlabel',
     'sphinxcontrib.redoc',
+    # 'rst2pdf.pdfbuilder'
 ]
 # pdf_documents = [('index', u'Centredo manual', u'Centredo documentation', u'Centredo')]
 
@@ -59,7 +60,6 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # def setup(app):
 #     app.add_stylesheet('theme_overrides.css')
 #     app.add_javascript('ultra_custom.js')
-    # app.add_javascript('galaga.js')
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
