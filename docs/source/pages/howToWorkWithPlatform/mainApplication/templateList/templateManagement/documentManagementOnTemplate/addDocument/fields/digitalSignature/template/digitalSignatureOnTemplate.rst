@@ -42,7 +42,7 @@ As soon as you did the steps above you can add document and add the field "EDS" 
 Which actions we can do with signature roles?
 =============================================
 
-Signer flow is definetly similar to the Assignee flow. You can make similar actions with Signer flow as with Asignee flow except set a role as a copy.
+Signer flow is similar to the Assignee flow. You can make similar actions with Signer flow as with Assignee flow except set a role as a copy.
 So, you can do the following:
 
 1. Add or remove role from the flow;
@@ -63,9 +63,9 @@ You can add EDS field to any document in envelope. To do this:
 3. Select the role of the signer who has to set a signature;
 4. Set the placeholder if needed (this placeholder will be shown on the template/envelope);
 5. In case when you need only qualified electronic signature - you should specify "Qualified" attribute;
-6. Select checkbox TIN if you want specify who should sing;
-    6.1 Checkbox TIN disabled if you don't have at least one required text, dictionary or lookup field;
-    6.2 After select checkbox you should select document where located your matching field and select field (for select field as matching field, this field should be required and only three types: text, dictionary or lookup)
+6. Select checkbox TIN (Taxpayer Identification Number) if you want to specify TIN number of signer;
+    6.1 Checkbox TIN disabled if you don't have at least one required text, dictionary or lookup field at whole template;
+    6.2 After selecting checkbox you should select document where located your matching field and select field (field should be required and have type of text, dictionary or lookup).
 
 On the template new block above document appears. You will see the block "Required signatures" with signatures.
 
@@ -87,7 +87,7 @@ deleted with fields.
 General view of the electronic signature field and signer role
 ==============================================================
 
-In the processing flow roles divided according to the colors palitra. Signatures on the signature block will be added according to the color in the flow.
+In the processing flow roles divided according to the colors palette. Signatures on the signature block will be added according to the color in the flow.
 If you change order the color of the button(s) will be changed too.
 
 Common information related to signer roles
