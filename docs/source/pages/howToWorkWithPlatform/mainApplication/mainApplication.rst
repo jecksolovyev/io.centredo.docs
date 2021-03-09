@@ -13,3 +13,4 @@ Main application
    registration/registration.rst
    userProfile/userProfile.rst
    templateList/template.rst
+   scenario/scenario.rst
