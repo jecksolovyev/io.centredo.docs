@@ -2,6 +2,8 @@
 Template Structure
 ==================
 
+.. toctree::
+
 .. code:: json
 
     {
@@ -50,35 +52,51 @@ Template consists of two blocks:
 
 2. Data block
 
-.. code:: xml
+.. code::
 
-   { "data": "
+
+    {"data": "
+
     <template>
-        <info>
-            <name>TEST TEMPLATE</name>
-            <description>TEST TEMPLATE</description>
-            <subject/>
-            <message/>
-            <expire/>
-        </info>
-        <documents>
-            <document id="52616c26-e515-49c6-9ab4-bd088ca1fcda">
-                <info>
-                    <title>New Document</title>
-                </info>
-                <body>
-                    <field type="text" name="TEST FIELD 1" roleId="f0d25c5e-e1fe-4759-8f81-ccfaeefb6eb9" placeholder="TEST FIELD 1"/>
-                    <field type="text" name="TEST FIELD 2" roleId="d070cfb5-366c-466c-a9f7-986e6361ef37" placeholder="TEST FIELD 2"/>
-                </body>
-            </document>
-        </documents>
-        <flow>
-            <roles>
-                <role id="f0d25c5e-e1fe-4759-8f81-ccfaeefb6eb9" title="Sender" type="sender" order="0"/>
-                <role id="d070cfb5-366c-466c-a9f7-986e6361ef37" title="Assignee" type="assignee" order="1"/>
-            </roles>
-        </flow>
-    </template>"
+	<info>
+		<name>TEST template</name>
+		<description>TEST template</description>
+		<subject/>
+		<message/>
+		<expire/>
+	</info>
+	<documents>
+		<document id=\"ef247568-559a-4ec1-9ecc-6b44c9fb8215\">
+			<info>
+				<title>New Document</title>
+			</info>
+			<body>
+				<div class=\"editor-div\">
+					<field type=\"text\" name=\"TEST template 1\" roleId=\"fd8cb669-db1d-41e1-8f6c-2ad3f8fa981a\" placeholder=\"TEST template 1\"/>
+					<field type=\"number\" name=\"TEST template 2\" roleId=\"3f29b3a8-3baa-4218-80b1-5a0bb85af247\" placeholder=\"TEST template 2\" precision=\"0\"/>
+					<signature name=\"Test signer\" roleId=\"348c486d-2901-4ecd-be0c-9a7e6c2ae2a2\"/>
+					<br/>
+				</div>
+			</body>
+		</document>
+		<document type=\"singleAttachment\" id=\"43d47e65-011d-4890-9eaf-c1c6d860b3b2\">
+			<info>
+				<title>New External Document 1</title>
+			</info>
+			<body>
+				<field type=\"attachment\" name=\"990f11c1-48de-4ac8-8479-a5989d5f08dc\" roleId=\"fd8cb669-db1d-41e1-8f6c-2ad3f8fa981a\" attachmentType=\"all\"/>
+				<signature name=\"Test signer\" roleId=\"348c486d-2901-4ecd-be0c-9a7e6c2ae2a2\"/>
+			</body>
+		</document>
+	</documents>
+	<flow>
+		<roles>
+			<role id=\"fd8cb669-db1d-41e1-8f6c-2ad3f8fa981a\" title=\"Sender\" type=\"sender\" order=\"0\"/>
+			<role id=\"3f29b3a8-3baa-4218-80b1-5a0bb85af247\" title=\"Assignee\" type=\"assignee\" order=\"1\"/>
+			<role id=\"348c486d-2901-4ecd-be0c-9a7e6c2ae2a2\" title=\"Test signer\" type=\"signer\" order=\"2\"/>
+		</roles>
+	</flow>
+    </template>"}
 
 
 .. csv-table::

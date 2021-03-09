@@ -1,6 +1,7 @@
 **Send Envelope**
 =================
 
+.. toctree::
 
 
 .. csv-table::
@@ -11,12 +12,13 @@ For create and send envelope customer should know based on what template will be
 
 **sendEnvelopeDto**
 
-.. code:: json
+.. code-block:: JSON
 
-    {"data":"<envelope
-    templateUuid=\"56cacd6a-ffe7-4b77-9c0c-f928d9a18cb5\"
-    status=\"DRAFT\"
-    templateVersion=\"ab0d11cb-ebdd-42bd-a581-ddca1bb9b585\">
+    {
+	"data":"<envelope>
+	templateUuid=\"56cacd6a-ffe7-4b77-9c0c-f928d9a18cb5\" 
+	status=\"DRAFT\" 
+	templateVersion=\"ab0d11cb-ebdd-42bd-a581-ddca1bb9b585\">
 	<state>
 		<message/>
 	</state>
@@ -36,13 +38,14 @@ For create and send envelope customer should know based on what template will be
 			<field name=\"date field\" value=\"2020-12-02T10:20:10.846Z\">2020-12-02 12:20</field>
 		</document>
 	</documents>
-    </envelope>"}
+    </envelope>"
+	}
 
 **RESPONSE**
 In response we got envelope uuid:
 
 
-.. code:: json
+.. code-block:: JSON
 
     {"uuid":"89499ba2-287d-404c-87b0-342dc5b01b6a"}
 

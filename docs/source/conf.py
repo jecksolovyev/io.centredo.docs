@@ -4,6 +4,8 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import sphinx_bootstrap_theme
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -17,9 +19,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Centredo'
-copyright = '2020, Centredo'
-author = 'Centredo'
+project = ''
+copyright = '2021, WhiteDoc'
+author = 'WhiteDoc'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
@@ -33,6 +35,7 @@ release = '0.0.1'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosectionlabel',
+    'sphinxcontrib.redoc',
     # 'rst2pdf.pdfbuilder'
 ]
 # pdf_documents = [('index', u'Centredo manual', u'Centredo documentation', u'Centredo')]
@@ -51,16 +54,39 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # def setup(app):
 #     app.add_stylesheet('theme_overrides.css')
 #     app.add_javascript('ultra_custom.js')
-    # app.add_javascript('galaga.js')
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ['custom.css']
+html_js_files = ['custom.js']
 
 master_doc = 'index'
+
+redoc = [
+    {
+        'name': 'Public API',
+        'page': 'pages/apiIntegration/openapi/publicApi',
+        'spec': 'pages/apiIntegration/openapi/swagger_pub.json',
+        'embed': True
+    },
+    {
+        'name': 'Authorized API',
+        'page': 'pages/apiIntegration/openapi/authApi',
+        'spec': 'pages/apiIntegration/openapi/swagger_auth.json',
+        'embed': True,
+        'opts': {
+            'suppress-warnings' : True,
+            'lazy-rendering' : False,
+            'required-props-first' : True,
+            'hide-hostname' : True
+        }
+    }
+]

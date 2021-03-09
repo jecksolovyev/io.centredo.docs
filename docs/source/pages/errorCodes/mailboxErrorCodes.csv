@@ -1,0 +1,21 @@
+**Custom error code**, **Error detail**, **Error description**
+30001,Mailbox {0} not found,"Entered mailbox couldn't be found in the system"
+30002,Mailbox {0} deleted,Mailbox has been deleted. Please use active mailbox.
+30003,"Mailbox name can't be empty","Mailbox name shouldn't be empty. It should contain at least one symbol"
+30004,Mailbox name size exceeded 256,Mailbox mane could be longer than 256 symbols
+30005,"Mailbox Alias name can't be empty","Mailbox alias name shouldn't be empty. It should contain at least three symbols"
+30006,Mailbox Alias name size exceeded maximum size,"Mailbox alias name shouldn't be longer than 256 symbols"
+30007,Alias not found or attached to other mailbox,Alias you have tried to delete has not found or related to another mailbox
+30008,Contact {0} not found,"Category with UUID you entered doesn't exist or has not found"
+30009,"MoveTo category can't be subordinated of the category to delete","It's impossible to move category inside category you want to delete"
+30010,Category {0} not found,"Category with ID you entered doesn't exist or has not found"
+30011,Invalid parentId value,"ID of parent category isn't valid"
+30012,Alias already exists,Alias with entered name has been already existed
+30013,Empty category id,Category ID is empty in request. Please enter required parameter category ID/
+30014,"Can't change category access to official","It's impossible to change category access to official. Official categories can create only system user."
+30015,Category already exists,Category with entered ID has been already existed
+30016,Mailbox {0} for another account,"Mailbox doesn't belong to this account. Please check your request and be sure that mailbox you want to invite belong to this account"
+30017,Mailbox {0} has no other owners,"Mailbox doesn't have another owner and can't be left"
+30018,Sender mailbox not found,"Mailbox UUID of Sender has not found, please check correctness of request"
+30019,Mailbox UUID is empty,"Mailbox UUID couldn't be empty"
+30020,Mailbox UUID is invalid or empty,Mailbox UUID is invalid or empty. Please send valid request with valid Mailbox UUID

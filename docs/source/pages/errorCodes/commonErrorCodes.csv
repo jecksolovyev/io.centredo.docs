@@ -1,0 +1,29 @@
+**Custom error code**, **Error detail**, **Error description**
+1000,Undefined exception,"There is undefined and unpredictable exception. If it's happened, please, make a screenshot of the error and contact with support team to clarify and sole the issue."
+1001,Record not found,"Record with respective request parameter is not found in database. Please check your request, compare with documentation and send again"
+1002,XML Conversion error. {0},"XML conversion got an error. It can happen if we can't convert document using xslt conversion map and source to envelope xml structure. Please pay attention to the error explanation and particular row with error in the message"
+1003,Bad image data,"Image in request has been broken or couldn't be processed via system, please try to use another format or properties of the image"
+1004,Empty field in request,"IN request you send is empty required field. Please check your request, compare with documentation and send again"
+1005,Too many requests,You have sent to many requests for particular endpoint from this particular use. Please wait 10 minutes and try again
+1006,Validation failed. {0},If any validation of the fields failed you get this error. In the data of the error you can find particular explanation of the validation error
+1007,Document has been already modified,Document has been already modified. Please request document again and change it again
+1008,Invalid XML. {0},"XML structure isn't valid, read error description to clarify details"
+1009,Verification code is absent,"Verification code in the request is missed. Please check your request, compare with documentation and send again"
+1010,Please try later. Files are generating at the moment,Files are generating at the moment. To generate files one more time please wait until file generated and try again
+1011,Unexpected content-type: {0},"Type of the uploaded document is incorrect and doesn't correspond to allowed. Allowed types are: csv, xls"
+1012,"Field '{0}' must be email","Entered value isn't email"
+1013,"Field '{0}' must be from {1} chars long",Entered quantity of symbols is less than minimal chars length allowed
+1014,"Field '{0}' must be less than {1} chars long",Entered quantity of symbols is bigger than allowed maximum chars length
+1015,"Field '{0}' must be from {1} to {2} chars long",Entered quantity of symbols should be in the interval of validation
+1016,Unsupported locale: {0},Locale is not supported by the system
+1017,Weak password,Password validation occured. Password should be at lease 8 symbols and contains Latin symbols in lower and upper cases and special symbols
+1018,Wrong timezone: {0},Timezone is not supported by the system
+1019,File is not ready for download,File you requested is not ready for download. Please wait some time and try again
+1020,Not valid filename: {0},Filename is not valid
+1021,File upload error: {0},"File can't be uploaded. Please pay attention to the explanation in the error message"
+1022,"Request header '{0}' required","Request header is required in this request. Please check your request, compare with documentation and send again"
+1023,"Request query parameter '{0}' required","Request query is required in this request. Please check your request, compare with documentation and send again"
+1024,"Request body parameter '{0}' required","Request body is required in this request. Please check your request, compare with documentation and send again"
+1025,"Request path parameter '{0}' required","Request path parameter is required in this request. Please check your request, compare with documentation and send again"
+1026,Authentication error,Entered email or password is invalid
+1027,Authentication token has been expired or revoked,Authentication token has been expired or revoked. To solve the issue authorized again

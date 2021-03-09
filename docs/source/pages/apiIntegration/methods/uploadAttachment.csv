@@ -1,0 +1,9 @@
+**URL**,
+Method,POST
+Request URL,``/api/v1/envelope/attachment``
+**Headers**,
+authorization(require),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__"
+Mailbox(require),mailboxUuid: mailbox id
+Content-Type,application/json
+**REQUEST**,
+file,"string($binary)"
