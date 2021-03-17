@@ -89,3 +89,4 @@ After validation completed you will see results.
 
 .. include:: advancedElectronicSignature.rst
 .. include:: qualifiedElectronicSignature.rst
+.. include:: TINSignature.rst
