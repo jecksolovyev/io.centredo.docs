@@ -10,3 +10,4 @@ Admin panel
    mailboxes/mailboxes.rst
    billing/billing.rst
    integration/integration.rst
+   permissionsList/permissionsList.rst

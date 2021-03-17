@@ -87,3 +87,8 @@ If you need to delete any scenario you have to do the following:
 3. Click on "Delete" option from the list
 
 If scenario deletes successfuly you will get respective message and scenario disapper from the list.
+
+What is condition and how to use it?
+====================================
+
+There is will be information relate to conditions ...
