@@ -50,3 +50,15 @@
 50049,No active role for mailbox {0},"Mailbox UUID by which you're trying to send request doesn't have active role in particular envelope. Please wait for your turn."
 50050,The envelope is in wrong status,"Envelope status is wrong for this action and can't be processed."
 50051,Attachment is already used,Attachment with entered UUID has already used in this envelope
+50052,Certificate not qualified,"Required qualified certificate to sign data, but not qualified used"
+50053,Invitation envelope {0} not found,"Envelope for invitation not found, inconsistent data"
+50054,Accepted envelopes list is empty,List of UUID for accepting is empty
+50055,Invitations for envelopes {0} not found,Some of request envelopes has no invitations for this user
+50056,"Can't approve invitation, envelope {0} is in final status",Envelope for invitation is in final state
+50057,Not found role for invitation in envelope {0},Envelope has no role for email
+50058,Role unavailable for processing {0},Envelope has no role for email
+50059,ITN value was not found for signature {0},No ITN value found to match during signing
+50060,Expected ITN does not match the number in the signature,"The document was signed with wrong signature, please check ITN"
+50061,Envelope scenario has no available steps,Envelope scenario has no available steps
+50062,"Can't continue scenario with not completed envelope","Can't continue scenario with not completed envelope"
+50063,Envelope has no scenario info,Envelope has no scenario info

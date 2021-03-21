@@ -50,3 +50,8 @@
 40049,Signature by role id was not found,"Signature field doesn't have role with respective role UUID. Please add signer role or remove signature field and try again"
 40050,"Can't change template access to official","Template access level couldn't be changed to the official access level. Only system user can change access level to the official"
 40051,Template {0} mismatch version {1},Template UUID and template version mismatch. Please check correctness of the template version and template content
+40052,Template role {0} not found,Xml template has no role with id
+40053,"Template's signature '{0}' must have both ITN fields filled",Please fill both itnDocumentId and itnFieldName or none of them
+40054,"ITN field '{0}' was not found for signature '{1}'",Check that document has proper ITN field assigned for signature
+40055,"ITN field '{0}' has wrong type or place in document","Check that ITN field is one of (text field, lookup, select-dictionary), not optional, not in the table"
+40056,No access to template {0},Xml template has no role with id

@@ -13,9 +13,10 @@
 90015,No access to envelope,"User doesn't have access to this envelope. Only users who included to the processing flow can watch envelopes"
 90017,Envelope role forbidden to change data,"Envelope role can't change data in the envelope. If you want to change data in the envelope set respective role on the template"
 90018,Access to account {0} is forbidden,"User doesn't have access to this account. Ask your system administrator to give permissions."
-90019,Access to account {0} is forbidden. Missed permissions: {1},"User doesn't have access particular functionality of this account. Ask your system administrator to give permissions. Missed permissions you can find in the error message."
+90019,Mailbox header does not match to mailbox uuid from entity,Please check that entity belongs to current mailbox
 90021,"You don't have enough privilege for this","User doesn't have enough permissions to do this action. Please ask your system administrator to give permissions"
 90022,No access to this import task,"User doesn't have access to the import task"
-90023,Access to this account is forbidden,Account is inaccessible for you. Ask account owner to give you permissions to account.
 90026,No access to attachment,Attahcment is inaccessible for you
 90030,"Can't revoke last owner","You can't revoke last owner of the entity"
+90031,Not a scenario owner,Not scenario owner
+90032,No access to scenario,No read access to scenario

@@ -27,3 +27,4 @@
 1025,"Request path parameter '{0}' required","Request path parameter is required in this request. Please check your request, compare with documentation and send again"
 1026,Authentication error,Entered email or password is invalid
 1027,Authentication token has been expired or revoked,Authentication token has been expired or revoked. To solve the issue authorized again
+1028,Standard Spring MVC exceptions,One of the standard server exceptions has occurred. Please see error message and check the request data for mistakes

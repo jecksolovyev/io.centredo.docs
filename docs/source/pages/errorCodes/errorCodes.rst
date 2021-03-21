@@ -68,3 +68,10 @@ Permissions error codes
 .. csv-table::
    :file: permissionsErrorCodes.csv
    :widths:  10, 40, 50
+
+Scenario error codes
+=======================
+
+.. csv-table::
+   :file: scenarioErrorCodes.csv
+   :widths:  10, 40, 50

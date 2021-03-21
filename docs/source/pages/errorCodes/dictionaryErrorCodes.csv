@@ -25,3 +25,4 @@
 60024,Empty dictionary UUID,Required dictionary UUID parameter if empty in request. Please enter valid dictionary UUID
 60025,"Dictionary '{0}' is not public","Dictionary access level isn't public and it can't be used. Please update dictionary access level to use it."
 60026,"Can't delete last column","Dictionary should has at least one column. Last column can't be deleted from the dictionary."
+60027,No access to dictionary,No access to dictionary

@@ -11,20 +11,33 @@
 20010,Unsupported permission set,"Permissions in the request aren't correct. Please check request data, compare it with documentation and send again"
 20011,"Parent category shouldn't have access level higher than subordinated","Parent category shouldn't have access level higher than subordinated"
 20012,"Account '{0}' has no other owners","Account with entered UUID doesn't have other owners. Add at least one more owner ot Account and do the action again"
-20013,Account domain name not found,
-20014,Account domain name size exceeded maximum size 256,
-20015,"Can't resolve domain '{0}'",
-20016,"Can't use domain '{0}'",
-20017,"Domain '{0}' not found",
-20018,Unknown domain verification method,
-20019,Domain already verified,
-20020,Only INACTIVE domains can be activated,
-20021,Only ACTIVE domains can be deactivated,
-20022,Domain verification expired,
-20023,Domain verify info not found,
-20024,"Domain '{0}' already verified by another account",
-20025,"Domain and account don't match",
-20026,Wrong domain {0} for user with email {1},
-20027,Domain has to be verified and active,
+20013,Account domain name not found,Account domain name empty in create domain request body
+20014,Account domain name size exceeded maximum size 256,Account domain name exceeded max allowed size (256 characters) in create domain request body
+20015,"Can't resolve domain '{0}'","Domain can't be resolved to IP. Possible that it is not exists"
+20016,"Can't use domain '{0}'",Domain already verified and used by another account or already added to current account
+20017,"Domain '{0}' not found",Domain not found in database by domainUuid
+20018,Unknown domain verification method,Domain verification method was not found in request body during domain verify request
+20019,Domain already verified,"Domain already verified and verify info can't be changed"
+20020,Only INACTIVE domains can be activated,"Can't activate unverified or already activated domain"
+20021,Only ACTIVE domains can be deactivated,"Can't deactivate unverified or already deactivated domain"
+20022,Domain verification expired,Domain verification expired. Please use verify method to renew verification
+20023,Domain verify info not found,Domain verify info not found during domain confirmation or domain check
+20024,"Domain '{0}' already verified by another account","Domain has pass verification, but it was already added and verified by another account."
+20025,"Domain and account don't match","Try to access domain, which is not belongs to current account"
+20027,"Domain '{0}' has to be verified and active",Domain is not active during corporate user creation
 20028,Invitation vs existing permission conflict,User has already have access to the entity and cannot be invited any more to this entity
 20029,Invitations roles & permissions empty,"Roles or permissions are missed in the request. Please check your request, compare with documentation and send again"
+20030,"Account '{0}' has no verified domains",Account has no any verified domains when required
+20031,Error during XLSX generation,Xlsx file generation error
+20032,"User's sheet not found",Corporate import excel file has no sheet with users
+20033,Duplicated user {0},Duplicated user email in corporate users import file
+20034,Wrong account uuid {0} on account users sheet,Wrong account uuid found on account users sheet
+20035,Cell A1 not found on account users sheet,Cell A1 not found on account users sheet
+20036,Mailbox {0} not belongs to account or not exists,Mailbox not belongs to account or not exists
+20037,Duplicated mailbox {0} sheet found,Found two sheets with same mailbox uuid
+20038,Cell A1 not found on mailbox users sheet,Cell A1 not found on mailbox users sheet
+20039,Undefined user {0} found,"Found user email not listed on user's sheet"
+20040,Listed roles error for user {0},Listed role(s) not exists or belongs to another account
+20041,Listed permissions error for user {0},Listed permission(s) not exists
+20042,"Can't open file as a spreadsheet",Uploaded file not a valid XLSX binary
+20043,"Role {0} can't be deleted because it assigned to users or invitations",Role is used and assigned to users or invitationsMAILBOX

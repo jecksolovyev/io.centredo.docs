@@ -2,7 +2,7 @@
 10001,User {0} not found,User with requested UUID has not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
 10003,Proof message is not valid,"Entered proof message is not valid. Proof message should be user email in upper case (f.e.: ""EMAIL@EXAMPLE.COM"")"
-10004,Such email already in use,User with particular email has been already registered
+10004,Such email already in use: {0},User with particular email has been already registered
 10005,User already activated,User has been already activated. To use system you have to authorized
 10006,Invitation is for another user,"Opened content doesn't belong to your particular user, change user to see content"
 10007,User notification {0} not found,There are no notifications for particular user
@@ -19,9 +19,10 @@
 10018,Bad range dates number: {0},Range of date is incorrect. Correct range format is date/date in date format ISO 8601
 10019,Bad ISO date: {0},"Format date is incorrect, please use ISO 8601 date formats"
 10020,Already invited,This user has been already invited to this entity
-10021,Corporate user cannot delete himself,
-10022,Corporate user cannot create new account,
-10023,User is not corporate,
+10021,Corporate user cannot delete himself,Only admin of account can delete corporate user
+10022,Corporate user cannot create new account,Corparate user is already assigned to account and it cannot be changed
+10023,User {0} is not corporate,Current action can be applied only for corporate user
 10024,"User '{0}' already has access to account/mailbox",This user has already has access to these entities
 10025,Wrong password,Old password is wrong. Please check correctness of entered password
 10026,User is inactive,User has not confirmed the email yet
+10027,User {0} is corporate,Current action can be applied only for not corporate user
