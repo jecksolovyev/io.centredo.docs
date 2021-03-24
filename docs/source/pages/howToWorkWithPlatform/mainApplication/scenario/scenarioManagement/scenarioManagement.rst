@@ -134,3 +134,97 @@ What is condition and how to use it?
 | If there are no conditions, then we run the next step with the null parameter.
 | **2** Condition that create several envelopes based on the values in the source. But at the same time, if the values are "Yes", then create envelope (s) 1, and if the value is "No", then create envelope(s).
 | If several steps meet the conditions, then the user in the envelope will display several buttons for starting different steps (in the rest, several steps will be received in the response)
+
+Simple condition
+================
+
+Condition is a XSLT map which will be applied to the source envelope of the step.
+A simple condition has to return "true" or "false" in xml format:
+
+.. code:: xml
+
+    <result>
+        true
+    </result>
+
+A condition XSLT example:
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            <result>
+                <xsl:choose>
+                    <xsl:when test="envelope/documents/document[@id='document_id']/field[@name='field_name'] &gt; 0">
+                        true
+                    </xsl:when>
+                    <xsl:otherwise>
+                        false
+                    </xsl:otherwise>
+                </xsl:choose>
+            </result>
+        </xsl:template>
+    </xsl:stylesheet>
+
+One to Many condition
+=====================
+
+This type of condition can be applied ONLY to a table inside a document.
+Condition has to return "true" or "false" for every row in the table in the following format:
+
+.. code:: xml
+
+    <result>
+      <rows>
+        <row index='0'>true<row>
+        <row index='1'>false<row>
+        <row index='2'>false<row>
+        <row index='3'>true<row>
+      </rows>
+    </result>
+
+Index attribute has to match index attribute in "fieldset" node.
+
+A condition XSLT example:
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            <result>
+                <rows>
+                    <xsl:for-each select="envelope/documents/document[@id='document_id']/fieldgroup[@name="table_name"]/fieldset">
+                        <row index="{@index}">
+                            <xsl:choose>
+                                <xsl:when test="field[@name='field_name']='Yes'">
+                                  true
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    false
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </row>
+                    </xsl:for-each>
+                </rows>
+            </result>
+        </xsl:template>
+    </xsl:stylesheet>
+
+For every row where result = "true" a new envelope will be created.
+To provide "xslt" map with a proper row index, this map has to be modified accordingly.
+The following parameter has to be added:
+
+.. code:: xml
+
+    <xsl:param name="row_index"/>
+
+And it can be used in following way:
+
+.. code:: xml
+
+    <field name="field_name">
+        <xsl:value-of select="envelope/documents/document[@id='document_id']/fieldgroup[@name='table_name']/
+            fieldset[@index=$row_index]/field[@name='field_name']/@value"/>
+    </field>

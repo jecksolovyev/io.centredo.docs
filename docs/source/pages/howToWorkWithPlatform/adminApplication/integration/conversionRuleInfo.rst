@@ -4,7 +4,31 @@ Conversion rule info
 
 .. toctree::
 
-**Conversion rule example for outgoing documents**
+WdExtensions
+==============================================
+
+WdExtensions - is a help java class for working with dictionaries inside XSLT map.
+In order to apply it, the following namespace has to be added:
+
+.. code:: xml
+
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                    xmlns:saxon="http://saxon.sf.net/"
+                    xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
+                    exclude-result-prefixes="saxon wdExtensions">
+
+There are 2 static methods:
+
+| 1. wdExtensions:getValueFromDictionary(String dictionaryUuid, String columnByUuid, String valueToFind, String columnToFind)
+| Can be used to find a value in column
+
+| 2. wdExtensions:getRecordUuidByValueFromDictionary(String dictionaryUuid, String columnUuid, String valueToFind)
+| Can be used to find UUID of dictionary record
+
+Conversion rule example for outgoing documents
+==============================================
 
 .. code:: xml
 
@@ -409,7 +433,8 @@ Conversion rule info
     </xsl:stylesheet>
 
 
-**Conversion rule example for incoming documents**
+Conversion rule example for incoming documents
+==============================================
 
 .. code:: xml
 
