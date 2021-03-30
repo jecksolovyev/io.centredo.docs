@@ -13,11 +13,11 @@ Steps include name, source and destination (where source and destination include
 How to create scenario?
 =======================
 
-To create scenario you have to click on button "New sceario" on the scenario list. And after that fill in required details.
+To create scenario you have to click on button "New scenario" on the scenario list. And after that fill in required details.
 
 .. warning:: **Please note! First step of the scenario doesn\'t contain source. It contains only destination**
 
-Sceanrio creation form persented below:
+Scenario creation form presented below:
 
 .. image:: ../pic_scenario/scenario-create.png
    :width: 600
@@ -58,9 +58,9 @@ To configure the first step of scenario you have to click on "+" button near "Sc
 
 4. Click on "Save" icon in the right top corner of the step.
 
-.. warning:: **The latest template version uuid automatically applies in the field after tempalte uuid entered**
+.. warning:: **The latest template version uuid automatically applies in the field after template uuid entered**
 
-To create second, third and the rest of the following steps you have to do similar steps as above, but you will need to fill new field "source". Source it's two field with tempalte uuid and template version uuid of the previous step of the scenario.
+To create second, third and the rest of the following steps you have to do similar steps as above, but you will need to fill new field "source". Source it's two field with template uuid and template version uuid of the previous step of the scenario.
 
 How to edit scenario?
 =====================
@@ -109,7 +109,7 @@ If you need to clone any scenario you have to do the following:
 
 3. Click on "Clone" option from the list
 
-If scenario cloned successfuly you will get respective message and will see cloned scenario in the list.
+If scenario cloned successfully you will get respective message and will see cloned scenario in the list.
 
 How to delete scenario?
 =======================
@@ -122,7 +122,17 @@ If you need to delete any scenario you have to do the following:
 
 3. Click on "Delete" option from the list
 
-If scenario deletes successfuly you will get respective message and scenario disapper from the list.
+If scenario deletes successfully you will get respective message and scenario disappear from the list.
+
+What is option send envelope immediately after step run?
+=========================================================
+
+If you want to send envelope after step run, mark the respective checkbox.
+
+.. warning:: **Please note: to send envelope you have to fill all required fields in the envelope for Sender role and you have to set all recipient and signer mailboxes or emails in the flow**
+
+If you any required data is missed on the step (at the conversion rule) you will get an error while saving scenario.
+
 
 What is condition and how to use it?
 ====================================
