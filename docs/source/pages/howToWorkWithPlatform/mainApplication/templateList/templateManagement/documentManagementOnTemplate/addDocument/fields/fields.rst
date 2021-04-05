@@ -14,3 +14,4 @@ Fields
    yesNo/yesNoField.rst
    lookup/lookup.rst
    digitalSignature/eds.rst
+   duplicate/duplicate.rst
