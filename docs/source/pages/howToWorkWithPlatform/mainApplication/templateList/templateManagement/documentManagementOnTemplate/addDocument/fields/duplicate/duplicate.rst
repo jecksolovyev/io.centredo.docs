@@ -11,7 +11,7 @@ Allowed fields for duplicating: text, number, currency, date and time, dictionar
 Create Duplicate Field
 ===================
 
-1. Navigate to https://staging.whitedoc.space/template/form/editor
+1. Open template for edition and open document for edition
 
 2. Drag and drop duplicate-field to the document
 
@@ -21,16 +21,16 @@ Create Duplicate Field
 
 5. Choose document from list of documents with allowed fields for duplicating.
 
-6. Choose which field should use duplicate field to set value.
+6. Choose which field should use duplicate field to set value
 
-7. Click save.
+7. Click save
 
 8. Field added
 
 Edit Duplicate Field
 =================
 
-1. Navigate to https://staging.whitedoc.space/template/form/editor
+1. Open template for edition and open document for edition
 
 2. Click on the duplicate field in the document
 
