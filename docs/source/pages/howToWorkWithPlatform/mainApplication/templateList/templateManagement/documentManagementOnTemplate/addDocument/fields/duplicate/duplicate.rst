@@ -19,7 +19,7 @@ Create Duplicate Field
 
 4. Fill the name of the field (Should be unique per document)
 
-5. Choose document from list of documents with allowed fields for duplicating.
+5. Choose document from list of documents with allowed fields for duplicating
 
 6. Choose which field should use duplicate field to set value
 
