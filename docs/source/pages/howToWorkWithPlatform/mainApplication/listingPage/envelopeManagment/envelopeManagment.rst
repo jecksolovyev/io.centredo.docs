@@ -1,14 +1,14 @@
-==================
-Envelope managment
-==================
+===================
+Envelope management
+===================
 
 .. toctree::
 
-Envelope managment should include the following functionality:
+Envelope management should include the following functionality:
 
 1. List of the statuses of the envelopes
 
-2. Possibility to archive and unarchive envelopes 
+2. Possibility to archive and unarchive envelopes
 
 3. Possibility to sign envelopes
 

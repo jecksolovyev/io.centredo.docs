@@ -8,5 +8,6 @@ Listing page
     labelsManagment/labelsManagment.rst
     filtrationFunctionality/filtrationFunctionality.rst
     envelopeManagment/envelopeManagment.rst
+    envelopesReport/envelopesReport.rst
     
 There is should be description...
