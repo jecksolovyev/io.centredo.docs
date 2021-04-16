@@ -70,4 +70,7 @@ But deleting allowed field (text, number, currency, date and time, dictionary, y
 Duplicate Field in Envelope
 ===========================
 
-Duplicate field disabled on envelope. For fill in duplicate field need to fill value in parent field.All duplicates fields which related to this parent field will be automatically fill.
+Duplicate field is disabled on envelope. 
+To fill in duplicate field you have to fill value in parent field. All duplicates fields which related to this parent field will be automatically fill.
+
+If parent of the duplicate field is optional you can don't fill in parent field and in this case duplicate field will be emty too.
