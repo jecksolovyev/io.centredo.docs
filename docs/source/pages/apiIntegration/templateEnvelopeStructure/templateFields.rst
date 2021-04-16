@@ -90,7 +90,7 @@ Values: exact value from template attribute valueYes or from template attribute 
 |                                 `<table name="tableName" class="table-stripped" iterable="true" roleId="UUID"></table>`                                           |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. code:: json
+.. code:: xml
 
     <table name="tableName" class="table-stripped" iterable="true" roleId="UUID">
        <thead>

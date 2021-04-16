@@ -7,6 +7,7 @@ Template Structure
    templateStaticElements.rst
    templateFields.rst
 
+
 .. code:: json
 
     {
