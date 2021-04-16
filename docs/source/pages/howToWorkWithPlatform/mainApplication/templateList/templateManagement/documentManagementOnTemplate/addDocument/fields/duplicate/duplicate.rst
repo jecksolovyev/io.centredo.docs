@@ -68,6 +68,6 @@ You can delete Duplicate Field without limits.
 But deleting allowed field (text, number, currency, date and time, dictionary, yes/no) isn't available when the field has duplicate field that is related to him. Need to delete duplicate field first.
 
 Duplicate Field in Envelope
-===============================
+===========================
 
 Duplicate field disabled on envelope. For fill in duplicate field need to fill value in parent field.All duplicates fields which related to this parent field will be automatically fill.
