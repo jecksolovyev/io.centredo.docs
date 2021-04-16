@@ -14,7 +14,11 @@ document type,"Type of document, this attribute provided only for external docum
 document id,Document identifier
 title,Document name
 ,*Body*
-,This block by default contain `attachment field  <../fields/templateFields.html>`__   and optional can contain `signature field <../fields/templateFields.html>`__
+,This block by default contain `attachment field  <../fields/templateFields.html>`__
+,**Signatures**
+name,Signature name
+role id,Role identifier
+document id,Document identifier
 ,**Flow**
 role id,Role identifier
 title,Role name in flow
