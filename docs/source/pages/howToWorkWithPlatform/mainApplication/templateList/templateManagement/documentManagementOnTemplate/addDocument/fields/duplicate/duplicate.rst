@@ -1,6 +1,6 @@
-============
+===============
 Duplicate Field
-============
+===============
 
 .. toctree::
 
@@ -9,7 +9,7 @@ Duplicate field is available only when the template contains at least one field 
 Allowed fields for duplicating: text, number, currency, date and time, dictionary, yes/no.
 
 Create Duplicate Field
-===================
+======================
 
 1. Open template for edition and open document for edition
 
@@ -28,7 +28,7 @@ Create Duplicate Field
 8. Field added
 
 Edit Duplicate Field
-=================
+====================
 
 1. Open template for edition and open document for edition
 
@@ -45,18 +45,18 @@ Edit Duplicate Field
 7. Click on "Save" will Save all the changes you mad and close edit form
 
 Duplicate Field Template
-=====================
+========================
 
 Duplicate field at document can use any allowed field from any document in template if they are not inside table-field.
 
 Duplicate Inside Table-field
-=========================
+============================
 
 Duplicate field inside table field can use only allowed field from this table or any allowed field from any document in template.
 Duplicate field inside table can't use fields from other table-field.
 
 Disabled Duplicate Field
-=====================
+========================
 
 Duplicate field is disabled when template hasn't have any allowed field.
 
@@ -66,3 +66,8 @@ Deleting Duplicate Field
 You can delete Duplicate Field without limits.
 
 But deleting allowed field (text, number, currency, date and time, dictionary, yes/no) isn't available when the field has duplicate field that is related to him. Need to delete duplicate field first.
+
+Duplicate Field in Envelope
+===============================
+
+Duplicate field disabled on envelope. For fill in duplicate field need to fill value in parent field.All duplicates fields which related to this parent field will be automatically fill.
