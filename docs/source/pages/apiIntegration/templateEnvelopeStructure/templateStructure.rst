@@ -4,6 +4,9 @@ Template Structure
 
 .. toctree::
 
+   templateStaticElements.rst
+   templateFields.rst
+
 .. code:: json
 
     {
