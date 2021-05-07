@@ -28,3 +28,16 @@
 1026,Authentication error,Entered email or password is invalid
 1027,Authentication token has been expired or revoked,Authentication token has been expired or revoked. To solve the issue authorized again
 1028,Standard Spring MVC exceptions,One of the standard server exceptions has occurred. Please see error message and check the request data for mistakes
+1029,"Attachment '{0}' exceeded max size: {1} > {2}",Attachment file size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
+1030,"File type mismatch for image '{0}'","Image file type is not correspond to allowed file types. Allowed file types: png, jpg, jpeg."
+1031,"Image '{0}' exceeded max size: {1}x{2}",Image size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
+1032,Attachment {0} not found,Attachment with entered UUID has not found. Please check correctness of the entered value
+1033,"Attachment '{0}' is not in {1} format","Attachment can't be uploaded because of the wrong file format. Please use one of the allowed format from the list"
+1034,"Image source '{0}' is wrong","Image tag supports only 'data:' and 'image-uuid:' prefixes for source attribute"
+1035,"Hash attribute has to be specified for '{0}'",Hash attribute is required to sign the document
+1036,"Image hashes don't match for '{0}'",Check that hashes are correct for images
+1037,Image {0} is already in use,"Image cannot be reused, please upload new one"
+1038,Please accept Terms and Conditions and Privacy Policy,"Parameter agreed has to be 'true'. Please read Terms and Conditions and Privacy Policy."
+1039,Image {0} was uploaded by another mailbox {1},Image cannot be used in current mailbox
+1040,Bad range dates number: {0},Range of date is incorrect. Correct range format is date/date in date format ISO 8601
+1041,Requested range out of bounds,Requested range out of bounds

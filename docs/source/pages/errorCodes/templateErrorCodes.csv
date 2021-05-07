@@ -55,3 +55,6 @@
 40054,"ITN field '{0}' was not found for signature '{1}'",Check that document has proper ITN field assigned for signature
 40055,"ITN field '{0}' has wrong type or place in document","Check that ITN field is one of (text field, lookup, select-dictionary), not optional, not in the table"
 40056,No access to template {0},Xml template has no role with id
+40057,Parent of duplicate field {0} was not found,Duplicate field does not have a parent field in the template
+40058,"'relatedTo' property cannot be empty for duplicate field",Fill property with proper value
+40059,Unsupportable type {0} of parent field for duplicate {1},This kind of type is not allowed for duplicate parent field
