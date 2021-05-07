@@ -62,3 +62,7 @@
 50061,Envelope scenario has no available steps,Envelope scenario has no available steps
 50062,"Can't continue scenario with not completed envelope","Can't continue scenario with not completed envelope"
 50063,Envelope has no scenario info,Envelope has no scenario info
+50064,Parent of duplicate field {0} was not found,Duplicate field does not have a parent field in the envelope
+50065,Template {0} does not match envelope template {1},Make sure the templates match
+50066,"Record UUID has to be populated for field '{0}'","Please fill the 'recordUuid' attribute with proper value"
+50067,"Attachment UUID has to be populated for field '{0}'","Please fill the 'attachmentUuid' attribute with proper value"
