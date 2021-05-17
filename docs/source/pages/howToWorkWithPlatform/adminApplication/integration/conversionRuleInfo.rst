@@ -163,7 +163,7 @@ Conversion rule example for outgoing documents
             <xsl:choose>
                 <xsl:when test="NAD/NAD01='SU'">
                     <xsl:variable name="supplierRecordValue" select="NAD/NAD02/NAD0201"></xsl:variable>
-                    <field name="SUPPLIER" value="{wdExtensions:getRecordUuidByValueFromDictionary('a5390637-f3b5-49f3-b7f6-48132f6fe8bb', '7f9d20ab-71d8-45e0-9756-2887fd427cd6', $supplierRecordValue)}">
+                    <field name="SUPPLIER" recordUuid="{wdExtensions:getRecordUuidByValueFromDictionary('a5390637-f3b5-49f3-b7f6-48132f6fe8bb', '7f9d20ab-71d8-45e0-9756-2887fd427cd6', $supplierRecordValue)}">
                         <xsl:value-of select="$supplierRecordValue"/>
                     </field>
                 </xsl:when>
@@ -172,7 +172,7 @@ Conversion rule example for outgoing documents
                     <xsl:choose>
                         <xsl:when test="$buyer=13">
                             <xsl:variable name="buyerRecordValue" select="NAD/NAD02/NAD0201"></xsl:variable>
-                            <field name="BUYER" value="{wdExtensions:getRecordUuidByValueFromDictionary('258a20bd-ffe5-47b4-a76a-5d440469e444', '592553ba-3e02-43c1-bff6-b7fa438b8fda', $buyerRecordValue)}">
+                            <field name="BUYER" recordUuid="{wdExtensions:getRecordUuidByValueFromDictionary('258a20bd-ffe5-47b4-a76a-5d440469e444', '592553ba-3e02-43c1-bff6-b7fa438b8fda', $buyerRecordValue)}">
                                 <xsl:value-of select="$buyerRecordValue"/>
                             </field>
                         </xsl:when>
@@ -185,13 +185,13 @@ Conversion rule example for outgoing documents
                 </xsl:when>
                 <xsl:when test="NAD/NAD01='DP'">
                     <xsl:variable name="deliveryPlaceValue" select="NAD/NAD02/NAD0201"></xsl:variable>
-                    <field name="DELIVERYPLACE" value="{wdExtensions:getRecordUuidByValueFromDictionary('258a20bd-ffe5-47b4-a76a-5d440469e444', '592553ba-3e02-43c1-bff6-b7fa438b8fda', $deliveryPlaceValue)}">
+                    <field name="DELIVERYPLACE" recordUuid="{wdExtensions:getRecordUuidByValueFromDictionary('258a20bd-ffe5-47b4-a76a-5d440469e444', '592553ba-3e02-43c1-bff6-b7fa438b8fda', $deliveryPlaceValue)}">
                         <xsl:value-of select="$deliveryPlaceValue"/>
                     </field>
                 </xsl:when>
                 <xsl:when test="NAD/NAD01='IV'">
                     <xsl:variable name="invoicePartnerRecordValue" select="NAD/NAD02/NAD0201"></xsl:variable>
-                    <field name="INVOICEPARTNER" value="{wdExtensions:getRecordUuidByValueFromDictionary('258a20bd-ffe5-47b4-a76a-5d440469e444', '592553ba-3e02-43c1-bff6-b7fa438b8fda', $invoicePartnerRecordValue)}">
+                    <field name="INVOICEPARTNER" recordUuid="{wdExtensions:getRecordUuidByValueFromDictionary('258a20bd-ffe5-47b4-a76a-5d440469e444', '592553ba-3e02-43c1-bff6-b7fa438b8fda', $invoicePartnerRecordValue)}">
                         <xsl:value-of select="$invoicePartnerRecordValue"/>
                     </field>
                 </xsl:when>
