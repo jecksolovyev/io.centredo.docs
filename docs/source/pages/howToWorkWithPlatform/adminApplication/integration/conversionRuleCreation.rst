@@ -18,13 +18,13 @@ Conversion rule creation process for outgoing document
 
 2. In field (1) customer can provide rule name or leave default name
 
-3. In field (4) customer should provide matching rule. According this rule will be matching document and conversion rule
-
-4. In field (5) customer should select according what content will be make matching (matching rule can be created using RegExp).
-    - Name - matching rule will be match with file name
-    - Content - matching rule will be match with file content
+3. In field (4) customer should provide matching rule. According this rule will be matching document and conversion rule (matching rule can be created using RegExp).
 
 .. important:: F.e.: you have a couple of files with different names and similar part of name: example111.txt, example222.txt and example333.txt. To write a matching rule which will be appropriate for all of the files you can write next expression: example.*.txt and all files will be correspond to your matching pattern. `How to use regular expression you can find here <https://en.wikipedia.org/wiki/Regular_expression>`_
+
+4. In field (5) customer should select according what content will be make matching
+    - Name - matching rule will be match with file name
+    - Content - matching rule will be match with file content
 
 5. In field (6) customer should provide templateUUID which match to outgoing document
 
