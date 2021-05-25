@@ -51,7 +51,7 @@ If it's necessary to delete image from document you can do it in three ways
 
 1. Click on image and click on delete icon in the menu
 
-.. image:: pic_imagesInsideTemplate/removeIngBtn.png
+.. image:: pic_imagesInsideTemplate/removeImgBtn.png
    :width: 400
    :align: center
 
