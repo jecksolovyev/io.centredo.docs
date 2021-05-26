@@ -5,6 +5,7 @@ Admin Settings
 .. toctree::
    
    domains/domains.rst
+   external-links/external-links.rst
 
 Account Settings - is a list of account properties that helps to identify and manage acсount. Data from account used for creating mailboxes and billing.
 
