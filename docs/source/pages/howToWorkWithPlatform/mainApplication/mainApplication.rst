@@ -14,3 +14,4 @@ Main application
    userProfile/userProfile.rst
    templateList/template.rst
    scenario/scenario.rst
+   optionsInHeader/external-links.rst
