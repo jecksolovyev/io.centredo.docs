@@ -144,6 +144,6 @@ Delete dictionary
 1. Click to delete icon.
 2. Confirm operation.
 
-.. warning:: **Please note!** `Behaviour of dictionary field after deleting a dictionary <delete_behaviour.html>`_
+.. warning:: **Please note!** `Behaviour of dictionary field after deletion a dictionary <delete_behaviour.html>`_
 
 .. include:: delete_behaviour.rst
