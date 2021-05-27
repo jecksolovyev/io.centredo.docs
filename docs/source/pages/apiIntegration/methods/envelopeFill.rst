@@ -21,7 +21,7 @@ For fill envelope customer should provide data to field which assigned to him by
         </state>
         <documents>
             <document id=\"ef247568-559a-4ec1-9ecc-6b44c9fb8215\">
-                <field name=\"TEST template 2\" value=\"12312\">12312</field>
+                <field name=\"TEST template 2\">12312</field>
             </document>
             <document id=\"43d47e65-011d-4890-9eaf-c1c6d860b3b2\"/>
         </documents>

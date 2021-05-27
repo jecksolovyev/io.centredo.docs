@@ -35,7 +35,7 @@ For create and send envelope customer should know based on what template will be
 	</flow>
 	<documents>
 		<document id=\"4a61f258-fd9d-406c-b47e-81c90d4e5c47\">
-			<field name=\"date field\" value=\"2020-12-02T10:20:10.846Z\">2020-12-02 12:20</field>
+			<field name=\"date field\">2020-12-02T10:20:10.846Z</field>
 		</document>
 	</documents>
     </envelope>"

@@ -18,7 +18,7 @@ Envelope Structure
         </info>
         <documents>
             <document id=\"ef247568-559a-4ec1-9ecc-6b44c9fb8215\">
-                <field name=\"TEST template 1\" value=\"TEST ENVELOPE\">TEST ENVELOPE</field>
+                <field name=\"TEST template 1\">TEST ENVELOPE</field>
             </document>
         </documents>
         <flow>
@@ -65,10 +65,10 @@ Envelope consists of two blocks:
         </info>
         <documents>
             <document id=\"ef247568-559a-4ec1-9ecc-6b44c9fb8215\">
-                <field name=\"TEST template 1\" value=\"TEST ENVELOPE\">TEST ENVELOPE</field>
+                <field name=\"TEST template 1\">TEST ENVELOPE</field>
             </document>
             <document id=\"1bb895fc-ab36-47e8-802e-5b39fc02db64\">
-			<field name=\"a1c7eaad-dc3a-4332-a17d-c82bffeea499\" value=\"27509b61-baa2-4a4e-9909-4d2f32597410\">test.txt</field>
+			<field name=\"a1c7eaad-dc3a-4332-a17d-c82bffeea499\" attachmentUuid=\"27509b61-baa2-4a4e-9909-4d2f32597410\">test.txt</field>
 		</document>
         </documents>
         <flow>
