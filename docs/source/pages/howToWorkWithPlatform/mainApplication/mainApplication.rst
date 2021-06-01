@@ -15,3 +15,4 @@ Main application
    templateList/template.rst
    scenario/scenario.rst
    optionsInHeader/external-links.rst
+   accessLevel/accessLevel.rst
