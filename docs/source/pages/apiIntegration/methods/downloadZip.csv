@@ -3,6 +3,7 @@ Method ,POST
 Request URL,``/api/v1/envelope/{envelopeUuid}/zip``
 envelopeUuid (required),Envelope UUID - which you want to download
 documentId (query – optional),Document ID of specific document which you want to download from envelope
+onlyPrimaryFiles (query – optional),boolean value which give possibility to download only primary files if true
 **Headers**,
 authorization(require),"Bearer “token” – token, which get after `Authorization <authorization.html>`__      "
 Mailbox(require),mailboxUuid: mailbox id
