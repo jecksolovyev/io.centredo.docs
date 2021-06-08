@@ -2,6 +2,8 @@
 Remove envelope from chain
 ==========================
 
+.. toctree::
+
 User can remove envelope from chain in case he added this envelope to chain before.
 
 How to remove envelopes from chain?
