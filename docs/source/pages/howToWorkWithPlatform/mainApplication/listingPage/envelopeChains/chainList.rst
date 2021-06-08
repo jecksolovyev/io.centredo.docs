@@ -2,6 +2,8 @@
 List chain envelopes
 ====================
 
+.. toctree::
+
 User can see all envelopes from chain by opening one of chain's envelope
 
 List chain envelopes
