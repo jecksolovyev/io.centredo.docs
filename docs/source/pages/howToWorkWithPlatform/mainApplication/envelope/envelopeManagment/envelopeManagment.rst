@@ -1,6 +1,6 @@
-==================
-Envelope managment
-==================
+===================
+Envelope management
+===================
 
 .. toctree::
     
