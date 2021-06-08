@@ -1,11 +1,11 @@
-===================
+=====================
 Add envelope to chain
-===================
+=====================
 
 User can merge few envelopes into chain or add envelopes to existing chain. Single restriction is envelope should not be in any chain before adding to some chain.
 
 How to add envelopes into chain?
-=========================
+================================
 
 1. To merge envelopes into chain select envelopes you want to merge and press "Add to chain" button
 

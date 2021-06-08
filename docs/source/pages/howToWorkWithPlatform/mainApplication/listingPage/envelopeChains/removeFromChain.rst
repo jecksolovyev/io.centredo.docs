@@ -1,11 +1,11 @@
-===================
+==========================
 Remove envelope from chain
-===================
+==========================
 
 User can remove envelope from chain in case he added this envelope to chain before.
 
 How to remove envelopes from chain?
-=========================
+===================================
 
 1. To remove envelopes from chain select chained envelopes on envelopes list
 

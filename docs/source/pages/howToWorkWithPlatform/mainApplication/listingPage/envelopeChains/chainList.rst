@@ -1,11 +1,11 @@
-===================
+====================
 List chain envelopes
-===================
+====================
 
 User can see all envelopes from chain by opening one of chain's envelope
 
 List chain envelopes
-=========================
+====================
 
 1. When you open chained envelope you will see "Chain" section in the header with count of envelopes in this chain.
 
