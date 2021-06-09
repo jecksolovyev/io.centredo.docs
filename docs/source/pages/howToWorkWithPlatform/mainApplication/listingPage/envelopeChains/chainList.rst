@@ -21,4 +21,3 @@ Current envelope highlighted with color. Click on other envelopes will open desi
 .. image:: assets/chain06.png
    :width: 600
    :align: center
-
