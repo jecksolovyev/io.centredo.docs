@@ -13,7 +13,7 @@
 60012,columnUuid is not set for template field,"Dictionary field on the template doesn't have column UUID of the dictionary. Please update template and clarify column UUID for dictionary field or remove dictionary field"
 60013,dictionaryUuid is not set for template field,"Dictionary field on the template doesn't have dictionary UUID. Please update template and clarify dictionary UUID for dictionary field or remove dictionary field"
 60014,Dictionary must be locked for processing,"Dictionary is locked for the updating. It can't be updated at this time. Dictionary updating can take some time."
-60015,"Expected {0} values in each row, but got {1}","Value in the request doesn't correspond to value in the dictionary. Please check your request and send valida data"
+60015,"Expected {0} values in each row, but got {1}","Quantity of the columns and rows are different in the document you've tried to upload, please check your file for validity."
 60016,Dictionary record should contains column values,"Dictionary record doesn't contains column value in request. Please check your request, compare with documentation and send again"
 60017,"Can't change dictionary access to official","Dictionary access level can't be changed to the official access level. Only system user can change access level to official"
 60018,This file format is not supported yet,"Entered file format has not supported yes. Supported file formats: CSV, XLS"
