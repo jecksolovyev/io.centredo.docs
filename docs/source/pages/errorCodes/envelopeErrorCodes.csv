@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
 50003,"Value of '{0}' should be less than {1}",Entered value in the field is bigger than maximum value. Please enter valid value
@@ -14,7 +13,7 @@
 50013,Generated envelope has different templateUuid,Generated envelope has different template UUID in the envelope data or in the parameter of the request
 50014,Generated envelope has different versionUuid,Generated envelope has different template version UUID in the envelope data or in the parameter of the request
 50015,"Invalid value '{0}' of field '{1}', expected '{2}'","Entered value doesn't correspond to the date format. Please enter value in date format YYYY-MM-DD"
-50016,Attachment {0} not found,Attachment with entered UUID has not found. Please check correctness of the entered value
+50016,"Envelope document with ID '{0}' was not found in template",Document in envelope has wrong ID
 50017,Envelope document {0} not found in XML structure,Document has not found in XML structure of the envelope
 50018,Envelope sender not found,Sendet has not found in XML structure of the envelope
 50019,Compiled document {0} not found in file storage,Document which has been compiled has not found in the file storage. Try to regenerate document
@@ -23,17 +22,13 @@
 50022,Duplicated field name: {0},"Name of the fields are duplicated. Please change the name of the field, because duplicated name if forbidden"
 50023,Table should have at least one row,Table should have at least on row
 50024,Signature made with not a stamp key,"It's impossible to set stamp on the document without stamp key. To set stamp please use key with stamp option"
-50025,"Attachment '{0}' is not in {1} format","Attachment can't be uploaded because of the wrong file format. Please use one of the allowed format from the list"
 50026,Total envelope attachments size exceeded allowed,Attachments size uploaded to the envelope is exceeded allowed size value
 50027,Duplicated attachment ids: {0},Attahcment IDs are duplicated in the document. Attachment IDs should be unique
 50028,Lookup source not found,Source of the lookup field has not found. Please check that dictionary or value in the dictionary still available
 50029,"Lookup value doesn't match","Value of the lookup field in request doesn't match to value in the dictionary. Please check your request, compare with dictionary and send again"
 50030,"Invalid value '{0}' for number value of field '{1}'",Invalid format of value has been entered to the number field. Number field accepts only numeric values
 50031,There is no need to sign the document {0},"There is no signature for particular mailbox or it's not turn of this mailbox for signing"
-50032,"Attachment '{0}' wrong attachment id",Attachment field has incorrect attachment id. Please check correctness of the attachment id
-50033,"Attachment '{0}' exceeded max size: {1} > {2}",Attachment file size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
 50034,"Attachment '{0}' file type mismatch","Attachment file type is not correspond to allowed file types. Allowed file types: pdf, doc, docx, xls, xlsx, xml, dbf, txt, rtf, png, jpg, jpeg, zip. Allowed file types can be minimized according to field settings in template."
-50035,"Can't calculate file hash","Application can't calculate hash of the file you sent"
 50036,"Can't archive envelope in not final status: {0}","It's impossible to archive envelope if it's not in final status, such as COMPLETED, CANCELLED or EXPIRED"
 50037,"Bad base64 value of field '{0}'","Binary file is valid, please check that file you try to send in base64 format."
 50038,"Expected '{0}' image type for field '{1}'",Image type format is incorrect. Please pay attention to the file format in error code and use respective file format to this field.
@@ -66,3 +61,10 @@
 50065,Template {0} does not match envelope template {1},Make sure the templates match
 50066,"Record UUID has to be populated for field '{0}'","Please fill the 'recordUuid' attribute with proper value"
 50067,"Attachment UUID has to be populated for field '{0}'","Please fill the 'attachmentUuid' attribute with proper value"
+50068,Label UUID or name has to be specified,"Please fill the 'label' or 'labelUuid' request parameter"
+50069,"Not enough uuids, at last {0} needed",Request has no enough uuids to merge/add into chain
+50070,No access to chain,mailbox has no access to any envelope with this chain uuid
+50071,Envelope {0} belongs to another chain,Envelope belongs to another chain
+50072,Envelope added to chain by another user,Current user has no rights to remove envelope from chain
+50073,Envelopes belongs to different chains,Envelopes belongs to different chains
+50074,Envelope belongs to automatically created chain,Envelope belongs to automatically created chain

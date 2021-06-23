@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 30001,Mailbox {0} not found,"Entered mailbox couldn't be found in the system"
 30002,Mailbox {0} deleted,Mailbox has been deleted. Please use active mailbox.
 30003,"Mailbox name can't be empty","Mailbox name shouldn't be empty. It should contain at least one symbol"

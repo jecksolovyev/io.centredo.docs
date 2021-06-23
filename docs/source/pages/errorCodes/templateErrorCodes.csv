@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 40001,Document {0} not found,Document with entered ID has not found. Please check correctness of the entered ID
 40002,Template {0} is archived,"Template with entered ID is archived. You can't use archived templates."
 40003,Template {0} not found,Template with entered UUID has not found. Please check correctness of the entered UUID
@@ -12,7 +11,7 @@
 40011,First role must be sender,First role in the template flow should be sender
 40012,Must be at least 2 roles,"Template has to have at least two roles, one sender is required and another one recipient or signer"
 40013,"Role '{0}' has no fields assigned","Role in the template doesn't have assigned fields. Please add fields with assigned to this role or make this role as a copy"
-40014,Signer roles should be last in the flow,"Orders number of the signer roles should be bigger than recipients orders. (f.e.: if sender order is 0, first recipient order is 1, second recipient order is 2 then signer order should be 3)"
+40014,Wrong order of roles in the flow,"Orders number of the signer roles should be bigger than recipients orders. (f.e.: if sender order is 0, first recipient order is 1, second recipient order is 2 then signer order should be 3)"
 40015,Signer roles without signatures: {0},"Signer role doesn't have signature (EDS) field related to him in the template. Please add one or remove signer role"
 40016,Following fields assigned on non-existing roles: {0},The fields assigned to non-existing roles. Please re-assign fields to existing roles or remove fields
 40017,Following roles has no fields assigned: {0},"Role with particular ID doesn't have assigned fields in the documents. Please add fields, remove roles ro set role as a copy"

@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 1000,Undefined exception,"There is undefined and unpredictable exception. If it's happened, please, make a screenshot of the error and contact with support team to clarify and sole the issue."
 1001,Record not found,"Record with respective request parameter is not found in database. Please check your request, compare with documentation and send again"
 1002,XML Conversion error. {0},"XML conversion got an error. It can happen if we can't convert document using xslt conversion map and source to envelope xml structure. Please pay attention to the error explanation and particular row with error in the message"
@@ -11,7 +10,7 @@
 1009,Verification code is absent,"Verification code in the request is missed. Please check your request, compare with documentation and send again"
 1010,Please try later. Files are generating at the moment,Files are generating at the moment. To generate files one more time please wait until file generated and try again
 1011,Unexpected content-type: {0},"Type of the uploaded document is incorrect and doesn't correspond to allowed. Allowed types are: csv, xls"
-1012,"Field '{0}' must be email","Entered value isn't email"
+1012,"Can't calculate file hash","Application can't calculate hash of the file you sent"
 1013,"Field '{0}' must be from {1} chars long",Entered quantity of symbols is less than minimal chars length allowed
 1014,"Field '{0}' must be less than {1} chars long",Entered quantity of symbols is bigger than allowed maximum chars length
 1015,"Field '{0}' must be from {1} to {2} chars long",Entered quantity of symbols should be in the interval of validation
@@ -36,8 +35,12 @@
 1034,"Image source '{0}' is wrong","Image tag supports only 'data:' and 'image-uuid:' prefixes for source attribute"
 1035,"Hash attribute has to be specified for '{0}'",Hash attribute is required to sign the document
 1036,"Image hashes don't match for '{0}'",Check that hashes are correct for images
-1037,Image {0} is already in use,"Image cannot be reused, please upload new one"
 1038,Please accept Terms and Conditions and Privacy Policy,"Parameter agreed has to be 'true'. Please read Terms and Conditions and Privacy Policy."
 1039,Image {0} was uploaded by another mailbox {1},Image cannot be used in current mailbox
 1040,Bad range dates number: {0},Range of date is incorrect. Correct range format is date/date in date format ISO 8601
 1041,Requested range out of bounds,Requested range out of bounds
+1042,Comment thread {0} was not found,Comment thread with entered UUID has not found. Please check correctness of the entered data
+1043,Access to comment thread {0} is not allowed,Access to comment thread with entered UUID is forbidden. Please check correctness of the entered data
+1044,Message with ID {0} in comment thread {1} was not found,No such message in comment thread. Please check correctness of the entered data
+1045,Main thread for document already exists,Please specify xpath and create a new thread
+1046,Thread {0} is already resolved or deleted and cannot be changed,There is no possibility to update the thread

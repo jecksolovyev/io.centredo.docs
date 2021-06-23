@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 20001,Account {0} not found,Account with entered account UUID has not found. Please check request data
 20002,Account {0} deleted,Account with entered account UUID has been deleted.
 20003,Account not found for role {0},"Role doesn't have account. Probably account has been deleted or non-existent"
@@ -40,4 +39,4 @@
 20040,Listed roles error for user {0},Listed role(s) not exists or belongs to another account
 20041,Listed permissions error for user {0},Listed permission(s) not exists
 20042,"Can't open file as a spreadsheet",Uploaded file not a valid XLSX binary
-20043,"Role {0} can't be deleted because it assigned to users or invitations",Role is used and assigned to users or invitationsMAILBOX
+20043,"Role {0} can't be deleted because it assigned to users or invitations",Role is used and assigned to users or invitations

@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 10001,User {0} not found,User with requested UUID has not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
 10003,Proof message is not valid,"Entered proof message is not valid. Proof message should be user email in upper case (f.e.: ""EMAIL@EXAMPLE.COM"")"
@@ -11,12 +10,11 @@
 10010,"Your invitation link has been expired, please confirm registration",Invitation code has been expired. Try to register in common way and confirm email.
 10011,Invitation not found or expired,"Invitation for particular user doesn't exist or expired"
 10012,Invitation Email is empty,"It's impossible to create invitation because of empty required email field"
-10013,No account provided for invitation,"Account option is missed in the request. Please check your request, compare with documentation and send again"
-10014,No permissions provided for invitation,"Permissions list is missed in the invitation request. Please check your request, compare with documentation and send again"
+10013,No account provided for update,"Account option is missed in the request. Please check your request, compare with documentation and send again"
+10014,No permissions provided for update,"Permissions list is missed in the request. Please check your request, compare with documentation and send again"
 10015,"Wrong role '{0}' is used","Role is incorrect for particular request, please check that entered role UUID is existing"
 10016,"Color can't be null","Color in the request can't be null. Please use color format #FFFFFF"
 10017,"Color '{0}' has wrong format",Color in the request in wrong format. Please use color format #FFFFFF
-10018,Bad range dates number: {0},Range of date is incorrect. Correct range format is date/date in date format ISO 8601
 10019,Bad ISO date: {0},"Format date is incorrect, please use ISO 8601 date formats"
 10020,Already invited,This user has been already invited to this entity
 10021,Corporate user cannot delete himself,Only admin of account can delete corporate user

@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 80001,Integration rule {0} deleted,Integration rule with entered UUID has been deleted
 80002,Integration rule {0} not found,Integration rule with entered UUID has not found or has not existed
 80003,Integration not found for mailbox {0},Integration configuration has not found for entered mailbox UUID

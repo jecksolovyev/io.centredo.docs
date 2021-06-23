@@ -1,4 +1,3 @@
-**Custom error code**, **Error detail**, **Error description**
 90004,Guest user has no access to any mailbox,"User doesn't have access to any mailbox. Please add access to any mailbox or login by user who has accesses"
 90005,"Can't do with system account","User doesn't have enough privileges to modify system data"
 90006,"Can't do with system mailbox","User doesn't have enough privileges to modify system data"
@@ -20,3 +19,4 @@
 90030,"Can't revoke last owner","You can't revoke last owner of the entity"
 90031,Not a scenario owner,Not scenario owner
 90032,No access to scenario,No read access to scenario
+90033,Only the author is allowed to change the comment.,No write access to comment message
