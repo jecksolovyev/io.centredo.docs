@@ -55,7 +55,7 @@ How to add comment
    :align: center
 
 How to add a reply to a comment
-=============================
+===============================
 
 1. Click to a "Reply" on initial comment.
 

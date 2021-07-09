@@ -9,5 +9,6 @@ Envelope
     acceptInvitationToEnvelope/acceptInvitationToEnvelope.rst
     externalDocument/externalDocument.rst
     comments/comments.rst
-    
-There is should be description...
+    envelopeSignatures/envelopeSignatures.rst
+
+Envelope is ...

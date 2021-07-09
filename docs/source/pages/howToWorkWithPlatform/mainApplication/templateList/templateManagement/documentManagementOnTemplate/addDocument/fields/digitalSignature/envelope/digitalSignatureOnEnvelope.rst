@@ -1,3 +1,5 @@
+.. _electronic-signature:
+
 ================================
 Electronic signature on envelope
 ================================
@@ -59,6 +61,23 @@ whom signed the document. Also you can click on it and detailed information open
    :align: center
 
 Also, you can set a stamp to the document if needed. You may do this just press on the link "I want to choose stamp" on the second step of the document signing.
+
+How to sign all documents in envelope
+=====================================
+
+You can sign all documents in envelope for one time.
+To do that follow the instructions above until you get step with documents list to sign. If you will have more than one document to sing option "Sign all documents" appears.
+
+Select "Sign all documents" option and all documents from particular envelope which you're able to sign will be shown to you.
+
+.. image:: pic_digitalSignature/signature3-2.png
+   :width: 400
+   :align: center
+
+If you continue signing procedure you will sign all documents from the list.
+
+.. warning::
+    Don't forget to send signed envelope after last step, in other case all changes (signs) will be lost.
 
 How to download the signed data
 ===============================
