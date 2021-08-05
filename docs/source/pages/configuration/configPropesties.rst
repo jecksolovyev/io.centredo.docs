@@ -32,10 +32,10 @@ Password Policy (app.user.password-policy)
 | **lowercase** - Require lowercase letters
 | **digit** - Require digits
 | **special-symbol** - Require at least one special character (! @ # $ % ^ & * ( ) _ + - = [ ] { } |
-| **repeat-character** - Avoid repeating characters
+| **repeat-character** - Do not allow repeating characters
 | **allow-whitespace**:boolean - Allow whitespace in password
-| **prevent-common-passwords**:boolean - Do not allow the use of forbidden passwords
-| **prevent-common-words**:boolean - Do not allow the use of forbidden words in password
+| **prevent-common-passwords**:boolean - Do not allow forbidden passwords (see BannedPassword db table)
+| **prevent-common-words**:boolean - Do not allow forbidden words in password (see BannedPasswordWord db table)
 | **expiration-days** - Password will be expired after days
 | **notify-before-days** - Send password expiration notification before expiration days
 | **prevent-reuse-months** - Do not allow reuse of passwords during period of months
