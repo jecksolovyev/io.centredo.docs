@@ -57,3 +57,6 @@
 40057,Parent of duplicate field {0} was not found,Duplicate field does not have a parent field in the template
 40058,"'relatedTo' property cannot be empty for duplicate field",Fill property with proper value
 40059,Unsupportable type {0} of parent field for duplicate {1},This kind of type is not allowed for duplicate parent field
+40060,Missing role order for manual flow ,Some role has no order when flow has manual type
+40061,All roles with same order ,All roles with same order in template flow
+40062,Role {0} should be ordered after {1} ,Wrong roles manual order

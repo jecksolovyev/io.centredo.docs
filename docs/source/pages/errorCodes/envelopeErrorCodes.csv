@@ -22,6 +22,7 @@
 50022,Duplicated field name: {0},"Name of the fields are duplicated. Please change the name of the field, because duplicated name if forbidden"
 50023,Table should have at least one row,Table should have at least on row
 50024,Signature made with not a stamp key,"It's impossible to set stamp on the document without stamp key. To set stamp please use key with stamp option"
+50025,This is no active signer role in envelope at the moment,"It's not time to sign anything"
 50026,Total envelope attachments size exceeded allowed,Attachments size uploaded to the envelope is exceeded allowed size value
 50027,Duplicated attachment ids: {0},Attahcment IDs are duplicated in the document. Attachment IDs should be unique
 50028,Lookup source not found,Source of the lookup field has not found. Please check that dictionary or value in the dictionary still available
@@ -41,7 +42,7 @@
 50045,Found role without mailboxUuid defined,"One of the roles doesn't have mailbox UUID in data of the envelope"
 50046,"Signature data not found for signature '{0}' at document '{1}'","Signature field doesn't have signature data, please check that you fill required signature field with valid data"
 50047,Signers do not match,"PDF and text files are signed by different signers, please sign document by one signer and send request again"
-50048,Signature data not found for source {0} in document {1},
+50048,Signature data not found for source {0} in document {1},Signature is not found in the list of signatures
 50049,No active role for mailbox {0},"Mailbox UUID by which you're trying to send request doesn't have active role in particular envelope. Please wait for your turn."
 50050,The envelope is in wrong status,"Envelope status is wrong for this action and can't be processed."
 50051,Attachment is already used,Attachment with entered UUID has already used in this envelope

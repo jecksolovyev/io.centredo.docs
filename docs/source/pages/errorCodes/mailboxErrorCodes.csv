@@ -18,3 +18,4 @@
 30018,Sender mailbox not found,"Mailbox UUID of Sender has not found, please check correctness of request"
 30019,Mailbox UUID is empty,"Mailbox UUID couldn't be empty"
 30020,Mailbox UUID is invalid or empty,Mailbox UUID is invalid or empty. Please send valid request with valid Mailbox UUID
+30021,Email is forbidden for alias name,Please do not use email as an alias name to avoid misunderstandings

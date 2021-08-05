@@ -15,7 +15,7 @@
 1014,"Field '{0}' must be less than {1} chars long",Entered quantity of symbols is bigger than allowed maximum chars length
 1015,"Field '{0}' must be from {1} to {2} chars long",Entered quantity of symbols should be in the interval of validation
 1016,Unsupported locale: {0},Locale is not supported by the system
-1017,Weak password,Password validation occured. Password should be at lease 8 symbols and contains Latin symbols in lower and upper cases and special symbols
+1017,Weak password: {0},Password validation occurred. Password should be more complex and contains Latin symbols in lower and upper cases and special symbols
 1018,Wrong timezone: {0},Timezone is not supported by the system
 1019,File is not ready for download,File you requested is not ready for download. Please wait some time and try again
 1020,Not valid filename: {0},Filename is not valid
@@ -26,7 +26,7 @@
 1025,"Request path parameter '{0}' required","Request path parameter is required in this request. Please check your request, compare with documentation and send again"
 1026,Authentication error,Entered email or password is invalid
 1027,Authentication token has been expired or revoked,Authentication token has been expired or revoked. To solve the issue authorized again
-1028,Standard Spring MVC exceptions,One of the standard server exceptions has occurred. Please see error message and check the request data for mistakes
+1028,Standard Spring MVC exceptions: {0},One of the standard server exceptions has occurred. Please see error message and check the request data for mistakes
 1029,"Attachment '{0}' exceeded max size: {1} > {2}",Attachment file size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
 1030,"File type mismatch for image '{0}'","Image file type is not correspond to allowed file types. Allowed file types: png, jpg, jpeg."
 1031,"Image '{0}' exceeded max size: {1}x{2}",Image size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
@@ -35,6 +35,7 @@
 1034,"Image source '{0}' is wrong","Image tag supports only 'data:' and 'image-uuid:' prefixes for source attribute"
 1035,"Hash attribute has to be specified for '{0}'",Hash attribute is required to sign the document
 1036,"Image hashes don't match for '{0}'",Check that hashes are correct for images
+1037,Password cannot be re-used,Do not use previous passwords
 1038,Please accept Terms and Conditions and Privacy Policy,"Parameter agreed has to be 'true'. Please read Terms and Conditions and Privacy Policy."
 1039,Image {0} was uploaded by another mailbox {1},Image cannot be used in current mailbox
 1040,Bad range dates number: {0},Range of date is incorrect. Correct range format is date/date in date format ISO 8601
@@ -44,3 +45,9 @@
 1044,Message with ID {0} in comment thread {1} was not found,No such message in comment thread. Please check correctness of the entered data
 1045,Main thread for document already exists,Please specify xpath and create a new thread
 1046,Thread {0} is already resolved or deleted and cannot be changed,There is no possibility to update the thread
+1047,"Attachment '{0}' exceeded max name length: {1}",Attachment file name length is bigger than limit for upload. Please pay attention to max length on the error code and try to upload file with less length
+1048,Password expired,Please renew the password
+1049,User is locked after too many login attempts. Please try later,Please wait and try later
+1050,Only one session is allowed. Please logout from another one,Additional session is blocked
+1051,IP address is blocked or not allowed,Please contact the platform/account administrator
+1052,Wrong IP or IP-range format for {0},Please fix IP format

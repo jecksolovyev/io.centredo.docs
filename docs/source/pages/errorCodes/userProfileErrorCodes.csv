@@ -24,3 +24,6 @@
 10025,Wrong password,Old password is wrong. Please check correctness of entered password
 10026,User is inactive,User has not confirmed the email yet
 10027,User {0} is corporate,Current action can be applied only for not corporate user
+10028,ITN code has to be specified for company account,Please add missed property to request
+10029,Incorrect phone number,Phone number should be in international format
+10030,This endpoint can only be executed for user with expired password,Active user should use another authorized endpoint

@@ -23,6 +23,7 @@
 20023,Domain verify info not found,Domain verify info not found during domain confirmation or domain check
 20024,"Domain '{0}' already verified by another account","Domain has pass verification, but it was already added and verified by another account."
 20025,"Domain and account don't match","Try to access domain, which is not belongs to current account"
+20026,The user policy for the account should be stricter than the global one.,Please check the user global policies /api/v1/settings
 20027,"Domain '{0}' has to be verified and active",Domain is not active during corporate user creation
 20028,Invitation vs existing permission conflict,User has already have access to the entity and cannot be invited any more to this entity
 20029,Invitations roles & permissions empty,"Roles or permissions are missed in the request. Please check your request, compare with documentation and send again"
