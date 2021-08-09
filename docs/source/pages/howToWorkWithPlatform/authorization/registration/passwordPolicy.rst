@@ -1,4 +1,4 @@
-.. _registration:
+.. _password-policy:
 
 ===============
 Password policy
