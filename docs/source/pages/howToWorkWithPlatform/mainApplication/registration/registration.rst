@@ -1,5 +1,7 @@
+.. _registration-instruction:
+
 ============================
-How to register on platfrom?
+How to register on platform?
 ============================
 
 .. toctree::
