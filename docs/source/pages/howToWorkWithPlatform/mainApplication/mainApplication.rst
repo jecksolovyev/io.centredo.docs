@@ -9,7 +9,6 @@ Main application
    dictionary/dictionary.rst
    envelope/envelope.rst
    listingPage/listingPage.rst
-   login/login.rst
    registration/registration.rst
    userProfile/userProfile.rst
    templateList/template.rst
