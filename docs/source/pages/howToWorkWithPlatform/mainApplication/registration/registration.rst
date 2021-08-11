@@ -69,7 +69,7 @@ open letter from platform. Letter contains confirmation link and confirmation co
    :width: 400
    :align: center
 
-* For finish registration by confirmation link you should click on link in email and after that you will be redirect to: https://staging.whitedoc.space/login
+* For finish registration by confirmation link you should click on link in email and after that you will be redirect to path /login
   and in the upper right corner will appear message about success registration.
 
 * For finish registration by confirmation code, you should copy code from letter and return to confirmation page. Input code in confirmation field and click next.
