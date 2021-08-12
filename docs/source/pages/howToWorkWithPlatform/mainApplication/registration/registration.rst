@@ -12,14 +12,14 @@ To be able to use platform, you must register and create an account:
 
 - Registration company account.
 
-Follow this link to register personal or company account: https://staging.whitedoc.space/registration
+Follow  to register personal or company account page: path/registration
 
 
 
 Personal account registration
 =============================
 
-1. Navigate to path /registration
+1. Navigate to path/registration
 
 .. image:: pic_registration/personal_registration_1.png
    :width: 400
@@ -65,11 +65,11 @@ Personal account registration
 8. For finish registration you should confirm your email address. For that go to mailbox which you use for registration,in this mailbox
 open letter from platform. Letter contains confirmation link and confirmation code. For finish registration you should use one of them.
 
-.. image:: Screenshot_2.png
+.. image:: pic_registration/Screenshot_2.png
    :width: 400
    :align: center
 
-* For finish registration by confirmation link you should click on link in email and after that you will be redirect to path /login
+* To finish registration by confirmation link you should click on link in email and after that you will be redirect to path/login
   and in the upper right corner will appear message about success registration.
 
 * For finish registration by confirmation code, you should copy code from letter and return to confirmation page. Input code in confirmation field and click next.
@@ -126,14 +126,14 @@ Company account registration
    :width: 400
    :align: center
 
-8. For continue registration you should click on "Continue" button, this button will enable after you filled all required fields.
+8. To continue registration you should click on "Continue" button, this button will be enabled after you filled in all required fields.
 
 .. image:: pic_registration/company_registration_8.png
    :width: 400
    :align: center
 
-9.After clicking on the "Continue" button,mailbox field will appear - fill in the mailbox name, you can add mailboxes to your account. The account must have at least one mailbox.
-To add a mailbox, click the Plus button.
+9. After click on the "Continue" button, "Define mailbox" section will appear. You can define mailbox(es) according to your needs. To add mailbox click on "Plus" button and fill in the mailbox name. The account must have at least one mailbox.
+
 
 .. image:: pic_registration/Screenshot_44.png
    :width: 400
@@ -146,24 +146,24 @@ To add a mailbox, click the Plus button.
    :align: center
 
 11. After you click on "Complete" button validation letter will be send on your email address which you point on step 4
-and you will redirect to confirmation page.
+    and you will be redirected to confirmation page.
 
 .. image:: pic_registration/personal_registration_7.png
    :width: 400
    :align: center
 
-12. For finish registration you should confirm your email address. For that go to mailbox which you use for registration,in this mailbox
-open letter from platform. Letter contains confirmation link and confirmation code. For finish registration you should use one of them.
+12. To finish registration you should confirm your email address. For that go to mailbox which you use for registration,in this mailbox
+    open letter from platform. To do that go to email address which you define on registration and open letter from platform.
 
 .. image:: pic_registration/Screenshot_2.png
    :width: 400
    :align: center
 
 
-* For finish registration by confirmation link you should click on link in email and after that you will be redirect to path /login
+* To finish registration by confirmation link you should click on link in email and after that you will be redirect to path/login
   and in the upper right corner will appear message about success registration.
 
-* For finish registration by confirmation code, you should copy code from letter and return to confirmation page. Input code in confirmation field and click next.
+* To finish registration by confirmation code, you should copy code from letter and return to confirmation page. Input code in confirmation field and click next.
   If you input correct code you will observe same message about success registration.
 
 .. image:: pic_registration/personal_registration_9.png
