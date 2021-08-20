@@ -1,4 +1,4 @@
-.. external-links-configuration:
+.. _external-links-configuration:
 
 ============================
 External links configuration
