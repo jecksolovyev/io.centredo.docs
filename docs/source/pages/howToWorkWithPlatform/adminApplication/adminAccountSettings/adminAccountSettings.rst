@@ -6,8 +6,12 @@ Admin Settings
    
    domains/domains.rst
    external-links/external-links.rst
+   password-policy/password-policy.rst
 
-Account Settings - is a list of account properties that helps to identify and manage acсount. Data from account used for creating mailboxes and billing.
+Account Settings - is a list of account properties that helps to identify and manage account. Data from account used
+for creating mailboxes and billing. From account settings you can easily :ref:`configure domains <domains-configuration>`,
+add :ref:`external links <external-links-configuration>` for mailboxes, configure :ref:`password policy <password-policy>` for domain users
+and delete account.
 
 
 Copy Account uuid

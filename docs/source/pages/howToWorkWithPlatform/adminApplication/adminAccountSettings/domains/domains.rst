@@ -6,8 +6,8 @@ Domains configuration
 
 .. toctree::
 
-Domains configuration allows manage owned to you domanins, activate and deactivate domains inside platform.
-Domains neccessary to add and verify if you need to create users on platform with domain you owned.
+Domains configuration allows manage owned to you domains, activate and deactivate domains inside platform.
+Domains necessary to add and verify if you need to create users on platform with domain you owned.
 
 
 How to add domain?
