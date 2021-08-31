@@ -11,8 +11,6 @@ Global Properties
 | **app.theme** - The UI theme of the platform (Red or Blue)
 | **app.timezone** - The default timezone (for dates in PDF)
 | **app.jivo-site-id** - ID of the support chat
-| **app.locales.supported** - The list of supported locales (en, ru, uk)
-| **app.locales.default** - The default locale of the platform (for invitations)
 
 User Properties (app.user)
 ==========================
@@ -22,6 +20,13 @@ User Properties (app.user)
 | **seconds-between-validations** - To prevent many requests and many emails
 | **profile-phone**:boolean - Enable required phone on registration
 | **profile-phone-default-region** - Default phone region (UA,FR,GB)
+| **email-validation-code-length** - The number of characters for validation code in e-mail
+
+Locale Properties (app.locales)
+==========================
+| **supported** - The list of supported locales (en, ru, uk)
+| **defaultLocale** - The default locale of the platform (for invitations)
+| **defaultAsLanguage** - The default locale will be taken as language in browser (geolocation and language of browser don't matter then)
 
 Password Policy (app.user.password-policy)
 ==========================================
