@@ -10,5 +10,6 @@ Envelope
     externalDocument/externalDocument.rst
     comments/comments.rst
     envelopeSignatures/envelopeSignatures.rst
+    approvalProcess/approved.rst
 
 Envelope is ...
