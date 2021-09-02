@@ -28,9 +28,9 @@ How to send envelope for approval
 
 4. Envelopes which have been sent for approval have status "On approval".
 
-..  image:: pic_approval/Screenshot_10.png
-    :width: 600
-    :align: center
+.. image:: pic_approval/Screenshot_10.png
+   :width: 600
+   :align: center
 
 5. You can view approval process, to do this you have to go to envelope with the status "On Approval" scroll down to "Approval flow" section and expand it.
 
