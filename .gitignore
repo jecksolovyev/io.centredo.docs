@@ -1,6 +1,7 @@
 node_modules/
 docs/build/
 docs/make.bat
+docs/Makefile
 docs/_build/
 .idea/
 .DS_Store
