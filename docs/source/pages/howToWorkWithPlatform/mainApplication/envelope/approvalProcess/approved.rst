@@ -14,7 +14,9 @@ How to send envelope for approval
    :width: 600
    :align: center
 
-2. In the input "Аpprover" and "Mailbox" (you can search mailbox by name or uuid) enter details of the approver. and click on [Add] button. You can create unlimited quantity of approvers. You can delete approver by clicking on [Cancel] button.
+2. In the input "Аpprover" and "Mailbox" (you can search mailbox by name or uuid) enter details of the approver and click on [Add] button. You can create unlimited quantity of approvers. You can delete approver by clicking on [Cancel] button.
+
+.. warning:: **Please note! You can't set approver mailbox to mailbox that's takes part in envelope processing or duplicate mailbox from approval flow.**
 
 .. image:: pic_approval/Screenshot_4.png
    :width: 600
@@ -44,10 +46,17 @@ How to send envelope for approval
    :width: 600
    :align: center
 
-7. While envelope has "On Approval " status user can only reject the envelope.
+7. While envelope has "On Approval " status, user that started approval process, can't process envelope further. In application is displayed only the last approval process. All data from previous approval process are available by API.
 
 .. image:: pic_approval/Screenshot_7.png
    :width: 600
    :align: center
 
-8. After approval envelope returns to status "Waiting", and user can re-send the envelope for approval or send it according to the general flow.
+8. Approver can reject or agreed approval and add comment for explaining his decision (optional).
+
+9. When approver choose to reject approval - envelope approval process is ended here and approval process will be in the status rejected.
+
+10. When approver choose to agreed approval - envelope approval process is continue and next approver will receive this envelope for approval.
+
+11. When approval flow process is finished (all approvers agreed, someone from approvers reject), envelope returns to status "Waiting". User, that started approval can process envelope further or start new approval process.
+
