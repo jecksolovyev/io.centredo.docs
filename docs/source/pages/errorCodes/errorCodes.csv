@@ -1,4 +1,4 @@
-COMMON,,
+**COMMON**,,
 1000,Undefined exception,"There is undefined and unpredictable exception. If it's happened, please, make a screenshot of the error and contact with support team to clarify and sole the issue."
 1001,Record not found,"Record with respective request parameter is not found in database. Please check your request, compare with documentation and send again"
 1002,XML Conversion error. {0},"XML conversion got an error. It can happen if we can't convert document using xslt conversion map and source to envelope xml structure. Please pay attention to the error explanation and particular row with error in the message"
@@ -52,7 +52,7 @@ COMMON,,
 1050,Only one session is allowed. Please logout from another one,Additional session is blocked
 1051,IP address is blocked or not allowed,Please contact the platform/account administrator
 1052,Wrong IP or IP-range format for [{0}],Please fix IP format
-USER/PROFILE,,
+**USER/PROFILE**,,
 10001,User {0} not found,User with requested UUID has not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
 10003,Proof message is not valid,"Entered proof message is not valid. Proof message should be user email in upper case (f.e.: ""EMAIL@EXAMPLE.COM"")"
@@ -83,7 +83,7 @@ USER/PROFILE,,
 10029,Incorrect phone number,Phone number should be in international format
 10030,This endpoint can only be executed for user with expired password,Active user should use another authorized endpoint
 10031,User already exists,Email already registered in system
-ACCOUNT,,
+**ACCOUNT**,,
 20001,Account {0} not found,Account with entered account UUID has not found. Please check request data
 20002,Account {0} deleted,Account with entered account UUID has been deleted.
 20004,Only one mailbox allowed,In this request only one mailbox is allowed
@@ -127,7 +127,7 @@ ACCOUNT,,
 20042,"Can't open file as a spreadsheet",Uploaded file not a valid XLSX binary
 20043,"Role {0} can't be deleted because it assigned to users or invitations",Role is used and assigned to users or invitations
 20044,The sum of letters of different types cannot be greater than the maximum length,Please update password policy with correct values
-MAILBOX,,
+**MAILBOX**,,
 30001,Mailbox {0} not found,"Entered mailbox couldn't be found in the system"
 30002,Mailbox {0} deleted,Mailbox has been deleted. Please use active mailbox.
 30003,"Mailbox name can't be empty","Mailbox name shouldn't be empty. It should contain at least one symbol"
@@ -149,7 +149,7 @@ MAILBOX,,
 30019,Mailbox UUID is empty,"Mailbox UUID couldn't be empty"
 30020,Mailbox UUID is invalid or empty,Mailbox UUID is invalid or empty. Please send valid request with valid Mailbox UUID
 30021,Email is forbidden for alias name,Please do not use email as an alias name to avoid misunderstandings
-TEMPLATE,,
+**TEMPLATE**,,
 40001,Document {0} not found,Document with entered ID has not found. Please check correctness of the entered ID
 40002,Template {0} is archived,"Template with entered ID is archived. You can't use archived templates."
 40003,Template {0} not found,Template with entered UUID has not found. Please check correctness of the entered UUID
@@ -211,7 +211,7 @@ TEMPLATE,,
 40060,Missing role order for manual flow,Some role has no order when flow has manual type
 40061,All roles with same order,All roles with same order in template flow
 40062,Role {0} should be ordered after {1},Wrong roles manual order
-ENVELOPE,,
+**ENVELOPE**,,
 50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
 50003,"Value of '{0}' should be less than {1}",Entered value in the field is bigger than maximum value. Please enter valid value
@@ -289,7 +289,7 @@ ENVELOPE,,
 50076,"No approval is allowed on the envelope, it may have already been done",User cannot approve the envelope
 50077,Rejection reason is required for approval,Please add comment for approval
 50078,"Wrong approval status, send APPROVED or REJECTED",Please send proper status
-DICTIONARY,,
+**DICTIONARY**,,
 60001,Dictionary {0} not found,Dictionary with entered UUID has not found. Please check correctness of the entered data
 60002,Dictionary name size exceeded maximum size,Dictionary name size is bigger than maximum allowed. Maximum allowed length of the dictionary name is 128 symbols.
 60003,Dictionary description size exceeded maximum size,Dictionary description size is bigger than maximum allowed. Maximum allowed length of the dictionary description is 256 symbols.
@@ -320,7 +320,7 @@ DICTIONARY,,
 60028,Filter operation unknown,Filter operation unknowm
 60029,Filter value is null,Filter operation unknow
 60030,"Dictionary export task don't match","Dictionary export task don't match"
-INTEGRATION,,
+**INTEGRATION**,,
 80001,Integration rule {0} deleted,Integration rule with entered UUID has been deleted
 80002,Integration rule {0} not found,Integration rule with entered UUID has not found or has not existed
 80003,Integration not found for mailbox {0},Integration configuration has not found for entered mailbox UUID
@@ -333,7 +333,7 @@ INTEGRATION,,
 80010,Conversion rule is required,Conversion rule is required in this request
 80011,Naming pattern rule is required,Naming pattern rule is required in this request
 80012,Source is required,Source is required in this request
-PERMISSIONS,,
+**PERMISSIONS**,,
 90004,Guest user has no access to any mailbox,"User doesn't have access to any mailbox. Please add access to any mailbox or login by user who has accesses"
 90005,"Can't do with system account","User doesn't have enough privileges to modify system data"
 90006,"Can't do with system mailbox","User doesn't have enough privileges to modify system data"
@@ -356,7 +356,7 @@ PERMISSIONS,,
 90031,Not a scenario owner,Not scenario owner
 90032,No access to scenario,No read access to scenario
 90033,Only the author is allowed to change the comment.,No write access to comment message
-SCENARIOS,,
+**SCENARIOS**,,
 100001,Scenario name can not be empty or null,Scenario name can not be empty
 100002,Scenario description can not be empty or null,Scenario description can not be empty
 100003,"Scenario access level can not be empty or null. Access can be fourth types: mailbox, account, pub and official",Scenario access level can not be empty
@@ -382,7 +382,7 @@ SCENARIOS,,
 100023,Scenario step id length can not be more than 256,Scenario step id length can not be more than 256
 100024,Scenario step name length can not be more than 256,Scenario step name length can not be more than 256
 100025,Scenario condition can not be applied properly,"Scenario condition is wrong, please check xslt mapping"
-EXTERNAL LINKS,,
+**EXTERNAL LINKS**,,
 110001,"Link name can't be empty","Link name is required and can't be empty. Please set link name"
 110002,Link name size exceeded maximum size,Link name size is bigger than maximum allowed. Maximum allowed length of the link name is 255 symbols.
 110003,"Link url can't be empty","Link url can't be empty"
