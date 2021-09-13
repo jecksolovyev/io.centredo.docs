@@ -26,6 +26,7 @@ Locale Properties (app.locales)
 ==========================
 | **supported** - The list of supported locales (en, ru, uk)
 | **defaultLocale** - The default locale of the platform (for invitations)
+| **defaultCountry** - The default country of the platform (if no coordinates in header)
 | **defaultAsLanguage** - The default locale will be taken as language in browser (geolocation and language of browser don't matter then)
 
 Password Policy (app.user.password-policy)
