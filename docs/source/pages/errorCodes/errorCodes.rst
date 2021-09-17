@@ -2,8 +2,6 @@
 Error codes knowledge base
 ==========================
 
-.. toctree::
-
 This document identifies types of errors. Each error code has common error type and also this codes are different depends on issue.
 
 .. csv-table::
