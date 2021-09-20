@@ -12,6 +12,4 @@ Envelope
     envelopeSignatures/envelopeSignatures.rst
     approvalProcess/approved.rst
 
-
-
 Envelope is ...
