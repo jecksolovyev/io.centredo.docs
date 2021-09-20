@@ -15,3 +15,4 @@ Main application
    scenario/scenario.rst
    optionsInHeader/external-links.rst
    accessLevel/accessLevel.rst
+   approve/approve.rst
