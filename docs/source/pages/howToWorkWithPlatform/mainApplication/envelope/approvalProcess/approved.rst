@@ -1,3 +1,5 @@
+.. _send-for-approval:
+
 =========================
 Envelope approval process
 =========================

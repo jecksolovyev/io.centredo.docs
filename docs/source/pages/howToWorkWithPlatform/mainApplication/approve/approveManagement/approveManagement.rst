@@ -53,3 +53,12 @@ Approval is a module with the functionality of viewing the list, filter and sear
    :align: center
 
 * When user click show more button in tooltip, comments of approvers open for user
+
+How to approve or reject several approvals
+==========================================
+
+On the approval list presented special functionality to approve or reject several approvals. To do this open tab "To approve" or "Urgent"
+select respective approvals you want to process and click on respective "Approve" or "Reject" icon in the table header. After this action
+modal window with comment area and confirmation button will appear. Add comment or leave it empty and confirm action.
+
+As soon as all approvals will be processed results will be displayed in the modal window.
