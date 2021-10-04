@@ -7,6 +7,7 @@ Admin Settings
    domains/domains.rst
    external-links/external-links.rst
    password-policy/password-policy.rst
+   cloudSignature/cloudSignature.rst
 
 
 Account Settings - is a list of account properties that helps to identify and manage account. Data from account used
