@@ -52,6 +52,7 @@
 1050,Only one session is allowed. Please logout from another one,Additional session is blocked
 1051,IP address is blocked or not allowed,Please contact the platform/account administrator
 1052,Wrong IP or IP-range format for [{0}],Please fix IP format
+1053,Error on sub-service call with message: {0},There is infrastructure problem. Please try later
 **USER/PROFILE**,,
 10001,User {0} not found,User with requested UUID has not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
@@ -285,10 +286,19 @@
 50072,Envelope added to chain by another user,Current user has no rights to remove envelope from chain
 50073,Envelopes belongs to different chains,Envelopes belongs to different chains
 50074,Envelope belongs to automatically created chain,Envelope belongs to automatically created chain
-50075,Approvers cannot participate in the main flow,One or more approvers are already in the main flow
+50075,Approvers cannot participate in the envelope processing process,One or more approvers are already in the main flow
 50076,"No approval is allowed on the envelope, it may have already been done",User cannot approve the envelope
 50077,Rejection reason is required for approval,Please add comment for approval
 50078,"Wrong approval status, send APPROVED or REJECTED",Please send proper status
+50079,Envelopes roles do not match template roles,Please check sent envelope XML for proper flow
+50080,Approval flow {0} not found,Approval flow with entered UUID has not found for this envelope
+50081,Only mailbox-creator can manage approval flow and start an approval,Mailbox cannot manage approval flow
+50082,Approval flow is already completed and cannot be cancelled,Mailbox cannot cancel approval flow
+50083,Mailbox has to be unique in the envelope approval flow,Please update the flow
+50084,UUID of the flow or approvers have to be specified separately,Please send flowUuid or approvers
+50085,Approval flow {0} is deleted,Approval flow with entered UUID is deleted and cannot be used
+50086,Approver {0} is already in another approval flow for this envelope,Approvers cannot participate in several flows for one envelope
+50087,"Duplicate value doesn't match","Value of the duplicate field in request doesn't match to value in related field"
 **DICTIONARY**,,
 60001,Dictionary {0} not found,Dictionary with entered UUID has not found. Please check correctness of the entered data
 60002,Dictionary name size exceeded maximum size,Dictionary name size is bigger than maximum allowed. Maximum allowed length of the dictionary name is 128 symbols.
@@ -314,7 +324,7 @@
 60022,Column order should be >= 0,"Column order can't be less or equal 0. Please enter positive value of the order"
 60023,Column value size exceeded (256),Record value size is bigger than maximum allowed. Maximum allowed length of the record value is 256 symbols.
 60024,Empty dictionary UUID,Required dictionary UUID parameter if empty in request. Please enter valid dictionary UUID
-60025,"Dictionary record was not found by value '{0}'",There is no record with such value in dictionary
+60025,"Dictionary record was not found by value '{0}' in column {1}",There is no record with such value in dictionary
 60026,"Can't delete last column","Dictionary should has at least one column. Last column can't be deleted from the dictionary."
 60027,No access to dictionary,No access to dictionary
 60028,Filter operation unknown,Filter operation unknowm
