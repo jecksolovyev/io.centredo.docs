@@ -166,7 +166,7 @@ information using UI or API. Also, roles information optionaly can be used on th
    :width: 400
    :align: center
 
-3. Third sheet is "Users". There are we have to fill users data (first name, last name and email). According to theese data users would be created.
+3. Third sheet is "Users". There are we have to fill users data (first name, last name and email). Also here you can choose to create or not personal user's mailbox (fill Y or N (or leave it empty) for create or not create). According to theese data users would be created.
 
 .. warning:: **Please note!** All users in the list have to have relation to verified domain(s). So if you decided to add user to the list from unverified or inactive domains, all process of users creation will be stoped.
 
