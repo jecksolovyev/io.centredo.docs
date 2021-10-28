@@ -92,7 +92,7 @@ To create corporate user you have to do the following:
    :width: 600
    :align: center
 
-3. Fill required fields on the user creation form, such as: first, last names, first part of email and select domain part
+3. Fill required fields on the user creation form, such as: first, last names, first part of email and select domain part. Also you can choose to create or not personal mailbox for this user.
 
 .. image:: pic_users/createUserForm.png
    :width: 600
