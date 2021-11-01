@@ -92,7 +92,7 @@ To create corporate user you have to do the following:
    :width: 600
    :align: center
 
-3. Fill required fields on the user creation form, such as: first, last names, first part of email and select domain part
+3. Fill required fields on the user creation form, such as: first, last names, first part of email and select domain part. Also you can choose to create or not personal mailbox for this user.
 
 .. image:: pic_users/createUserForm.png
    :width: 600
@@ -166,7 +166,7 @@ information using UI or API. Also, roles information optionaly can be used on th
    :width: 400
    :align: center
 
-3. Third sheet is "Users". There are we have to fill users data (first name, last name and email). According to theese data users would be created.
+3. Third sheet is "Users". There are we have to fill users data (first name, last name and email). Also here you can choose to create or not personal user's mailbox (fill Y or N (or leave it empty) for create or not create). According to theese data users would be created.
 
 .. warning:: **Please note!** All users in the list have to have relation to verified domain(s). So if you decided to add user to the list from unverified or inactive domains, all process of users creation will be stoped.
 
