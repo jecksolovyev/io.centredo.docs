@@ -43,7 +43,7 @@ In order to import CSV file to dictionary user has to perform 2 steps:
         }).start();
     })
 
-2. Approve import processing task by endpoint '/api/v1/upload/{taskUuid}' with following parameters:
+2. Approve import processing task by endpoint '/api/v1/upload/{taskUuid}/confirm' with following parameters:
 
 |   headerFirstRow: boolean - if headers are in the first row of CSV file
 |   replace: boolean - clear current records before import
