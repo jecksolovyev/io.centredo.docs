@@ -10,7 +10,6 @@ Global Properties
 | **app.name** - The name of the platform
 | **app.theme** - The UI theme of the platform (Red or Blue)
 | **app.timezone** - The default timezone (for dates in PDF)
-| **app.jivo-site-id** - ID of the support chat
 
 User Properties (app.user)
 ==========================
