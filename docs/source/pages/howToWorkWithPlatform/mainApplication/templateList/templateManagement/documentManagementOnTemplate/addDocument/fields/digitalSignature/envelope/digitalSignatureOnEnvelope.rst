@@ -110,3 +110,4 @@ After validation completed you will see results.
 .. include:: qualifiedElectronicSignature.rst
 .. include:: TINSignature.rst
 .. include:: signatureCommonErrors.rst
+.. include:: smartId.rst
