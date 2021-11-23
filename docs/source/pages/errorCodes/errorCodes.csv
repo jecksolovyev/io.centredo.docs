@@ -142,7 +142,6 @@
 30006,Mailbox Alias name size exceeded maximum size,"Mailbox alias name shouldn't be longer than 256 symbols"
 30007,Alias not found or attached to other mailbox,Alias you have tried to delete has not found or related to another mailbox
 30008,Contact {0} not found,"Category with UUID you entered doesn't exist or has not found"
-30009,"MoveTo category can't be subordinated of the category to delete","It's impossible to move category inside category you want to delete"
 30010,Category {0} not found,"Category with ID you entered doesn't exist or has not found"
 30011,Invalid parentId value,"ID of parent category isn't valid"
 30012,Alias already exists,Alias with entered name has been already existed
@@ -218,10 +217,11 @@
 40060,Missing role order for manual flow,Some role has no order when flow has manual type
 40061,All roles with same order,All roles with same order in template flow
 40062,Role {0} should be ordered after {1},Wrong roles manual order
-40063,"Field name contains invalid characters: '{{0}}'",Field name is empty or contains spaces on start or end
-40064,"Signature name contains invalid characters: '{{0}}'",Signature name is empty or contains spaces on start or end
-40065,Duplicated field name: {{0}},Duplicated field name
+40063,"Field name contains invalid characters: '{0}'",Field name is empty or contains spaces on start or end
+40064,"Signature name contains invalid characters: '{0}'",Signature name is empty or contains spaces on start or end
+40065,Duplicated field name: {0},Duplicated field name
 40066,Category or onе of subcategories is not empty,"There is active template if category or one of it's subcategories"
+40067,"MoveTo category can't be subordinated of the category to delete","It's impossible to move category inside category you want to delete"
 **ENVELOPE**,,
 50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
@@ -255,6 +255,7 @@
 50030,"Invalid value '{0}' for number value of field '{1}'",Invalid format of value has been entered to the number field. Number field accepts only numeric values
 50031,There is no need to sign the document {0},"There is no signature for particular mailbox or it's not turn of this mailbox for signing"
 50032,"There is a validation error for signature with type '{0}' and message: {1}",Please check signature data in the request
+50033,No XML data for envelope,Please check envelope XML data in the request
 50034,"Attachment '{0}' file type mismatch","Attachment file type is not correspond to allowed file types. Allowed file types: pdf, doc, docx, xls, xlsx, xml, dbf, txt, rtf, png, jpg, jpeg, zip. Allowed file types can be minimized according to field settings in template."
 50035,The mailbox no longer has access to envelope,The access to the envelope has been revoked
 50036,"Can't archive envelope in not final status: {0}","It's impossible to archive envelope if it's not in final status, such as COMPLETED, CANCELLED or EXPIRED"
