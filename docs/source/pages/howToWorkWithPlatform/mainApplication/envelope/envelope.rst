@@ -11,5 +11,5 @@ Envelope
     comments/comments.rst
     envelopeSignatures/envelopeSignatures.rst
     approvalProcess/approved.rst
-
+    delegationProcess/delegationProcess.rst
 Envelope is ...
