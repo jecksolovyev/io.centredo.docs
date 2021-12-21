@@ -39,7 +39,7 @@
 1037,Password cannot be reused,Do not use previous passwords
 1038,Please accept Terms and Conditions and Privacy Policy,"Parameter agreed has to be 'true'. Please read Terms and Conditions and Privacy Policy."
 1039,Image {0} was uploaded by another mailbox {1},Image cannot be used in current mailbox
-1040,Bad range dates number: {0},Range of date is incorrect. Correct range format is date/date in date format ISO 8601
+1040,There must be 2 dates specified for a range,Range of date is incorrect. Correct range format is date/date in date format ISO 8601
 1041,Requested range out of bounds,Requested range out of bounds
 1042,Comment thread {0} was not found,Comment thread with entered UUID has not found. Please check correctness of the entered data
 1043,Access to comment thread {0} is not allowed,Access to comment thread with entered UUID is forbidden. Please check correctness of the entered data
@@ -229,8 +229,8 @@
 50004,"Expected value with precision = {0} for field '{1}'",Precision of the entered value should be bigger than valid precision. Please pay attention to the settings of the field
 50005,Empty signatures list,Signatures list is empty on envelope. Please add signatures block before send request
 50006,"Unexpected value '{0}' for field '{1}'. Allowed: {2},{3}.","Entered value doesn't correspond to one of the allowed values. Please look at properties of the field to clarify allowed values"
-50007,Not all roles has mailboxUuid set properly,"This error happens if some of the role doesn't have valid mailbox uuid on the envelope"
-50008,Not all roles has id set properly,"This error happens if some of the role doesn't have valid role id on the envelope"
+50007,Not all roles has mailboxUuid set properly,"This error happens if some role doesn't have valid mailbox uuid on the envelope"
+50008,Not all roles has id set properly,"This error happens if some role doesn't have valid role id on the envelope"
 50009,Not valid envelope subject: {0},"Subject of the envelope is empty or invalid. Subject of the envelope shouldn't have restricted symbols: [\\/:""*?<>|\p{C}]+"
 50010,"There is mailbox predefined in template for role '{0}' and can't be changed","Mailbox UUID is predefined for particular role on the template and can't be changed"
 50011,Envelope {0} not found,Envelope with entered UUID has not found. Please check correctness of the entered data
@@ -265,6 +265,7 @@
 50040,E-ink is not filled properly,"Image of the E-ink signature is not correct, please check that image has at least 15px of the painted area"
 50041,Attachment {0} file not found,Attachment with entered UUID has not found. Please check correctness of the entered value
 50042,File {0} was not found for envelope {1},File with entered UUID has not found in the entered envelope. Please check correctness of the entered values
+50043,No envelope UUID in request,Please check envelope UUID in the request
 50044,Such label already exists,Label with respective name has already existed. Please use existing or create new with different name
 50045,Found role without mailboxUuid defined,"One of the roles doesn't have mailbox UUID in data of the envelope"
 50046,"Signature data not found for signature '{0}' at document '{1}'","Signature field doesn't have signature data, please check that you fill required signature field with valid data"
@@ -294,9 +295,9 @@
 50070,No access to chain,mailbox has no access to any envelope with this chain uuid
 50071,Envelope {0} belongs to another chain,Envelope belongs to another chain
 50072,Envelope added to chain by another user,Current user has no rights to remove envelope from chain
-50073,Envelopes belongs to different chains,Envelopes belongs to different chains
+50073,Envelopes belong to different chains,Envelopes belong to different chains
 50074,Envelope belongs to automatically created chain,Envelope belongs to automatically created chain
-50075,Approvers cannot participate in the envelope processing process,One or more approvers are already in the main flow
+50075,Approvers cannot participate in the envelope processing,One or more approvers are already in the main flow
 50076,"No approval is allowed on the envelope, it may have already been done",User cannot approve the envelope
 50077,Rejection reason is required for approval,Please add comment for approval
 50078,"Wrong approval status, send APPROVED or REJECTED",Please send proper status
@@ -309,6 +310,12 @@
 50085,Approval flow {0} is deleted,Approval flow with entered UUID is deleted and cannot be used
 50086,Approver {0} is already in another approval flow for this envelope,Approvers cannot participate in several flows for one envelope
 50087,"Duplicate value doesn't match","Value of the duplicate field in request doesn't match to value in related field"
+50088,"'uuids' or 'searchParams' have to be specified separately","Please send 'uuids' or 'searchParams'"
+50089,Envelope cannot be delegated,Delegation is forbidden for envelope
+50090,Delegate cannot cancel the delegation,Only initiator of the delegation can cancel it
+50091,"Delegation not found or initiator's role is already completed",Please check the delegation role
+50092,Delegation or envelope is already completed,No further actions allowed
+50093,Recipient field must be UUID or email,"Please check the 'recipient' field format"
 **DICTIONARY**,,
 60001,Dictionary {0} not found,Dictionary with entered UUID has not found. Please check correctness of the entered data
 60002,Dictionary name size exceeded maximum size,Dictionary name size is bigger than maximum allowed. Maximum allowed length of the dictionary name is 128 symbols.
@@ -358,16 +365,16 @@
 90005,"Can't do with system account","User doesn't have enough privileges to modify system data"
 90006,"Can't do with system mailbox","User doesn't have enough privileges to modify system data"
 90007,Mailbox has no access to label,"Mailbox doesn't have access to the label"
-90008,No access to dictionary,Dictionary is inaccessible for you. Ask dictionary owner to update access level.
-90009,No access to template,Tempalte is inaccessible for you. Ask template owner to update access level.
+90008,No access to dictionary {0},Dictionary is inaccessible for you. Ask dictionary owner to update access level.
+90009,No access to template {0},Tempalte is inaccessible for you. Ask template owner to update access level.
 90010,No access to parent category,Parent category is inaccessible for you. Ask category owner to update access level.
 90011,No access to category,Category is inaccessible for you. Ask category owner to update access level.
 90012,No access to notification,Notification is inaccessible for you
 90013,No access to mailbox {0},"User doesn't have access to this mailbox. Ask your system administrator to give permissions."
 90014,No access to mailbox {0}. Missed permissions: {1},"User doesn't have access particular functionality of this mailbox. Ask your system administrator to give permissions. Missed permissions you can find in the error message."
-90015,No access to envelope,"User doesn't have access to this envelope. Only users who included to the processing flow can watch envelopes"
+90015,No access to envelope {0},"User doesn't have access to this envelope. Only users who included to the processing flow can watch envelopes"
 90017,Envelope role forbidden to change data,"Envelope role can't change data in the envelope. If you want to change data in the envelope set respective role on the template"
-90018,Access to account {0} is forbidden,"User doesn't have access to this account. Ask your system administrator to give permissions."
+90018,No access to account {0},"User doesn't have access to this account. Ask your system administrator to give permissions."
 90019,Mailbox header does not match to mailbox uuid from entity,Please check that entity belongs to current mailbox
 90021,"You don't have enough privilege for this","User doesn't have enough permissions to do this action. Please ask your system administrator to give permissions"
 90022,No access to this import task,"User doesn't have access to the import task"
