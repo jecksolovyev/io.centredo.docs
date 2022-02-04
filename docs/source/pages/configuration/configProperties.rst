@@ -9,7 +9,6 @@ Global Properties
 
 | **app.name** - The name of the platform
 | **app.theme** - The UI theme of the platform (Red or Blue)
-| **app.timezone** - The default timezone (for dates in PDF)
 
 User Properties (app.user)
 ==========================
@@ -27,6 +26,7 @@ Locale Properties (app.locales)
 | **defaultLocale** - The default locale of the platform (for invitations)
 | **defaultCountry** - The default country of the platform (if no coordinates in header)
 | **defaultAsLanguage** - The default locale will be taken as language in browser (geolocation and language of browser don't matter then)
+| **timezone** - The default time zone of the platform (for user creation, dates in email and pdf)
 
 Password Policy (app.user.password-policy)
 ==========================================
@@ -57,4 +57,7 @@ Session Policy (app.user.session-policy)
 | **allowed-ips**:array - The list of allowed IPs
 | **blocked-ips**:array - The list of blocked IPs
 
-
+| **FYI**
+| Each property can be set via ENVIRONMENT property by replacing '.' with '_' and in upper case, see examples:
+| APP_NAME=WhiteDoc
+| APP_USER_PASSWORD-POLICY.UPPERCASE=2
