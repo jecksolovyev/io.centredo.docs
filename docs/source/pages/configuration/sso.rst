@@ -16,7 +16,7 @@ SSO Properties (app.sso)
 SSO SAML2 Identity Provider configuration (app.sso.saml)
 ========================================================
 
-| **sp-name** - Name of the Service Provider for WhiteDoc on IdP side
+| **entity-id** - ID of the Service Provider (URI format)
 | **idp-metadata-url** - URL to Identity Provider metadata
 | **keystore.location** - Path to JKS file with signing certificate
 | **keystore.alias** - Alias of the certificate
