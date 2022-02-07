@@ -13,7 +13,7 @@ SSO Properties (app.sso)
 | **last-name-prop-name** - Mapper field name for "Last Name" ('lastName' by default)
 | **phone-number-prop-name** - Mapper field name for "Phone Number" ('phoneNumber' by default)
 
-SSO SAML2 Identity Provider configuration (app.sso.saml)
+SSO SAML2 Configuration (app.sso.saml)
 ========================================================
 
 | **entity-id** - ID of the Service Provider (URI format)
@@ -26,3 +26,14 @@ SSO SAML2 Identity Provider configuration (app.sso.saml)
 | Each property can be set via ENVIRONMENT property by replacing '.' with '_' and in upper case, see examples:
 | APP_SSO_ENABLED=true
 | APP_SSO_FIRST-NAME-PROP-NAME=givenName
+
+How to set up IdP SSO
+========================================================
+
+* Create new SAML application on IdP
+* Set ACS URL {whitedoc_backend_url}/saml/SSO
+* Set Entity ID (the same as app.sso.saml.entity-id)
+* Set Sign Assertion = true
+* Set Name ID format = EMAIL
+* Add attribute mappings for First and Last names
+* Copy IdP Metadata URL and set to app.sso.saml.idp-metadata-url
