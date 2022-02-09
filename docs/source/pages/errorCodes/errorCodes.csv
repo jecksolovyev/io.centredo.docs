@@ -56,6 +56,9 @@
 1054,{0},Request is rejected by system. Check the correctness
 1055,Payload is too large,Please decrease the size of the file/request
 1056,Email is expected for SSO authorization,Please change username to email in your Identity Provider
+1057,Unsupported access level: {0},Access level is not supported in this context
+1058,Shared category can only belong to shared category,Shared category can only belong to shared category
+1059,"'uuids' or 'searchParams' have to be specified separately","Please send 'uuids' or 'searchParams'"
 **USER/PROFILE**,,
 10001,User {0} not found,User with requested UUID has not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
@@ -225,6 +228,8 @@
 40067,"MoveTo category can't be subordinated of the category to delete","It's impossible to move category inside category you want to delete"
 40068,Template has roles with empty ids,Template syntax error. Please check roles ids and make them not empty
 40069,Template has roles with same id: {0},Template syntax error. Please check roles ids and make them unique
+40070,"Can't share template to yourself","Creator's mailbox should not be in sharedTo list"
+40071,Only shared categories can be assigned to shared template,Only shared categories can be assigned to shared template
 **ENVELOPE**,,
 50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
