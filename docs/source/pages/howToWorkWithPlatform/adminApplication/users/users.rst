@@ -139,7 +139,7 @@ Create any quantity of users
 As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users.
 How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`.
 
-To create more than one user you can click on "Create" button in header and select recpective option "Create users". Modal window appeares and you will be able 
+To create more than one user you can click on "Create" button in header and select respective option "Create users". Modal window appeares and you will be able
 to download the example of the file for massive user creation.
 
 You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so don't change extention.
@@ -147,14 +147,14 @@ You can open the file using any tool which support .xlsx format. Also, you have 
 What is the content of the file?
 ================================
 
-File contains defferent qunatity of sheets and it depends on qunatity of Mailboxes in the particular account.
+File contains defferent qunatity of sheets and it depends on quantity of Mailboxes in the particular account.
 
 .. image:: pic_users/tabs.png
    :width: 400
    :align: center
 
-1. First sheet is "Roles". On this sheet are showing all roles which avaliable for particular account. If you want to clarify what exact role does, you can get this
-information using UI or API. Also, roles information optionaly can be used on the Account and Mailbox sheets (we will observe it below).
+1. First sheet is "Roles". On this sheet are showing all roles which available for particular account. If you want to clarify what exact role does, you can get this
+information using UI or API. Also, roles information optionally can be used on the Account and Mailbox sheets (we will observe it below).
 
 .. image:: pic_users/roles.png
    :width: 400
@@ -192,3 +192,29 @@ information using UI or API. Also, roles information optionaly can be used on th
 
 As soon as you fill the file with data you need you can upload the file and create users. All users get emails 
 and have to follow the instructions as described in the :ref:`How to authorized as corporate user? <howToAuth>`
+
+
+How to generate report by users?
+====================================
+
+.. toctree::
+
+If you want to get xlsx file with report by users you have to do the following:
+
+1. Open platform
+
+2. Got to Admin Panel
+
+3. Open tab 'Users' and select all necessary records
+
+4. Click on button with document icon (button called "Generate report")
+
+5. After click you will see the message that report will be send to you email after generation
+
+6. Follow to email address
+
+7. Open email you got
+
+8. Click on button "Download"
+
+Now you can open the file on your computer

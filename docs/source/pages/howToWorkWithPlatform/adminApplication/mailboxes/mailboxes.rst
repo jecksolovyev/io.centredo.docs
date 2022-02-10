@@ -168,3 +168,28 @@ Delete mailbox
 .. include:: delete_mailbox_behaviour.rst
 
 
+
+How to generate report by mailboxes?
+====================================
+
+.. toctree::
+
+If you want to get xlsx file with report by mailboxes you have to do the following:
+
+1. Open platform
+
+2. Got to Admin Panel
+
+3. Open tab 'Mailboxes' and select all necessary records
+
+4. Click on button with document icon (button called "Generate report")
+
+5. After click you will see the message that report will be send to you email after generation
+
+6. Follow to email address
+
+7. Open email you got
+
+8. Click on button "Download"
+
+Now you can open the file on your computer
