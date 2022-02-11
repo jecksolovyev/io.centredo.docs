@@ -6,5 +6,6 @@ Template
 
    templateManagement/templateManagement.rst
    categoryManagement/categoryManagement.rst
+   templateAccess/templateAccess.rst
    templateListPage/templateListPage.rst
    templateManagementOnTemplateList/templateManagementOnTemplateList.rst
