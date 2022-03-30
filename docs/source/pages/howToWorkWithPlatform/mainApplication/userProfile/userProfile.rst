@@ -15,7 +15,9 @@ User profile
 1. Update profile settings.
 2. Register personal accounts.
 3. Register company accounts.
-4. Delete profile.
+4. Add logo for user profile
+5. Delete profile.
+6. Creating and applying an electronic ink signature
 
 
 To open user profile page navigate to https://staging.whitedoc.space/profile .
@@ -122,6 +124,29 @@ Register company account
    :width: 600
    :align: center
 
+Ability for users upload logos/photos
+=====================================
+
+User can add logo for their profile
+
+1. Go to user profile
+
+2. User  view " User icon settings"
+
+.. image:: pic_userprofile/Screenshot_12.png
+   :width: 600
+   :align: center
+
+3. Click "Upload" button, user can choose any images. User can click the info icon and view params for images
+
+.. image:: pic_userprofile/Screenshot_1.png
+   :width: 600
+   :align: center
+
+4. User can save image, if click "Save" button
+
+5. You can return default profile logo, when user click "Set default" button. In this case profile logo will consist on first letters of first and  last name
+
 
 
 Delete user profile
@@ -178,3 +203,12 @@ you should register new user.
    :align: center
 
 .. warning:: **Please note!** `Behaviour of data after deleting a user profile <delete_userProfile_behaviour.html>`_
+
+Creating and applying an electronic ink signature
+=================================================
+
+1. Go to user profile page
+2. You can view "Signature settings"
+3. Click "Replace signature" and you have opportunity handwritten signature or input text
+4. User can chose font and color for signature
+5. After creating signature user must click "Save change" on the account setting page
