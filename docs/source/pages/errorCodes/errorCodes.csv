@@ -3,7 +3,7 @@
 1001,Record not found,"Record with respective request parameter is not found in database. Please check your request, compare with documentation and send again"
 1002,XML Conversion error. {0},"XML conversion got an error. It can happen if we can't convert document using xslt conversion map and source to envelope xml structure. Please pay attention to the error explanation and particular row with error in the message"
 1003,Bad image data,"Image in request has been broken or couldn't be processed via system, please try to use another format or properties of the image"
-1004,Empty field in request,"IN request you send is empty required field. Please check your request, compare with documentation and send again"
+1004,Empty field in request,"You send is empty required field in request. Please check your request, compare with documentation and send again"
 1005,Too many requests,You have sent to many requests for particular endpoint from this particular use. Please wait 10 minutes and try again
 1006,Validation failed. {0},If any validation of the fields failed you get this error. In the data of the error you can find particular explanation of the validation error
 1007,Document has been already modified,Document has been already modified. Please request document again and change it again
@@ -25,7 +25,7 @@
 1023,"Request query parameter '{0}' required","Request query is required in this request. Please check your request, compare with documentation and send again"
 1024,"Request body parameter '{0}' required","Request body is required in this request. Please check your request, compare with documentation and send again"
 1025,"Request path parameter '{0}' required","Request path parameter is required in this request. Please check your request, compare with documentation and send again"
-1026,Authentication error,Entered email or password is invalid
+1026,Authentication error,"Some authentication error, please check logs"
 1027,Authentication token has been expired or revoked,Authentication token has been expired or revoked. To solve the issue authorized again
 1028,Standard Spring MVC exceptions: {0},One of the standard server exceptions has occurred. Please see error message and check the request data for mistakes
 1029,"File '{0}' exceeded max size: {1} > {2}",File size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
@@ -48,17 +48,21 @@
 1046,Thread {0} is already resolved or deleted and cannot be changed,There is no possibility to update the thread
 1047,"Attachment '{0}' exceeded max name length: {1}",Attachment file name length is bigger than limit for upload. Please pay attention to max length on the error code and try to upload file with less length
 1048,Password expired,Please renew the password
-1049,User is locked after too many login attempts. Please try later,Please wait and try later
+1049,"To protect your account from hacking, we temporarily blocked the possibility of authorization. Wait {0} minute(s) or click ""Forgot password?""",Please wait and try later
 1050,Only one session is allowed. Please logout from another one,Additional session is blocked
 1051,IP address is blocked or not allowed,Please contact the platform/account administrator
 1052,Wrong IP or IP-range format for [{0}],Please fix IP format
-1053,Error on sub-service call with message: {0},There is infrastructure problem. Please try later
-1054,{0},Request is rejected by system. Check the correctness
+1053,Sub-service is unavailable: {0},There is an infrastructure problem. Please try later
+1054,Sub-service error with message: {0},There is an error on sub-service side
 1055,Payload is too large,Please decrease the size of the file/request
 1056,Email is expected for SSO authorization,Please change username to email in your Identity Provider
 1057,Unsupported access level: {0},Access level is not supported in this context
 1058,Shared category can only belong to shared category,Shared category can only belong to shared category
 1059,"'uuids' or 'searchParams' have to be specified separately","Please send 'uuids' or 'searchParams'"
+1060,"Image '{0}' is smaller than minimum size: {1}x{2}",Image size is smaller than limit for upload. Please pay attention to min size on the error code and try to upload file with larger size.
+1061,"The email address or password is incorrect. Try again or click ""Forgot password?"" to reset it.",Entered email or password is invalid
+1062,"The email address or password is incorrect. You have 1 attempt left. To avoid temporary blocking, click ""Forgot password?""",Entered email or password is invalid
+1063,{0},Request is rejected by system. Check the correctness
 **USER/PROFILE**,,
 10001,User {0} not found,User with requested UUID has not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
@@ -137,6 +141,7 @@
 20043,"Role {0} can't be deleted because it assigned to users or invitations",Role is used and assigned to users or invitations
 20044,The sum of letters of different types cannot be greater than the maximum length,Please update password policy with correct values
 20045,"User doesn't belong to the account",Listed user(s) belongs to another account
+20046,Tariff {0} was not found in billing system,Tariff not found for the account
 **MAILBOX**,,
 30001,Mailbox {0} not found,"Entered mailbox couldn't be found in the system"
 30002,Mailbox {0} deleted,Mailbox has been deleted. Please use active mailbox.
@@ -167,7 +172,7 @@
 40006,Template must have access level equal or wider than category access level,Template access level has to be equal or bigger than category access level
 40007,"Template 'name' is mandatory and must be from 3 till 100 characters long",Template name is mandatory and must be from 3 till 100 characters long in request
 40008,"Template 'description' is mandatory and must be from 3 till 255 characters long",Template description is mandatory and must be from 3 till 255 characters long in request
-40009,Must has other roles except sender,Template has to have at least one another role except sender
+40009,Must have other roles except sender,Template has to have at least one another role except sender
 40010,Must be only 1 sender,Template should contain only one role with type sender
 40011,First role must be sender,First role in the template flow should be sender
 40012,Must be at least 2 roles,"Template has to have at least two roles, one sender is required and another one recipient or signer"
@@ -201,8 +206,8 @@
 40040,Duplicated signature name in document {0},"Names of the signatures field are duplicated. It's necessary than for one document should be unique names of the fields"
 40041,"Missed document info section, document id: {0}","Structure of the template data isn't correct. Please add info sections to the document structure"
 40042,Too much signatures per role {0},Signature role can has one signature field per one document.
-40043,Too much fields in document,External document can contain only one attachment field
-40044,"Unexpected field type '{0}'","Type of the entered field is not supported. Supported types of fields: text, number, money, datetime, select-simple, select-dictionary, yesno, attachment"
+40043,Too many fields in document,External document can contain only one attachment field
+40044,"Unexpected field type '{0}'","Type of the entered field is not supported. Supported types of fields: text, number, money, datetime, select-dictionary, yesno, attachment"
 40045,Unexpected document body content: {0},"Only one type of field ""attachment"" is allowed for external document"
 40046,Dynamic table name not found,Name of the dynamic table is missed
 40047,Dynamic table roleId not found,"Table field doesn't have assigned role"
@@ -230,6 +235,10 @@
 40069,Template has roles with same id: {0},Template syntax error. Please check roles ids and make them unique
 40070,"Can't share template to yourself","Creator's mailbox should not be in sharedTo list"
 40071,Only shared categories can be assigned to shared template,Only shared categories can be assigned to shared template
+40072,"Field '{0}' can't be searchable","Supported types of fields that can be searchable: text, number, money, datetime, select-dictionary, duplicate, lookup"
+40073,"Field '{0}' from the formula '{1}' was not found",Please check all fields in the formula
+40074,"Wrong formula with name '{0}'",Please check the formula
+40075,Recursive call in formulas,Please check the formulas
 **ENVELOPE**,,
 50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
@@ -248,7 +257,7 @@
 50015,"Invalid value '{0}' of field '{1}', expected '{2}'","Entered value doesn't correspond to the date format. Please enter value in date format YYYY-MM-DD"
 50016,"Envelope document with ID '{0}' was not found in template",Document in envelope has wrong ID
 50017,Envelope document {0} not found in XML structure,Document has not found in XML structure of the envelope
-50018,Envelope sender not found,Sendet has not found in XML structure of the envelope
+50018,Envelope sender not found,Sender has not found in XML structure of the envelope
 50019,Compiled document {0} not found in file storage,Document which has been compiled has not found in the file storage. Try to regenerate document
 50020,Label {0} not found,Label with particular UUID has not found
 50021,Envelope attachment field not found in document {0},External document attachment is not found in the document. Please check your request upload document and send again
@@ -324,6 +333,9 @@
 50091,"Delegation not found or initiator's role is already completed",Please check the delegation role
 50092,Delegation or envelope is already completed,No further actions allowed
 50093,Recipient field must be UUID or email,"Please check the 'recipient' field format"
+50094,Search by field parameters has wrong format,Search by field parameters has wrong format
+50095,Only sender can notify all active roles,This user cannot send email notifications
+50096,No envelopes to notify. Please try later,Notifications have already been sent for envelopes
 **DICTIONARY**,,
 60001,Dictionary {0} not found,Dictionary with entered UUID has not found. Please check correctness of the entered data
 60002,Dictionary name size exceeded maximum size,Dictionary name size is bigger than maximum allowed. Maximum allowed length of the dictionary name is 128 symbols.
