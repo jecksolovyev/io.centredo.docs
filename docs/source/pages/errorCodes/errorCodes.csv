@@ -141,7 +141,6 @@
 20043,"Role {0} can't be deleted because it assigned to users or invitations",Role is used and assigned to users or invitations
 20044,The sum of letters of different types cannot be greater than the maximum length,Please update password policy with correct values
 20045,"User doesn't belong to the account",Listed user(s) belongs to another account
-20046,Tariff {0} was not found in billing system,Tariff not found for the account
 **MAILBOX**,,
 30001,Mailbox {0} not found,"Entered mailbox couldn't be found in the system"
 30002,Mailbox {0} deleted,Mailbox has been deleted. Please use active mailbox.
@@ -441,3 +440,6 @@
 110008,Link {0} for another account,"Link doesn't belong to this account."
 110009,Link has invalid URL,Link has invalid URL. Please fix
 110010,"Can't use official link access","Can't use official link access"
+**BILLING**,,
+120001,Tariff {0} was not found in billing system,Tariff not found for the account
+120002,You cannot change tariff so often,Please wait and try again
