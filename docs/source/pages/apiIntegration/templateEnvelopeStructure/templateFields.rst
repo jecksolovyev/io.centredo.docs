@@ -149,6 +149,7 @@ Duplicate is read-only field with the value calculated using EXCEL operations
 - value is a formula which supports about 270 excel operations
 
 Example: SUM({field1},{doc2::field2}) where
+
 - {field1} is a value of field1 from the same document
 - {doc2::field2} is a value of field2 in document with id 'doc2'
 
