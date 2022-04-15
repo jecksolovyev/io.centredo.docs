@@ -139,14 +139,16 @@ Duplicate is read-only field with the value of the related field.
 +---------------------------------------------------------------------------------------------------------------------------------+
 |                                                       Formula field                                                             |
 +=================================================================================================================================+
-|  `<formula name="name" precision="integer" trailingZeros="boolean">EXCEL FORMULA</formula>`                                     |
+|  `<formula name="name" precision="integer" trailingZeros="boolean">value</formula>`                                             |
 +---------------------------------------------------------------------------------------------------------------------------------+
 
- - precision - default 2
- - trailingZeros - default true
- - value is a formula which supports about 270 excel operators
+Duplicate is read-only field with the value calculated using EXCEL operations
 
-Example: SUM({field1},{doc2::field2})
-    where {field1} is a value of field1 from the same document
-        and {doc2::field2} is a value of field2 in document with id 'doc2'
+- precision - default 2
+- trailingZeros - default true
+- value is a formula which supports about 270 excel operations
+
+Example: SUM({field1},{doc2::field2}) where
+- {field1} is a value of field1 from the same document
+- {doc2::field2} is a value of field2 in document with id 'doc2'
 
