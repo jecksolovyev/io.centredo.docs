@@ -23,14 +23,12 @@ Screen size limits:
 
     minWidth = 600,
     maxWidth = 1440,
-    minHeight = 600,
     maxHeight = 1024
 
 **3. Mobile**
 
     minWidth = 320,
     maxWidth = 766,
-    minHeight = 550,
 
 If the user uses a screen resolution that is not suitable for working with the service, he will see a dummy notification
 with instructions on what to do next.
