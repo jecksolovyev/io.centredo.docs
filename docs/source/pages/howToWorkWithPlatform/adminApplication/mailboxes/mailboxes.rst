@@ -19,7 +19,7 @@ This page allows:
 
 4. Delete mailbox(es);
 
-To open mailboxes page navigate to https://staging.whitedoc.space/admin/mailboxes
+Open mailboxes page
 
 .. image:: pic_mailboxes/mailboxesMainView.png
    :width: 600
@@ -87,6 +87,16 @@ After successful edition of the mailbox the notification message will show at th
 .. image:: pic_mailboxes/mailboxesChangesSaved.png
    :width: 600
    :align: center
+
+You can hide visibility of your mailbox for system members.To do this, activate the toggle: "Hide name/aliases from other accounts".
+    When the toggle is active, mailbox name or alias can be found by users who have access to the account.
+    it is also possible to find you by contact name if the mailbox is saved in the user's contacts.
+    In any state toggle, your mailbox can be found in the system by mailbox UUID.
+
+.. image:: pic_mailboxes/Screenshot_15.png
+   :width: 600
+   :align: center
+
 
 Copy mailbox UUID
 =================
