@@ -6,6 +6,7 @@ Envelope
 
     envelopeManagment/envelopeManagment.rst
     inviteToEnvelope/inviteToEnvelopeByEmail.rst
+    resendEnvelopeInvite/resendEnvelopeInvite.rst
     acceptInvitationToEnvelope/acceptInvitationToEnvelope.rst
     externalDocument/externalDocument.rst
     comments/comments.rst

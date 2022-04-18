@@ -40,7 +40,7 @@ Copy Account uuid
 Edit personal account
 =====================
 
-1. Navigate to https://staging.whitedoc.space/admin/account-settings
+1. Go to admin panel
 
 .. image:: assets/personal-account.png
    :width: 600
@@ -69,6 +69,30 @@ Edit personal account
 .. image:: assets/personal-account-success.png
    :width: 600
    :align: center
+
+
+Ability for account and platform upload logos/photos
+====================================================
+
+User can add logo for their account and change logo platform
+
+1. Go to admin panel
+
+2. User  view "Account icon settings" and "Platform logotype settings"
+
+.. image:: pic_admin/Screenshot_8.png
+   :width: 600
+   :align: center
+
+3. Click "Upload" button, user can choose any images. User can click the info icon and view params for images
+
+.. image:: pic_admin/Screenshot_1.png
+   :width: 600
+   :align: center
+
+4. User can save image, if click "Save" button
+
+5. You can return default  logo, when user click "Set default" button. In this case logo will consist on two first letters account name and logo platform will consist logo WhiteDoc
 
 Edit company account
 ====================
