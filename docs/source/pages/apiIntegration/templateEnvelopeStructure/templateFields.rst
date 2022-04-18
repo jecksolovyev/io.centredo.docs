@@ -142,14 +142,36 @@ Duplicate is read-only field with the value of the related field.
 |  `<formula name="name" precision="integer" trailingZeros="boolean">value</formula>`                                             |
 +---------------------------------------------------------------------------------------------------------------------------------+
 
-Duplicate is read-only field with the value calculated using EXCEL operations
+Formula is read-only field with the value calculated using EXCEL operations
 
 - precision - default 2
 - trailingZeros - default true
 - value is a formula which supports about 270 excel operations
 
-Example: SUM({field1},{doc2::field2}) where
+SUPPORTED OPERATIONS: arithmetic and logical, some region operators, and:
+[ABS, ACOS, ACOSH, ADDRESS, AND, AREAS, ASIN, ASINH, ATAN, ATAN2, ATANH,
+AVEDEV, AVERAGE, CEILING, CHAR, CHOOSE, CLEAN, CODE, COLUMN, COLUMNS, COMBIN,
+CONCATENATE, COS, COSH, COUNT, COUNTA, COUNTBLANK, COUNTIF, DATE, DATEVALUE, DAY,
+DAYS360, DEGREES, DEVSQ, DGET, DMAX, DMIN, DOLLAR, DSUM, ERROR.TYPE, EVEN, EXACT,
+EXP, FACT, FALSE, FIND, FIXED, FLOOR, FREQUENCY, FV, GEOMEAN, HLOOKUP, HOUR,
+HYPERLINK, IF, INDEX, INDIRECT, INT, INTERCEPT, IPMT, IRR, ISBLANK, ISERR,
+ISERROR, ISLOGICAL, ISNA, ISNONTEXT, ISNUMBER, ISREF, ISTEXT, LARGE, LEFT, LEN,
+LN, LOG, LOG10, LOOKUP, LOWER, MATCH, MAX, MAXA, MDETERM, MEDIAN, MID, MIN, MINA,
+MINUTE, MINVERSE, MIRR, MMULT, MOD, MODE, MONTH, NA, NORMDIST, NORMINV, NORMSDIST,
+NORMSINV, NOT, NOW, NPER, NPV, ODD, OFFSET, OR, PERCENTILE, PERCENTRANK, PI, PMT,
+POISSON, POWER, PPMT, PRODUCT, PROPER, PV, RADIANS, RAND, RANK, RATE, REPLACE,
+REPT, RIGHT, ROMAN, ROUND, ROUNDDOWN, ROUNDUP, ROW, ROWS, SEARCH, SECOND, SIGN,
+SIN, SINH, SLOPE, SMALL, SQRT, STANDARDIZE, STDEV, SUBSTITUTE, SUBTOTAL, SUM,
+SUMIF, SUMPRODUCT, SUMSQ, SUMX2MY2, SUMX2PY2, SUMXMY2, T, TAN, TANH, TDIST, TEXT,
+TIME, TIMEVALUE, TODAY, TRANSPOSE, TREND, TRIM, TRUE, TRUNC, UPPER, VALUE, VAR,
+VARP, VLOOKUP, WEEKDAY, YEAR]
+
+Example 1: SUM({field1},{doc2::field2}) where
 
 - {field1} is a value of field1 from the same document
 - {doc2::field2} is a value of field2 in document with id 'doc2'
 
+Example 2: formula SUM({field1}) next to dynamic table where
+
+- {field1} ia a field name from the table
+- all values from all rows will summed up
