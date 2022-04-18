@@ -15,3 +15,4 @@ Fields
    lookup/lookup.rst
    digitalSignature/eds.rst
    duplicate/duplicate.rst
+   formula/Formula.rst
