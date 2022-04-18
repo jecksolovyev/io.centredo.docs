@@ -6,8 +6,9 @@ Template Access
 
 User can specify  access level of the template, when creating and editing it.
 
-There are three types of access on the platform:
+There are four types of access on the platform:
 
+- access for your mailbox only
 - access for selected mailboxes(Selected mailboxes)
 - access for all mailboxes in your account(My account)
 - access for everyone on WhiteDoc(Everyone)
