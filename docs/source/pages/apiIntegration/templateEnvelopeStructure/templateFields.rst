@@ -142,14 +142,31 @@ Duplicate is read-only field with the value of the related field.
 |  `<formula name="name" precision="integer" trailingZeros="boolean">value</formula>`                                             |
 +---------------------------------------------------------------------------------------------------------------------------------+
 
-Duplicate is read-only field with the value calculated using EXCEL operations
+Formula is read-only field with the value calculated using EXCEL operations.
 
 - precision - default 2
 - trailingZeros - default true
 - value is a formula which supports about 270 excel operations
 
-Example: SUM({field1},{doc2::field2}) where
+Three functions are available for selection on the UI:
+- arguments summation(SUM),
+- arguments multiplication(PRODUCT),
+- arguments summation in a dynamic table column (SUM table column)
 
+arguments can be: numeric, currency, dictionary field, lookup, duplicate, formula field and also the user can enter his own value
+
+Example 1: SUM({field1},{doc2::field2}) where
 - {field1} is a value of field1 from the same document
 - {doc2::field2} is a value of field2 in document with id 'doc2'
+
+Example 2: PRODUCT({field1},{field2}) where
+- {field1} is a value of field1 from the same document
+- {field2} is a value entered by user
+
+Example 3: SUM table column({field1}) where
+-{field1} is a value that is in the dynamic table cell
+As a result of this function, the selected argument in the cell will be summed up throughout the column.
+
+For users who will work through integrations, it is necessary to understand that the SUM table column function contains one attribute,
+and looks like this: <formula precision="2" name="total">SUM({rowTotal})</formula>, but the SUM function has two arguments
 
