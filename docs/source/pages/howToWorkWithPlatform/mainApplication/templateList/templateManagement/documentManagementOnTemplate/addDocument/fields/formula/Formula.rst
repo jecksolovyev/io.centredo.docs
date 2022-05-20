@@ -5,16 +5,19 @@ Formula Field
 .. toctree::
 
 Dynamic Formula field has been added to the template page.
-There are three functions available in the formula box:
+There are functions available in the formula box:
 
 1. SUM - argument summation
 2. PRODUCT - multiplication of arguments
-3. SUM table column - summing arguments in a dynamic table column
-4. SUBTRACT - returns the difference of arguments
-5. DIVIDE - returns the quotient of arguments
-6. COUNTA table column - returns the number of column cells in a table field
-7. MIN table column - returns the smallest number in a set of arguments
-8. MAX table column - returns the largest value in a set of arguments
+3. SUBTRACT - returns the difference of arguments
+4. DIVIDE - returns the quotient of arguments
+
+functions can only be applied to a field within a table:
+
+1. SUM table column - summing arguments in a dynamic table column
+2. COUNTA table column -returns  number of non-empty cells in a column
+3. MIN table column - returns the smallest number in a set of arguments
+4. MAX table column - returns the largest value in a set of arguments
 
 arguments can be: numeric, currency, dictionary field, lookup, duplicate, formula field and also the user can enter his own value
 
@@ -23,7 +26,7 @@ Create Formula Field
 
 1. Create Template
 
-2. Go to template create number field and currency field
+2. Go to template, create number field and currency field
 
 .. image:: pic_formula/Screenshot_1.png
    :width: 600
@@ -102,7 +105,7 @@ In order to apply the COUNTA table column function, you must repeat the followin
 1. Create Template
 2. Create dynamic table field
 3. Add number field in table
-4. Select formula field, adding argument
+4. Select formula field, add argument
 
 .. image:: pic_formula/Screenshot_56.png
    :width: 600
@@ -116,20 +119,20 @@ In order to apply the COUNTA table column function, you must repeat the followin
    :width: 600
    :align: center
 
-8. COUNTA table column function shows number of rows in the table.
+8. COUNTA table column function counts the number of non-empty cells in a column
 
 In order to apply the MIN/MAX table column function, you must repeat the following steps:
 
 1. Create Template
 2. Create dynamic table field
 3. Add number field and currency field in table
-4. Select MIN table column formula, adding argument
+4. Select MIN table column formula, add argument
 
 .. image:: pic_formula/Screenshot_02.png
      :width: 600
      :align: center
 
-5. Select MAX table column function, adding argument
+5. Select MAX table column function, add argument
 
 .. image:: pic_formula/Screenshot_03.png
    :width: 600
@@ -137,7 +140,7 @@ In order to apply the MIN/MAX table column function, you must repeat the followi
 
 6. Fill in the main fields of template
 7. Create envelope
-8. Add rows to table. and fill number fields
+8. Add rows to table and fill in number fields
 
 .. image:: pic_formula/Screenshot_04.png
    :width: 600
