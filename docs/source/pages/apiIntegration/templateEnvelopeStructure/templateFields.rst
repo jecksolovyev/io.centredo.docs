@@ -141,7 +141,7 @@ Duplicate is read-only field with the value of the related field.
 +=================================================================================================================================+
 |  `<formula name="name" precision="integer" trailingZeros="boolean">value</formula>`                                             |
 +---------------------------------------------------------------------------------------------------------------------------------+
-
+ 
 Formula is read-only field with the value calculated using EXCEL operations
 
 - precision - default 2
