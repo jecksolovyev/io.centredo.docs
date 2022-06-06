@@ -5,6 +5,7 @@ Admin Settings
 .. toctree::
    
    domains/domains.rst
+   ssoSettings/ssoSettings.rst
    external-links/external-links.rst
    password-policy/password-policy.rst
    cloudSignature/cloudSignature.rst
