@@ -1,6 +1,6 @@
-=========================
+===============================================
 Devices and screen sizes for work with platform
-=========================
+===============================================
 
 **For convenient work with the service, the user must have one of 3 types of supporting devices:**
 
@@ -11,9 +11,9 @@ Devices and screen sizes for work with platform
 At the stage of initialization or / changing the screen resolution, the system checks whether the current screen resolution
 of the user is acceptable for further convenient work.
 
-===================
-Screen size limits:
-===================
+==================
+Screen size limits
+==================
 
 **1. Desktop**
 
@@ -21,21 +21,20 @@ Screen size limits:
 
 **2. Tablet**
 
-    minWidth = 600,
-    maxWidth = 1440,
-    maxHeight = 1024
+    minWidth = 756,
+    maxWidth = 1439
 
 **3. Mobile**
 
     minWidth = 320,
-    maxWidth = 766,
+    maxWidth = 755,
 
 If the user uses a screen resolution that is not suitable for working with the service, he will see a dummy notification
 with instructions on what to do next.
 
-==============
+=============
 User messages
-==============
+=============
 
 **1. If the user is using a desktop computer, they will be prompted to:**
 
