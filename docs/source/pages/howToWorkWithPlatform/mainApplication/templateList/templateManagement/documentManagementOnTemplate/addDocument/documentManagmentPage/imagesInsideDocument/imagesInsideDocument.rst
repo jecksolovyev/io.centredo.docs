@@ -1,3 +1,5 @@
+.. _addImageTemplate:
+
 ======================
 Images inside document
 ======================
