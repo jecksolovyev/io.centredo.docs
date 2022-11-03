@@ -4,8 +4,7 @@ Add document
 
 .. toctree::
 
-    documentManagmentPage/documentManagmentPage.rst
+    documentManagementPage/documentManagementPage.rst
     fields/fields.rst
-    documentManagmentPage/imagesInsideDocument/imagesInsideDocument.rst
 
 There is should be more information...
