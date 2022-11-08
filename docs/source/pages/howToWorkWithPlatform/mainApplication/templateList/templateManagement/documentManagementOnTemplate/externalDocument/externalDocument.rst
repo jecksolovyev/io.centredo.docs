@@ -1,19 +1,17 @@
-=====================
-Add External Document
-=====================
+=================
+External Document
+=================
 
 .. toctree::
-
----------
 
 How to upload the external document?
 =====================================
 
 You have the ability to upload an external document to envelope and sign this document with an EDS.
 
-To do this, just :
+To do this, just:
 
-1. Navigate to https://staging.whitedoc.space/template/list?s=mailbox or press the button "Templates" on the left sidebar.
+1. Navigate to ../template/list?s=mailbox or press the button "Templates" on the left sidebar.
 
 .. image:: pic_addExternalDocument/templateButtonOnSidebar.png
    :width: 600
@@ -41,5 +39,24 @@ and assign it to another role.
 
 Also, you can add EDS to such a document.
 
+How to delete external document from template?
+==============================================
 
+To delete the external document you have to do the following:
+
+1. Click the "More" button - it is the button with three dots - on the document.
+2. Select "Delete" on the menu.
+3. External document has been deleted.
+
+How to clone external document from template?
+=============================================
+
+You have the ability to clone an external document - create the duplicate of the document.
+To clone the external document you have to do the following:
+
+1. Click the "More" button - it is the button with three dots - on the document.
+2. Select "Clone" on the menu.
+3. External document has been cloned.
+
+-------------------
 

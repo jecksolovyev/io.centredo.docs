@@ -1,6 +1,6 @@
-==================
-Category managment
-==================
+===================
+Category management
+===================
 
 .. toctree::
 

@@ -123,22 +123,22 @@ How to delete comment
    :width: 600
    :align: center
 
-How to solve comment threads
-============================
+How to resolve comment threads
+==============================
 
-.. warning:: **Please note!** You can solve only your comment threads.
+.. warning:: **Please note!** You can resolve only your comment threads.
 
-.. warning:: **Please note!** You can solve only active comment threads.
+.. warning:: **Please note!** You can resolve only active comment threads.
 
-1. Click on solve icon.
+1. Click on resolve icon.
 
-.. image:: pic_comments/SolveComment/SolveComment1.png
+.. image:: pic_comments/resolveComment/resolveComment1.png
    :width: 600
    :align: center
 
-2. Comment solved. Now this comment thread is located in solved comment section. Also highlighted section on envelope to which this comment attached is removed in case when it's last comment attached to this section.
+2. Comment resolved. Now this comment thread is located in resolved comment section. Also highlighted section on envelope to which this comment attached is removed in case when it's last comment attached to this section.
 
-.. image:: pic_comments/SolveComment/SolveComment2.png
+.. image:: pic_comments/resolveComment/resolveComment2.png
    :width: 600
    :align: center
 

@@ -21,7 +21,7 @@ Role configuration interface
 
 Role configuration interface for AUTO flow contain the following information:
 
-.. image:: pic_templateCreationEdition/Screenshot 2021-06-25 at 14.34.01.png
+.. image:: pic_templateCreationEdition/processingFlowForm.png
    :width: 400
    :align: center
 
@@ -85,3 +85,4 @@ Some restrictions of the role places in the flow:
 2. EDS signer cannot have order lower than last Assignee
 
 3. Copy can have any order in the flow but not less than 1
+
