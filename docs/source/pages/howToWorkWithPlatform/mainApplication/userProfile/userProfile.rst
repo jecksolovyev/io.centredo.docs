@@ -2,13 +2,6 @@
 User profile
 ============
 
-.. toctree::
-
-   invitationManagement/invtitationManagement.rst
-   delete_userProfile_behaviour.rst
-
----------
-
 **User profile** page allows:
 
 
@@ -212,3 +205,14 @@ Creating and applying an electronic ink signature
 3. Click "Replace signature" and you have opportunity handwritten signature or input text
 4. User can chose font and color for signature
 5. After creating signature user must click "Save change" on the account setting page
+
+
+---------------------------------
+
+**Content list**
+
+.. toctree::
+
+   invitationManagement/invitationManagement.rst
+   delete_userProfile_behaviour.rst
+   addLogo.rst

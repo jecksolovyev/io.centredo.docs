@@ -4,7 +4,7 @@ How to create, edit and manage template?
 
 .. toctree::
 
-Template it's an entity of the platfrom which can contain one or more documents inside and using template customers can create envelopes.
+Template it's an entity of the platform which can contain one or more documents inside and using template customers can create envelopes.
 
 How to create template?
 =======================
@@ -15,11 +15,11 @@ To create template you have to follow to the next steps:
 
 2. Click on button "New template"
 
-3. Fill in obligatory fields as Template subject and message
+3. Fill in obligatory fields as Template subject and message within right side bar menu "Template"
 
 4. Configure processing flow of the template. How to configure processing flow and what is it you can find by the :ref:`link <processing-flow>`
 
-5. Create document and add fields according to the role in the flow to the document
+5. Add fields to document or create new one documents according to the role in the flow to the document
 
 6. Click on "Save" button to save template on platform
 
@@ -34,8 +34,5 @@ If you want to add some changes to template or documents inside template you hav
 
 3. Select "Edit" option from the list to open template configuration form
 
-Now you can make you changes. To save you changes click on button "Save" on the template properties page
-
-
-
+Now you can make you changes. To save you changes click on button "Save" on the template editor page
 

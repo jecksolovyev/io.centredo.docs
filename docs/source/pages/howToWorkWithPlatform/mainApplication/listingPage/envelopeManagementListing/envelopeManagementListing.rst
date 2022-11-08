@@ -1,6 +1,6 @@
-===================
-Envelope management
-===================
+==============================
+Envelope management on mailbox
+==============================
 
 .. toctree::
 

@@ -8,9 +8,9 @@ for single and several envelopes management. Full list of functionality you can 
 .. toctree::
 
     tabsDescription/tabsDescription.rst
-    labelsManagment/labelsManagment.rst
+    labelsManagement/labelsManagement.rst
     filtrationFunctionality/filtrationFunctionality.rst
-    envelopeManagment/envelopeManagment.rst
+    envelopeManagementListing/envelopeManagementListing.rst
     envelopesReport/envelopesReport.rst
     envelopeChains/envelopeChains.rst
 
