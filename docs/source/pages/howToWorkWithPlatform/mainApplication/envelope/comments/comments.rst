@@ -54,13 +54,13 @@ How to add comment
    :width: 600
    :align: center
    
-5. If you picked "Selected mailboxes" option you will need to add all desired mailboxes one by one in this windows.
+5. If you picked "Selected mailboxes" option you will need to add all desired mailboxes one by one in this window.
 
 .. image:: pic_comments/AddComment/AddCommentStep5.png
    :width: 600
    :align: center
 
-6. Click Save in visibility windows and Save in comment window. Comment appeared. Also you can see highlighted section on envelope to which this comment attached. (Note that if you unchecked all options in visibility windows comment will be visible only to your mailbox).
+6. Click Save in visibility window and Save in comment window. Comment appeared. Also you can see highlighted section on envelope to which this comment attached. (Note that if you unchecked all options in visibility window comment will be visible only to your mailbox.)
 
 .. image:: pic_comments/AddComment/AddCommentStep6.png
    :width: 600
