@@ -42,17 +42,36 @@ How to add comment
    :width: 600
    :align: center
 
-3. Write a comment in the window that appears and click on "Save" button.
+3. Write a comment in the window that appears.
 
 .. image:: pic_comments/AddComment/AddCommentStep3.png
    :width: 600
    :align: center
-
-4. Comment appeared. Also you can see highlighted section on envelope to which this comment attached.
+   
+4. Click on visibility link to select who will be able to see this comment.
 
 .. image:: pic_comments/AddComment/AddCommentStep4.png
    :width: 600
    :align: center
+   
+5. If you picked "Selected mailboxes" option you will need to add all desired mailboxes one by one in this windows.
+
+.. image:: pic_comments/AddComment/AddCommentStep5.png
+   :width: 600
+   :align: center
+
+6. Click Save in visibility windows and Save in comment window. Comment appeared. Also you can see highlighted section on envelope to which this comment attached. (Note that if you unchecked all options in visibility windows comment will be visible only to your mailbox).
+
+.. image:: pic_comments/AddComment/AddCommentStep6.png
+   :width: 600
+   :align: center
+   
+7. You can edit visibility level of your comment by clicking visibility link near it.
+
+.. image:: pic_comments/AddComment/AddCommentStep7.png
+   :width: 600
+   :align: center
+
 
 How to add a reply to a comment
 ===============================
