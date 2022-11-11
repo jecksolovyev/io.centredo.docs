@@ -4,48 +4,59 @@ Lookup Field
 
 .. toctree::
 
-Lookup field automatically pull value from field dictionary field from record.
-Lookup field available only when template has one or more dictionaries without allow custom value attribute.
+Lookup field automatically pulls value from related dictionary.
 
 Create Lookup Field
 ===================
 
 1. Navigate to https://staging.whitedoc.space/template/form/editor
 
-2. Drag and drop lookup-field to the document
+2. Drag and drop lookup field to the document (note that at least one dictionary field should be added to the document for you to be able to add lookup fields).
 
-3. Form should appear
+3. Next window should appear:
 
-4. Fill the name of the field (Should be unique per document)
+.. image:: pic_lookup/LookupCreationForm.png
+   :width: 600
+   :align: center
 
-5. Fill the placeholder for this field (Not mandatory, if you won't fill this field, name will be used as placeholder).
+4. Fill the "Name" attribute of the field (should be unique per document).
 
-6. Choose document from list of documents with dictionaries without allow custom value attribute.
+5. Fill the "Placeholder" attribute for this field (not mandatory, if you won't fill this field, name will be used as placeholder).
 
-7. Choose to with dictionary field lookup field will be applied by setting related to attribute.
+6. Select "Optional" attribute status for this field. If it is enabled value in the field can be left empty (note that if same value for related dictionary is enabled control will be locked in enabled state).
 
-8. Choose which column (from dictionary column) should use lookup field to set value.
+7. Select "Allow custom values" attribute status for this field. If it is enabled value in the field can be modified by hand instead of using only predefined values from dictionary.
 
-9. Click save.
+8. Select "Search" attribute status for this field. If it is enabled value in the field can be used for envelope search in mailbox.
 
-10. Field added
+9. Choose "Document" from the list of documents with dictionaries.
+
+10. Choose dictionary from "Related to" list of dictionaries for this field to refer to.
+
+11. Choose column from "Column name" list of columns for this field to refer to.
+
+12. Click on "Save" will add new lookup field.
 
 Edit Lookup Field
 =================
 
 1. Navigate to https://staging.whitedoc.space/template/form/editor
 
-2. Click on the lookup field in the document
+2. Click on the lookup field in the document.
 
-3. Edit field form should appear on the right side
+3. Edit field form should appear on the right side:
 
-4. Click on "Delete" button will delete field and close edit form
+.. image:: pic_lookup/LookupEditionForm.png
+   :width: 600
+   :align: center
 
-5. Click on Cancel will close edit form
+4. Click on "Delete" button will delete field and close edit form.
 
-6. You can change parameters the same way as described in "Create Lookup Field"
+5. Click on "Cancel" will close edit form.
 
-7. Click on "Save" will Save all the changes you mad and close edit form
+6. You can change parameters the same way as described in "Create Lookup Field".
+
+7. Click on "Save" will Save all the changes you made and close edit form.
 
 Lookup Field Template
 =====================
