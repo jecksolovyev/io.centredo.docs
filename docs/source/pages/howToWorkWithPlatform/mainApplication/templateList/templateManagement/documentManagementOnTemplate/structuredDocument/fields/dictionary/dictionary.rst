@@ -4,8 +4,8 @@ Dictionary field
 
 .. toctree::
 
-Dictionary is a list of records in a systematic form, e.g. list of employee(Name, Surname, Age, Address).
-Data from dictionary could be used in envelope:
+Dictionary is a list of records in a table form, e.g. list of employees (First name, Last name, Age, Address).
+Data from dictionary could be used in envelope.
 
 Create Dictionary Field
 =======================
@@ -61,13 +61,7 @@ Edit Dictionary Field
 
 7. Click on "Save" will Save all the changes you made and close edit form.
 
-Dictionary template field
-=========================
-To add dictionary field to template drag and drop dictionary field from the fields bar to the document. Select dictionary, receiver role and column of the dictionary.
-Also it's possible to set "Allow custom value" it allows to enter custom value on envelope stage (when receiver fill in the document).
-
-
-Dictionary envelope field
-=========================
-User need to select value from the list of records values. If allow custom value attribute is true - user can enter custom value.
-After value was set to field and processing flow was continued - value of dictionary field is blocked. Any updates in dictionary doesn't apply to this field.
+Dictionary Field in Envelope
+============================
+User has to select a value from drop-down menu. If "Allow custom values" attribute enabled user can enter custom values.
+After value was added to field and processing flow was continued value of dictionary field is blocked. Any updates in dictionary will not apply to this field.

@@ -4,7 +4,7 @@ Lookup Field
 
 .. toctree::
 
-Lookup field automatically pulls value from related dictionary.
+Lookup field automatically pulls a value from related dictionary.
 
 Create Lookup Field
 ===================
@@ -61,37 +61,37 @@ Edit Lookup Field
 Lookup Field Template
 =====================
 
-Lookup field at document can use dictionary field from any document in template if they are not inside table-field.
+Lookup field in the document can use dictionary field from any document in template if it is not inside table field.
 
-Lookup Inside Table-field
-=========================
+Lookup Inside Table fields
+==========================
 
-Lookup field inside table field can use only dictionary field from this table or dictionary field from any document in template.
-Lookup field inside table can't use dictionary from other table-field.
+Lookup field inside table field can use only dictionary field from the same table or dictionary field from any document in template.
+Lookup fields inside table can't use dictionary from other table fields.
 
 Missing Column At Lookup Field
 ==============================
 
-When lookup field use dictionary column that was deleted - he became invalid and template became invalid too.
-To fix lookup field need to select new column.
+When lookup field uses dictionary column that was deleted, it becomes invalid with the template itself.
+To fix this lookup field needs to be update with new existing column.
 
 No Access To Dictionary
 =======================
 
-When dictionary field has no access to dictionary template became invalid and field became invalid and lookup field that was related to this dictionary field became invalid too.
-To fix lookup field need to select new dictionary at dictionary field to which lookup was attached and set new column at every lookup field that was related to this dictionary field.
+When dictionary field has no access to dictionary it becomes invalid with all attached lookup fields and the template itself.
+To fix this lookup field needs to be update with new existing dictionary and column.
 
 Disabled Lookup Field
 =====================
 
-Lookup field is disabled when template hasn't have any dictionary field.
+Lookup field can not be added to document if no dictionary fields are added there prior to this.
 
 Deleting Dictionary Field
 =========================
 
-Deleting dictionary field isn't available when dictionary has lookup field that is related to him. Need to delete lookup field or set them related to other dictionary field first.
+Dictionary can not be deleted if it has lookup fields attached to it. To delete such dictionary you need to delete or reattach to other dictionary fields all related lookup fields.
 
-Lookup Field Envelope
-=====================
+Lookup Field in Envelope
+========================
 
-Lookup field disabled on envelope. For fill in lookup field need select dictionary value, when dictionary value selected all lookup fields which related to this dictionary field will be automatically fill. User can’t fill in lookup fields if he don’t have access to dictionary which used in dictionary field. User can fill in all lookup fields on envelope and save this envelope as a draft and send later. If somebody change dictionary(update records, delete column or delete dictionary) before user send envelope draft with lookup fields, user will observe error message with information about dictionary changes. If dictionary was deleted all lookup fields which related to this dictionary field will be highlighted by red color.
+Lookup field can not be filled manually unless it has "Allow custom values" attribute enabled. To fill in lookup field value in related dictionary field should be selected. When value in dictionary is selected all related lookup fields will be automatically filled. If related dictionary is updated before user sends envelope an error message with information about dictionary changes will be shown. If dictionary was deleted all lookup fields which relate to this dictionary field will be highlighted with red.
