@@ -4,22 +4,24 @@ Formula Field
 
 .. toctree::
 
-Dynamic Formula field has been added to the template page.
-There are functions available in the formula box:
+Dynamic formula field performs calculation based on arguments taken from other fields.
+Next functions are available for any argument fields in the document:
 
 1. SUM - argument summation
 2. PRODUCT - multiplication of arguments
 3. SUBTRACT - returns the difference of arguments
 4. DIVIDE - returns the quotient of arguments
 
-functions can only be applied to a field within a table:
+Next functions can only be applied to a field within a table:
 
-1. SUM table column - summing arguments in a dynamic table column
-2. COUNTA table column -returns  number of non-empty cells in a column
-3. MIN table column - returns the smallest number in a set of arguments
-4. MAX table column - returns the largest value in a set of arguments
+5. SUM table column - summing arguments in a dynamic table column
+6. COUNTA table column -returns  number of non-empty cells in a column
+7. MIN table column - returns the smallest number in a set of arguments
+8. MAX table column - returns the largest value in a set of arguments
 
-arguments can be: numeric, currency, dictionary field, lookup, duplicate, formula field and also the user can enter his own value
+Next fields can be used as arguments in the Formula: Number, Currency, Dictionary, Lookup and Duplicate. Formula field itself also can be used as other formula`s argument.
+
+Please note that if you use Dictionary, Lookup or Duplicate of any of this fields, their contents will be parsed as numbers. All symbols except numbers and last dot will be ignored in calculations. If there are several dots only last one will be considered as decimal place separator, other dots will also be ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
 Create Formula Field
 ====================
@@ -146,4 +148,4 @@ In order to apply the MIN/MAX table column function, you must repeat the followi
    :width: 600
    :align: center
 
-10. As a result, the field MIN table column formula - shows the minimum value and MAX table column function -  the maximum.
+10. As a result, the field MIN table column formula - shows the minimum value and MAX table column function - the maximum.
