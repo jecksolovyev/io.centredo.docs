@@ -10,7 +10,7 @@ Data from dictionary could be used in envelope.
 Create Dictionary Field
 =======================
 
-1. Navigate to https://staging.whitedoc.space/template/form/editor
+1. Navigate to https://staging.whitedoc.space/template/form/create
 
 2. Drag and drop dictionary field to the document.
 
@@ -24,7 +24,7 @@ Create Dictionary Field
 
 5. Select a role from "Role name" menu which will be filling this field.
 
-6. Fill the "Placeholder" attribute for this field (not mandatory, if you won't fill this field, name will be used as placeholder).
+6. Fill the "Placeholder" attribute for this field (not mandatory, if you don't fill this field, name will be used as placeholder).
 
 7. Select "Optional" attribute status for this field. If it is enabled value in the field can be left empty.
 
@@ -43,7 +43,7 @@ Create Dictionary Field
 Edit Dictionary Field
 =====================
 
-1. Navigate to https://staging.whitedoc.space/template/form/editor
+1. Navigate to https://staging.whitedoc.space/template/form/create
 
 2. Click on the dictionary field in the document.
 

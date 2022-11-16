@@ -9,7 +9,7 @@ Lookup field automatically pulls a value from related dictionary.
 Create Lookup Field
 ===================
 
-1. Navigate to https://staging.whitedoc.space/template/form/editor
+1. Navigate to https://staging.whitedoc.space/template/form/create
 
 2. Drag and drop lookup field to the document (note that at least one dictionary field should be added to the document for you to be able to add lookup fields).
 
@@ -21,7 +21,7 @@ Create Lookup Field
 
 4. Fill the "Name" attribute of the field (should be unique per document).
 
-5. Fill the "Placeholder" attribute for this field (not mandatory, if you won't fill this field, name will be used as placeholder).
+5. Fill the "Placeholder" attribute for this field (not mandatory, if you don't fill this field, name will be used as placeholder).
 
 6. Select "Optional" attribute status for this field. If it is enabled value in the field can be left empty (note that if same value for related dictionary is enabled control will be locked in enabled state).
 
@@ -40,7 +40,7 @@ Create Lookup Field
 Edit Lookup Field
 =================
 
-1. Navigate to https://staging.whitedoc.space/template/form/editor
+1. Navigate to https://staging.whitedoc.space/template/form/create
 
 2. Click on the lookup field in the document.
 
@@ -94,4 +94,4 @@ Dictionary can not be deleted if it has lookup fields attached to it. To delete 
 Lookup Field in Envelope
 ========================
 
-Lookup field can not be filled manually unless it has "Allow custom values" attribute enabled. To fill in lookup field value in related dictionary field should be selected. When value in dictionary is selected all related lookup fields will be automatically filled. If related dictionary is updated before user sends envelope an error message with information about dictionary changes will be shown. If dictionary was deleted all lookup fields which relate to this dictionary field will be highlighted with red.
+Lookup field can not be filled manually unless it has "Allow custom values" attribute enabled. To fill in lookup field, value in related dictionary field should be selected. When value in dictionary is selected all related lookup fields will be automatically filled. If related dictionary is updated before user sends envelope an error message with information about dictionary changes will be shown. If dictionary was deleted all lookup fields which relate to this dictionary field will be highlighted with red. If related Dictionary field has "Allow custom value" attribute enabled - Lookup field inherits this attribute and user will be able add custom data.
