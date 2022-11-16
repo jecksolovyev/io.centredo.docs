@@ -21,7 +21,7 @@ Next functions can only be applied to a field within a table:
 
 Next fields can be used as arguments in the Formula: Number, Currency, Dictionary, Lookup and Duplicate. Formula field itself also can be used as other formula`s argument.
 
-Please note that if you use Dictionary, Lookup or Duplicate of any of this fields, their contents will be parsed as numbers. All symbols except numbers and last dot will be ignored in calculations. If there are several dots only last one will be considered as decimal place separator, other dots will also be ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
+.. note:: **Please note!** that if you use Dictionary, Lookup or Duplicate of any of this fields, their contents will be parsed as numbers. All symbols except numbers and last dot will be ignored in calculations. If there are several dots only last one will be considered as decimal place separator, other dots will also be ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
 Create Formula Field
 ====================
