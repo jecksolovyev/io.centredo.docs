@@ -6,8 +6,7 @@ Electronic signature on template
 
 ---------
 
-Electronic signature it's a field with specific role relation which can be added to the document. You may add one electronic signature field to the one document
-for one signer role.
+Electronic signature is a field with specific role relation which can be added to the document. You may add one electronic signature field to the one document for one signer role.
 
 Electronic signature types
 ==========================
@@ -58,16 +57,17 @@ To use the electronic signature on the document you have to add signer role. You
 
 You can add EDS field to any document in envelope. To do this:
 
-1. Drag and drop the field to the document;
-2. Set unique field name;
-3. Select the role of the signer who has to set a signature;
-4. Set the placeholder if needed (this placeholder will be shown on the template/envelope);
-5. In case when you need only qualified electronic signature - you should specify "Qualified" attribute;
-6. Select checkbox TIN (Taxpayer Identification Number) if you want to specify TIN number of signer;
-    6.1 Checkbox TIN disabled if you don't have at least one required text, dictionary or lookup field at whole template;
-    6.2 After selecting checkbox you should select document where located your matching field and select field (field should be required and have type of text, dictionary or lookup).
+1. Drag and drop the field to the document
+2. Set unique field name
+3. Select the role of the signer who has to set a signature
+4. Set the placeholder if needed (this placeholder will be shown on the template/envelope instead of field name)
+5. If you expect only qualified electronic signature you should enable "Qualified" attribute
+6. If you expect a stamp in addition to the signature you should enable "Require stamp" attribute
+7. If you want to specify TIN number of signer you should select "TIN" checkbox (Taxpayer Identification Number)
+    7.1 "TIN" checkbox will be disabled if you don't have at least one required text, dictionary or lookup field in your template
+    7.2 After selecting the checkbox you should select document where your matching field is located and select field (field should be required and have type of text, dictionary or lookup)
 
-On the template new block above document appears. You will see the block "Required signatures" with signatures.
+You will see that new "Required signatures" block will appear above the document.
 
 .. image:: pic_digitalSignature/signatureOnTemplate.png
    :width: 400
