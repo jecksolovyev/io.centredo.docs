@@ -1,56 +1,56 @@
 **COMMON**,,
-1000,Undefined exception,"There is undefined and unpredictable exception. If it's happened, please, make a screenshot of the error and contact with support team to clarify and sole the issue."
+1000,Undefined exception,"There is undefined and unpredictable exception. If it's happened, please, make a screenshot of the error and contact support team to clarify and solve the issue."
 1001,Record not found,"Record with respective request parameter is not found in database. Please check your request, compare with documentation and send again"
-1002,XML Conversion error. {0},"XML conversion got an error. It can happen if we can't convert document using xslt conversion map and source to envelope xml structure. Please pay attention to the error explanation and particular row with error in the message"
-1003,Bad image data,"Image in request has been broken or couldn't be processed via system, please try to use another format or properties of the image"
-1004,Empty field in request,"You send is empty required field in request. Please check your request, compare with documentation and send again"
-1005,Too many requests,You have sent to many requests for particular endpoint from this particular use. Please wait 10 minutes and try again
-1006,Validation failed. {0},If any validation of the fields failed you get this error. In the data of the error you can find particular explanation of the validation error
-1007,Document has been already modified,Document has been already modified. Please request document again and change it again
-1008,Invalid XML. {0},"XML structure isn't valid, read error description to clarify details"
-1009,Verification code is absent,"Verification code in the request is missed. Please check your request, compare with documentation and send again"
-1010,Please try later. Files are generating at the moment,Files are generating at the moment. To generate files one more time please wait until file generated and try again
-1011,Unexpected content-type: {0},"Type of the uploaded document is incorrect and doesn't correspond to allowed. Allowed types are: csv, xls"
-1012,"Can't calculate file hash","Application can't calculate hash of the file you sent"
-1013,"Field '{0}' must be from {1} chars long",Entered quantity of symbols is less than minimal chars length allowed
+1002,XSLT translation error. {0},XSLT translation error. It happens when we cannot transform XML document using XSLT template and get an envelope xml structure. Please pay attention to the error details and a row.
+1003,Bad image data,"An image in the request couldn't be processed, use another format and/or properties of an image"
+1004,Empty value for required field,"You've sent an empty value for a required field. Please check your request parameters and send again"
+1005,Too many requests,"You've sent to many requests for particular endpoint and user. Please try again in 10 minutes"
+1006,Validation failed. {0},"You are going to get this error, if any validation rules of the fields failed. Please see the details of the error to find particular field and failed validation rule"
+1007,Document has been modified,Document has already been modified. Please request updated document and then change it
+1008,Invalid XML. {0},"XML structure is not valid, read error description to clarify details"
+1009,Verification code is absent,"Verification code in the request is missing. Please check request data, check documentation and resend"
+1010,Try again later. Files are generating at the moment,Files are generating at the moment. To generate files one more time please wait until this process if over and then try again
+1011,Unexpected content-type: {0},"Content-type of the uploaded document is incorrect or is not allowed. Allowed types are: CSV, XLS"
+1012,Cannot calculate file hash,Application cannot calculate hash of the file you sent
+1013,"Field '{0}' must be not less than {1} chars long",Entered quantity of symbols is less than minimal chars length allowed
 1014,"Field '{0}' must be less than {1} chars long",Entered quantity of symbols is bigger than allowed maximum chars length
-1015,"Field '{0}' must be from {1} to {2} chars long",Entered quantity of symbols should be in the interval of validation
+1015,"Field '{0}' must be from {1} to {2} chars long",Entered quantity of symbols should be within the interval
 1016,Unsupported locale: {0},Locale is not supported by the system
 1017,{0},Password validation occurred. Password should be more complex and contains Latin symbols in lower and upper cases and special symbols
 1018,Wrong timezone: {0},Timezone is not supported by the system
-1019,File is not ready for download,File you requested is not ready for download. Please wait some time and try again
+1019,File is not ready for download,File you requested is not ready for download yet. Please wait a minute and try again
 1020,Not valid filename: {0},Filename is not valid
-1021,File upload error: {0},"File can't be uploaded. Please pay attention to the explanation in the error message"
+1021,File upload error: {0},File cannot be uploaded. Please pay attention to the explanation in the error message
 1022,"Request header '{0}' required","Request header is required in this request. Please check your request, compare with documentation and send again"
-1023,"Request query parameter '{0}' required","Request query is required in this request. Please check your request, compare with documentation and send again"
+1023,"Request query parameter '{0}' required","Request parameter is required. Please check your request, compare with documentation and send again"
 1024,"Request body parameter '{0}' required","Request body is required in this request. Please check your request, compare with documentation and send again"
 1025,"Request path parameter '{0}' required","Request path parameter is required in this request. Please check your request, compare with documentation and send again"
 1026,Authentication error,"Some authentication error, please check logs"
-1027,Authentication token has been expired or revoked,Authentication token has been expired or revoked. To solve the issue authorized again
+1027,Authentication token has been expired or revoked,Authentication token has been expired or revoked. To solve the issue authorize once again
 1028,Standard Spring MVC exceptions: {0},One of the standard server exceptions has occurred. Please see error message and check the request data for mistakes
-1029,"File '{0}' exceeded max size: {1} > {2}",File size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
+1029,"File '{0}' exceeded max size: {1} > {2}",File size is bigger than the limit for upload. Please pay attention to max size on the error code and try to upload a file with proper size.
 1030,"File type mismatch for image '{0}'","Image file type is not correspond to allowed file types. Allowed file types: png, jpg, jpeg."
-1031,"Image '{0}' exceeded max size: {1}x{2}",Image size is bigger than limit for upload. Please pay attention to max size on the error code and try to upload file with less size.
-1032,Attachment {0} not found,Attachment with entered UUID has not found. Please check correctness of the entered value
-1033,"Attachment '{0}' is not in {1} format","Attachment can't be uploaded because of the wrong file format. Please use one of the allowed format from the list"
+1031,"Image '{0}' exceeded max size: {1}x{2}",Image size is bigger than the limit for upload. Please pay attention to max size on the error code and try to upload file with proper size.
+1032,Attachment {0} not found,Attachment with entered UUID was not found. Please check UUID
+1033,"Attachment '{0}' is not in {1} format",Attachment cannot be uploaded because of the wrong file format. Please use one of the allowed formats from the list
 1034,"Image source '{0}' is wrong","Image tag supports only 'data:' and 'image-uuid:' prefixes for source attribute"
 1035,"Hash attribute has to be specified for '{0}'",Hash attribute is required to sign the document
-1036,"Image hashes don't match for '{0}'",Check that hashes are correct for images
-1037,Password cannot be reused,Do not use previous passwords
-1038,Please accept Terms and Conditions and Privacy Policy,"Parameter agreed has to be 'true'. Please read Terms and Conditions and Privacy Policy."
-1039,Image {0} was uploaded by another mailbox {1},Image cannot be used in current mailbox
-1040,There must be 2 dates specified for a range,Range of date is incorrect. Correct range format is date/date in date format ISO 8601
+1036,"Image hashes do not match for '{0}'",Check that hashes are correct for the image
+1037,Password cannot be reused,Do not use previously used passwords
+1038,Please accept Terms and Conditions and Privacy Policy,Please read and accept Terms and Conditions and Privacy Policy.
+1039,Image {0} was uploaded by another mailbox {1},This image cannot be used in this mailbox
+1040,There must be 2 dates specified for a range,"Range field value is incorrect. Acceptable range format is date/date, and date must be ISO-8601"
 1041,Requested range out of bounds,Requested range out of bounds
-1042,Comment thread {0} was not found,Comment thread with entered UUID has not found. Please check correctness of the entered data
-1043,Access to comment thread {0} is not allowed,Access to comment thread with entered UUID is forbidden. Please check correctness of the entered data
-1044,Message with ID {0} in comment thread {1} was not found,No such message in comment thread. Please check correctness of the entered data
-1045,Main thread for document already exists,Please specify xpath and create a new thread
+1042,Comment thread {0} is not found,Comment thread with entered UUID was not found. Please check correctness of the entered data
+1043,Access to comment thread {0} is not allowed,Access to the comment thread with entered UUID is forbidden. Please check correctness of the entered data
+1044,Message with ID {0} in comment thread {1} was not found,No such message in the comment thread. Please check correctness of the entered data
+1045,Main thread for document already exists,Please specify XPath and create a new thread
 1046,Thread {0} is already resolved or deleted and cannot be changed,There is no possibility to update the thread
-1047,"Attachment '{0}' exceeded max name length: {1}",Attachment file name length is bigger than limit for upload. Please pay attention to max length on the error code and try to upload file with less length
+1047,"Attachment '{0}' exceeded max name length: {1}",Attachment file name length is bigger than the limit. Please pay attention to max length on the error code and try to upload file with less length
 1048,Password expired,Please renew the password
-1049,"To protect your account from hacking, we temporarily blocked the possibility of authorization. Wait {0} minute(s) or click ""Forgot password?""",Please wait and try later
-1050,Only one session is allowed. Please logout from another one,Additional session is blocked
-1051,IP address is blocked or not allowed,Please contact the platform/account administrator
+1049,"To protect your account from hacking, we temporarily blocked the possibility of authorization. Wait {0} minute(s) or click “Forgot password?”",Please wait a few minutes and try again
+1050,Only one session is allowed. Please log out from another one,Additional session is blocked
+1051,IP address is blocked,Please contact the platform/account administrator
 1052,Wrong IP or IP-range format for [{0}],Please fix IP format
 1053,Sub-service is unavailable: {0},There is an infrastructure problem. Please try later
 1054,Sub-service error with message: {0},There is an error on sub-service side
@@ -60,399 +60,410 @@
 1058,Shared category can only belong to shared category,Shared category can only belong to shared category
 1059,"'uuids' or 'searchParams' have to be specified separately","Please send 'uuids' or 'searchParams'"
 1060,"Image '{0}' is smaller than minimum size: {1}x{2}",Image size is smaller than limit for upload. Please pay attention to min size on the error code and try to upload file with larger size.
-1061,"The email address or password is incorrect. Try again or click ""Forgot password?"" to reset it.",Entered email or password is invalid
-1062,"The email address or password is incorrect. You have 1 attempt left. To avoid temporary blocking, click ""Forgot password?""",Entered email or password is invalid
-1063,{0},Request is rejected by system. Check the correctness
-1064,Please log in using SSO,Corporate user cannot register or log in with password
+1061,The email address or password is incorrect. Try again or click “Forgot password?” to reset it.,Entered email or password is invalid
+1062,"The email address or password is incorrect. You have 1 attempt left. To avoid temporary blocking, click “Forgot password?”",Entered email or password is invalid
+1063,{0},Request is rejected by the system
+1064,Please log in using SSO,Corporate user cannot register or log in using a password
+1065,Wrong code format,Please send a proper code from email
+1066,Field {0} cannot be empty,Please set the field value
+1068,Unsupported format {0},This format cannot be processed
+1069,Shared mailboxes must be specified for access level = shared,Check shared mailboxes are filled
 **USER/PROFILE**,,
-10001,User {0} not found,User with requested UUID has not found
+10001,User {0} not found,User with requested UUID was not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
-10003,Proof message is not valid,"Entered proof message is not valid. Proof message should be user email in upper case (f.e.: ""EMAIL@EXAMPLE.COM"")"
-10004,Such email already in use: {0},User with particular email has been already registered
-10005,User already activated,User has been already activated. To use system you have to authorized
-10006,Invitation is for another user,"Opened content doesn't belong to your particular user, change user to see content"
-10007,User notification {0} not found,There are no notifications for particular user
-10008,Email validation code not found or expired,Email validation code has not found or expired. Check correctness of entered code or re-send new one.
-10009,Invitation code not found or expired,Invitation  code has not found or expired. Check correctness of entered code or ask to re-send new one.
-10010,"Your invitation link has been expired, please confirm registration",Invitation code has been expired. Try to register in common way and confirm email.
-10011,Invitation not found or expired,"Invitation for particular user doesn't exist or expired"
-10012,Invitation Email is empty,"It's impossible to create invitation because of empty required email field"
+10003,Proof message is not valid,"Entered proof message is not valid. A proof message should be the user's email in upper case (f.e.: “EMAIL@EXAMPLE.COM”)"
+10004,Email already in use: {0},User with particular email has already been registered
+10005,User already activated,User has already been activated. To use the system you have to be authorized
+10006,Invitation is for another user,"Opened content doesn't belong to your particular user, log in with other credentials to be able to see the content"
+10007,User notification {0} is not found,There are no notifications for particular user
+10008,Email validation code not found or expired,Email validation code was not found or expired. Check correctness of entered code or resend with a new one.
+10009,Invitation code not found or expired,Invitation code was not found or expired. Check correctness of the entered code or ask to resend a new one.
+10010,"Your invitation link has been expired, please register now",Invitation code has been expired. Try to register and confirm your email the usual way
+10011,Invitation not found or expired,Invitation for particular user does not exist or expired
+10012,Invitation email is empty,"It's impossible to create invitation, email field is required"
 10013,No account provided for update,"Account option is missed in the request. Please check your request, compare with documentation and send again"
-10014,No permissions provided for update,"Permissions list is missed in the request. Please check your request, compare with documentation and send again"
-10015,"Wrong role '{0}' is used","Role is incorrect for particular request, please check that entered role UUID is existing"
-10016,"Color can't be null","Color in the request can't be null. Please use color format #FFFFFF"
+10014,No permissions provided for update,"Permissions list is missing in the request. Please check your request, compare with documentation and send again"
+10015,"Wrong role '{0}' is used","Role is incorrect for particular request, please check that entered role UUID exists"
 10017,"Color '{0}' has wrong format",Color in the request in wrong format. Please use color format #FFFFFF
-10018,User is already blocked,User has been already blocked
-10019,Bad ISO date: {0},"Format date is incorrect, please use ISO 8601 date formats"
-10020,Already invited,This user has been already invited to this entity
+10018,User is already blocked,User has already been blocked
+10019,Bad ISO date: {0},"Format date is incorrect, please use ISO-8601 date formats"
+10020,Already invited,This user has already been invited to this entity
 10021,Corporate user cannot delete himself,Only admin of account can delete corporate user
-10022,Corporate user cannot create new account,Corparate user is already assigned to account and it cannot be changed
-10023,User {0} is not corporate,Current action can be applied only for corporate user
-10024,"User '{0}' already has access to account/mailbox",This user has already has access to these entities
+10022,Corporate user cannot create new account,Corporate user is already assigned to an account and this cannot be changed
+10023,User {0} is not corporate,Current action can be applied only on a corporate user
+10024,"User '{0}' already has access to account/mailbox",This user already has the access to these entities
 10025,Wrong password,Old password is wrong. Please check correctness of entered password
-10026,User is inactive,User has not confirmed the email yet
-10027,User {0} is corporate,Current action can be applied only for not corporate user
-10028,ITN code has to be specified for company account,Please add missed property to request
+10026,User is inactive,User has not confirmed his email yet
+10027,User {0} is corporate,Current action can be applied only on non-corporate user
+10028,ITN code has to be specified for company account,Please add missing property to the request
 10029,Incorrect phone number,Phone number should be in international format
-10030,This endpoint can only be executed for user with expired password,Active user should use another authorized endpoint
-10031,User already exists,Email already registered in system
+10030,This endpoint can only be executed for user with expired password,"Active user should use another endpoint, please check documentation"
+10031,User already exists,Email already registered in the system
 10032,User is blocked,Ask your system administrator to unblock
+10033,Verification record expired,Please repeat operation
 **ACCOUNT**,,
-20001,Account {0} not found,Account with entered account UUID has not found. Please check request data
-20002,Account {0} deleted,Account with entered account UUID has been deleted.
-20004,Only one mailbox allowed,In this request only one mailbox is allowed
-20005,Role has no account,Account UUID is necessary parameter in request. Please enter valid account UUID to create role
-20006,Role {0} not found,Role with entered UUID in request has not found. Please check request data
-20007,Role with such name already exists,Role with particular name has already existed. Please enter new name or remove existing role
+20001,Account {0} not found,An account with entered UUID is not found. Please check request data
+20002,Account {0} deleted,Account with entered UUID has been deleted.
+20004,Only one mailbox allowed,This request allows only one mailbox
+20005,Role has no account,Account UUID parameter is required in a request. Please enter valid account UUID to create role
+20006,Role {0} not found,Role with entered UUID is not found. Please check request data
+20007,Role with such name already exists,Role with particular name is exist. Please enter new name or remove the existing role
 20008,No role permissions data found,"Role permissions data is required in this request. Please check request data, compare it with documentation and send again"
-20009,No role type found,"Role type isn't correct in request. Supported role types: Account, Mailbox and System. Please check request data, compare it with documentation and send again"
-20010,Unsupported permission set,"Permissions in the request aren't correct. Please check request data, compare it with documentation and send again"
-20011,"Parent category shouldn't have access level higher than subordinated","Parent category shouldn't have access level higher than subordinated"
-20012,"Account '{0}' has no other owners","Account with entered UUID doesn't have other owners. Add at least one more owner ot Account and do the action again"
-20013,Account domain name not found,Account domain name empty in create domain request body
-20014,Account domain name size exceeded maximum size 256,Account domain name exceeded max allowed size (256 characters) in create domain request body
-20015,"Can't resolve domain '{0}'","Domain can't be resolved to IP. Possible that it is not exists"
-20016,"Can't use domain '{0}'",Domain already verified and used by another account or already added to current account
+20009,No role type found,"Role type is incorrect in the request. Supported role types: Account, Mailbox and System. Please check request data, compare it with documentation and send again"
+20010,Unsupported permission set,"Permissions in the request are not correct. Please check request data, compare it with documentation and send again"
+20011,Parent category should not have access level higher than subordinated,Parent category should not have access level higher than subordinated
+20012,"Account '{0}' has no other owners",Account with entered UUID does not have other owners. Add at least one more owner ot Account and repeat the action
+20013,Account domain name not found,Account domain name is empty in the create domain request body
+20014,Account domain name size exceeded maximum size 256,Account domain name exceeded max allowed size (256 characters) in the create domain request body
+20015,"Cannot resolve domain '{0}'","Domain cannot be resolved to IP. Looks like it doesn't exist"
+20016,"Cannot use domain '{0}'",Domain already verified and used by another account or already added to current account
 20017,"Domain '{0}' not found",Domain not found in database by domainUuid
 20018,Unknown domain verification method,Domain verification method was not found in request body during domain verify request
-20019,Domain already verified,"Domain already verified and verify info can't be changed"
-20020,Only INACTIVE domains can be activated,"Can't activate unverified or already activated domain"
-20021,Only ACTIVE domains can be deactivated,"Can't deactivate unverified or already deactivated domain"
+20019,Domain already verified,Domain already verified and verification info cannot be changed
+20020,Only INACTIVE domains can be activated,Cannot activate unverified or already activated domain
+20021,Only ACTIVE domains can be deactivated,Cannot deactivate unverified or already deactivated domain
 20022,Domain verification expired,Domain verification expired. Please use verify method to renew verification
-20023,Domain verify info not found,Domain verify info not found during domain confirmation or domain check
+20023,Domain verify info not found,Domain verify info was not found during domain confirmation or domain check
 20024,"Domain '{0}' already verified by another account","Domain has pass verification, but it was already added and verified by another account."
-20025,"Domain and account don't match","Try to access domain, which is not belongs to current account"
+20025,Domain and account do not match,"You're trying to access domain, which is not belongs to current account"
 20026,The user policy for the account should be stricter than the global one.,Please check the user global policies /api/v1/settings
 20027,"Domain '{0}' has to be verified and active",Domain is not active during corporate user creation
-20028,Invitation vs existing permission conflict,User has already have access to the entity and cannot be invited any more to this entity
-20029,Invitations roles & permissions empty,"Roles or permissions are missed in the request. Please check your request, compare with documentation and send again"
-20030,"Account '{0}' has no verified domains",Account has no any verified domains when required
-20031,Error during XLSX generation,Xlsx file generation error
-20032,"User's sheet not found",Corporate import excel file has no sheet with users
+20028,Invitation permission conflict,User has already had access to the entity and cannot be invited anymore to this entity
+20029,Invitations roles or permissions are empty,"Roles or permissions are missing in the request. Please check your request, compare with documentation and send again"
+20030,"Account '{0}' has no verified domains",Account has no verified domains
+20031,Error during XLSX generation,Excel file generation error
+20032,Users not found,Corporate import Excel file has no sheet with users
 20033,Duplicated user {0},Duplicated user email in corporate users import file
-20034,Wrong account uuid {0} on account users sheet,Wrong account uuid found on account users sheet
+20034,Wrong account UUID {0} on account users sheet,Wrong account UUID found on account users sheet
 20035,Cell A1 not found on account users sheet,Cell A1 not found on account users sheet
 20036,Mailbox {0} not belongs to account or not exists,Mailbox not belongs to account or not exists
-20037,Duplicated mailbox {0} sheet found,Found two sheets with same mailbox uuid
+20037,Duplicated mailbox {0} sheet found,"Found more than one sheet with same mailbox UUID, while it must be just one"
 20038,Cell A1 not found on mailbox users sheet,Cell A1 not found on mailbox users sheet
-20039,Undefined user {0} found,"Found user email not listed on user's sheet"
+20039,Undefined user {0} found,"Found user email which is not listed on user's sheet"
 20040,Listed roles error for user {0},Listed role(s) not exists or belongs to another account
 20041,Listed permissions error for user {0},Listed permission(s) not exists
-20042,"Can't open file as a spreadsheet",Uploaded file not a valid XLSX binary
-20043,"Role {0} can't be deleted because it assigned to users or invitations",Role is used and assigned to users or invitations
-20044,The sum of letters of different types cannot be greater than the maximum length,Please update password policy with correct values
-20045,"User doesn't belong to the account",Listed user(s) belongs to another account
+20042,Cannot open file as a spreadsheet,"Uploaded file isn't a valid Excel format"
+20043,Role {0} cannot be deleted because it is assigned to users or invitations,Role is in use and assigned to users or invitations
+20044,Total number of chars cannot be greater than the maximum length set,Please update password policy with correct values
+20045,User does not belong to the account,Listed user(s) belongs to another account
 20046,"SSO Identity Provider '{0}' not found",SSO Identity Provider is absent in database
 20047,Metadata URL or XML have to be specified separately,Please enter only URL or XML
-20048,Metadata loading/parsing error,Please check URL or XML
-20049,"IdP and account don't match","Try to access IdP, which is not belongs to current account"
+20048,Metadata loading/parsing error,Metadata cannot be loaded or parsed without an error. Please check URL or XML
+20049,IdP and account do not match,"You're trying to access IdP, which is not belongs to current account"
 20050,Domain does not exist or is not active,Please activate domain
-20051,"SSO Identity Provider not found for domain '{0}'",Please set the IdP for domain
-20052,"SSO Identity Provider '{0}' is in use for domain and cannot be deleted",Please un-assign IdP
-20053,"SSO Identity Provider '{0}' has to be unique in the system",Please check metadata
+20051,"SSO Identity Provider not found for domain '{0}'",SSO Identity Provider not found for the domain. Please set an IdP
+20052,"SSO Identity Provider '{0}' is in use for domain and cannot be deleted",Please un-assign IdP. SSO Identity Provider is in use for the domain and cannot be deleted
+20053,"SSO Identity Provider '{0}' has to be unique in the system",Please check metadata. SSO Identity Provider has to be unique in the system
+20054,Street name must be between 1 and 200 chars long,Street name should be between 1 and 200 chars long
+20055,City name must be between 1 and 200 chars long,City name should be between 1 and 200 chars long
+20056,Region name must be between 1 and 200 chars long,Region name should be between 1 and 200 chars long
+20057,Country name must be between 1 and 100 chars long,Country name should be between 1 and 100 chars long
+20058,Zip code must be between 1 and 10 chars long,Zip code should be between 1 and 10 chars long
+20059,Formatted address must be between 1 and 300 chars long,Formatted address should be between 1 and 300 chars long
+20060,Account billing address not found,"Account billing address not found, please create new one"
 **MAILBOX**,,
-30001,Mailbox {0} not found,"Entered mailbox couldn't be found in the system"
+30001,Mailbox {0} not found,Entered mailbox could not be found in the system
 30002,Mailbox {0} deleted,Mailbox has been deleted. Please use active mailbox.
-30003,"Mailbox name can't be empty","Mailbox name shouldn't be empty. It should contain at least one symbol"
-30004,Mailbox name size exceeded 256,Mailbox mane could be longer than 256 symbols
-30005,"Mailbox Alias name can't be empty","Mailbox alias name shouldn't be empty. It should contain at least three symbols"
-30006,Mailbox Alias name size exceeded maximum size,"Mailbox alias name shouldn't be longer than 256 symbols"
-30007,Alias not found or attached to other mailbox,Alias you have tried to delete has not found or related to another mailbox
-30008,Contact {0} not found,"Category with UUID you entered doesn't exist or has not found"
-30010,Category {0} not found,"Category with ID you entered doesn't exist or has not found"
-30011,Invalid parentId value,"ID of parent category isn't valid"
-30012,Alias already exists,Alias with entered name has been already existed
-30013,Empty category id,Category ID is empty in request. Please enter required parameter category ID/
-30014,"Can't change category access to official","It's impossible to change category access to official. Official categories can create only system user."
-30015,Category already exists,Category with entered ID has been already existed
-30016,Mailbox {0} for another account,"Mailbox doesn't belong to this account. Please check your request and be sure that mailbox you want to invite belong to this account"
-30017,Mailbox {0} has no other owners,"Mailbox doesn't have another owner and can't be left"
-30018,Sender mailbox not found,"Mailbox UUID of Sender has not found, please check correctness of request"
-30019,Mailbox UUID is empty,"Mailbox UUID couldn't be empty"
+30003,Mailbox name cannot be empty,Mailbox name should not be empty. It should contain at least 1 symbol
+30004,Mailbox name length exceeded maximum size,"Mailbox name length couldn't be more than 256 symbols"
+30005,Mailbox alias cannot be empty,Mailbox alias name should not be empty. It should contain at least 3 symbols
+30006,Mailbox alias length exceeded maximum size,"Mailbox alias name length couldn't be more than 256 symbols"
+30007,Alias not found or attached to another mailbox,Alias you have tried to delete was not found or attached to another mailbox
+30008,Category {0} not found,"Category with UUID you entered doesn't exist or was not found"
+30010,Category {0} not found,"Category with UUID you entered doesn't exist or was not found"
+30011,Invalid parentId value,ID of parent category is not valid
+30012,Alias already exists,Alias with entered name is exist
+30013,Empty category ID,Category ID is empty in request. Please enter required parameter
+30014,Cannot change category access to official,"It's impossible to change category access to official. Official categories may be created only by the system user."
+30015,Category already exists,Category with entered UUID exists
+30016,"Mailbox {0} doesn't belong to the account",Mailbox does not belong to this account. Please check your request and ensure that a mailbox you want to invite belongs to the account
+30017,Mailbox {0} has no other owners,Mailbox does not have another owner and cannot be left
+30018,Sender mailbox not found,"Mailbox UUID of Sender was not found, please check correctness of request"
+30019,Mailbox UUID is empty,Mailbox UUID should not be empty
 30020,Mailbox UUID is invalid or empty,Mailbox UUID is invalid or empty. Please send valid request with valid Mailbox UUID
-30021,Email is forbidden for alias name,Please do not use email as an alias name to avoid misunderstandings
+30021,Email is forbidden for alias name,Please do not use emails as an alias name to avoid misunderstandings
 **TEMPLATE**,,
-40001,Document {0} not found,Document with entered ID has not found. Please check correctness of the entered ID
-40002,Template {0} is archived,"Template with entered ID is archived. You can't use archived templates."
-40003,Template {0} not found,Template with entered UUID has not found. Please check correctness of the entered UUID
+40001,Document {0} not found,Document with entered UUID was not found. Please check correctness of the entered UUID
+40002,Template {0} is archived,Template with entered UUID is archived. You cannot use archived templates.
+40003,Template {0} not found,Template with entered UUID was not found. Please check correctness of the entered UUID
 40004,Template Data {0} not found,"Template data is not found in storage. Please check your request, compare with documentation and send again"
 40005,Template Data not found for template {0},"Template data is not found in storage. Please check your request, compare with documentation and send again"
 40006,Template must have access level equal or wider than category access level,Template access level has to be equal or bigger than category access level
-40007,"Template 'name' is mandatory and must be from 3 till 100 characters long",Template name is mandatory and must be from 3 till 100 characters long in request
-40008,"Template 'description' is mandatory and must be from 3 till 255 characters long",Template description is mandatory and must be from 3 till 255 characters long in request
-40009,Must have other roles except sender,Template has to have at least one another role except sender
-40010,Must be only 1 sender,Template should contain only one role with type sender
-40011,First role must be sender,First role in the template flow should be sender
-40012,Must be at least 2 roles,"Template has to have at least two roles, one sender is required and another one recipient or signer"
-40013,"Role '{0}' has no fields assigned","Role in the template doesn't have assigned fields. Please add fields with assigned to this role or make this role as a copy"
-40014,Notification must be earlier than expiration,Please set expire.notifyIn < expire.after
-40015,Signer roles without signatures: {0},"Signer role doesn't have signature (EDS) field related to him in the template. Please add one or remove signer role"
+40009,Must have other roles except the sender,Template has to have at least one another role except sender
+40010,Must be only 1 sender,Template should contain only one role with type Sender
+40011,First role must be Sender,First role in the template flow should be sender
+40012,Must be at least 2 roles,"Template has to have at least 2 roles, first required to be dedicated for Sender and another one for Recipient or Signer"
+40013,"Role '{0}' has no fields assigned","Role in the template doesn't have assigned fields. Please add fields with assigned to this role or make this role a Copy"
+40014,Notification must be earlier than expiration,"If an envelope expires in 3 days, we can't notify on a 5th day. Please set expire.notifyIn < expire.after"
+40015,Signer roles without signature: {0},Signer role does not have signature field related to him in the template. Please add one or remove Signer role
 40016,Following fields assigned on non-existing roles: {0},The fields assigned to non-existing roles. Please re-assign fields to existing roles or remove fields
-40017,Following roles has no fields assigned: {0},"Role with particular ID doesn't have assigned fields in the documents. Please add fields, remove roles ro set role as a copy"
+40017,Following roles has no fields assigned: {0},"Role with particular ID doesn't have assigned fields in the documents. Please add fields, remove roles or make this role a Copy"
 40018,"Template validation error in document '{0}' lookup '{1}'. Related field '{2}' not found in document fields","Lookup field doesn't have related dictionary field in the document. Please add dictionary field to the document or remove lookup field"
-40019,"Template validation error in document '{0}' lookup '{1}'. Related field can't be used as lookup source","Lookup field doesn't have related source in the dictionary. Please check availability of the dictionary/dictionary record or remove lookup field"
+40019,"Template validation error in document '{0}' lookup '{1}'. Related field cannot be used as lookup source","Lookup field doesn't have related source in the dictionary. Please check availability of the dictionary/dictionary record or remove lookup field"
 40020,Duplicated document ids: {0},Document IDs are duplicated in the template. Document IDs should be unique inside template
-40021,Duplicated document names: {0},Document name are duplicated in the template. Document names should be unique inside template
-40022,"Field '{0}' has min value > max value","Entered values of the min value is bigger than max value. It's impossible to set this parameters for field."
+40021,Duplicated document names: {0},Document name are duplicated within the template. Document names must be unique within the template
+40022,"Field '{0}' has min value > max value","Entered values of the min value is bigger than max value. It's impossible to set these parameters for field."
 40023,"Field '{0}' has precision value larger than allowed {1}",Entered precision value for the field is bigger than allowed for particular type of the field
-40024,Not valid template subject: {0},"Template subject contains invalid symbols. Please be sure that you don't use one of them: [\\/:""*?<>|\p{C}]+"
-40025,Template {0} already deleted,Tempalte has been deleted and could be used to envelope creation
-40026,Empty template data,Tempalte data parameter is empty. Please use valid structure of the request
-40027,Not valid document id: {0},Document ID is not valid
-40028,Not valid document title: {0},"Document title contains invalid symbols. Please be sure that you don't use one of them: [\\/:""*?<>|\p{C}]+"
-40029,"At least one non-optional field required in a table '{0}'",Table field has to have at least one non-optional field inside and also this at least one non-optional field assigned to the table owner
-40030,Dynamic table head not found. Table name: {0},"Table structure isn't correct. Table should contains head."
-40031,Dynamic table head row not found. Table name: {0},"Table structure isn't correct. Table should contain only one head row."
-40032,Dynamic table head row columns not found. Table name: {0},"Table structure isn't correct. Table should contain columns in the structure."
-40033,Dynamic table inside another table is forbidden. Parent table name: {0},"It's impossible to set table inside another table"
-40034,Dynamic table body not found. Table name: {0},"Table structure isn't correct. Table should contains body."
-40035,Illegal style attribute: {0},Table attribute is illegal. Allowed attributes for table: margin
-40036,"Field '{0}' assigned to wrong role","Field assigned to role who can't fill data. Restricted roles are Signer and Copy"
+40025,Template {0} already deleted,Template has been deleted and cannot be used to envelope creation
+40026,Empty template data,Template data parameter is empty. Please use valid structure of the request
+40029,"At least one non-optional field required in a table '{0}'",At least one table field has to have non-optional and also this field must be assigned to the table owner
+40030,Dynamic table head not found. Table name: {0},Table structure is not correct. Table should contain head.
+40031,Dynamic table head row not found. Table name: {0},Table structure is not correct. Table should contain only one head row.
+40032,Dynamic table head row columns not found. Table name: {0},Table structure is not correct. Table should contain columns in the structure.
+40033,Dynamic table inside another table is forbidden. Parent table name: {0},"It's impossible to have dynamic table inside other dynamic table"
+40034,Dynamic table body not found. Table name: {0},Table structure is not correct. Table should contain body.
+40035,Wrong style attribute: {0},Table attribute is forbidden. Allowed attributes for table: margin
+40036,"Field '{0}' assigned to wrong role",Field assigned to a role which cannot fill data. Restricted roles are Signer and Copy
 40037,"Template validation error in document '{0}' field has incorrect name: '{1}'","Fields in the template shouldn't contain spaces or special symbols. Please use names such as name, name1, name_1"
-40038,No iterable row in the iterable table!,Table should contain at least on row
-40039,Signature assigned to not signer role {0},"Signature field is assigned to the role which is different from signer, please re-assign the field or remove signature field"
-40040,Duplicated signature name in document {0},"Names of the signatures field are duplicated. It's necessary than for one document should be unique names of the fields"
+40038,No rows found,Table should contain at least 1 row
+40039,Signature assigned to not Signer role {0},"Signature field is assigned to the role which is different from Signer, please reassign the field or remove it"
+40040,Duplicated signature name in document {0},Names of the signature fields are duplicated. A document must have unique names of the fields
 40041,"Missed document info section, document id: {0}","Structure of the template data isn't correct. Please add info sections to the document structure"
 40042,Too much signatures per role {0},Signature role can has one signature field per one document.
 40043,Too many fields in document,External document can contain only one attachment field
 40044,"Unexpected field type '{0}'","Type of the entered field is not supported. Supported types of fields: text, number, money, datetime, select-dictionary, yesno, attachment"
-40045,Unexpected document body content: {0},"Only one type of field ""attachment"" is allowed for external document"
+40045,Unexpected document body content: {0},Only one type of field “attachment” is allowed for external document
 40046,Dynamic table name not found,Name of the dynamic table is missed
 40047,Dynamic table roleId not found,"Table field doesn't have assigned role"
-40048,Template has no signatures,"Documents inside template doesn't have signatures field, but has signer roles. Please add signatures fields or remove signers role and try again"
-40049,Signature by role id was not found,"Signature field doesn't have role with respective role UUID. Please add signer role or remove signature field and try again"
-40050,"Can't change template access to official","Template access level couldn't be changed to the official access level. Only system user can change access level to the official"
+40048,Template has no signatures,"Documents inside template doesn't have signatures field, but has a Signer role. Please add signatures fields or remove the Signer role and try again"
+40049,Signature by role UUID was not found,"Signature field doesn't have role with respective role UUID. Please add a Signer role or remove a signature field and try again"
+40050,Cannot change template access to official,"Template access level couldn't be changed to the official access level. Only system user can change access level to the official"
 40051,Template {0} mismatch version {1},Template UUID and template version mismatch. Please check correctness of the template version and template content
-40052,Template role {0} not found,Xml template has no role with id
+40052,Template role {0} not found,Template has no role with this UUID
 40053,"Template's signature '{0}' must have both ITN fields filled",Please fill both itnDocumentId and itnFieldName or none of them
 40054,"ITN field '{0}' was not found for signature '{1}'",Check that document has proper ITN field assigned for signature
-40055,"ITN field '{0}' has wrong type or place in document","Check that ITN field is one of (text field, lookup, select-dictionary), not optional, not in the table"
-40056,No access to template {0},Xml template has no role with id
+40055,"ITN field '{0}' has wrong type or place in document","Check that ITN field is one of (text field, lookup, select-dictionary), not optional, and not in the table"
+40056,No access to template {0},Template has no role with UUID
 40057,Parent of duplicate field {0} was not found,Duplicate field does not have a parent field in the template
-40058,"'relatedTo' property cannot be empty for duplicate field",Fill property with proper value
-40059,Unsupportable type {0} of parent field for duplicate {1},This kind of type is not allowed for duplicate parent field
-40060,Missing role order for manual flow,Some role has no order when flow has manual type
-40061,All roles with same order,All roles with same order in template flow
-40062,Role {0} should be ordered after {1},Wrong roles manual order
-40063,"Field name contains invalid characters: '{0}'",Field name is empty or contains spaces on start or end
-40064,"Signature name contains invalid characters: '{0}'",Signature name is empty or contains spaces on start or end
+40058,"'relatedTo' property cannot be empty for Duplicate field",Fill property with proper value
+40059,Unsupportable type {0} of parent field for Duplicate {1},This kind of type is not allowed for Duplicate parent field
+40060,Missing role order,A role has no order set while template flow set to manual ordering
+40061,All roles have same order,All roles with same order in template flow
+40062,Role {0} should be ordered after {1},Wrong template flow role order set
 40065,Duplicated field name: {0},Duplicated field name
-40066,Category or onе of subcategories is not empty,"There is active template if category or one of it's subcategories"
-40067,"MoveTo category can't be subordinated of the category to delete","It's impossible to move category inside category you want to delete"
-40068,Template has roles with empty ids,Template syntax error. Please check roles ids and make them not empty
-40069,Template has roles with same id: {0},Template syntax error. Please check roles ids and make them unique
-40070,"Can't share template to yourself","Creator's mailbox should not be in sharedTo list"
+40066,Category or one of subcategories is not empty,There is active template in the category or one of its subcategories
+40067,Cannot move to this category,"It's impossible to move a category inside the category you're about to delete"
+40069,Template has roles with same ID: {0},Template syntax error. Please check roles IDs and make them unique
+40070,Cannot share template to yourself,"Creator's mailbox should not be in sharedTo list"
 40071,Only shared categories can be assigned to shared template,Only shared categories can be assigned to shared template
-40072,"Field '{0}' can't be searchable","Supported types of fields that can be searchable: text, number, money, datetime, select-dictionary, duplicate, lookup"
+40072,"Field '{0}' cannot be searchable","Supported types of fields that can be searchable: text, number, money, datetime, select-dictionary, duplicate, lookup"
 40073,"Field '{0}' from the formula '{1}' was not found",Please check all fields in the formula
 40074,"Wrong formula with name '{0}'. Check supported operations",Please check the formula
-40075,Recursive call in formulas,Please check the formulas
+40075,Recursion found in formulas,Please check the formulas
+40076,Stamp is not supported,Please do not use stamps
 **ENVELOPE**,,
-50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with valid content
+50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with a valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
 50003,"Value of '{0}' should be less than {1}",Entered value in the field is bigger than maximum value. Please enter valid value
-50004,"Expected value with precision = {0} for field '{1}'",Precision of the entered value should be bigger than valid precision. Please pay attention to the settings of the field
-50005,Empty signatures list,Signatures list is empty on envelope. Please add signatures block before send request
-50006,"Unexpected value '{0}' for field '{1}'. Allowed: {2},{3}.","Entered value doesn't correspond to one of the allowed values. Please look at properties of the field to clarify allowed values"
-50007,Not all roles has mailboxUuid set properly,"This error happens if some role doesn't have valid mailbox uuid on the envelope"
-50008,Not all roles has id set properly,"This error happens if some role doesn't have valid role id on the envelope"
-50009,Not valid envelope subject: {0},"Subject of the envelope is empty or invalid. Subject of the envelope shouldn't have restricted symbols: [\\/:""*?<>|\p{C}]+"
-50010,"There is mailbox predefined in template for role '{0}' and can't be changed","Mailbox UUID is predefined for particular role on the template and can't be changed"
-50011,Envelope {0} not found,Envelope with entered UUID has not found. Please check correctness of the entered data
-50012,Xml Envelope templateUuid or templateVersion is required,template UUID or template version UUID is required to this request
+50004,"Expected value with precision = {0} for field '{1}'",Precision of the entered value should be higher than minimal precision. Please pay attention to the settings of the field
+50005,Empty signatures list,Signatures list is empty on the envelope. Please add signatures block before send request
+50006,"Unexpected value '{0}' for field '{1}'. Allowed: {2},{3}.",Entered value does not correspond to one of the allowed values. Please look at properties of the field to clarify allowed values
+50007,Not all roles has mailboxUuid set properly,"This error happens if some role doesn't have valid mailbox UUID on the envelope"
+50008,Not all roles has ID set properly,"This error happens if some role doesn't have valid role ID on the envelope"
+50009,Not valid envelope subject: {0},Subject of the envelope is empty or invalid. Subject of the envelope should not have restricted symbols: [\/:”*?<>|p{C}]+
+50010,"There is mailbox predefined in template for role '{0}' and cannot be changed",Mailbox UUID is predefined for particular role on the template and cannot be changed
+50011,Envelope {0} not found,Envelope with entered UUID was not found. Please check correctness of the entered data
+50012,Envelope templateUuid or templateVersion is required,Template UUID or template version UUID is required to this request
 50013,Generated envelope has different templateUuid,Generated envelope has different template UUID in the envelope data or in the parameter of the request
 50014,Generated envelope has different versionUuid,Generated envelope has different template version UUID in the envelope data or in the parameter of the request
-50015,"Invalid value '{0}' of field '{1}', expected '{2}'","Entered value doesn't correspond to the date format. Please enter value in date format YYYY-MM-DD"
+50015,"Invalid value '{0}' of field '{1}', expected '{2}'",Entered value does not correspond to the date format. Please enter value in date format YYYY-MM-DD
 50016,"Envelope document with ID '{0}' was not found in template",Document in envelope has wrong ID
-50017,Envelope document {0} not found in XML structure,Document has not found in XML structure of the envelope
-50018,Envelope sender not found,Sender has not found in XML structure of the envelope
-50019,Compiled document {0} not found in file storage,Document which has been compiled has not found in the file storage. Try to regenerate document
-50020,Label {0} not found,Label with particular UUID has not found
+50017,Envelope document {0} not found in XML structure,Document was not found in XML structure of the envelope
+50018,Envelope sender not found,Sender was not found in XML structure of the envelope
+50019,Compiled document {0} not found in file storage,Document which has been compiled was not found in the file storage. Try to regenerate document
+50020,Label {0} not found,Label with particular UUID was not found
 50021,Envelope attachment field not found in document {0},External document attachment is not found in the document. Please check your request upload document and send again
-50022,Duplicated field name: {0},"Name of the fields are duplicated. Please change the name of the field, because duplicated name if forbidden"
-50023,Table should have at least one row,Table should have at least on row
-50024,Signature {0} made with not a stamp key in document {1},"It's impossible to set stamp on the document without stamp key. To set stamp please use key with stamp option"
-50025,This is no active signer role in envelope at the moment,"It's not time to sign anything"
-50026,Total envelope attachments size exceeded allowed,Attachments size uploaded to the envelope is exceeded allowed size value
-50027,Duplicated attachment ids: {0},Attahcment IDs are duplicated in the document. Attachment IDs should be unique
-50028,Lookup source not found,Source of the lookup field has not found. Please check that dictionary or value in the dictionary still available
-50029,"Lookup value doesn't match","Value of the lookup field in request doesn't match to value in the dictionary. Please check your request, compare with dictionary and send again"
+50022,Duplicated field name: {0},"Name of the fields are duplicated. Please change the name of the field, because duplicated name is forbidden"
+50023,Table should have at least 1 row,Table should have at least 1 row
+50024,Signature {0} in document {1} is made using not a stamp key,"It's impossible to set stamp on the document without using a stamp key. To set stamp please use key with stamp option"
+50025,This is no active Signer role in envelope at the moment,"It's not a time to sign anything"
+50026,Cumulative envelope attachments size exceeded limit,Cumulative attachments size uploaded to the envelope is exceeded allowed size limit
+50027,Duplicated attachment IDs: {0},Attachment IDs are duplicated in the document. Attachment IDs should be unique
+50028,Lookup source not found,Source of the lookup field was not found. Please check that dictionary or value in the dictionary still available
+50029,Lookup value does not match,"Value of the lookup field in request does not match to value in the dictionary. Please check your request, compare with dictionary and send again"
 50030,"Invalid value '{0}' for number value of field '{1}'",Invalid format of value has been entered to the number field. Number field accepts only numeric values
-50031,There is no need to sign the document {0},"There is no signature for particular mailbox or it's not turn of this mailbox for signing"
+50031,There is no need to sign the document {0},"There is no signature required from particular mailbox, or it was not the right step of the signing process"
 50032,"There is a validation error for signature with type '{0}' and message: {1}",Please check signature data in the request
 50033,No XML data for envelope,Please check envelope XML data in the request
 50034,"Attachment '{0}' file type mismatch","Attachment file type is not correspond to allowed file types. Allowed file types: pdf, doc, docx, xls, xlsx, xml, dbf, txt, rtf, png, jpg, jpeg, zip. Allowed file types can be minimized according to field settings in template."
-50035,The mailbox no longer has access to envelope,The access to the envelope has been revoked
-50036,"Can't archive envelope in not final status: {0}","It's impossible to archive envelope if it's not in final status, such as COMPLETED, CANCELLED or EXPIRED"
-50037,"Bad base64 value of field '{0}'","Binary file is valid, please check that file you try to send in base64 format."
+50035,Mailbox no longer has access to envelope,The access to the envelope has been revoked
+50036,Cannot archive envelope which is not in a final status: {0},"It's impossible to archive an envelope if it's not in a final status, such as COMPLETED, CANCELLED or EXPIRED"
+50037,"Bad base64 value of field '{0}'","Binary data is invalid, please check that file you're trying to send properly encoded in BASE64"
 50038,"Expected '{0}' image type for field '{1}'",Image type format is incorrect. Please pay attention to the file format in error code and use respective file format to this field.
-50039,Maximum expected image size is {0} x {1},"Image size doesn't correspond to maximum values of the image size. Please use image with size less than maximum values. Maximum values of size you can watch on error message."
-50040,E-ink is not filled properly,"Image of the E-ink signature is not correct, please check that image has at least 15px of the painted area"
-50041,Attachment {0} file not found,Attachment with entered UUID has not found. Please check correctness of the entered value
-50042,File {0} was not found for envelope {1},File with entered UUID has not found in the entered envelope. Please check correctness of the entered values
+50039,Maximum expected image size is {0} x {1},Image size does not fit into maximum width and height limits. Please use image with size less than maximum values.
+50040,Simple electronic signature is not created,"Image of the SES is not correct, please check that image has at least 15px of the painted area"
+50041,Attachment {0} file not found,Attachment with entered UUID was not found. Please check correctness of the entered value
+50042,File {0} was not found for envelope {1},File with entered UUID was not found in the entered envelope. Please check correctness of the entered values
 50043,No envelope UUID in request,Please check envelope UUID in the request
-50044,Such label already exists,Label with respective name has already existed. Please use existing or create new with different name
+50044,Label already exists,Label with respective name is exist. Please use existing or create new one with a different name
 50045,Found role without mailboxUuid defined,"One of the roles doesn't have mailbox UUID in data of the envelope"
-50046,"Signature data not found for signature '{0}' at document '{1}'","Signature field doesn't have signature data, please check that you fill required signature field with valid data"
-50047,Signers do not match for signature {0},"PDF and text files are signed by different signers, please sign document by one signer and send request again"
+50046,"Signature data not found for signature '{0}' at document '{1}'","Signature field does not have signature data, please check that you fill required signature field with valid data"
+50047,Signers do not match for signature {0},"PDF and text files are signed by different signers, please sign document by one Signer and send request again"
 50048,Signature data not found for source {0} in document {1},Signature is not found in the list of signatures
-50049,No active role for mailbox {0},"Mailbox UUID by which you're trying to send request doesn't have active role in particular envelope. Please wait for your turn."
-50050,The envelope is in wrong status,"Envelope status is wrong for this action and can't be processed."
-50051,Attachment is already used,Attachment with entered UUID has already used in this envelope
+50049,No active role for mailbox {0},"Mailbox UUID by which you're trying to send request does not have active role in particular envelope. Please wait for your turn."
+50050,Wrong envelope status,Envelope status is wrong for this action and cannot be processed.
+50051,Attachment is already used,Attachment with entered UUID was already used in this envelope
 50052,Certificate not qualified for signature {0} in document {1},"Required qualified certificate to sign data, but not qualified used"
-50053,Invitation envelope {0} not found,"Envelope for invitation not found, inconsistent data"
+50053,Invitation envelope {0} not found,"Envelope for the invitation not found, inconsistent data"
 50054,Accepted envelopes list is empty,List of UUID for accepting is empty
-50055,Invitations for envelopes {0} not found,Some of request envelopes has no invitations for this user
-50056,"Can't approve invitation, envelope {0} is in final status",Envelope for invitation is in final state
-50057,Not found role for invitation in envelope {0},Envelope has no role for email
+50055,Invitations for envelopes {0} not found,Some envelope requests have no invitations for this user
+50056,"Cannot approve invitation, envelope {0} is in final status",Envelope for invitation is in final state
+50057,Role not found for invitation {0},Envelope has no role for email
 50058,Role unavailable for processing {0},Envelope has no role for email
-50059,ITN value was not found for signature {0},No ITN value found to match during signing
-50060,Expected ITN does not match the number for the signature {0} in document {1},"The document was signed with wrong signature, please check ITN"
+50059,ITN value not found for signature {0},No ITN value found to match during signing
+50060,Expected ITN does not match the signature {0} in document {1},"The document was signed with wrong signature, please check ITN"
 50061,Envelope scenario has no available steps,Envelope scenario has no available steps
-50062,"Can't continue scenario with not completed envelope","Can't continue scenario with not completed envelope"
-50063,Envelope has no scenario info,Envelope has no scenario info
-50064,Parent of duplicate field {0} was not found,Duplicate field does not have a parent field in the envelope
+50062,Cannot continue scenario with uncompleted envelope,Cannot continue scenario with uncompleted envelope
+50063,Envelope has no scenario info,Envelope has no scenario information
+50064,Parent of duplicate field {0} not found,Duplicate field does not have a parent field in the envelope
 50065,Template {0} does not match envelope template {1},Make sure the templates match
-50066,"Record UUID has to be populated for field '{0}'","Please fill the 'recordUuid' attribute with proper value"
+50066,"Record UUID must be populated for field '{0}'","Please fill the 'recordUuid' attribute with proper value"
 50067,"Attachment UUID has to be populated for field '{0}'","Please fill the 'attachmentUuid' attribute with proper value"
 50068,Label UUID or name has to be specified,"Please fill the 'label' or 'labelUuid' request parameter"
-50069,"Not enough uuids, at last {0} needed",Request has no enough uuids to merge/add into chain
-50070,No access to chain,mailbox has no access to any envelope with this chain uuid
+50069,"Not enough UUIDs, at least {0} needed",Request has no enough UUIDs to merge/add into a chain
+50070,No access to chain,Mailbox has no access to any envelope within this chain UUID
 50071,Envelope {0} belongs to another chain,Envelope belongs to another chain
-50072,Envelope added to chain by another user,Current user has no rights to remove envelope from chain
+50072,Envelope added to chain by another user,Current user has no rights to remove envelope from the chain
 50073,Envelopes belong to different chains,Envelopes belong to different chains
 50074,Envelope belongs to automatically created chain,Envelope belongs to automatically created chain
 50075,Approvers cannot participate in the envelope processing,One or more approvers are already in the main flow
-50076,"No approval is allowed on the envelope, it may have already been done",User cannot approve the envelope
+50076,Approval is not allowed on envelope,"User cannot approve the envelope, it may have already been done"
 50077,Rejection reason is required for approval,Please add comment for approval
-50078,"Wrong approval status, send APPROVED or REJECTED",Please send proper status
-50079,Envelopes roles do not match template roles,Please check sent envelope XML for proper flow
-50080,Approval flow {0} not found,Approval flow with entered UUID has not found for this envelope
-50081,Current mailbox cannot manage the approval flow or start/cancel an approval,Mailbox cannot manage approval flow
-50082,Approval flow is already completed and cannot be cancelled,Mailbox cannot cancel approval flow
-50083,Mailbox has to be unique in the envelope approval flow,Please update the flow
-50084,UUID of the flow or approvers have to be specified separately,Please send flowUuid or approvers
-50085,Approval flow {0} is deleted,Approval flow with entered UUID is deleted and cannot be used
-50086,Approver {0} is already in another approval flow for this envelope,Approvers cannot participate in several flows for one envelope
-50087,"Duplicate value doesn't match","Value of the duplicate field in request doesn't match to value in related field"
+50078,Wrong approval status,"Please send proper status, send APPROVED or REJECTED"
+50079,Roles do not match template roles,Please check sent envelope XML for proper flow
+50080,Approval {0} not found,Approval with entered UUID was not found for this envelope
+50081,Cannot manage or start/cancel an approval,Current mailbox cannot manage or start/cancel an approval
+50082,Approval cannot be cancelled,Approval flow is already completed and cannot be cancelled
+50083,Mailbox must be unique in the approval,Please update the approval
+50084,UUID of approvers have to be specified separately,Please send flowUuid or approvers
+50085,Approval {0} is deleted,Approval with entered UUID is deleted and cannot be used
+50086,Approver {0} is already in another approval for this envelope,Approvers cannot participate in several approval processes for one envelope
+50087,Duplicate value does not match,Value of the duplicate field in request does not match to value in related field
 50089,Envelope cannot be delegated,Delegation is forbidden for envelope
 50090,Delegate cannot cancel the delegation,Only initiator of the delegation can cancel it
-50091,"Delegation not found or initiator's role is already completed",Please check the delegation role
+50091,Delegation not found or Initiator role is completed,Please check the delegation role
 50092,Delegation or envelope is already completed,No further actions allowed
 50093,Recipient field must be UUID or email,"Please check the 'recipient' field format"
 50094,Search by field parameters has wrong format,Search by field parameters has wrong format
-50095,Only sender can notify all active roles,This user cannot send email notifications
-50096,No envelopes to notify. Please try later,Notifications have already been sent for envelopes
+50095,Only sender can send notification,This user cannot send email notifications. Only sender can notify still uncompleted roles
+50096,No envelopes to notify,Notifications have already been sent for envelopes
+50097,Document does not have printable version,"Only PDF, DOC, DOCX can have printable version"
+50098,Only completed envelopes can be shared by email,Please send only completed envelope UUIDs
+50099,Only {0} envelopes are allowed for sharing,Please decrease number of envelopes
+50100,Some columns cannot be deleted or hidden,Some columns have to be visible
+50101,"File ''{0}'' cannot be edited because it already has digital signatures",Please choose another file
+50102,"File ''{0}'' is encrypted",Please choose another file
+50103,"No column ''{0}'' to sort",Wrong sortField
 **DICTIONARY**,,
-60001,Dictionary {0} not found,Dictionary with entered UUID has not found. Please check correctness of the entered data
-60002,Dictionary name size exceeded maximum size,Dictionary name size is bigger than maximum allowed. Maximum allowed length of the dictionary name is 128 symbols.
-60003,Dictionary description size exceeded maximum size,Dictionary description size is bigger than maximum allowed. Maximum allowed length of the dictionary description is 256 symbols.
-60004,"Dictionary name can't be empty","Dictionary name is required and can't be empty. Please set dictionary name"
-60005,Dictionary column not found,Dictionary column with entered UUID has not found in this dictionary
+60001,Dictionary {0} not found,Dictionary with entered UUID was not found. Please check correctness of the entered data
+60002,Dictionary name length exceeded limit,Dictionary name length is higher than maximum allowed. Limit is 128 symbols.
+60003,Dictionary description length exceeded limit,Dictionary description length is higher than maximum allowed. Limit is 256 symbols.
+60004,Dictionary name cannot be empty,Dictionary name is required and cannot be empty. Please set dictionary name
+60005,Dictionary column not found,Dictionary column with entered UUID was not found in this dictionary
 60006,Empty column UUID,Column UUID is required parameter for this request. Please enter column UUID to create valid request
 60007,Dictionary column value not found,Dictionary column value with UUID in request is not found in the database. Please check correctness of your request
-60008,Dictionary record {0} not found,Dictionary record with entered UUID has not found in this dictionary
+60008,Dictionary record {0} not found,Dictionary record with entered UUID was not found in this dictionary
 60009,Dictionary {0} archived,Dictionary with entered UUID has been archived
-60010,"Column value doesn't match","Value in the dictionary column and in the data of request you send doesn't match. Please check value in the dictionary."
-60011,Empty custom value not allowed,"Custom value can't be empty for dictionary field. Please choose and send value from the dictionary or send your custom value."
-60012,columnUuid is not set for template field,"Dictionary field on the template doesn't have column UUID of the dictionary. Please update template and clarify column UUID for dictionary field or remove dictionary field"
-60013,dictionaryUuid is not set for template field,"Dictionary field on the template doesn't have dictionary UUID. Please update template and clarify dictionary UUID for dictionary field or remove dictionary field"
-60014,Dictionary must be locked for processing,"Dictionary is locked for the updating. It can't be updated at this time. Dictionary updating can take some time."
+60010,Column value does not match,Value in the dictionary column and in the data of request you send does not match. Please check value in the dictionary.
+60011,Empty custom value not allowed,Custom value cannot be empty for dictionary field. Please choose and send value from the dictionary or send your custom value.
+60012,Column UUID is not set,"Dictionary field on the template doesn't have column UUID of the dictionary. Please update template and clarify column UUID for dictionary field or remove dictionary field"
+60013,Dictionary UUID is not set,"Dictionary field on the template doesn't have dictionary UUID. Please update template and clarify dictionary UUID for dictionary field or remove dictionary field"
+60014,Dictionary must be locked for processing,Dictionary is locked for the updating. It cannot be updated at this time. Dictionary updating can take some time.
 60015,"Expected {0} values in each row, but got {1}","Quantity of the columns and rows are different in the document you've tried to upload, please check your file for validity."
-60016,Dictionary record should contains column values,"Dictionary record doesn't contains column value in request. Please check your request, compare with documentation and send again"
-60017,"Can't change dictionary access to official","Dictionary access level can't be changed to the official access level. Only system user can change access level to official"
-60018,This file format is not supported yet,"Entered file format has not supported yes. Supported file formats: CSV, XLS"
-60019,Dictionary is locked,"Dictionary is locked for updating. Updating can take some time. During updating process dictionary can't be changed"
-60020,"Column name can't be empty","Column name is required and can't be empty. Please set column name"
-60021,Column name size exceeded (64),Column name size is bigger than maximum allowed. Maximum allowed length of the column name is 64 symbols.
-60022,Column order should be >= 0,"Column order can't be less or equal 0. Please enter positive value of the order"
-60023,Column value size exceeded (256),Record value size is bigger than maximum allowed. Maximum allowed length of the record value is 256 symbols.
+60016,Dictionary record should contain column values,"Dictionary record doesn't contain column value in request. Please check your request, compare with documentation and send again"
+60017,Cannot change dictionary access to official,Dictionary access level cannot be changed to the official access level. Only system user can change access level to official
+60018,This file format is not supported,"Entered file format is not supported yes. Supported file formats: CSV, XLS"
+60019,Dictionary is locked,Dictionary is locked for updating. Updating can take some time. During updating process dictionary cannot be changed
+60020,Column name cannot be empty,Column name is required and cannot be empty. Please set column name
+60021,Column name length exceeded limit,Column name length is higher than maximum allowed. Limit is 64 symbols.
+60022,Column order should be >= 0,Column order cannot be less or equal 0. Please enter positive value of the order
+60023,Column value length exceeded limit,Record value length is higher than maximum allowed. Limit is 256 symbols.
 60024,Empty dictionary UUID,Required dictionary UUID parameter if empty in request. Please enter valid dictionary UUID
-60025,"Dictionary record was not found by value '{0}' in column {1}",There is no record with such value in dictionary
-60026,"Can't delete last column","Dictionary should has at least one column. Last column can't be deleted from the dictionary."
+60025,"Dictionary record not found by value '{0}' in column {1}",There is no record with such value in dictionary
+60026,Cannot delete last column,Dictionary should have at least one column. Last column cannot be deleted from the dictionary.
 60027,No access to dictionary,No access to dictionary
-60028,Filter operation unknown,Filter operation unknowm
-60029,Filter value is null,Filter operation unknow
-60030,"Dictionary export task don't match","Dictionary export task don't match"
+60028,Filter operation unknown,Filter operation unknown
+60029,Filter value is null,Filter operation unknown
+60030,Export task do not match,"Dictionary export task don't match"
+60031,Dictionary column width must be greater or equal to 140,Dictionary column width must be greater or equal to 140
 **INTEGRATION**,,
 80001,Integration rule {0} deleted,Integration rule with entered UUID has been deleted
-80002,Integration rule {0} not found,Integration rule with entered UUID has not found or has not existed
-80003,Integration not found for mailbox {0},Integration configuration has not found for entered mailbox UUID
-80004,Name pattern generates empty filename,We can not generate a file name
-80005,"templateUuid doesn't match versionUuid","Template UUID doesn't match template version UUID. Please compare template and version UUIDs"
+80002,Integration rule {0} not found,Integration rule with entered UUID has was found or not exists
+80003,Integration not found for mailbox {0},Integration configuration was not found for entered mailbox UUID
+80004,Name pattern generates empty filename,We cannot generate a file name
+80005,templateUuid does not match versionUuid,Template UUID does not match template version UUID. Please compare template and version UUIDs
 80006,Protocol {0} not supported,"Entered protocol has not supported yet. Supported protocols: SFTP, FTPS, AS2, SOAP"
 80007,Matching pattern source is required,Matching pattern source is required in this request
-80008,Template Uuid is required,Tempalte UUID is required in this request
-80009,Template version Uuid is required,Tempalte version UUID is required in this request
+80008,Template UUID is required,Template UUID is required in this request
+80009,Version UUID is required,Template version UUID is required in this request
 80010,Conversion rule is required,Conversion rule is required in this request
 80011,Naming pattern rule is required,Naming pattern rule is required in this request
 80012,Source is required,Source is required in this request
 **PERMISSIONS**,,
-90002,"You don't have enough privilege in account {0}","User doesn't have enough permissions to do this action. Please ask your system administrator to give permissions"
-90003,"You don't have enough privilege in mailbox {0}","User doesn't have enough permissions to do this action. Please ask your system administrator to give permissions"
-90004,Guest user has no access to any mailbox,"User doesn't have access to any mailbox. Please add access to any mailbox or login by user who has accesses"
-90005,"Can't do with system account","User doesn't have enough privileges to modify system data"
-90006,"Can't do with system mailbox","User doesn't have enough privileges to modify system data"
-90007,Mailbox has no access to label,"Mailbox doesn't have access to the label"
+90002,You do not have enough privilege for account {0},User does not have enough permissions to do this action. Please ask your system administrator to give permissions
+90003,You do not have enough privilege for mailbox {0},User does not have enough permissions to do this action. Please ask your system administrator to give permissions
+90004,Guest user has no access to any mailbox,User does not have access to any mailbox. Please add access to any mailbox or login by user who has accesses
+90005,Cannot do with system account,User does not have enough privileges to modify system data
+90006,Cannot do with system mailbox,User does not have enough privileges to modify system data
+90007,Mailbox has no access to label,Mailbox does not have access to the label
 90008,No access to dictionary {0},Dictionary is inaccessible for you. Ask dictionary owner to update access level
-90009,No access to template {0},Tempalte is inaccessible for you. Ask template owner to update access level
+90009,No access to template {0},Template is inaccessible for you. Ask template owner to update access level
 90010,No access to parent category,Parent category is inaccessible for you. Ask category owner to update access level
 90011,No access to category,Category is inaccessible for you. Ask category owner to update access level
 90012,No access to notification,Notification is inaccessible for you
-90013,No access to mailbox {0},"User doesn't have access to this mailbox. Ask your system administrator to give permissions"
-90014,No access to mailbox {0}. Missed permissions: {1},"User doesn't have access particular functionality of this mailbox. Ask your system administrator to give permissions. Missed permissions you can find in the error message"
-90015,No access to envelope {0},"User doesn't have access to this envelope. Only users who included to the processing flow can watch envelopes"
-90017,Envelope role forbidden to change data,"Envelope role can't change data in the envelope. If you want to change data in the envelope set respective role on the template"
-90018,No access to account {0},"User doesn't have access to this account. Ask your system administrator to give permissions"
-90019,Mailbox header does not match to mailbox uuid from entity,Please check that entity belongs to current mailbox
-90022,No access to this import task,"User doesn't have access to the import task"
-90026,No access to attachment,Attahcment is inaccessible for you
-90030,"Can't revoke last owner","You can't revoke last owner of the entity"
-90031,Not a scenario owner,Not scenario owner
+90013,No access to mailbox {0},User does not have access to this mailbox. Ask your system administrator to give permissions
+90014,No access to mailbox {0}. Missed permissions: {1},User does not have access particular functionality of this mailbox. Ask your system administrator to give permissions. Missed permissions you can find in the error message
+90015,No access to envelope {0},User does not have access to this envelope. Only users who included to the processing flow can watch envelopes
+90017,Envelope role forbidden to change data,Envelope role cannot change data in the envelope. If you want to change data in the envelope set respective role on the template
+90018,No access to account {0},User does not have access to this account. Ask your system administrator to give permissions
+90019,Mailbox header does not match to mailbox UUID,Please check that entity belongs to current mailbox
+90022,No access to import task,User does not have access to the import task
+90026,No access to attachment,Attachment is inaccessible for you
+90030,Cannot revoke last owner,You cannot revoke last owner of the entity
+90031,Not a scenario owner,User is not a scenario owner
 90032,No access to scenario,No read access to scenario
 90033,Only the author is allowed to change the comment,No write access to comment message
 **SCENARIOS**,,
-100001,Scenario name can not be empty or null,Scenario name can not be empty
-100002,Scenario description can not be empty or null,Scenario description can not be empty
-100003,"Scenario access level can not be empty or null. Access can be fourth types: mailbox, account, pub and official",Scenario access level can not be empty
-100004,Id can not be empty or null,Scenario step id can not be empty
-100005,Scenario step name can not be empty or null,Scenario step name can not be empty
-100006,Scenario step XSLT map can not be empty or null,Scenario step XSLT map can not be empty
-100007,Steps is required. Steps can not be empty or null,Scenario should have at least 1 step
-100008,Scenario step template uuid can not be be empty or null,Scenario template uuid should not be empty
-100009,Scenario step template version can not be be empty or null,Scenario template version should not be empty
-100010,Scenario save failed,Scenario save failed
+100001,Scenario name cannot be empty,Scenario name cannot be empty or NULL
+100002,Scenario description cannot be empty,Scenario description cannot be empty or NULL
+100003,Scenario access level cannot be empty,"Scenario access level cannot be empty or NULL. Access can be fourth types: mailbox, account, pub and official"
+100004,ID cannot be empty,Scenario step ID cannot be empty or NULL
+100005,Scenario step name cannot be empty,Scenario step name cannot be empty or NULL
+100006,Scenario step XSLT map cannot be empty,Scenario step XSLT map cannot be empty or NULL
+100007,Steps is required,Scenario should have at least 1 step
+100008,Scenario step template UUID cannot be empty,Scenario template uuid should not be empty
+100009,Scenario step template version cannot be empty,Scenario template version should not be empty
+100010,Save failed,Scenario save failed
 100011,Scenario {0} not found,Scenario not found
 100012,Scenario {0} deleted,Scenario deleted
-100013,Can not create or update scenario access to official,Scenario access level can not be changed to the official access level. Only system user can change access level to official
+100013,Cannot create or update scenario access to official,Scenario access level cannot be changed to the official access level. Only system user can change access level to official
 100014,Step {0} not available at this stage,Step not available at this stage
-100015,First step can not have source template,First step can not have source template
-100016,Step destination can not be empty,First step can not have source template
-100017,Step {0} source can not be empty,Step source can not be empty
-100018,Step {0} destination does not match with result,Step destination do not match with result
-100019,Duplicated step id {0},Duplicated step id
+100015,First step cannot have source template,First step cannot have source template
+100016,Step destination cannot be empty,First step cannot have source template
+100017,Step {0} source cannot be empty,Step source cannot be empty
+100018,Step {0} destination does not match,Step destination do not match with result
+100019,Duplicated step ID {0},Duplicated step id
 100020,Step {0} source does not match with any previous destination,Please check the order of steps
-100021,Scenario name length can not be more than 256,Scenario name can not be more than 256
-100022,Scenario description length can not be more than 256,Scenario description can not be more than 256
-100023,Scenario step id length can not be more than 256,Scenario step id length can not be more than 256
-100024,Scenario step name length can not be more than 256,Scenario step name length can not be more than 256
-100025,Scenario condition can not be applied properly,"Scenario condition is wrong, please check xslt mapping"
+100021,Scenario name length cannot be more than 256,Scenario name cannot be more than 256
+100022,Scenario description length cannot be more than 256,Scenario description cannot be more than 256
+100023,Scenario step ID length cannot be more than 256,Scenario step id length cannot be more than 256
+100024,Scenario step name length cannot be more than 256,Scenario step name length cannot be more than 256
+100025,Scenario condition cannot be applied,"Scenario condition is wrong, please check XSLT mapping"
 **EXTERNAL LINKS**,,
-110001,"Link name can't be empty","Link name is required and can't be empty. Please set link name"
-110002,Link name size exceeded maximum size,Link name size is bigger than maximum allowed. Maximum allowed length of the link name is 255 symbols.
-110003,"Link url can't be empty","Link url can't be empty"
+110001,Link name cannot be empty,Link name is required and cannot be empty. Please set link name
+110002,Link name length exceeded maximum size,Link name size is higher than maximum allowed. Limit is 255 symbols.
+110003,Link url cannot be empty,Link url cannot be empty
 110004,Link order should be positive or zero,Link order should be positive or zero
-110005,"Link access level can't be public","Link access level can't be public"
+110005,Link access level cannot be public,Link access level cannot be public
 110006,Mailbox UUID required when link access level is mailbox,Mailbox UUID required when link access level is mailbox
 110007,Link {0} not found,Link not found by UUID
-110008,Link {0} for another account,"Link doesn't belong to this account."
+110008,Link {0} for another account,Link does not belong to this account.
 110009,Link has invalid URL,Link has invalid URL. Please fix
-110010,"Can't use official link access","Can't use official link access"
+110010,Cannot use official link access,Cannot use official link access
 **BILLING**,,
 120001,Tariff {0} was not found in billing system,Tariff not found for the account
-120002,You cannot change billing plan so often,Please wait and try again
-120003,The limit already reached. You may want to consider upgrading your plan,
-**Update your tariff**,,
-120004,The limit ({0}) already reached. You may want to consider upgrading your plan,Update your tariff
-120005,"The action isn't available in your billing plan. You may want to consider upgrading",Update your tariff
-120006,"The billing plan cannot be selected. Limit '{0}' is exceeded. The count is {1} in your account but must be no more than {2}",Select another tariff or modify your account
+120002,Cannot change billing plan so often,You cannot change billing plan so often. Please try next day
+120003,"You have reached the limit, consider upgrading your plan","You have reached the limit, consider upgrading your plan"
+120004,"You have reached the limit ({0}), consider upgrading your plan","You have reached the limit, consider upgrading your plan"
+120005,The action is not available in your billing plan. You may want to consider upgrading,"You have reached the limit, consider upgrading your plan"
+120006,"This billing plan cannot be selected. Limit '{0}' is exceeded. The count is {1} in your account but must be no more than {2}",Select another tariff or modify your account
