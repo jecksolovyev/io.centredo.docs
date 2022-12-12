@@ -66,7 +66,7 @@ CC role can be set at any place of the processing flow, but not earlier than Sen
 
 
 Parallel flow
-=========
+=============
 
 In AUTO flow system configure processing flow by the following rules:
 
@@ -77,13 +77,9 @@ In AUTO flow system configure processing flow by the following rules:
 3. CC is added after last EDS Signer (if EDS Signer has been already added to the flow) or after last Assignee (if Assignee has been already added to the flow and EDS Singer was not added), or after Sender if no role except Sender was added.
 
 Consistent flow
-===========
+===============
 
 Logic of addition roles to the flow similar to AUTO flow, but user can change the order. To change the order user has to enable "Set ordering process" toggle and set order using drag and drop option for roles or edit order number of each role manually. For example you can create a flow where signer role can be before assignee role in case when assignee has no actions in current document of the template and has to upload other documents.
-
-.. image:: pic_templateCreationEdition/SignerBeforeAssignee.png
-   :width: 400
-   :align: center
 
 Some restrictions of the role places in the flow:
 
@@ -96,7 +92,7 @@ Some restrictions of the role places in the flow:
 .. warning:: **If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode. Order other then that wil not be allowed by the application.**
 
 Serial-parallel flow
-===========
+====================
 
 It is a flow similar to Consistent flow where you can create multiple roles with same processing order.
 
