@@ -7,13 +7,13 @@ What is processing flow and how to configure it
 .. toctree::
 
 
-Processing flow is an order of the life cycle of the envelope. With it you can configure in what sequence recipients will get an envelope. There are three types of the sequences: parallel, consistent and serial-parallel
+Processing flow is an order in which envelope will be received by all recepients. With it you can configure in what sequence recipients will get an envelope. There are three types of the sequences: parallel, consistent and serial-parallel
 
 1. Parallel flow is an AUTO mode of the flow when system make configuration of the flow by scripted rules and participants of flow receive envelope parallel and according to the role type
 
-2. Consistent flow it's MANUAL mode of the flow. To enable it click on "Set ordering process" toggle and configure roles according to your requirements to the flow
+2. Consistent flow is a MANUAL mode of the flow. To enable it click on "Set ordering process" toggle and configure roles according to your requirements to the flow
 
-3. Serial-parallel flow it's also MANUAL mode but with a couple of roles with similar order
+3. Serial-parallel flow is also a MANUAL mode but with a couple of roles with similar order
 
 Role configuration interface
 ============================
@@ -26,7 +26,7 @@ Role configuration interface for AUTO flow contain the following information:
 
 1. Role order — order of the role in the list (available only if "Set ordering process" toggle is enabled)
 
-2. Role name — name which will be displayed to the user in the template and envelopes. It's a mandatory field
+2. Role name — name which will be displayed to the user in the template and envelopes. It is a mandatory field
 
 3. Role mailbox — mailbox of the role to which envelope will be send. Optional to fill in the template, but mandatory in envelopes
 
@@ -79,8 +79,7 @@ In AUTO flow system configure processing flow by the following rules:
 MANUAL flow
 ===========
 
-Logic of addition roles to the flow similar to AUTO flow, but user can change the order.
-To change the order user has to enable "Set ordering process" toggle and set order using drag and drop option for roles or edit order manually.
+Logic of addition roles to the flow similar to AUTO flow, but user can change the order. To change the order user has to enable "Set ordering process" toggle and set order using drag and drop option for roles or edit order number of each role manually. For example you can create a flow where signer role can be before assignee role in case when assignee has no actions in current document of the template and has to upload other documents.
 
 Some restrictions of the role places in the flow:
 
@@ -90,3 +89,23 @@ Some restrictions of the role places in the flow:
 
 3. Copy can have any order in the flow but not less than 1
 
+.. warning:: **If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.**
+
+Serial-parallel flow
+====================
+
+It is a flow similar to Consistent flow where you can create multiple roles with same processing order.
+
+.. image:: pic_templateCreationEdition/SerialParallelFlow.png
+   :width: 400
+   :align: center
+
+Some restrictions of the role places in the flow:
+
+1. Assignee cannot have order in the flow higher than first EDS Signer
+
+2. EDS signer cannot have order lower than last Assignee
+
+3. Copy can have any order in the flow but not less than 1
+
+.. warning:: **If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.**
