@@ -10,7 +10,7 @@ Also allows to prepare table exactly of the size which needed for participant of
 Create Table Field
 ===================
 
-1. Navigate to https://staging.whitedoc.space/template/form/create
+1. Navigate to /template/form/create
 
 2. Drag and drop Table field to the document
 
@@ -36,7 +36,7 @@ Fill the Table with fields
 Edit Table Field properties
 ===========================
 
-1. Navigate to https://staging.whitedoc.space/template/form/create.
+1. Navigate to /template/form/create.
 
 2. Click on the table field in the document
 

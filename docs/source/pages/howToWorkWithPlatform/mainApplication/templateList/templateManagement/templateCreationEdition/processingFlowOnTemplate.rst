@@ -65,8 +65,8 @@ CC role just receive copy of envelope and can't edit fields in the document.
 CC role can be set at any place of the processing flow, but not earlier than Sender.
 
 
-Parallel flow
-=============
+AUTO flow
+=========
 
 In AUTO flow system configure processing flow by the following rules:
 
@@ -76,8 +76,8 @@ In AUTO flow system configure processing flow by the following rules:
 
 3. CC is added after last EDS Signer (if EDS Signer has been already added to the flow) or after last Assignee (if Assignee has been already added to the flow and EDS Singer was not added), or after Sender if no role except Sender was added.
 
-Consistent flow
-===============
+MANUAL flow
+===========
 
 Logic of addition roles to the flow similar to AUTO flow, but user can change the order. To change the order user has to enable "Set ordering process" toggle and set order using drag and drop option for roles or edit order number of each role manually. For example you can create a flow where signer role can be before assignee role in case when assignee has no actions in current document of the template and has to upload other documents.
 
@@ -89,7 +89,7 @@ Some restrictions of the role places in the flow:
 
 3. Copy can have any order in the flow but not less than 1
 
-.. warning:: **If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode. Order other then that wil not be allowed by the application.**
+.. warning:: **If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.**
 
 Serial-parallel flow
 ====================
@@ -108,4 +108,4 @@ Some restrictions of the role places in the flow:
 
 3. Copy can have any order in the flow but not less than 1
 
-.. warning:: **If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode. Order other then that wil not be allowed by the application.**
+.. warning:: **If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.**
