@@ -53,4 +53,4 @@ The envelope sent by email can be assigned to mailbox automatically with Auto De
 * By default 'Auto Deposit Mailbox' is set to user's personal mailbox
 
 .. note::
-   User will have option to select auto deposit mailbox in invitation email under mailbox select menu.
+   User has an option to select auto deposit mailbox in invitation email under mailbox select menu.
