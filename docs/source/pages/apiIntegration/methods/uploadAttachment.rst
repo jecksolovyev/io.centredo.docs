@@ -9,8 +9,7 @@ Upload attachment or external documents
 
 For add file to document, customer should upload this file in binary format to our system by request above. In response on this request customer got data which he should use in envelope for add this file in document in the appropriate field.
 
-Response
-********
+**RESPONSE**
 
 .. code:: json
 
@@ -19,5 +18,3 @@ Response
       "filename": "string",
       "filesize": 0
     }
-
-

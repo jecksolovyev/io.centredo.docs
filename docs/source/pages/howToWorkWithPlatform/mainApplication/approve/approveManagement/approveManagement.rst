@@ -26,16 +26,19 @@ Approval is a module with the functionality of viewing the list, filter and sear
    :align: center
 
 * At this page user can watch folders (in left side)
+
 .. image:: pic_approveManagement/approve-folder.png
    :width: 600
    :align: center
 
 * Filters and search which user can use (in top side)
+
 .. image:: pic_approveManagement/approve-filters.png
    :width: 600
    :align: center
 
 * At the main screen user can watch table with envelopes list respectively to filters has been set or search query
+
 .. image:: pic_approveManagement/approve-list-row.png
    :width: 600
    :align: center
@@ -43,11 +46,13 @@ Approval is a module with the functionality of viewing the list, filter and sear
 * Page url is automatically set filters, so user can copy/send page URL to another user, and user can watch filtered content from url
 
 * At the bottom of page user can watch paginator for change listing page
+
 .. image:: pic_approveManagement/approve-paginator.png
    :width: 600
    :align: center
 
 * When you click on the status in the tooltip displays the entire history of the approval flow of the envelope
+
 .. image:: pic_approveManagement/status-view.png
    :width: 600
    :align: center

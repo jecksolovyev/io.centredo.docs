@@ -1,6 +1,6 @@
-===============
+=======================
 Account corporate users
-===============
+=======================
 
 .. toctree::
 
@@ -10,7 +10,7 @@ Account can have corporate users, which belongs to account's domain names. Befor
 
 
 1. Download example file
-=====================
+========================
 
 Returns example XLSX binary with all available roles, permissions and mailboxes for account.
 
@@ -34,7 +34,7 @@ Returns example XLSX binary with all available roles, permissions and mailboxes 
      - Target account UUID
 
 2. Mass create users
-========================
+====================
 
 Receives XLSX file and create users with permissions. Will return 200 if OK.
 

@@ -21,7 +21,7 @@ User Properties (app.user)
 | **email-validation-code-length** - The number of characters for validation code in e-mail
 
 Locale Properties (app.locales)
-==========================
+===============================
 | **supported** - The list of supported locales (en, ru, uk)
 | **defaultLocale** - The default locale of the platform (for invitations)
 | **defaultCountry** - The default country of the platform (if no coordinates in header)

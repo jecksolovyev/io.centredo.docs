@@ -47,16 +47,12 @@ What are you downloading?
 You download the archive with the zip extension.
 
 * If you download a specific document.
-Inside the archive will be a file with the extension .pdf, a file with the extension .xml, files with captions in .p7s format (qunatity of files
-depends on qunatity of signers nultiple twice for each document), signing certificate with .pdf extension and name: DocumentName.signatures.pdf. 
-Where DocumentName it's name of the document you downloaded and printable version of the document with .pdf extension which include visual expression of signatures and 
-signing certificate in one file.
+
+Inside the archive will be a file with the extension .pdf, a file with the extension .xml, files with captions in .p7s format (qunatity of files depends on qunatity of signers nultiple twice for each document), signing certificate with .pdf extension and name: DocumentName.signatures.pdf. Where DocumentName it's name of the document you downloaded and printable version of the document with .pdf extension which include visual expression of signatures and signing certificate in one file.
 
 * If you download the entire envelope.
-There will be several folders inside the archive (if the envelope consists of several documents).
-Folder names match document names accordingly.
-Inside their folders are the above-mentioned files (pdf, xml and p7s), as well as an AuditTrail file.
 
+There will be several folders inside the archive (if the envelope consists of several documents). Folder names match document names accordingly. Inside their folders are the above-mentioned files (pdf, xml and p7s), as well as an AuditTrail file.
 
 The signing document certificate
 ================================
@@ -80,8 +76,7 @@ In the signing document certificate you can find information about the document,
    :width: 600
    :align: center
 
-2. Section about the signer, sign and/or stamp contains (if it's signature you will see key icon opposite table block with data and if it's stamp 
-you will see stamp icon opposite table block with data):
+2. Section about the signer, sign and/or stamp contains (if it's signature you will see key icon opposite table block with data and if it's stamp you will see stamp icon opposite table block with data):
 
 * Owner - name of the signature owner
 * Organization - name of the organiztion to which signature belongs
@@ -104,8 +99,7 @@ you will see stamp icon opposite table block with data):
 Printable version of the document
 =================================
 
-Printable version of the document you can get in two ways. First is described before and you can it download with signed data in archive. The second one is to 
-open document to print from envelope page.
+Printable version of the document you can get in two ways. First is described before and you can it download with signed data in archive. The second one is to open document to print from envelope page.
 
 1. As soon as document completed you will see icon "Print" near document.
 

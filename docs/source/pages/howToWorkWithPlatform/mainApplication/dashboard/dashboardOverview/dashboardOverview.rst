@@ -20,9 +20,7 @@ To do this follow instructions:
    :width: 400
    :align: center
 
-2. As soon as you click on "Upload document" modal window for drag and drop files opens and over it opens file manager of you computer. Where you
- can select files to upload (you're able to upload any quantity of files, but limit of the all of them shouldn't be more than 25MB and each file
-shouldn't be more than 5MB)
+2. As soon as you click on "Upload document" modal window for drag and drop files opens and over it opens file manager of you computer. Where you can select files to upload (you're able to upload any quantity of files, but limit of the all of them shouldn't be more than 25MB and each file shouldn't be more than 5MB)
 
 .. image:: pic_dashboardOverview/dragAndDropModal.png
    :width: 400
