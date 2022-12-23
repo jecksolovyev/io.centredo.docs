@@ -21,7 +21,7 @@ Create Table Field
 
 6. If you want to add column with row numbers enable show column number attribute
 
-7. Fill the quantity of the columns of the table
+7. Fill the quantity of the columns of the table (up to 120)
 
 8. Click save
 
