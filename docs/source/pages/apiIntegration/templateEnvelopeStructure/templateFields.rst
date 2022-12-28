@@ -9,7 +9,6 @@ Template Dynamic Fields
 
  - multilines - boolean, multiline or single line text, multiline should be textarea on UI, optional, default false
 
-
 +---------------------------------------------------------------------------------------------------------------------------------+
 |                                                       Number field                                                              |
 +=================================================================================================================================+
@@ -18,7 +17,6 @@ Template Dynamic Fields
 
  - min, max - default 'infinite'
  - precision - default 0
-
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 |                                                       Money field                                                               |
@@ -29,7 +27,6 @@ Template Dynamic Fields
  - max - default 'infinite'
  - min - default 0
  - precision = 2 (always)
-
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 |                                                   Datetime field                                                                |
@@ -43,7 +40,6 @@ Template Dynamic Fields
      - 2019-12-31T23:59:59Z
  - time - optional (send only if true)
 
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                    Select-dictionary field (Dropdown)                                                                             |
 +===================================================================================================================================================================+
@@ -53,7 +49,6 @@ Template Dynamic Fields
  - "allow-custom-value" - allow choose custom value if not exists in dictionary
  - dictionaryUuid - dictionary uuid for dict|strict-dict subtypes, optional, required for dict|strict-dict
  - columnUuid - uuid of dictionary column, which value should be taken as text value
-
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                       Lookup field                                                                                |
@@ -65,7 +60,6 @@ Template Dynamic Fields
  - documentId - document id from which we take dictionary field
  - columnUuid - uuid of dictionary column, which value should be taken as text value
 
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                       E-sign field                                                                                |
 +===================================================================================================================================================================+
@@ -74,7 +68,6 @@ Template Dynamic Fields
 
 Field value size limited up to 10kb. Field value - base64 encoded png image, size up to 300x300
 
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                       Yes/No field                                                                                |
 +===================================================================================================================================================================+
@@ -82,7 +75,6 @@ Field value size limited up to 10kb. Field value - base64 encoded png image, siz
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Values: exact value from template attribute valueYes or from template attribute valueNo.
-
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                  Dynamic Table                                                                                    |
@@ -106,7 +98,6 @@ Values: exact value from template attribute valueYes or from template attribute 
             </tr>
         </tbody>
     </table>
-
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                   Attachment field                                                                                |

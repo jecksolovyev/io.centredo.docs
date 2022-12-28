@@ -98,4 +98,3 @@ Depending on the need, customer can add a different type of fields `template fie
     "createdAt":"2020-12-02T06:30:44.503Z",
     "modifiedAt":"2020-12-02T06:30:44.503Z"
     }
-

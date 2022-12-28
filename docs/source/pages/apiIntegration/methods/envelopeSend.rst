@@ -11,6 +11,7 @@
 For create and send envelope customer should know based on what template will be created envelope.
 
 **sendEnvelopeDto**
+===================
 
 .. code-block:: JSON
 
@@ -48,6 +49,5 @@ In response we got envelope uuid:
 .. code-block:: JSON
 
     {"uuid":"89499ba2-287d-404c-87b0-342dc5b01b6a"}
-
 
 Customer can check envelope status by this uuid.

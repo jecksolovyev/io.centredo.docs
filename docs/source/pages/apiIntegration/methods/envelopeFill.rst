@@ -10,7 +10,8 @@ For fill envelope customer should provide data to field which assigned to him by
   :widths:  10, 41
 
 
-**sendEnvelopeDto**
+**sendEnvelopeDTO**
+===================
 
 .. code-block:: JSON
 
@@ -28,4 +29,3 @@ For fill envelope customer should provide data to field which assigned to him by
     </envelope>","uuid":"3e8e9c87-09a1-4b5f-8f1a-2ea3049ed34e"}
 
 All provided data will be filled to appropriated fields and when next recipient open this envelope this data will be shown.
-

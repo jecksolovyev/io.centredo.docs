@@ -1,6 +1,6 @@
-===========
+==============
 Authorized API
-===========
+==============
 
 `Full Version <newtab::authApi.html>`__
 

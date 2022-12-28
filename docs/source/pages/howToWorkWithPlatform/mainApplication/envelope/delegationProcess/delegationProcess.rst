@@ -1,8 +1,8 @@
 .. _send-for-delegation:
 
-=========================
+===========================
 Envelope delegation process
-=========================
+===========================
 
 .. toctree::
 
@@ -45,6 +45,3 @@ How to send envelope for delegation
    :align: center
 
 8. Initiator can cancel delegation, if delegate has not completed envelope. In this case,delegate will lose access to viewing and filling out  envelope. To do this, initiator need to click the cancel button on the processing flow.
-
-
-

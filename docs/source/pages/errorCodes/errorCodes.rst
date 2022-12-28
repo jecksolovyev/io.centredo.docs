@@ -8,4 +8,3 @@ This document identifies types of errors. Each error code has common error type 
     :header: "Error code", "Error detail", "Error description"
     :file: errorCodes.csv
     :widths:  10, 40, 50
-
