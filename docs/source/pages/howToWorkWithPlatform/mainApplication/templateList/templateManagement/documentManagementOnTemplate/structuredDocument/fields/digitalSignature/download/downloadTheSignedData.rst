@@ -133,4 +133,4 @@ Printable version of the document you can get in two ways. First is described be
 
 4. Data and time of the signature set
 
-5. Sertificate cerial number according to legal data
+5. Certificate serial number according to legal data

@@ -4,7 +4,7 @@ Table Field
 
 .. toctree::
 
-Table field allows user to add dynamic data to the document. Also it allows to prepare table of exact needed size for participant of the envelope processing flow.
+Table field allows user to add dynamic data to the document. Also it allows to prepare table of exact needed size for participant of the envelope processing flow. Each table can have up to 120 columns and each column can be resized (min width is 30 pixels).
 
 Create Table Field
 ===================
@@ -50,18 +50,18 @@ Edit Table Field properties
 7. Click on "Save" will save all the changes you made and close edit form
 
 .. note::
-   If you want to truncate some columns of the table in it's initial state you can click on according column, enable "Initially hidden" attribute in column properties and click "Save". Note that this is supported only for columns which have optional dynamic fields in them. Columns with static text, non-optional fields or empty cells can not be hidden. On the envelope view user will be able to show such columns from the menu on the right end of the table (only columns which have optional fields assigned for viewing user will be presented). If hidden column fields will not be filled during document processing these columns will be excluded from the final version of the document.
+   If you want to hide certain columns of the table in its initial state you can click on according column, enable "Initially hidden" attribute in column properties and click "Save". Note that this is supported only for columns which have optional dynamic fields in them. Columns with static text, non-optional fields or empty cells can not be hidden. On the envelope view user will be able to show such columns from the menu on the right end of the table (only columns which have optional fields assigned for viewing user will be presented). If hidden column fields will not be filled during document processing these columns will be excluded from the final version of the document.
 
 Edit Table field content
 ========================
 
 1. Add table to the document
 
-2. Click on the header of a column and type the name different from from defaul "Column name" value
+2. Click on the header of a column and enter new column name different from default "Column name" value
 
 3. Name of the column has been updated
 
-4. At the header you're able to add or remove column of the table using "+" and "-" buttons, if you press "-" of the last column table will be removed
+4. You can add or remove columns via right-click menu of each column header
 
 5. You also can change vertical text alignment in the header right click menu for each column
 
@@ -82,4 +82,4 @@ Each added row will be added with same fields which were added to the first row.
 
 When table owner added table rows and filled all mandatory fields he can send the document according to the flow. As an owner of the table he can be one of the participants of the processing flow.
 
-The rest of the participants only can edit fields in the table assigned to them.
+The rest of the participants only can input data in fields assigned to them inside the table.
