@@ -49,7 +49,7 @@ Save сhanges.
    :width: 400
    :align: center
 
-After saving еру template it will be available for mailboxes specified by you in the folder "Shared with me".
+After saving the template it will be available for mailboxes specified by you in the folder "Shared with me".
 
 .. image:: picTemplateAccess/TemplateAccess_6.png
    :width: 400
@@ -58,13 +58,13 @@ After saving еру template it will be available for mailboxes specified by you
 Additional sharing access configurations
 ========================================
 
-At the bottom of template tab of envelope menu you will find "Do not send files by email" attribute.
+At the bottom of the template tab of envelope menu you can find "Do not send files by email" attribute.
 
 .. image:: picTemplateAccess/TemplateAccess_7.png
    :width: 400
    :align: center
    
-If you will enable it and save the template, all envelopes created from it will not contain any files from envelope in notification emails. Also such envelopes can not be shared with other mailboxes.
+If you will enable it and save the template, all envelopes created from it will not contain any files from the envelope in notification emails. Also such envelopes can not be shared with other mailboxes.
 
 .. warning::
-   If you will enable this toggle, it wouldn't be possible to turn in off in the envelopes. If it is disabled on template — it can be modified in the envelopes.
+   If you will enable this toggle, it wouldn't be possible to turn it off in the envelopes. If it is disabled in the template — it can be modified in the envelopes.
