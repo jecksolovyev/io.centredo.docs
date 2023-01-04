@@ -13,6 +13,7 @@ Envelope
     envelopeSignatures/envelopeSignatures.rst
     approvalProcess/approved.rst
     delegationProcess/delegationProcess.rst
+    sendEnvelopeAsGuest/sendEnvelopeAsGuest.rst
 
 
-Envelope is ...
+Envelope is one or more documents (structured and external) with automatic or manual processing flow. Envelope is tool allows EDI process.
