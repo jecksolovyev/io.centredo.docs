@@ -34,5 +34,4 @@ If you want to add some changes to template or documents inside template you hav
 
 3. Select "Edit" option from the list to open template configuration form
 
-Now you can make you changes. To save you changes click on button "Save" on the template editor page
-
+Now you can make you changes. To save you changes click on button "Save" on the template editor page.
