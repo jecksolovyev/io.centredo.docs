@@ -63,7 +63,7 @@ How to clone a structured document?
 
 .. toctree::
 
-	linksInsideDocument/linksInsideDocument.rst
+    linksInsideDocument/linksInsideDocument.rst
     imagesInsideDocument/imagesInsideDocument.rst
     tablesInsideDocument/tablesInsideDocument.rst
     fields/fields.rst
