@@ -20,8 +20,8 @@ import sphinx_bootstrap_theme
 # -- Project information -----------------------------------------------------
 
 project = ''
-copyright = '2022, WhiteDoc'
-author = 'WhiteDoc'
+copyright = '2023, DocStudio'
+author = 'DocStudio'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
