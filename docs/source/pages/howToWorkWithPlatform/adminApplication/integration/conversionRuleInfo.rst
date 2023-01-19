@@ -4,8 +4,8 @@ Conversion rule info
 
 .. toctree::
 
-WdExtensions
-==============================================
+WDExtensions
+============
 
 WdExtensions - is a help java class for working with dictionaries inside XSLT map.
 In order to apply it, the following namespace has to be added:

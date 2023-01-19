@@ -19,7 +19,7 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = ''
+project = 'WhiteDoc'
 copyright = '2023, DocStudio'
 author = 'DocStudio'
 
