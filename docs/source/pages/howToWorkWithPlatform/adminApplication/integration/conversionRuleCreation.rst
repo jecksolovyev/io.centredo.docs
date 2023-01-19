@@ -87,16 +87,12 @@ Working with existed conversion rules
 
 **Update**
 For update conversion rule for outgoing document, customer should upload source file and successfully finish execute.
-Button Save will be unavailable until execute not successfully finished
-For update conversion rule for incoming document also need successfully finish conversion rule execute
+Button Save will be unavailable until execute not successfully finished.
+For update conversion rule for incoming document also need successfully finish conversion rule execute.
 
 **Clone**
 Customer can create new conversion rule using clone function. For use this function want to clone conversion rule he should open this rule from conversion rule list. Where conversion rule is open customer should click on clone button, after that customer can update cloned rule.
-For save new conversion rule need successfully finish execute and click on save button
+For save new conversion rule need successfully finish execute and click on save button.
 
 **Delete**
-Customer can delete any conversion rules, for that need open conversion rule, click on delete button and in opened modal window confirm deletion
-
-
-
-
+Customer can delete any conversion rules, for that need open conversion rule, click on delete button and in opened modal window confirm deletion.
