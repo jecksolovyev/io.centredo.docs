@@ -432,10 +432,10 @@ Conversion rule example for outgoing documents
 
     </xsl:stylesheet>
 	
-Conversion rule example for outgoing documents (XLS to XML)
-===========================================================
+XLS to XML converion
+====================
 
-Our platform has capabilities to convert .xls and .xlsx files to envelopes. This is achieved by using built-in XLS to XML converter. To use it you should use following file sourse XML file. After conversion rule is created using this file You can put .xls and .xlsx files with accorrding names directly to your outbox or coutbox folders and they wil be converted to envelopes automatically. 
+Our platform has capabilities to convert .xls and .xlsx files to envelopes. This is achieved by using built-in XLS to XML converter. To use it you should use following file as sourse XML file in new conversion rule. After conversion rule is created with this file, You can put .xls and .xlsx files with accorrding names directly to your outbox or coutbox folders and they wil be converted to envelopes automatically. 
 
 .. code:: xml
 	
