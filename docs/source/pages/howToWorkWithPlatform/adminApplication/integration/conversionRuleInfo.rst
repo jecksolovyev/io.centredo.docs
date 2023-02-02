@@ -432,12 +432,10 @@ Conversion rule example for outgoing documents
 
     </xsl:stylesheet>
 	
-XLS and X12 to XML converion
-====================
+XLS and X12 to XML conversion
+=============================
 
-Our platform has capabilities to convert .xls and .xlsx files and X12 files (.xml or .txt) to envelopes. This is achieved by using built-in converter. To use it you should use sample of needed format file as sourse file in new conversion rule (first window). After that you have to write conversion rule in second window (use Xpath to extract needed values to according fields). Then try running your rule - you should see output in 3rd window. Do not forget to add regexp to name field so correct files can be found for conversion. When conversion rule is created, You can put needed files with accorrding names directly to your outbox or coutbox folders and they wil be converted to envelopes automatically. 
-
-
+Our platform has capabilities to convert .xls and .xlsx files and X12 files (.xml or .txt) to envelopes. This is achieved by using built-in converter. To use it you should use sample of needed format file as sourse file in new conversion rule (first window). After that you have to write conversion rule in second window (use Xpath to extract needed values to according fields). Then try running your rule - you should see output in 3rd window. Do not forget to add regexp to name field so correct files can be found for conversion. When conversion rule is created, You can put needed files with accorrding names directly to your outbox or coutbox folders and they wil be converted to envelopes automatically.
 
 Conversion rule example for incoming documents
 ==============================================
