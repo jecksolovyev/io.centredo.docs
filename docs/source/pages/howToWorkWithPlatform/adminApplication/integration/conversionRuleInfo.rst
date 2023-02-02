@@ -432,67 +432,12 @@ Conversion rule example for outgoing documents
 
     </xsl:stylesheet>
 	
-XLS to XML converion
+XLS and X12 to XML converion
 ====================
 
-Our platform has capabilities to convert .xls and .xlsx files to envelopes. This is achieved by using built-in XLS to XML converter. To use it you should use following file as sourse XML file in new conversion rule. After conversion rule is created with this file, You can put .xls and .xlsx files with accorrding names directly to your outbox or coutbox folders and they wil be converted to envelopes automatically. 
+Our platform has capabilities to convert .xls and .xlsx files and X12 files (.xml or .txt) to envelopes. This is achieved by using built-in converter. To use it you should use sample of needed format file as sourse file in new conversion rule (first window). After that you have to write conversion rule in second window (use Xpath to extract needed values to according fields). Then try running your rule - you should see output in 3rd window. Do not forget to add regexp to name field so correct files can be found for conversion. When conversion rule is created, You can put needed files with accorrding names directly to your outbox or coutbox folders and they wil be converted to envelopes automatically. 
 
-.. code:: xml
-	
-	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-	<xml>
-		<sheet index="0" name="Sheet 1">
-			<row index="0">
-				<col format="@" index="0">Sheet 1 Row 1 Column 1</col>
-				<col format="@" index="1">Sheet 1 Row 1 Column 2</col>
-				<col format="@" index="2">Sheet 1 Row 1 Column 3</col>
-			</row>
-			<row index="1">
-				<col format="@" index="0">Sheet 1 Row 2 Column 1</col>
-				<col format="@" index="1">Sheet 1 Row 2 Column 2</col>
-				<col format="@" index="2">Sheet 1 Row 2 Column 3</col>
-			</row>
-			<row index="2">
-				<col format="@" index="0">Sheet 1 Row 3 Column 1</col>
-				<col format="@" index="1">Sheet 1 Row 3 Column 2</col>
-				<col format="@" index="2">Sheet 1 Row 3 Column 3</col>
-			</row>
-		</sheet>
-		<sheet index="1" name="Sheet 2">
-			<row index="0">
-				<col format="@" index="0">Sheet 2 Row 1 Column 1</col>
-				<col format="@" index="1">Sheet 2 Row 1 Column 2</col>
-				<col format="@" index="2">Sheet 2 Row 1 Column 3</col>
-			</row>
-			<row index="1">
-				<col format="@" index="0">Sheet 2 Row 2 Column 1</col>
-				<col format="@" index="1">Sheet 2 Row 2 Column 2</col>
-				<col format="@" index="2">Sheet 2 Row 2 Column 3</col>
-			</row>
-			<row index="2">
-				<col format="@" index="0">Sheet 2 Row 3 Column 1</col>
-				<col format="@" index="1">Sheet 2 Row 3 Column 2</col>
-				<col format="@" index="2">Sheet 2 Row 3 Column 3</col>
-			</row>
-		</sheet>
-			<sheet index="2" name="Sheet 3">
-			<row index="0">
-				<col format="@" index="0">Sheet 3 Row 1 Column 1</col>
-				<col format="@" index="1">Sheet 3 Row 1 Column 2</col>
-				<col format="@" index="2">Sheet 3 Row 1 Column 3</col>
-			</row>
-			<row index="1">
-				<col format="@" index="0">Sheet 3 Row 2 Column 1</col>
-				<col format="@" index="1">Sheet 3 Row 2 Column 2</col>
-				<col format="@" index="2">Sheet 3 Row 2 Column 3</col>
-			</row>
-			<row index="2">
-				<col format="@" index="0">Sheet 3 Row 3 Column 1</col>
-				<col format="@" index="1">Sheet 3 Row 3 Column 2</col>
-				<col format="@" index="2">Sheet 3 Row 3 Column 3</col>
-			</row>
-		</sheet>
-	</xml>
+
 
 Conversion rule example for incoming documents
 ==============================================
