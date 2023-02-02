@@ -9,30 +9,58 @@ External Document
 How to upload the external document?
 ====================================
 
-1. Click to upload zone.
+1. Click on the upload zone
 
 .. image:: pic_externalDocument/ExternalDocument.png
    :width: 600
    :align: center
 
-2. Choose file.
-3. When the upload is finished - you will see name of file inside uploading section. Also you could choose another file before you send envelope.
+2. Select a file
+3. When the upload is finished you will see name of file inside uploading section (or file itself it it was in .pdf format). Also you can choose another file before you send envelope.
 
-.. image:: pic_externalDocument/UploadedAgreement.png
+.. image:: pic_externalDocument/UploadedFile.png
    :width: 600
    :align: center
 
-4. To send envelope - you should fill other field('s) and upload another external document('s) assigned to your role.
+4. To send envelope you should fill all other mandatory fields and upload all external documents assigned to your role.
 
 
 External document signing process
 =================================
 
-For signing external document used only electronic digital signature. And signature should be set at template page.
+Electronic digital signature and e-ink signatures can be used to sign external documents. According signatures should be added to the documents on the template.
 
-Process of signing external document has only one difference from signing internal document.
-In case of signing external document electronic digital signature applied only to .pdf file version(no .xml).
+.. note::
+   Electronic ink signatures can be applied only to .pdf format external documents. Plsease note that if you will add e-ink signature to external document in the template, only .pdf files will be accepted for this documents in following envelopes.
 
-.. image:: pic_externalDocument/ExternalDocumentElectronicDigitalSignature.png
+Process of signing external documents with EDS has one difference from signing internal document. When signing external document electronic digital signature is applied only to .pdf file version (not to .xml file). Signature interface is same as for structured documents.
+
+.. image:: pic_externalDocument/ExternalDocumentEDS.png
+   :width: 600
+   :align: center
+
+How to add e-ink signature to external document?
+================================================
+
+1. To add e-ink signature to the external document click on the signature field
+
+.. image:: pic_externalDocument/ExternalDocumentEink.png
+   :width: 600
+   :align: center
+
+2. After this place signature where you want it to be and click
+
+.. image:: pic_externalDocument/ExternalDocumentEinkDone.png
+   :width: 600
+   :align: center
+
+3. When this is done you can finish filling all mandatory fields and send the envelope - all signatures will be visible on it.
+
+How to add stamps to external document?
+=======================================
+
+Note that you can add stamps to the external document in the same way as a e-ink signature. Text stamp can be edited to contain any needed text (up to 140 symbols)
+
+.. image:: pic_externalDocument/ExternalDocumentStamps.png
    :width: 600
    :align: center
