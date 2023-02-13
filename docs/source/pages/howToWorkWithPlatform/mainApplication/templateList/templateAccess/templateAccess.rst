@@ -1,3 +1,5 @@
+.. _templateAccessLevel:
+
 ===============
 Template Access
 ===============
