@@ -6,7 +6,6 @@ Envelope delegation process
 
 .. toctree::
 
-
 How to send envelope for delegation
 ===================================
 
