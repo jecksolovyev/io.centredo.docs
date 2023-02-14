@@ -4,12 +4,25 @@ API methods
 
 .. toctree::
 
+    methods/authorization.rst
+    methods/checkEnvelopeStatus.rst
+    methods/documentsForSign.rst
+    methods/downloadEnvelopeZip.rst
+    methods/envelopeFill.rst
+    methods/envelopeSend.rst
+    methods/searchMailbox.rst
+    methods/signDocument.rst
+    methods/templateCreation.rst
+    methods/uploadAttachment.rst
+    methods/account/users.rst
+    methods/account/domains.rst
+
 
 .. hint::
     All api requests will be send to: https://api.centredo.com/
 
-Authorization
-=============
+Authorization endpoint
+======================
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 |**Method** |       **Request URL**         |                                            **Description**                                      |
 +===========+===============================+=================================================================================================+
@@ -17,8 +30,8 @@ Authorization
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 
 
-How to send envelope
-====================
+How to send envelope (endpoints)
+================================
 
 +-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
 |**Method** |       **Request URL**                           |                          **Description**                                      |
@@ -39,9 +52,8 @@ How to send envelope
 +-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
 
 
-
-Create template
-===============
+Create template endpoint
+========================
 
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 |**Method** |       **Request URL**         |                                           **Description**                                       |
@@ -50,8 +62,8 @@ Create template
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 
 
-Search mailbox
-==============
+Search mailbox endpoint
+=======================
 
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 |**Method** |       **URL запиту**          |                                           **Description**                                       |
@@ -60,8 +72,8 @@ Search mailbox
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 
 
-Upload attachment or external document
-======================================
+Upload attachment or external document endpoint
+===============================================
 
 +-----------+---------------------------------+-------------------------------------------------------------------------------------------------+
 |**Method** |       **URL запиту**            |                                           **Description**                                       |
@@ -69,8 +81,8 @@ Upload attachment or external document
 | POST      | ``/api/v1/envelope/attachment`` | `Upload attachment or external documents <methods/uploadAttachment.html>`__                     |
 +-----------+---------------------------------+-------------------------------------------------------------------------------------------------+
 
-Send envelope
-=============
+Send envelope endpoint
+======================
 
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 |**Method** |       **Request URL**         |                                           **Description**                                       |
@@ -78,8 +90,8 @@ Send envelope
 | POST      | ``/api/v1/envelope/send``     | `Send envelope <methods/envelopeSend.html>`__                                                   |
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 
-Check envelope status
-=====================
+Check envelope status endpoint
+==============================
 
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 |**Method** |       **Request URL**         |                                           **Description**                                       |
@@ -87,8 +99,8 @@ Check envelope status
 | GET       | ``/api/v1/mailbox/{uuid}``    | `Check envelope status <methods/checkEnvelopeStatus.html>`__                                    |
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 
-Get completed document for print
-================================
+Get completed document for print endpoint
+=========================================
 
 .. list-table::
    :widths: 1 45 54
@@ -101,8 +113,8 @@ Get completed document for print
      - ``/api/v1/envelope/{envelopeUuid}/for-print``
      - `Get document for print. Document should be completed. <openapi/authApi.html#operation/getDocumentPrintVersionUsingGET>`__
 
-Account
-=======
+Account endpoints
+=================
 
 .. list-table::
    :widths: 1 45 54
@@ -142,8 +154,8 @@ Account
      - ``/api/v1/account/{accountUuid}/users``
      - `Mass create users <methods/account/users.html#mass-create-users>`__
 
-User/Profile
-============
+User/Profile endpoints
+======================
 
 .. list-table::
    :widths: 1 45 54

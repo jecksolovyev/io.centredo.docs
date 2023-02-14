@@ -1,5 +1,6 @@
-**Send Envelope**
-=================
+=============
+Send Envelope
+=============
 
 .. toctree::
 
@@ -10,8 +11,8 @@
 
 For create and send envelope customer should know based on what template will be created envelope.
 
-**sendEnvelopeDto**
-===================
+sendEnvelopeDto
+===============
 
 .. code-block:: JSON
 

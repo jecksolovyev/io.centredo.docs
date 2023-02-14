@@ -1,10 +1,11 @@
-==========================
-Error codes knowledge base
-==========================
+========================
+Veakoodide teadmistebaas
+========================
 
-This document identifies types of errors. Each error code has common error type and also this codes are different depends on issue.
+.. toctree::
 
+See dokument määrab kindlaks vigade tüübid. Igal veakoodil on ühine veatüüp ja ka need koodid on sõltuvalt probleemist erinevad.
 .. csv-table::
-    :header: "Error code", "Error detail", "Error description"
+    :header: "Veakood", "Vea detail", "Vea kirjeldus"
     :file: errorCodes.csv
     :widths:  10, 40, 50

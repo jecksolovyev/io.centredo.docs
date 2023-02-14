@@ -1,10 +1,11 @@
-==========================
-Error codes knowledge base
-==========================
+========================================
+Base de connaissances des codes d'erreur
+========================================
 
-This document identifies types of errors. Each error code has common error type and also this codes are different depends on issue.
+.. toctree::
 
+Ce document identifie les types d'erreurs. Chaque code d'erreur a un type d'erreur commun et ces codes sont également différents en fonction du problème.
 .. csv-table::
-    :header: "Error code", "Error detail", "Error description"
+    :header: "Code d'erreur", "Détail de l'erreur", "Erreur de description"
     :file: errorCodes.csv
     :widths:  10, 40, 50

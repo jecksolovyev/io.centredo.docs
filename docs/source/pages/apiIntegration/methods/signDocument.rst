@@ -16,8 +16,8 @@ To sign document send request to the following endpoint.
   :file: signDocument.csv
   :widths:  10, 41
 
-Request structure example:
-==========================
+Request structure example
+=========================
 
 .. code-block:: JSON
 

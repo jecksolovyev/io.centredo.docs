@@ -9,8 +9,8 @@ Account corporate users
 Account can have corporate users, which belongs to account's domain names. Before you can create multiple users you should download a file example, make changes in it and upload after that.
 
 
-1. Download example file
-========================
+Download example file
+=====================
 
 Returns example XLSX binary with all available roles, permissions and mailboxes for account.
 
@@ -33,8 +33,8 @@ Returns example XLSX binary with all available roles, permissions and mailboxes 
    * - accountUuid :red:`*`
      - Target account UUID
 
-2. Mass create users
-====================
+Mass create users
+=================
 
 Receives XLSX file and create users with permissions. Will return 200 if OK.
 
