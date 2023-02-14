@@ -1,10 +1,12 @@
-==========================
-Error codes knowledge base
-==========================
+========================
+Kļūdu kodu zināšanu bāze
+========================
 
-This document identifies types of errors. Each error code has common error type and also this codes are different depends on issue.
+.. toctree::
+
+Šajā dokumentā ir norādīti kļūdu veidi. Katram kļūdas kodam ir kopīgs kļūdas veids, un arī šie kodi ir atšķirīgi atkarībā no problēmas.
 
 .. csv-table::
-    :header: "Error code", "Error detail", "Error description"
+    :header: "Kļūdas kods", "Kļūdas detaļas", "Kļūdas apraksts"
     :file: errorCodes.csv
     :widths:  10, 40, 50

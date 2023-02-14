@@ -1,10 +1,11 @@
-==========================
-Error codes knowledge base
-==========================
+======================
+Klaidų kodų žinių bazė
+======================
 
-This document identifies types of errors. Each error code has common error type and also this codes are different depends on issue.
+.. toctree::
 
+Šiame dokumente nurodomos klaidų rūšys. Kiekvienas klaidos kodas turi bendrą klaidos tipą, o šie kodai skiriasi priklausomai nuo problemos.
 .. csv-table::
-    :header: "Error code", "Error detail", "Error description"
+    :header: "Klaidos kodas", "Klaidos detalė", "Klaidos aprašymas"
     :file: errorCodes.csv
     :widths:  10, 40, 50

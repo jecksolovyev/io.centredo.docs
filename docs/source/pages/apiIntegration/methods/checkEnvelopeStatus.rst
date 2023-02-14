@@ -1,5 +1,6 @@
-**Check envelope status**
-=========================
+=====================
+Check envelope status
+=====================
 
 .. toctree::
 

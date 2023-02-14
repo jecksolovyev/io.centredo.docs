@@ -1,5 +1,6 @@
-**Search mailbox**
-==================
+==============
+Search mailbox
+==============
 
 .. toctree::
 
