@@ -73,15 +73,9 @@ master_doc = 'index'
 redoc_uri = 'https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js'
 redoc = [
     {
-        'name': 'Public API',
-        'page': 'pages/apiIntegration/openapi/publicApi',
-        'spec': 'pages/apiIntegration/openapi/swagger_pub.json',
-        'embed': True
-    },
-    {
-        'name': 'Authorized API',
-        'page': 'pages/apiIntegration/openapi/authApi',
-        'spec': 'pages/apiIntegration/openapi/swagger_auth.json',
+        'name': 'Open API',
+        'page': 'pages/apiIntegration/openapi/openApi',
+        'spec': 'pages/apiIntegration/openapi/swagger.json',
         'embed': True,
         'opts': {
             'suppress-warnings' : True,
