@@ -32,10 +32,10 @@ There are several ways to create an envelope:
    :width: 400
    :align: center
 
-Envelope draft will be opened.
+Envelope draft will be opened
 
 .. image:: picEnvelopeCreation/envelopeFlow.png
    :width: 400
    :align: center
 
-From this page you will have to fill all roles that take part in envelope processing flow (unless they are predifined on the template level). After all mandatory fields will be filled you can send envelope to the next participant of the flow.
+From this page you will have to fill all roles that take part in envelope processing flow (unless they are predifined on the template level). Note that you can enable "I am assignee/approver/signer" attribute to predefine your own mailbox for specified role. After all mandatory fields will be filled you can send envelope to the next participant of the flow.
