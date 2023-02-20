@@ -1,4 +1,4 @@
-.. _addLinksInDocuments:
+.. _addLinkTemplate:
 
 =====================
 Links inside document
