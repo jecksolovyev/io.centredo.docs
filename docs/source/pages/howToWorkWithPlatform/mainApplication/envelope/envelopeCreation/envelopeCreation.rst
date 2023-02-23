@@ -32,7 +32,7 @@ There are several ways to create an envelope:
    :width: 400
    :align: center
 
-6. By cloning existing envelope. Please nte that if mailbox has no access to the template of origin or envelop is created via Quick send Clone button will not be shown.
+6. By cloning existing envelope. Please note that if mailbox has no access to the template of origin or envelop is created via Quick send 'Clone' button will not be shown.
 
 .. image:: picEnvelopeCreation/createFromExisting.png
    :width: 400
