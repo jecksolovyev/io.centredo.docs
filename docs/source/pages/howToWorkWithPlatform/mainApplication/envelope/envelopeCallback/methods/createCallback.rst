@@ -55,7 +55,9 @@ Request body parameters described below:
 +-----------------+------------------------------------------------------------------------------------------------------+
 | status          | Filter envelopes by status. Allowed statuses for callbacks are WAITING, COMPLETED, CANCELLED, EXPIRED|
 +-----------------+------------------------------------------------------------------------------------------------------+
-| subject         | Filter envelopes by respective subject of envelope                                                   |
+| subject         | Filter envelopes by respective subject of envelope. Filter works according to the contain rule.      |
+|                 | It means if we apply filter by subject "agreement" all envelopes with word "agreement" will be added |
+|                 | to callback queue and callback will be sent.                                                         |
 +-----------------+------------------------------------------------------------------------------------------------------+
 | receiveDateFrom | Filter envelopes by receive date FROM specified date and time                                        |
 +-----------------+------------------------------------------------------------------------------------------------------+
