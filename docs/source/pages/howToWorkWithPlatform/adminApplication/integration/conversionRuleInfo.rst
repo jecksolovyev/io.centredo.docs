@@ -19,13 +19,19 @@ In order to apply it, the following namespace has to be added:
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
                     exclude-result-prefixes="saxon wdExtensions">
 
-There are 2 static methods:
+There are 4 static methods:
 
 | 1. wdExtensions:getValueFromDictionary(String dictionaryUuid, String columnByUuid, String valueToFind, String columnToFind)
 | Can be used to find a value in column
 
 | 2. wdExtensions:getRecordUuidByValueFromDictionary(String dictionaryUuid, String columnUuid, String valueToFind)
 | Can be used to find UUID of dictionary record
+
+| 3. wdExtensions:createAttachementWithSourceFile()
+| Extension uploads original file to storage, creates attachment UUID and return UUID as result. This extension can be used if created envelope required original file. Each repetition of extension will create new attachment with new UUID.
+
+| 4. wdExtensions:getMailboxUuidByAlias(String mailboxAlias)
+| Extension accepts alias name and return mailboxUUID. Can be used to configure recipients in flow. Instead of mailboxAlias can be path to respective value in original document.
 
 Conversion rule example for outgoing documents
 ==============================================
@@ -48,7 +54,7 @@ Conversion rule example for outgoing documents
         <xsl:template match="ORDERS">
             <xsl:variable name="supplierGLN" select="../UNB/UNB03/UNB0301"/>
             <xsl:variable name="senderGLN" select="../UNB/UNB02/UNB0201"/>
-            <xsl:variable name="supplierUuid" select="wdExtensions:getValueFromDictionary('a5390637-f3b5-49f3-b7f6-48132f6fe8bb', '7f9d20ab-71d8-45e0-9756-2887fd427cd6', $supplierGLN, 'f69ee017-1fb3-4ff1-a803-c4ade48ea65e')"/>
+            <xsl:variable name="supplierUuid" select="{wdExtensions:getValueFromDictionary('a5390637-f3b5-49f3-b7f6-48132f6fe8bb', '7f9d20ab-71d8-45e0-9756-2887fd427cd6', $supplierGLN, 'f69ee017-1fb3-4ff1-a803-c4ade48ea65e')}"/>
             <envelope templateUuid="579ba3f3-7e26-4c7a-845c-ffa0fdf78057" templateVersion="55809865-32df-4341-91b0-b8bc44451394">
                 <info>
                     <subject>Замовлення на постачання № <xsl:choose><!--Dlya MTI-->
