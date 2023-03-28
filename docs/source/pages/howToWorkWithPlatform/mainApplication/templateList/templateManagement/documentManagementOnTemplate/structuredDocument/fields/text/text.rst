@@ -33,7 +33,7 @@ You will see modal window with properties of Text field you are adding.
 
 7. Min - minimum number of characters required for field (no limit is applied if left empty)
 
-7. Max - maximum number of characters required for field (standart limit is applied if left empty)
+8. Max - maximum number of characters required for field (standart limit is applied if left empty)
 
 When attributres are set you can click Save button and field will be added. You can click filed to see its properties and update them. Also you can delete the field in same menu.
 

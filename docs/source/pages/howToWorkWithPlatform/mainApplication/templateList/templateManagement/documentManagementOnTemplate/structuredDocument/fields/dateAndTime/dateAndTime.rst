@@ -30,7 +30,7 @@ You will see modal window with properties of Date and time field you are adding.
 
 7. Min - minimum date (no limit is applied if left empty)
 
-7. Max - maximum date (no limit is applied if left empty)
+8. Max - maximum date (no limit is applied if left empty)
 
 .. note::
    Please note that min and max fields accepts only integers. They specify date offset in days. For example if min is 5 and max is 2, then date interval from 5 past days to 2 days in the future can be set. If min is 0 and max is 0 then only current date can be selected.
