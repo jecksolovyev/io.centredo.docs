@@ -6,13 +6,13 @@ Date and time field
 
 To add Date and time field you should place a cursor in the document and click on Date and time field button, or drag it over the document.
 
-.. image:: pic_text/DateButton.png
+.. image:: pic_dateAndTime/DateButton.png
    :width: 400
    :align: center
 
 You will see modal window with properties of Date and time field you are adding.
 
-.. image:: pic_text/DateAttributes.png
+.. image:: pic_dateAndTime/DateAttributes.png
    :width: 400
    :align: center
 
@@ -37,6 +37,6 @@ You will see modal window with properties of Date and time field you are adding.
 
 When attributres are set you can click Save button and field will be added. You can click filed to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_text/DateField.png
+.. image:: pic_dateAndTime/DateField.png
    :width: 400
    :align: center
