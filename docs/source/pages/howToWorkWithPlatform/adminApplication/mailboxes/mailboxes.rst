@@ -8,18 +8,15 @@ Mailboxes
 
 ---------
 
-Mailboxes page it's a part of admin panel interface. 
-This page allows:
+Mailboxes page is a part of admin panel interface. This page allows:
 
-1. Manage current mailbox(es);
+1. Manage existing mailboxes
 
-2. Create new mailbox(es);
+2. Create new mailboxes
 
-3. Remove user(s) from mailbox(es);
+3. Remove users from mailboxes
 
-4. Delete mailbox(es);
-
-Open mailboxes page
+4. Delete mailboxes
 
 .. image:: pic_mailboxes/mailboxesMainView.png
    :width: 600
@@ -40,13 +37,13 @@ Add new mailbox
    :width: 600
    :align: center
 
-3. Click on the button "Create" (the state of the "Create" button will change after name enters)
+3. Click on the button "Create" (it will become enablled after name is entered)
 
 .. image:: pic_mailboxes/mailboxesCreateMailbox.png
    :width: 600
    :align: center
 
-4. After successful mailbox creation will show message in the right corner of the page and mailbox will show in the list of mailboxes
+4. After successful mailbox creation you will see message in the right corner of the page and mailbox will show in the list of mailboxes
 
 .. image:: pic_mailboxes/mailboxesSuccessfulCreation.png
    :width: 600
@@ -55,14 +52,12 @@ Add new mailbox
 Check users assigned to mailbox
 ===============================
 
-To check the users which assigned to the particular mailbox click on the link with number in the column "Users". After this action redirect will happen to the page Users https://staging.whitedoc.space/admin/users with perdefined filter by Mailbox.
+To see the list of users which have access to the mailbox click on the link with number in the column "Users". After this action you will be redirected to the page page with perdefined filter by Mailbox.
 
 Edit mailbox
 ============
 
-Edition interface allows update name of the mailbox, add and remove aliases of the mailbox, copy the mailboxs UUID, unassign all users who has permissions to the mailbox and delete mailbox.
-
-To open edition form of the mailbox, just click on the settings icon
+Edition interface allows update name of the mailbox, add and remove aliases to the mailbox, copy the mailboxs UUID, unassign all users with access to the mailbox and delete mailbox. To open mailbox edit form click on the settings icon.
 
 .. image:: pic_mailboxes/mailboxesOpenEditionForm.png
    :width: 600
@@ -76,22 +71,19 @@ Name field has length validation:
 1. Min value - 1 symbol
 2. Max value - 255 symbols
 
-To edit name just focus the name, change the name and click on "Save changes" button
+To edit name just focus the name change it and click on "Save changes" button.
 
 .. image:: pic_mailboxes/mailboxesNameUpdate.png
    :width: 600
    :align: center
 
-After successful edition of the mailbox the notification message will show at the right corner of the page
+After successful edition of the mailbox the notification message will show at the right corner of the page.
 
 .. image:: pic_mailboxes/mailboxesChangesSaved.png
    :width: 600
    :align: center
 
-You can hide visibility of your mailbox for system members.To do this, activate the toggle: "Hide name/aliases from other accounts".
-    When the toggle is active, mailbox name or alias can be found by users who have access to the account.
-    it is also possible to find you by contact name if the mailbox is saved in the user's contacts.
-    In any state toggle, your mailbox can be found in the system by mailbox UUID.
+You can hide visibility of your mailbox for system members.To do this, activate the toggle: "Hide name/aliases from other accounts". When the toggle is active mailbox name or alias can be found only by users who have access to this account.
 
 .. image:: pic_mailboxes/Screenshot_15.png
    :width: 600
@@ -107,12 +99,15 @@ To copy the mailbox UUID click on the copying icon. After successful copying the
    :width: 600
    :align: center
 
-Add/Remove alias(es) for mailbox
-================================
+Alias management
+================
 
-For the particular mailbox aliases couldn't be duplicated only unique values accepts. 
+Two identical aliases can not be added to one mailbox.
 
-To add alias(es) to the mailbox
+.. note:: 
+   Two different mailboxes in the system can have same alias. If you need to ensure that you're alias is unique systewide, you can use qualified alias. Qualified aliases use a prefix with semicolon in the end e.g. TIN:youralias. If such prefix is used, same alias with same prefix can not be created in the system after initial one is created. Please note that not any prefix can be used - please contact your administrator for information on what unique prefix groups are used on your instance of application.
+
+To add alias(es) to the mailbox:
 
 1. Click on the aliases area of the page 
 
@@ -130,7 +125,7 @@ To add alias(es) to the mailbox
    :width: 600
    :align: center
 
-To remove alias(es) from the mailbox, click on remove icon of the alias and click on "Save changes" button
+To remove alias from the mailbox, click on remove icon of the alias and click on "Save changes" button
 
 .. image:: pic_mailboxes/mailboxesDeletionButton.png
    :width: 600
