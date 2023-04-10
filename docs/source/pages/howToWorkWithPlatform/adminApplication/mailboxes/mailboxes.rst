@@ -105,7 +105,7 @@ Alias management
 Two identical aliases can not be added to one mailbox.
 
 .. note:: 
-   Two different mailboxes in the system can have same alias. If you need to ensure that you're alias is unique systewide, you can use qualified alias. Qualified aliases use a prefix with semicolon in the end e.g. TIN:youralias. If such prefix is used, same alias with same prefix can not be created in the system after initial one is created. Please note that not any prefix can be used - please contact your administrator for information on what unique prefix groups are used on your instance of application.
+   Two different mailboxes in the system can have same alias. If you need to ensure that you're alias is unique systewide, you can use qualified alias. Qualified aliases use a prefix with semicolon in the end e.g. TIN:youralias. If such prefix is used, same alias with same prefix can not be created in the system after initial one is created. For such aliases only letters, numbers and dash is allowed. Please note that not any prefix can be used - please contact your administrator for information on what unique prefix groups are used on your instance of application.
 
 To add alias(es) to the mailbox:
 
@@ -168,7 +168,7 @@ Delete mailbox
 
 3. Confirm the decision and mailbox will be deleted
 
-.. warning:: **Please note!** `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
+.. warning:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
 
 .. include:: delete_mailbox_behaviour.rst
 
