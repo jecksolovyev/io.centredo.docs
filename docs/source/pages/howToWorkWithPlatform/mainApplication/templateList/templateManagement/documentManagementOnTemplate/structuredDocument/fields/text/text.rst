@@ -4,13 +4,15 @@ Text field
 
 .. toctree::
 
+Text field allows you to create dynamic text box which will be filled by participants of the envelope processing flow.
+
 To add text field you should place a cursor in the document and click on Text field button, or drag it over the document.
 
 .. image:: pic_text/TextButton.png
    :width: 400
    :align: center
 
-You will see modal window with properties of Text field you are adding.
+Modal window with properties of the field will appear.
 
 .. image:: pic_text/TextAttributes.png
    :width: 400
@@ -29,7 +31,7 @@ You will see modal window with properties of Text field you are adding.
 .. note::
    Please note that standart character limit is 1000 for singleline filed and 5000 for multiline field
 
-6. Search - this attribute specifies will this field be eligible for mailbox page search
+6. Search - this attribute specifies if this field should be eligible for mailbox page search
 
 7. Min - minimum number of characters required for field (no limit is applied if left empty)
 
