@@ -16,3 +16,4 @@ Fields
    digitalSignature/eds.rst
    duplicate/duplicate.rst
    formula/Formula.rst
+   autonumber/autonumber.rst

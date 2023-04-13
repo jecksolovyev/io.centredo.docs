@@ -4,7 +4,9 @@ Date and time field
 
 .. toctree::
 
-To add Date and time field you should place a cursor in the document and click on Date and time field button, or drag it over the document.
+Date and time field allows you to create date and time selector which will be filled by participants of the envelope processing flow.
+
+To add text field you should place a cursor in the document and click on Text field button, or drag it over the document.
 
 .. image:: pic_dateAndTime/DateButton.png
    :width: 400
@@ -26,7 +28,7 @@ You will see modal window with properties of Date and time field you are adding.
 
 5. Time - this attribute specifies if time will be included with date
 
-6. Search - this attribute specifies will this field be eligible for mailbox page search
+6. Search - this attribute specifies if this field should be eligible for mailbox page search
 
 7. Min - minimum date (no limit is applied if left empty)
 
