@@ -23,20 +23,22 @@ To add attachment field to template drag and drop this field from the fields bar
 4. Select file extensions
 
 File extensions provide restriction what type of document can be uploaded to this field.
-Our system support to upload files with next extensions: pdf, doc, docx, rtf, xls, xlsx, txt, png, jpg, jpeg, zip.
+Our system support to upload files with next extensions: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar.
 Depends on of your selection in file extensions, type of uploaded files can be limited.
 
 File extensions selection:
 
 1. All - can be uploaded any files with supported extensions
 
-2. Document: pdf, doc, docx, txt, xls, xlsx
+2. Document: .pdf
 
-3. Image: png, jpg, jpeg
+2. File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
 
-4. Archive: zip
+3. Image: .png, .jpg, .jpeg
+
+4. Archive: .zip, .7z, .rar
 
 Attachment envelope field
 =========================
 For upload file to attachment field you should click on this field, after that will be open file explorer where you can select file which you want upload.
-You able to upload only one file to one attachment field. Maximum file size 5 MB, size of all uploaded files in one envelope limited by 25 MB.
+You able to upload only one file to one attachment field. Maximum file size and size of all uploaded files in one envelope displays on instance but default value is 5MB and 25MB respectively.

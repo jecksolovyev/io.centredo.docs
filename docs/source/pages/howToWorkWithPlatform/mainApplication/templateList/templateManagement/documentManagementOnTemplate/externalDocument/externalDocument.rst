@@ -30,14 +30,15 @@ This document will automatically be assigned to the sender role.
 
 5. On the template editor, you can set the file extensions: 
 
-* Document - pdf, docx, xlsx, txt;
-* Image - png, jpg, jpeg;
-* Archive - zip;
-* All it;
+* ALl - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar
+* File - .pdf
+* Document - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
+* Image - .png, .jpg, .jpeg
+* Archive - .zip, .7z, .rar
 
 and assign it to another role.
 
-Also, you can add EDS to such a document.
+Also, you can add EDS or e-ink field to such a document.
 
 How to delete external document from template?
 ==============================================
