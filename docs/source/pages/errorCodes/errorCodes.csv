@@ -285,7 +285,7 @@
 50031,There is no need to sign the document {0},"There is no signature required from particular mailbox, or it was not the right step of the signing process"
 50032,"There is a validation error for signature with type '{0}' and message: {1}",Please check signature data in the request
 50033,No XML data for envelope,Please check envelope XML data in the request
-50034,"Attachment '{0}' file type mismatch","Attachment file type is not correspond to allowed file types. Allowed file types: pdf, doc, docx, xls, xlsx, xml, dbf, txt, rtf, png, jpg, jpeg, zip. Allowed file types can be minimized according to field settings in template."
+50034,"Attachment '{0}' file type mismatch","Attachment file type is not correspond to allowed file types. Allowed file types: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar. Allowed file types can be minimized according to field settings in template."
 50035,Mailbox no longer has access to envelope,The access to the envelope has been revoked
 50036,Cannot archive envelope which is not in a final status: {0},"It's impossible to archive an envelope if it's not in a final status, such as COMPLETED, CANCELLED or EXPIRED"
 50037,"Bad base64 value of field '{0}'","Binary data is invalid, please check that file you're trying to send properly encoded in BASE64"

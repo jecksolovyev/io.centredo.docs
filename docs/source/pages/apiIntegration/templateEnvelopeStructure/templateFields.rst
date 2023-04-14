@@ -108,13 +108,15 @@ Values: exact value from template attribute valueYes or from template attribute 
 AttachmentType should be one of the presented above (all, document, image, archive).
 Supported document types:
 
-1) All: pdf, docx, xlsx, txt, png, jpg, jpeg, zip;
+1) All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar;
 
-2) Document: pdf, docx, xlsx, txt;
+2) Document: .pdf;
 
-3) Image: png, jpg, jpeg;
+3) File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps;
 
-4) Archive: zip.
+4) Image: .png, .jpg, .jpeg;
+
+5) Archive: .zip, .7z, .rar;
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                     Duplicate field                                                                               |
