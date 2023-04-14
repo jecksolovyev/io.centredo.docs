@@ -30,7 +30,7 @@ This document will automatically be assigned to the sender role.
 
 5. On the template editor, you can set the file extensions: 
 
-* ALl - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar
+* All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar
 * File - .pdf
 * Document - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
 * Image - .png, .jpg, .jpeg
