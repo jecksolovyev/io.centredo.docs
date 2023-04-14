@@ -32,11 +32,11 @@ File extensions selection:
 
 2. Document: .pdf
 
-2. File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
+3. File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
 
-3. Image: .png, .jpg, .jpeg
+4. Image: .png, .jpg, .jpeg
 
-4. Archive: .zip, .7z, .rar
+5. Archive: .zip, .7z, .rar
 
 Attachment envelope field
 =========================
