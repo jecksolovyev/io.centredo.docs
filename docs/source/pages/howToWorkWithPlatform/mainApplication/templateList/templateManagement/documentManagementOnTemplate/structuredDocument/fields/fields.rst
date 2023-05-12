@@ -11,6 +11,7 @@ Fields
    attachment/attachment.rst
    table/table.rst
    signField/signField.rst
+   checkBox/checkBox.rst
    yesNo/yesNoField.rst
    lookup/lookup.rst
    digitalSignature/eds.rst
