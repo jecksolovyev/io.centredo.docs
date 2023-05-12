@@ -17,7 +17,7 @@ To add Checkbox field to the document drag and drop it to the document from the 
 
 Checkbox field in the envelope
 ==============================
-In the envelope Checkbox field looks like regular checkbox. It has grey borders by default or red borders if Reuired  attribute was enabled.
+In the envelope Checkbox field looks like regular checkbox. It has grey borders by default or red borders if Required  attribute was enabled.
 
 .. image:: pic_checkBox/checkBox.png
    :width: 100
