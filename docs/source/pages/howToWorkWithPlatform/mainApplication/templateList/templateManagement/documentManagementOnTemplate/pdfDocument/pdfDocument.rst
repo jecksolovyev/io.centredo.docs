@@ -14,19 +14,19 @@ How to add a PDF document to template?
 
 1. Navigate to ../template/list?s=mailbox or press the button "Templates" on the left sidebar
 
-.. image:: ../pic_DocumentManagement/templatesSidebarButton.png
+.. image:: pic_pdfDocument/templatesSidebarButton.png
    :width: 600
    :align: center
 
 2. Click on the "New Template" button
 
-.. image:: ../pic_DocumentManagement/newTemplateButtonTemplates.png
+.. image:: pic_pdfDocument/newTemplateButtonTemplates.png
    :width: 600
    :align: center
 
 3. Alternatively, you can click "Create template" or "New From Blanc" button on the dashboard
 
-.. image:: ../pic_DocumentManagement/newTemplateButtonDashboard.png
+.. image:: pic_pdfDocument/newTemplateButtonDashboard.png
    :width: 600
    :align: center
 
