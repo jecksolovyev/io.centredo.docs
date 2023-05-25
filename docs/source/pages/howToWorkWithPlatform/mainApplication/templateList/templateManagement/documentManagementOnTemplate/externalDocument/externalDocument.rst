@@ -4,57 +4,52 @@ External Document
 
 .. toctree::
 
-How to upload the external document?
-=====================================
+What is external document?
+==========================
 
-You have the ability to upload an external document to envelope and sign this document with an EDS.
+It is a field which allows to create a form for upload of an external file of various formats in the envelope created from template. It can be signed with an EDS or e-ink signature later by envelope processing flow participants.
 
-To do this, just:
+How to add an external document to template?
+============================================
 
-1. Navigate to ../template/list?s=mailbox or press the button "Templates" on the left sidebar.
+1. Navigate to ../template/list?s=mailbox or press the button "Templates" on the left sidebar
 
-.. image:: pic_addExternalDocument/templateButtonOnSidebar.png
+.. image:: ../pic_DocumentManagement/templatesSidebarButton.png
    :width: 600
    :align: center
 
-2. Click on the "New Template" button.
+2. Click on the "New Template" button
 
-.. image:: pic_addExternalDocument/newTemplateButton.png
+.. image:: ../pic_DocumentManagement/newTemplateButtonTemplates.png
    :width: 600
    :align: center
 
-3. Then you will be redirected to the template creation page. On the right container, you can see the "Add external document" button. Click on it.
-4. If you click on "New External document", you will be redirected to the template editor and be scroll to the external document.
+3. Alternatively, you can click "Create template" or "New From Blanc" button on the dashboard
 
-This document will automatically be assigned to the sender role.
+.. image:: ../pic_DocumentManagement/newTemplateButtonDashboard.png
+   :width: 600
+   :align: center
 
-5. On the template editor, you can set the file extensions: 
+4. Click on the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
+5. Click on "External" button. After this document will appear under default first structured document (assigned to Sender by default)
+6. In the template editor you can edit document properties, such as role, optionality or allowed file extensions:
 
 * All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar
-* File - .pdf
-* Document - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
+* File - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
+* PDF document - .pdf
 * Image - .png, .jpg, .jpeg
 * Archive - .zip, .7z, .rar
 
-and assign it to another role.
+6. You also can add EDS and e-ink fields to such document
 
-Also, you can add EDS or e-ink field to such a document.
+How to clone external document?
+===============================
 
-How to delete external document from template?
-==============================================
+1. Click "More" button in the right upper corner of the document
+2. Click "Clone" button in the menu
 
-To delete the external document you have to do the following:
+How to delete external document?
+================================
 
-1. Click the "More" button - it is the button with three dots - on the document.
-2. Select "Delete" on the menu.
-3. External document has been deleted.
-
-How to clone external document from template?
-=============================================
-
-You have the ability to clone an external document - create the duplicate of the document.
-To clone the external document you have to do the following:
-
-1. Click the "More" button - it is the button with three dots - on the document.
-2. Select "Clone" on the menu.
-3. External document has been cloned.
+1. Click "More" button in the right upper corner of the document
+2. Click "Delete" button in the menu
