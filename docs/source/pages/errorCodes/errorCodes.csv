@@ -35,10 +35,10 @@
 1033,"Attachment '{0}' is not in {1} format",Attachment cannot be uploaded because of the wrong file format. Please use one of the allowed formats from the list
 1034,"Image source '{0}' is wrong","Image tag supports only 'data:' and 'image-uuid:' prefixes for source attribute"
 1035,"Hash attribute has to be specified for '{0}'",Hash attribute is required to sign the document
-1036,"Image hashes do not match for '{0}'",Check that hashes are correct for the image
+1036,"Attachement hashes do not match for '{0}'",Check that hashes are correct for the attachement
 1037,Password cannot be reused,Do not use previously used passwords
 1038,Please accept Terms and Conditions and Privacy Policy,Please read and accept Terms and Conditions and Privacy Policy.
-1039,Image {0} was uploaded by another mailbox {1},This image cannot be used in this mailbox
+1039,Attachement {0} was uploaded by another mailbox {1},This attachement cannot be used in this mailbox
 1040,There must be 2 dates specified for a range,"Range field value is incorrect. Acceptable range format is date/date, and date must be ISO-8601"
 1041,Requested range out of bounds,Requested range out of bounds
 1042,Comment thread {0} is not found,Comment thread with entered UUID was not found. Please check correctness of the entered data
@@ -48,7 +48,7 @@
 1046,Thread {0} is already resolved or deleted and cannot be changed,There is no possibility to update the thread
 1047,"Attachment '{0}' exceeded max name length: {1}",Attachment file name length is bigger than the limit. Please pay attention to max length on the error code and try to upload file with less length
 1048,Password expired,Please renew the password
-1049,"To protect your account from hacking, we temporarily blocked the possibility of authorization. Wait {0} minute(s) or click “Forgot password?”",Please wait a few minutes and try again
+1049,"To protect your account from hacking, we temporarily blocked the possibility of authorization. Wait {0} minute(s) or click “Forgot password?�?",Please wait a few minutes and try again
 1050,Only one session is allowed. Please log out from another one,Additional session is blocked
 1051,IP address is blocked,Please contact the platform/account administrator
 1052,Wrong IP or IP-range format for [{0}],Please fix IP format
@@ -60,18 +60,22 @@
 1058,Shared category can only belong to shared category,Shared category can only belong to shared category
 1059,"'uuids' or 'searchParams' have to be specified separately","Please send 'uuids' or 'searchParams'"
 1060,"Image '{0}' is smaller than minimum size: {1}x{2}",Image size is smaller than limit for upload. Please pay attention to min size on the error code and try to upload file with larger size.
-1061,The email address or password is incorrect. Try again or click “Forgot password?” to reset it.,Entered email or password is invalid
-1062,"The email address or password is incorrect. You have 1 attempt left. To avoid temporary blocking, click “Forgot password?”",Entered email or password is invalid
+1061,The email address or password is incorrect. Try again or click “Forgot password?�? to reset it.,Entered email or password is invalid
+1062,"The email address or password is incorrect. You have 1 attempt left. To avoid temporary blocking, click “Forgot password?�?",Entered email or password is invalid
 1063,{0},Request is rejected by the system
 1064,Please log in using SSO,Corporate user cannot register or log in using a password
 1065,Wrong code format,Please send a proper code from email
 1066,Field {0} cannot be empty,Please set the field value
 1068,Unsupported format {0},This format cannot be processed
 1069,Shared mailboxes must be specified for access level = shared,Check shared mailboxes are filled
+1070,"Date field '{0}' must be greater than current date",Please change the date value
+1071,File convert error: {0},File conversion error
+1072,Bad ISO date: {0},"Format date is incorrect, please use ISO-8601 date formats"
+1073,"File '{0}' cannot be uploaded because there are no pages of allowed size {1}",Please use another file
 **USER/PROFILE**,,
 10001,User {0} not found,User with requested UUID was not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
-10003,Proof message is not valid,"Entered proof message is not valid. A proof message should be the user's email in upper case (f.e.: “EMAIL@EXAMPLE.COM”)"
+10003,Proof message is not valid,"Entered proof message is not valid. A proof message should be the user's email in upper case (f.e.: “EMAIL@EXAMPLE.COM�?)"
 10004,Email already in use: {0},User with particular email has already been registered
 10005,User already activated,User has already been activated. To use the system you have to be authorized
 10006,Invitation is for another user,"Opened content doesn't belong to your particular user, log in with other credentials to be able to see the content"
@@ -86,7 +90,6 @@
 10015,"Wrong role '{0}' is used","Role is incorrect for particular request, please check that entered role UUID exists"
 10017,"Color '{0}' has wrong format",Color in the request in wrong format. Please use color format #FFFFFF
 10018,User is already blocked,User has already been blocked
-10019,Bad ISO date: {0},"Format date is incorrect, please use ISO-8601 date formats"
 10020,Already invited,This user has already been invited to this entity
 10021,Corporate user cannot delete himself,Only admin of account can delete corporate user
 10022,Corporate user cannot create new account,Corporate user is already assigned to an account and this cannot be changed
@@ -101,6 +104,7 @@
 10031,User already exists,Email already registered in the system
 10032,User is blocked,Ask your system administrator to unblock
 10033,Verification record expired,Please repeat operation
+10034,Auto-deposit mailbox is not set,Auto-deposit mailbox has to be set for user
 **ACCOUNT**,,
 20001,Account {0} not found,An account with entered UUID is not found. Please check request data
 20002,Account {0} deleted,Account with entered UUID has been deleted.
@@ -169,19 +173,24 @@
 30005,Mailbox alias cannot be empty,Mailbox alias name should not be empty. It should contain at least 3 symbols
 30006,Mailbox alias length exceeded maximum size,"Mailbox alias name length couldn't be more than 256 symbols"
 30007,Alias not found or attached to another mailbox,Alias you have tried to delete was not found or attached to another mailbox
-30008,Category {0} not found,"Category with UUID you entered doesn't exist or was not found"
+30008,Contact {0} not found,"Contact with UUID you entered doesn't exist or was not found"
+30009,Auto delegation is enabled but mailbox is not specified,Please set the mailbox to which to delegate the envelope
 30010,Category {0} not found,"Category with UUID you entered doesn't exist or was not found"
 30011,Invalid parentId value,ID of parent category is not valid
 30012,Alias already exists,Alias with entered name is exist
 30013,Empty category ID,Category ID is empty in request. Please enter required parameter
 30014,Cannot change category access to official,"It's impossible to change category access to official. Official categories may be created only by the system user."
 30015,Category already exists,Category with entered UUID exists
-30016,"Mailbox {0} doesn't belong to the account",Mailbox does not belong to this account. Please check your request and ensure that a mailbox you want to invite belongs to the account
+30016,Mailbox {0} does not belong to the account,Mailbox does not belong to this account. Please check your request and ensure that a mailbox you want to invite belongs to the account
 30017,Mailbox {0} has no other owners,Mailbox does not have another owner and cannot be left
 30018,Sender mailbox not found,"Mailbox UUID of Sender was not found, please check correctness of request"
 30019,Mailbox UUID is empty,Mailbox UUID should not be empty
 30020,Mailbox UUID is invalid or empty,Mailbox UUID is invalid or empty. Please send valid request with valid Mailbox UUID
 30021,Email is forbidden for alias name,Please do not use emails as an alias name to avoid misunderstandings
+30022,"Alias name '{0}' already exists. Please reach your support",Qualified alias already used
+30023,"Incorrect qualified identifier '{0}'",Should match [0-9a-zA-Z.]
+30024,"Alias '{0}' listed more than once",But should be only one time
+30025,Mailbox UUID of delegate is invalid,Please do select another mailbox
 **TEMPLATE**,,
 40001,Document {0} not found,Document with entered UUID was not found. Please check correctness of the entered UUID
 40002,Template {0} is archived,Template with entered UUID is archived. You cannot use archived templates.
@@ -189,6 +198,7 @@
 40004,Template Data {0} not found,"Template data is not found in storage. Please check your request, compare with documentation and send again"
 40005,Template Data not found for template {0},"Template data is not found in storage. Please check your request, compare with documentation and send again"
 40006,Template must have access level equal or wider than category access level,Template access level has to be equal or bigger than category access level
+40007,Image {0} not found,"Image is not found, please upload the image before updating the template"
 40009,Must have other roles except the sender,Template has to have at least one another role except sender
 40010,Must be only 1 sender,Template should contain only one role with type Sender
 40011,First role must be Sender,First role in the template flow should be sender
@@ -202,10 +212,12 @@
 40019,"Template validation error in document '{0}' lookup '{1}'. Related field cannot be used as lookup source","Lookup field doesn't have related source in the dictionary. Please check availability of the dictionary/dictionary record or remove lookup field"
 40020,Duplicated document ids: {0},Document IDs are duplicated in the template. Document IDs should be unique inside template
 40021,Duplicated document names: {0},Document name are duplicated within the template. Document names must be unique within the template
-40022,"Field '{0}' has min value > max value","Entered values of the min value is bigger than max value. It's impossible to set these parameters for field."
+40022,"Field '{0}' has wrong min or max value","Entered values of the min value is bigger than max value. It's impossible to set these parameters for field."
 40023,"Field '{0}' has precision value larger than allowed {1}",Entered precision value for the field is bigger than allowed for particular type of the field
 40025,Template {0} already deleted,Template has been deleted and cannot be used to envelope creation
 40026,Empty template data,Template data parameter is empty. Please use valid structure of the request
+40027,Access level has to be Public or Official,Private template cannot be shared
+40028,Template {0} is not accessible by sharing code,Make sure the sharing code is correct
 40029,"At least one non-optional field required in a table '{0}'",At least one table field has to have non-optional and also this field must be assigned to the table owner
 40030,Dynamic table head not found. Table name: {0},Table structure is not correct. Table should contain head.
 40031,Dynamic table head row not found. Table name: {0},Table structure is not correct. Table should contain only one head row.
@@ -220,9 +232,9 @@
 40040,Duplicated signature name in document {0},Names of the signature fields are duplicated. A document must have unique names of the fields
 40041,"Missed document info section, document id: {0}","Structure of the template data isn't correct. Please add info sections to the document structure"
 40042,Too much signatures per role {0},Signature role can has one signature field per one document.
-40043,Too many fields in document,External document can contain only one attachment field
+40043,No signature provider for digital signing,Please use eInk signature instead
 40044,"Unexpected field type '{0}'","Type of the entered field is not supported. Supported types of fields: text, number, money, datetime, select-dictionary, yesno, attachment"
-40045,Unexpected document body content: {0},Only one type of field “attachment” is allowed for external document
+40045,Unexpected document body content: {0},Only one type of field “attachment�? is allowed for external document
 40046,Dynamic table name not found,Name of the dynamic table is missed
 40047,Dynamic table roleId not found,"Table field doesn't have assigned role"
 40048,Template has no signatures,"Documents inside template doesn't have signatures field, but has a Signer role. Please add signatures fields or remove the Signer role and try again"
@@ -243,6 +255,7 @@
 40065,Duplicated field name: {0},Duplicated field name
 40066,Category or one of subcategories is not empty,There is active template in the category or one of its subcategories
 40067,Cannot move to this category,"It's impossible to move a category inside the category you're about to delete"
+40068,All roles except sender have to be set,In order to share the template all roles have to be defined in advance
 40069,Template has roles with same ID: {0},Template syntax error. Please check roles IDs and make them unique
 40070,Cannot share template to yourself,"Creator's mailbox should not be in sharedTo list"
 40071,Only shared categories can be assigned to shared template,Only shared categories can be assigned to shared template
@@ -251,8 +264,21 @@
 40074,"Wrong formula with name '{0}'. Check supported operations",Please check the formula
 40075,Recursion found in formulas,Please check the formulas
 40076,Stamp is not supported,Please do not use stamps
+40077,Flow error - reachless document {0} for role {1},"Deadlock found, flow should be corrected"
+40078,"Column with attribute 'initiallyHidden' must have an optional field","Please delete 'initiallyHidden' attribute or add an optional field"
+40079,Too many fields in the table {0}. Allowed only {1},Please decrease number of fields in row
+40080,Too many columns in the table {0}. Allowed only {1},Please decrease number of columns in table
+40081,Number of head columns does not match number of body cells,Table structure is not correct. Table should contain same number of columns in the head and the body.
+40082,"All 'autonumber' fields have to be assigned on Sender role","Please set sender role for all 'autonumber' fields"
+40083,"Field '{0}' is not supposed to be in the table",Please move the field out of table
+40084,Template subject contains wrong field definition: {0},"Field cannot be in the table or of types: einksign, checkbox"
+40085,Pdf UUID has to be specified for document {0} with type = pdf,Please add attribute info -> pdf -> uuid to XML
+40086,"Field or table with name '{0}' is not supposed to be in the document '{1}'",Tables and attachements are not supported for PDF templates
+40087,"Attributes 'x', 'y' and 'page' must be specified for the field '{0}'",Please set coordinates in mm and a page number
+40088,Page number {0} does not exist for document {1},Wrong PDF page number
+40089,Coordinate {0} = {1} is greater then {2} for document {3},Wrong X or Y coordinates for PDF field
 **ENVELOPE**,,
-50001,Envelope field is empty,Required field on envelope is empty. To solve this issue please fill field with a valid content
+50001,"Envelope field '{0}' is empty",Required field on envelope is empty. To solve this issue please fill field with a valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
 50003,"Value of '{0}' should be less than {1}",Entered value in the field is bigger than maximum value. Please enter valid value
 50004,"Expected value with precision = {0} for field '{1}'",Precision of the entered value should be higher than minimal precision. Please pay attention to the settings of the field
@@ -260,14 +286,13 @@
 50006,"Unexpected value '{0}' for field '{1}'. Allowed: {2},{3}.",Entered value does not correspond to one of the allowed values. Please look at properties of the field to clarify allowed values
 50007,Not all roles has mailboxUuid set properly,"This error happens if some role doesn't have valid mailbox UUID on the envelope"
 50008,Not all roles has ID set properly,"This error happens if some role doesn't have valid role ID on the envelope"
-50009,Not valid envelope subject: {0},Subject of the envelope is empty or invalid. Subject of the envelope should not have restricted symbols: [\/:”*?<>|p{C}]+
+50009,Not valid envelope subject: {0},Subject of the envelope is empty or invalid. Subject of the envelope should not have restricted symbols
 50010,"There is mailbox predefined in template for role '{0}' and cannot be changed",Mailbox UUID is predefined for particular role on the template and cannot be changed
 50011,Envelope {0} not found,Envelope with entered UUID was not found. Please check correctness of the entered data
 50012,Envelope templateUuid or templateVersion is required,Template UUID or template version UUID is required to this request
 50013,Generated envelope has different templateUuid,Generated envelope has different template UUID in the envelope data or in the parameter of the request
 50014,Generated envelope has different versionUuid,Generated envelope has different template version UUID in the envelope data or in the parameter of the request
 50015,"Invalid value '{0}' of field '{1}', expected '{2}'",Entered value does not correspond to the date format. Please enter value in date format YYYY-MM-DD
-50016,"Envelope document with ID '{0}' was not found in template",Document in envelope has wrong ID
 50017,Envelope document {0} not found in XML structure,Document was not found in XML structure of the envelope
 50018,Envelope sender not found,Sender was not found in XML structure of the envelope
 50019,Compiled document {0} not found in file storage,Document which has been compiled was not found in the file storage. Try to regenerate document
@@ -285,9 +310,9 @@
 50031,There is no need to sign the document {0},"There is no signature required from particular mailbox, or it was not the right step of the signing process"
 50032,"There is a validation error for signature with type '{0}' and message: {1}",Please check signature data in the request
 50033,No XML data for envelope,Please check envelope XML data in the request
-50034,"Attachment '{0}' file type mismatch","Attachment file type is not correspond to allowed file types. Allowed file types: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar. Allowed file types can be minimized according to field settings in template."
+50034,"Attachment '{0}' file type mismatch","Attachment file type is not correspond to allowed file types. Allowed file types: pdf, doc, docx, xls, xlsx, xlsm, xml, dbf, txt, rtf, png, jpg, jpeg, zip. Allowed file types can be minimized according to field settings in template."
 50035,Mailbox no longer has access to envelope,The access to the envelope has been revoked
-50036,Cannot archive envelope which is not in a final status: {0},"It's impossible to archive an envelope if it's not in a final status, such as COMPLETED, CANCELLED or EXPIRED"
+50036,Cannot archive/delete envelope which is not in a final status: {0},"It's impossible to archive/delete an envelope if it's not in a final status, such as COMPLETED, CANCELLED or EXPIRED"
 50037,"Bad base64 value of field '{0}'","Binary data is invalid, please check that file you're trying to send properly encoded in BASE64"
 50038,"Expected '{0}' image type for field '{1}'",Image type format is incorrect. Please pay attention to the file format in error code and use respective file format to this field.
 50039,Maximum expected image size is {0} x {1},Image size does not fit into maximum width and height limits. Please use image with size less than maximum values.
@@ -339,6 +364,7 @@
 50085,Approval {0} is deleted,Approval with entered UUID is deleted and cannot be used
 50086,Approver {0} is already in another approval for this envelope,Approvers cannot participate in several approval processes for one envelope
 50087,Duplicate value does not match,Value of the duplicate field in request does not match to value in related field
+50088,Role {0} is expected to be an e-mail,Wrong envelope flow participant
 50089,Envelope cannot be delegated,Delegation is forbidden for envelope
 50090,Delegate cannot cancel the delegation,Only initiator of the delegation can cancel it
 50091,Delegation not found or Initiator role is completed,Please check the delegation role
@@ -351,9 +377,15 @@
 50098,Only completed envelopes can be shared by email,Please send only completed envelope UUIDs
 50099,Only {0} envelopes are allowed for sharing,Please decrease number of envelopes
 50100,Some columns cannot be deleted or hidden,Some columns have to be visible
-50101,"File ''{0}'' cannot be edited because it already has digital signatures",Please choose another file
-50102,"File ''{0}'' is encrypted",Please choose another file
-50103,"No column ''{0}'' to sort",Wrong sortField
+50101,"File '{0}' cannot be edited because it already has digital signatures",Please choose another file
+50102,"File '{0}' is encrypted",Please choose another file
+50103,"No column '{0}' to sort",Wrong sortField
+50104,Sharing envelope files by e-mail is prohibited,Sharing is disabled for the envelope
+50105,Envelope callback {0} not found,Envelope callback not found by id
+50106,Too many rows in the table {0}. Allowed only {1},Please decrease number of rows in table
+50108,"Invalid value '{0}' for checkbox value of field '{1}'",Invalid format of value has been entered to the checkbox field. Checkbox field accepts only 1 or 0
+50109,"Checkbox '{0}' expected to be checked","Checkbox field in template is required, soi must be checked"
+50110,"Envelope document id duplicated: '{0}'",Using of duplicated ids is prohibited
 **DICTIONARY**,,
 60001,Dictionary {0} not found,Dictionary with entered UUID was not found. Please check correctness of the entered data
 60002,Dictionary name length exceeded limit,Dictionary name length is higher than maximum allowed. Limit is 128 symbols.
@@ -392,7 +424,7 @@
 80003,Integration not found for mailbox {0},Integration configuration was not found for entered mailbox UUID
 80004,Name pattern generates empty filename,We cannot generate a file name
 80005,templateUuid does not match versionUuid,Template UUID does not match template version UUID. Please compare template and version UUIDs
-80006,Protocol {0} not supported,"Entered protocol has not supported yet. Supported protocols: SFTP, FTPS, AS2, SOAP"
+80006,Protocol {0} not supported,"Entered protocol has not supported yet. Supported protocols: FTPS, FTPS, AS2, SOAP"
 80007,Matching pattern source is required,Matching pattern source is required in this request
 80008,Template UUID is required,Template UUID is required in this request
 80009,Version UUID is required,Template version UUID is required in this request
@@ -423,6 +455,8 @@
 90031,Not a scenario owner,User is not a scenario owner
 90032,No access to scenario,No read access to scenario
 90033,Only the author is allowed to change the comment,No write access to comment message
+90034,No access for callback {0},Current mailbox has no access to this callback
+90035,Not a token owner,Current user has no access to application token
 **SCENARIOS**,,
 100001,Scenario name cannot be empty,Scenario name cannot be empty or NULL
 100002,Scenario description cannot be empty,Scenario description cannot be empty or NULL
