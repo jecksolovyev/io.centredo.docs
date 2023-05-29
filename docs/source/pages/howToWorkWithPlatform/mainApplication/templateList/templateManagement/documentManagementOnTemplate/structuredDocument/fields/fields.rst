@@ -10,7 +10,7 @@ Fields
    dictionary/dictionary.rst
    attachment/attachment.rst
    table/table.rst
-   signField/signField.rst
+   signature/signature.rst
    checkBox/checkBox.rst
    yesNo/yesNoField.rst
    lookup/lookup.rst
