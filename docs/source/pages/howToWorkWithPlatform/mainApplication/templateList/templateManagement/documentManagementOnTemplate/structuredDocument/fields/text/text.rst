@@ -11,7 +11,7 @@ How to add text field to template
 
 1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via dgar & drop)
 
-.. image:: pic_text/textButton.png
+.. image:: pic_text/textIcon.png
    :width: 600
    :align: center
 

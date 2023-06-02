@@ -11,7 +11,7 @@ How to add signature field to template
 
 1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via dgar & drop)
 
-.. image:: pic_signature/signatureButton.png
+.. image:: pic_signature/signatureIcon.png
    :width: 600
    :align: center
 
