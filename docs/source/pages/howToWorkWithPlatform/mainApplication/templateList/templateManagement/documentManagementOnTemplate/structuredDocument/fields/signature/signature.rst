@@ -9,93 +9,30 @@ Signature field allows user to place e-ink signature on a document. It can be ad
 How to add signature field to template
 ======================================
 
-1. You can click on Signature field in fields menu to add it to place where text cursor is positioned in structured document. To do so make sure that cursor is placed there
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via dgar & drop)
 
-.. image:: pic_signature/signatureIcon.png
+.. image:: pic_signature/signatureButton.png
    :width: 600
    :align: center
 
-2. Field creation form will appear
-
-.. image:: pic_signature/signatureModal.png
-   :width: 600
-   :align: center
-
-3. Alternatively you can drag and drop field to desired place in the document. In such way it can be also added to uploaded PDF documents in template. In such documents it can also be resized by dragging bottom right corner
+2. To add field to PDF document, drag and drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
 .. image:: pic_signature/signaturePDF.png
    :width: 600
    :align: center
 
-.. note::
-   If added to PDF document, signature field can also be moved around by drag and drop.
+3. Field creation form will appear, where you should set field attributes
 
-4. Fill the name of the field (should be unique per document)
-
-.. image:: pic_signature/sign-field-form-name.png
+.. image:: pic_signature/signatureModal.png
    :width: 600
    :align: center
 
-5. Choose Role to fill this field by clicking on "Role" input (default role is Sender)
+4. Name - this is a name of a field
+5. Role name - this is a role which will be assgined to fill this field
+6. Placeholder - this text will be shown in the text box before anything is filled in (can be left empty, field name will be used instead)
+7. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
 
-.. image:: pic_signature/sign-field-form-role.png
-   :width: 600
-   :align: center
-
-6. Choose Role from the list by clickin on role name
-
-.. image:: pic_signature/sign-field-form-role-select.png
-   :width: 600
-   :align: center
-
-7. Fill the placeholder for this field (optional, if left empty field name will be used)
-
-.. image:: pic_signature/sign-field-form-placeholder.png
-   :width: 600
-   :align: center
-
-8. Click save
-
-.. image:: pic_signature/sign-field-form-save.png
-   :width: 600
-   :align: center
-
-9. Field should be added now
-
-.. image:: pic_signature/sign-field-added.png
-   :width: 600
-   :align: center
-
-Editing signature field
-=======================
-
-1. Click on the signature field in the document
-
-.. image:: pic_signature/sign-field-added.png
-   :width: 600
-   :align: center
-
-3. Field properties should appear on the right side
-
-.. image:: pic_signature/sign-field-edit-form.png
-   :width: 600
-   :align: center
-
-4. Clicking on "Delete" button will delete field and close edit form
-
-.. image:: pic_signature/sign-field-edit-form-delete.png
-   :width: 600
-   :align: center
-
-5. Here you can change field properties
-
-.. image:: pic_signature/sign-field-edit-form-fields.png
-   :width: 600
-   :align: center
-
-7. Click on "Save" will Save all the changes you mad and close edit form
-
-.. image:: pic_signature/sign-field-edit-form-save.png
+.. image:: pic_signature/signatureStructured.png
    :width: 600
    :align: center
 
@@ -103,54 +40,33 @@ Filling signature field
 =======================
 
 1. Open envelope where signature field is located
-
-.. image:: pic_signature/envelope-editor.png
-   :width: 600
-   :align: center
-
 2. Click on signature field
 
-.. image:: pic_signature/envelope-signature.png
+.. image:: pic_signature/signatureEnvelope.png
    :width: 600
    :align: center
 
-2. Window will appear
+3. Window will appear
 
-.. image:: pic_signature/envelope-signature-popup.png
+.. image:: pic_signature/signatureDraw.png
    :width: 600
    :align: center
 
 .. note::
    If you have saved e-ink signature in your profile settings page, window will not open and signature will be automatically applied.
 
-3. Draw your signature on the empty area by pressing left side on the mouse and dragging it around. You have to draw at least 0.5 sec to complete validation of the field
+4. Draw your signature on the empty area by pressing left side on the mouse and dragging it around. You have to draw at least 0.5 sec to complete validation of the field. Note that you can change color or input text instead of drawing on Text tab
 
-.. image:: pic_signature/envelope-signature-popup-signing.png
+.. image:: pic_signature/signatureDrawn.png
    :width: 600
    :align: center
 
-4. Click on "Clear" button to reset draw area
-
-.. image:: pic_signature/envelope-signature-popup-clear.png
-   :width: 600
-   :align: center
-
-5. Click "Sign" to insert your signature to the field (can't be empty)
-
-.. image:: pic_signature/envelope-signature-popup-save.png
-   :width: 600
-   :align: center
-
-6. Click "Cancel" to close popup without changes
-
-.. image:: pic_signature/envelope-signature-popup-cancel.png
-   :width: 600
-   :align: center
-
+5. You can reset drawing area with "Clear" button
+6. Click "Sign" to insert your signature to the field (can't be empty)
 7. After clicking "Save" you will see your signature in the document
 
-.. image:: pic_signature/envelope-signature-ready.png
+.. image:: pic_signature/documentSigned.png
    :width: 600
    :align: center
 
-8. Signature edited (you will have to draw it from star) by clicking on the picture of your signature and repeating steps 2, 3 and 5
+8. Signature can be changed by clicking on the picture of your signature and repeating steps 2, 3 and 5
