@@ -4,41 +4,43 @@ Text field
 
 .. toctree::
 
-Text field allows you to create dynamic text box which will be filled by participants of the envelope processing flow.
+Text field allows you to create dynamic text box which will be filled by participants of the envelope processing flow. It can be added to structured and PDF documents.
 
-To add text field you should place a cursor in the document and click on Text field button, or drag it over the document.
+How to add text field to template
+=================================
 
-.. image:: pic_text/TextButton.png
-   :width: 400
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via dgar & drop)
+
+.. image:: pic_text/textButton.png
+   :width: 600
    :align: center
 
-Modal window with properties of the field will appear.
+2. To add field to PDF document, drag and drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
-.. image:: pic_text/TextAttributes.png
-   :width: 400
+.. image:: pic_text/textPDF.png
+   :width: 600
    :align: center
 
-1. Name - this is a name of a field
+3. Field creation form will appear, where you should set field attributes
 
-2. Role name - this is a role which will be assgined to fill this field
+.. image:: pic_text/textModal.png
+   :width: 600
+   :align: center
 
-3. Placeholder - this text will be shown in the text box before anything is filled in (can be left empty)
-
-4. Optional - this attribute specifies if this field is mandatory to fill
-
-5. Multiline - this attribute specifies is this text field will be single or multi lined
+4. Name - this is a name of a field
+5. Role name - this is a role which will be assgined to fill this field
+6. Placeholder - this text will be shown in the text box before anything is filled in (can be left empty, field name will be used instead)
+7. Optional - this attribute specifies if this field is mandatory to fill
+8. Multiline - this attribute specifies is this text field will be single or multi lined
 
 .. note::
    Please note that standart character limit is 1000 for singleline filed and 5000 for multiline field
 
-6. Search - this attribute specifies if this field should be eligible for mailbox page search
+9. Search - this attribute specifies if this field should be eligible for mailbox page search
+10. Min - minimum number of characters required for field (no limit is applied if left empty)
+11. Max - maximum number of characters required for field (standart limit is applied if left empty)
+12. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
 
-7. Min - minimum number of characters required for field (no limit is applied if left empty)
-
-8. Max - maximum number of characters required for field (standart limit is applied if left empty)
-
-When attributres are set you can click Save button and field will be added. You can click filed to see its properties and update them. Also you can delete the field in same menu.
-
-.. image:: pic_text/TextField.png
-   :width: 400
+.. image:: pic_text/textStructured.png
+   :width: 600
    :align: center
