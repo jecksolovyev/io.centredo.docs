@@ -9,13 +9,13 @@ Signature field allows user to place e-ink signature on a document. It can be ad
 How to add signature field to template
 ======================================
 
-1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via dgar & drop)
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via drag & drop)
 
 .. image:: pic_signature/signatureIcon.png
    :width: 600
    :align: center
 
-2. To add field to PDF document, drag and drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
+2. To add field to PDF document, drag & drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
 .. image:: pic_signature/signaturePDF.png
    :width: 600
