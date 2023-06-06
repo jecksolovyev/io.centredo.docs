@@ -22,8 +22,7 @@ Custom columns can be added to the envelope list from Customize view menu. Start
    :width: 400
    :align: center
    
-.. note::
-   Any field with enabled Search attribute will be available as custom column.
+.. note:: Any field with enabled Search attribute will be available as custom column.
    
 Also you can filter shown envelopes by adding filters or envelope fields from this menu
 
@@ -31,8 +30,7 @@ Also you can filter shown envelopes by adding filters or envelope fields from th
    :width: 400
    :align: center
    
-.. note::
-   Configured filters can be saved by clicking Save filter button.
+.. note:: Configured filters can be saved by clicking Save filter button.
    
 On the left side of the page you can navigate through your mailbox folders
 
@@ -46,8 +44,7 @@ Envelopes can be moved to Archive folder by selecting them and clicking on Archi
    :width: 400
    :align: center
 
-.. note::
-   Only envelopes in Completed, Expired and Cancelled statuses or Drafts can be archived.
+.. note:: Only envelopes in Completed, Expired and Cancelled statuses or Drafts can be archived.
 
 Later such envelopes can be unarchived from according folder by Unarchive button
 
@@ -61,8 +58,7 @@ Envelopes can be moved to Trash folder by selecting them and clicking on Delete 
    :width: 400
    :align: center
 
-.. note::
-   Only envelopes in Completed, Expired and Cancelled statuses or Drafts can be deleted.
+.. note:: Only envelopes in Completed, Expired and Cancelled statuses or Drafts can be deleted.
 
 Later such envelopes can be restored from according folder by Restore button
 

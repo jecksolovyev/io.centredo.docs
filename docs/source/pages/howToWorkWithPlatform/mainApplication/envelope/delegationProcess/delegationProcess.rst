@@ -17,8 +17,7 @@ How to send envelope for delegation
    :width: 600
    :align: center
 
-.. note::
-   This button will only appear for mailboxes with delegation permission.
+.. note:: This button will only appear for mailboxes with delegation permission.
 
 2. In the mailbox field of opened window find and select desired delegate mailbox by name, uuid or alias (or enter email address) and click Confirm
 
@@ -27,7 +26,6 @@ How to send envelope for delegation
    :align: center
 
 3. When it is done envelope will be received by mailbox which was selected for delegation
-
 4. Delegate will be able to perform all actions which were assigned to initiator role or cancel the delegation
 
 .. image:: delegation_pic/delegationCancel.png
@@ -47,13 +45,10 @@ It is possible to enable automatic incoming envelopes delegation for selected ma
    :width: 600
    :align: center
 
-.. note::
-   This section will only appear for mailboxes with delegation permission.
+.. note:: This section will only appear for mailboxes with delegation permission.
 
 2. In mailbox field find and select desired delegate mailbox by name, uuid or alias (or enter email address). It will become a delegate for all incoming envelopes of your mailbox
-
 3. You can specify Effective until date. If selected, forwarding will be automatically disabled day after selected. For example if 18.04.23 is selected, automatic delegation should turn off 19.04.23 at 00:00 (up to 2 hours delay is possible)
-
 4. Make sure to enable Active forwarding toggle if you want to enable delegation to selected mailbox
 
 .. image:: delegation_pic/autoDelegateOptions.png
@@ -62,9 +57,7 @@ It is possible to enable automatic incoming envelopes delegation for selected ma
 
 5. Click Save changes when all options are configured
 
-.. warning::
-   Envelopes with restricted delegation will not be automatically forwarded to selected mailbox and still be sent to your mailbox even when forwarding is enabled.
-
+.. warning:: Envelopes with restricted delegation will not be automatically forwarded to selected mailbox and still be sent to your mailbox even when forwarding is enabled.
 
 How to restrict envelope delegation
 ===================================

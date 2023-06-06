@@ -15,8 +15,7 @@ There are four types of access on the platform:
 - access for all mailboxes in your account (My account)
 - access for everyone on the platform (Everyone)
 
-.. note::
-   Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click on the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
+.. note:: Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click on the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
 
 How to modify template access level
 ===================================
@@ -66,7 +65,4 @@ At the bottom of the template tab of envelope menu you can find "Do not send fil
    :width: 400
    :align: center
    
-If you will enable it and save the template, all envelopes created from it will not contain any files from the envelope in notification emails. Also such envelopes can not be shared with other mailboxes.
-
-.. warning::
-   If you will enable this toggle, it wouldn't be possible to turn it off in the envelopes. If it is disabled in the template — it can be modified in the envelopes.
+If you will enable it and save the template, all envelopes created from it will not contain any files from the envelope in notification emails. Also such envelopes can not be shared with other mailboxes. If set on template level, it's impossible to change it on envelope level later.

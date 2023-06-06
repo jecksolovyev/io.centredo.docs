@@ -4,9 +4,7 @@
 How to manage scenario
 ======================
 
-Scenario includes the following information: name, description, uuid and steps of the scenario.
-
-Steps include name, source and destination (where source and destination include template uuid and template version uuid) and conversion rule.
+Scenario includes the following information: name, description, uuid and steps of the scenario. Steps include name, source and destination (where source and destination include template uuid and template version uuid) and conversion rule.
 
 .. toctree::
 
@@ -15,7 +13,7 @@ How to create scenario?
 
 To create scenario you have to click on button "New scenario" on the scenario list. And after that fill in required details.
 
-.. warning:: **Please note! First step of the scenario doesn\'t contain source. It contains only destination**
+.. note:: First step of the scenario does not contain source. It contains only destination.
 
 Scenario creation form presented below:
 
@@ -46,33 +44,22 @@ Scenario creation form presented below:
 How to configure particular step?
 =================================
 
-You can configure steps of the scenario and each step will run new one envelope.
+1. Click on "+" button near "Scenario steps" title. After that new form will appear
+2. Set the name of the scenario step
+3. Fill the destination with template uuid and template version uuid of template you need    
+4. You have to enter xslt conversion rule which will create envelope after run. How to create xslt conversion rule you can find by the following link
+5. Click on "Save" icon in the right top corner of the step
 
-To configure the first step of scenario you have to click on "+" button near "Scenario steps" title. After that new form will appear and you will be able to:
-
-1. Set the name of the scenario step.
-
-2. Fill the destination with template uuid and template version uuid of template you need.
-    
-3. You have to enter xslt conversion rule which will create envelope after run. How to create xslt conversion rule you can find by the following link.
-
-4. Click on "Save" icon in the right top corner of the step.
-
-.. warning:: **The latest template version uuid automatically applies in the field after template uuid entered**
+.. note:: The latest template version uuid automatically applies in the field after template uuid entered
 
 To create second, third and the rest of the following steps you have to do similar steps as above, but you will need to fill new field "source". Source it's two field with template uuid and template version uuid of the previous step of the scenario.
 
 How to edit scenario?
 =====================
 
-If you need to edit scenario you have to do the following:
-
 1. Open scenario list
-
 2. Click on three dots in the right corner of the scenario you need to edit
-
 3. Click on "Edit" option from the list
-
 4. Add your changes if needed and save scenario
 
 **Description of the scenario edit form below**
@@ -95,41 +82,30 @@ If you need to edit scenario you have to do the following:
 How to edit scenario step?
 ==========================
 
-If you need edit scenario step you have to click on "edit" button (pencil icon) on the scenario step you have to edit, add changes and click on "Save" button in the top right corner of the edited scenario step. 
-After that click on "Save" scenario button.
+If you need edit scenario step you have to click on "edit" button (pencil icon) on the scenario step you have to edit, add changes and click on "Save" button in the top right corner of the edited scenario step. After that click on "Save" scenario button.
 
 How to clone scenario?
 ======================
 
-If you need to clone any scenario you have to do the following:
-
 1. Open scenario list
-
 2. Click on three dots in the right corner of the scenario you need to edit
-
 3. Click on "Clone" option from the list
-
-If scenario cloned successfully you will get respective message and will see cloned scenario in the list.
+4. If scenario cloned successfully you will get respective message and will see cloned scenario in the list
 
 How to delete scenario?
 =======================
 
-If you need to delete any scenario you have to do the following:
-
 1. Open scenario list
-
 2. Click on three dots in the right corner of the scenario you need to edit
-
 3. Click on "Delete" option from the list
-
-If scenario deletes successfully you will get respective message and scenario disappear from the list.
+4. If scenario deletes successfully you will get respective message and scenario disappear from the list
 
 What is option send envelope immediately after step run?
 =========================================================
 
 If you want to send envelope after step run, mark the respective checkbox.
 
-.. warning:: **Please note: to send envelope you have to fill all required fields in the envelope for Sender role and you have to set all recipient and signer mailboxes or emails in the flow**
+.. note:: To send envelope you have to fill all required fields in the envelope for Sender role and you have to set all recipient and signer mailboxes or emails in the flow
 
 If you any required data is missed on the step (at the conversion rule) you will get an error while saving scenario.
 
@@ -140,24 +116,18 @@ What is condition and how to use it?
 On the platform presented two types of the conditions:
 
 1. Condition based on some fields, to create different branches of the script, for example, if in the act of completed work the amount of the service is more than 1000, then give the opportunity to launch one branch of the script, if more then another
-
-2. Condition that create several envelopes based on the values in the source. But at the same time, if the values are "Yes", then create envelope (s) 1, and if the value is "No", then create envelope(s).
+2. Condition that create several envelopes based on the values in the source. But at the same time, if the values are "Yes", then create envelope (s) 1, and if the value is "No", then create envelope(s)
 
 Condition is optional and may or may not be in the request or could be null.
 
 **Additional logic**
 
-If after checking the execution "condition" = false, then check the next steps, if all steps are false, then run the step in order in which condition = null.
-
-If there are no conditions, then we run the next steps with the null parameter condition and respective source value.
-
-If several steps meet the conditions, then the user in the envelope will display several buttons for starting different steps (in the rest, several steps will be received in the response)
+If after checking the execution "condition" = false, then check the next steps, if all steps are false, then run the step in order in which condition = null. If there are no conditions, then we run the next steps with the null parameter condition and respective source value. If several steps meet the conditions, then the user in the envelope will display several buttons for starting different steps (in the rest, several steps will be received in the response).
 
 Simple condition
 ================
 
-Condition is a XSLT map which will be applied to the source envelope of the step.
-A simple condition has to return "true" or "false" in xml format:
+Condition is a XSLT map which will be applied to the source envelope of the step. A simple condition has to return "true" or "false" in xml format:
 
 .. code:: xml
 
@@ -188,8 +158,7 @@ A condition XSLT example:
 One to Many condition
 =====================
 
-This type of condition can be applied ONLY to a table inside a document.
-Condition has to return "true" or "false" for every row in the table in the following format:
+This type of condition can be applied ONLY to a table inside a document. Condition has to return "true" or "false" for every row in the table in the following format:
 
 .. code:: xml
 
@@ -202,9 +171,7 @@ Condition has to return "true" or "false" for every row in the table in the foll
       </rows>
     </result>
 
-Index attribute has to match index attribute in "fieldset" node.
-
-A condition XSLT example:
+Index attribute has to match index attribute in "fieldset" node. A condition XSLT example:
 
 .. code:: xml
 

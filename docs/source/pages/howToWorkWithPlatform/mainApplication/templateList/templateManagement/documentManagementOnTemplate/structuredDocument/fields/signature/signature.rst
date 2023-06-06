@@ -52,8 +52,7 @@ Filling signature field
    :width: 600
    :align: center
 
-.. note::
-   If you have saved e-ink signature in your profile settings page, window will not open and signature will be automatically applied.
+.. note:: If you have saved e-ink signature in your profile settings page, window will not open and signature will be automatically applied.
 
 4. Draw your signature on the empty area by pressing left side on the mouse and dragging it around. You have to draw at least 0.5 sec to complete validation of the field. Note that you can change color or input text instead of drawing on Text tab
 

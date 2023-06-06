@@ -11,11 +11,8 @@ Mailboxes
 Mailboxes page is a part of admin panel interface. This page allows:
 
 1. Manage existing mailboxes
-
 2. Create new mailboxes
-
 3. Remove users from mailboxes
-
 4. Delete mailboxes
 
 .. image:: pic_mailboxes/mailboxesMainView.png
@@ -104,8 +101,7 @@ Alias management
 
 Two identical aliases can not be added to one mailbox.
 
-.. note:: 
-   Two different mailboxes in the system can have same alias. If you need to ensure that you're alias is unique systewide, you can use qualified alias. Qualified aliases use a prefix with semicolon in the end e.g. TIN:youralias. If such prefix is used, same alias with same prefix can not be created in the system after initial one is created. For such aliases only letters, numbers and dash are allowed. Please note that not any prefix can be used - please contact your administrator for information on what unique prefix groups are used on your instance of application.
+.. note:: Two different mailboxes in the system can have same alias. If you need to ensure that you're alias is unique systewide, you can use qualified alias. Qualified aliases use a prefix with semicolon in the end e.g. TIN:youralias. If such prefix is used, same alias with same prefix can not be created in the system after initial one is created. For such aliases only letters, numbers and dash are allowed. Please note that not any prefix can be used - please contact your administrator for information on what unique prefix groups are used on your instance of application.
 
 To add alias(es) to the mailbox:
 
@@ -154,25 +150,18 @@ Unassgin users from mailbox
 ===========================
 
 1. To unassign all users from mailbox (remove all permissions to the particular mailbox from the all users who has it except the user who do the action) click on the button "Deactivate"
-
 2. Confirm the decision and users will be unassigned
-
-
 
 Delete mailbox
 ==============
 
 1. To delete mailbox click on "Delete" button
-
 2. Enter the mailbox in upper case to the field in the modal window which opens after click on "Delete" button
-
 3. Confirm the decision and mailbox will be deleted
 
-.. warning:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
+.. note:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
 
 .. include:: delete_mailbox_behaviour.rst
-
-
 
 How to generate report by mailboxes?
 ====================================
@@ -182,19 +171,12 @@ How to generate report by mailboxes?
 If you want to get xlsx file with report by mailboxes you have to do the following:
 
 1. Open platform
-
 2. Got to Admin Panel
-
 3. Open tab 'Mailboxes' and select all necessary records
-
 4. Click on button with document icon (button called "Generate report")
-
 5. After click you will see the message that report will be send to you email after generation
-
 6. Follow to email address
-
 7. Open email you got
-
 8. Click on button "Download"
 
 Now you can open the file on your computer
