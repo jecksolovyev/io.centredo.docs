@@ -33,8 +33,7 @@ How to add text field to template
 7. Optional - this attribute specifies if this field is mandatory to fill
 8. Multiline - this attribute specifies is this text field will be single or multi lined
 
-.. note::
-   Please note that standart character limit is 1000 for singleline filed and 5000 for multiline field
+.. note:: Standart character limit is 1000 for singleline filed and 5000 for multiline field.
 
 9. Search - this attribute specifies if this field should be eligible for mailbox page search
 10. Min - minimum number of characters required for field (no limit is applied if left empty)

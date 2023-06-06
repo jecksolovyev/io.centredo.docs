@@ -4,8 +4,7 @@ Formula Field
 
 .. toctree::
 
-Dynamic formula field performs calculation based on arguments taken from other fields.
-Next functions are available for any argument fields in the document:
+Dynamic formula field performs calculation based on arguments taken from other fields. Next functions are available for any argument fields in the document:
 
 1. SUM - argument summation
 2. PRODUCT - multiplication of arguments
@@ -21,13 +20,12 @@ Next functions can only be applied to a field within a table:
 
 Next fields can be used as arguments in the Formula: Number, Currency, Dictionary, Lookup and Duplicate. Formula field itself also can be used as other formula`s argument.
 
-.. note:: **Please note!** that if you use Dictionary, Lookup or Duplicate of any of this fields, their contents will be parsed as numbers. All symbols except numbers and last dot will be ignored in calculations. If there are several dots only last one will be considered as decimal place separator, other dots will also be ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
+.. note:: If you use Dictionary, Lookup or Duplicate of any of this fields, their contents will be parsed as numbers. All symbols except numbers and last dot will be ignored in calculations. If there are several dots only last one will be considered as decimal place separator, other dots will also be ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
 Create Formula Field
 ====================
 
 1. Create Template
-
 2. Go to template, create number field and currency field
 
 .. image:: pic_formula/Screenshot_1.png
@@ -47,14 +45,13 @@ Create Formula Field
    :align: center
 
 4. Save the formula field. Fill in the main fields of  template. Create a draft envelope
-
 5. Filling numeric and currency field
 
 .. image:: pic_formula/Screenshot_3.png
    :width: 600
    :align: center
 
-6.After filling fields, pay attention to  formula field
+6. After filling fields, pay attention to  formula field
 
 .. image:: pic_formula/Screenshot_4.png
    :width: 600
@@ -65,7 +62,6 @@ Create Formula Field
 In order to apply the SUM table column function, you must repeat the following steps:
 
 1. Create Template
-
 2. Go to template create  dynamic table, added numeric field to dynamic table
 
 .. image:: pic_formula/Screenshot_6.png
@@ -79,7 +75,6 @@ In order to apply the SUM table column function, you must repeat the following s
    :align: center
 
 4. Save the formula field. Fill in the main fields of  template. Create a draft envelope
-
 5. Add two rows to table, filling numeric field
 
 .. image:: pic_formula/Screenshot_8.png
@@ -94,8 +89,7 @@ In order to apply the SUM table column function, you must repeat the following s
 
 7. Send envelope
 
-!!!For users who will work through integrations, it is necessary to understand that the SUM table column function contains one attribute,
-   and looks like this: <formula precision="2" name="total">SUM({rowTotal})</formula>, but the SUM function has two arguments
+.. note:: For users who will work through integrations, it is necessary to understand that the SUM table column function contains one attribute and looks like this: <formula precision="2" name="total">SUM({rowTotal})</formula>, but the SUM function has two arguments.
 
    .. image:: pic_formula/Screenshot_10.png
       :width: 600
@@ -148,4 +142,4 @@ In order to apply the MIN/MAX table column function, you must repeat the followi
    :width: 600
    :align: center
 
-10. As a result, the field MIN table column formula - shows the minimum value and MAX table column function - the maximum.
+10. As a result, the field MIN table column formula - shows the minimum value and MAX table column function - the maximum

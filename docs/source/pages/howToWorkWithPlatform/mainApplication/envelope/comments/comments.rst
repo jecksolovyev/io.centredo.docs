@@ -4,8 +4,6 @@ Comments
 
 .. toctree::
 
----------
-
 How to toggle comments section
 ==============================
 
@@ -171,7 +169,7 @@ How to resolve comment threads
 How to reopen comment threads
 =============================
 
-1. Click on reopen icon.
+1. Click on reopen icon
 
 .. image:: pic_comments/ReopenComment/ReopenComment1.png
    :width: 600

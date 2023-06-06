@@ -4,8 +4,6 @@ External Document
 
 .. toctree::
 
----------
-
 How to upload the external document?
 ====================================
 
@@ -24,14 +22,12 @@ How to upload the external document?
 
 4. To send envelope you should fill all other mandatory fields and upload all external documents assigned to your role
 
-
 External document signing process
 =================================
 
 Electronic digital signature and e-ink signatures can be used to sign external documents. According signatures should be added to the documents on the template
 
-.. note::
-   Electronic ink signatures can be applied only to .pdf format external documents. Plsease note that if you will add e-ink signature to external document in the template, only .pdf files will be accepted for this documents in following envelopes.
+.. note:: Electronic ink signatures can be applied only to .pdf format external documents. Plsease note that if you will add e-ink signature to external document in the template, only .pdf files will be accepted for this documents in following envelopes.
 
 Process of signing external documents with EDS has one difference from signing internal document. When signing external document electronic digital signature is applied only to .pdf file version (not to .xml file). Signature interface is same as for structured documents.
 

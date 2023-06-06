@@ -4,8 +4,6 @@ Invitation to the envelope by email
 
 .. toctree::
 
----------
-
 It's possible to invite participant of the envelope flow by email. Participants which invited by email have to follow the envelope invitation link from email.
 
 Invite participant to envelope by email from the draft page
@@ -52,5 +50,4 @@ The envelope sent by email can be assigned to mailbox automatically with Auto De
 * All envelopes will go to this mailbox automatically without invitations
 * By default 'Auto Deposit Mailbox' is set to user's personal mailbox
 
-.. note::
-   User has an option to select auto deposit mailbox in invitation email under mailbox select menu.
+.. note:: User has an option to select auto deposit mailbox in invitation email under mailbox select menu.
