@@ -2,9 +2,6 @@
 Send Envelope
 =============
 
-.. toctree::
-
-
 .. csv-table::
   :file: evnelopeSend.csv
   :widths:  10, 41
@@ -45,7 +42,6 @@ sendEnvelopeDto
 
 **RESPONSE**
 In response we got envelope uuid:
-
 
 .. code-block:: JSON
 

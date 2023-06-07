@@ -159,5 +159,4 @@ Status code: 200 OK
   :file: checkOneEnvelopeStatusCode.csv
   :widths:  10, 41
 
-
 From both of this request each customers who has access to this envelope can check his status.

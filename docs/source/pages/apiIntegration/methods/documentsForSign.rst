@@ -41,7 +41,6 @@ Status code: **200 OK**
         }
     ]
 
-
 Description of the response data:
 
 .. csv-table::

@@ -180,7 +180,7 @@ Index attribute has to match index attribute in "fieldset" node. A condition XSL
         <xsl:template match="/">
             <result>
                 <rows>
-                    <xsl:for-each select="envelope/documents/document[@id='document_id']/fieldgroup[@name="table_name"]/fieldset">
+                    <xsl:for-each select="envelope/documents/document[@id='document_id']/fieldgroup[@name='table_name']/fieldset">
                         <row index="{@index}">
                             <xsl:choose>
                                 <xsl:when test="field[@name='field_name']='Yes'">
@@ -197,9 +197,7 @@ Index attribute has to match index attribute in "fieldset" node. A condition XSL
         </xsl:template>
     </xsl:stylesheet>
 
-For every row where result = "true" a new envelope will be created.
-To provide "xslt" map with a proper row index, this map has to be modified accordingly.
-The following parameter has to be added:
+For every row where result = "true" a new envelope will be created. To provide "xslt" map with a proper row index, this map has to be modified accordingly. The following parameter has to be added:
 
 .. code:: xml
 

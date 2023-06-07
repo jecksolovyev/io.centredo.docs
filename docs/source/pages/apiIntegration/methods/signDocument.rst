@@ -4,8 +4,7 @@ Sign document(s) with EDS
 
 .. toctree::
 
-Customer can sign document if document has signature field inside assigned to the particular customer. Using this endpoint customer sign document(s) 
-with EDS.
+Customer can sign document if document has signature field inside assigned to the particular customer. Using this endpoint customer sign document(s) with EDS.
 
 Request
 =======
@@ -39,4 +38,4 @@ Request structure example
 Response
 ========
 
-If data in request is valid in response you will see Status code: **200 OK**
+If data in request is valid in response you will see Status code: **200 OK**.

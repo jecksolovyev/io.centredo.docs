@@ -1,8 +1,6 @@
-**URL**,
 Method,GET
-Request URL,``/api/v1/mailbox/search``
-**Headers**,
-authorization(require),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
-Mailbox(require),mailboxUuid
-Content-Type,application/json
+URL,``/api/v1/mailbox/search``
+authorization (required),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
+Mailbox (required),mailboxUuid
+content-type,application/json
 q,"Can be text, email, mailbox UUID"

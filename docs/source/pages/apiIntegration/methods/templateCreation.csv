@@ -1,0 +1,6 @@
+Method,POST
+URL,``/api/v1/template``
+authorization (required),"Bearer “token” – token, which get after `Authorization <authorization.html>`__      "
+Mailbox (required),mailboxUuid: mailbox id
+content-type,application/json
+Body,"{""access"":""mailbox"",""categories"":[],""data"":""string""}"

@@ -1,10 +1,7 @@
-**URL**,
-Method ,POST
-Request URL, ``/api/v1/envelope/{envelopeUuid}/for-sign``
-envelopeUuid (required), Envelope UUID - which you want to download
-**Headers**,
-authorization (require), "Bearer “token” – token, which get after `Authorization <authorization.html>`__"
-Mailbox (require), mailboxUuid: mailbox id
-Content-Type, application/json
-**Body**,
-docIds (required), array of the documents ids (array[string])
+Method,POST
+URL,``/api/v1/envelope/{envelopeUuid}/for-sign``
+envelopeUuid (required),Envelope UUID - which you want to download
+authorization (required),"Bearer “token” – token, which get after `Authorization <authorization.html>`__"
+Mailbox (required),mailboxUuid: mailbox id
+content-type,application/json
+docIds (required),array of the documents ids (array[string])

@@ -2,16 +2,11 @@
 Template creation
 =================
 
-.. toctree::
-
-
 .. csv-table::
-  :file: createTemplate.csv
+  :file: templateCreation.csv
   :widths:  10, 41
 
 **JSON Body**
-
-For create template
 
 .. code:: json
 
@@ -47,8 +42,6 @@ For create template
 	</flow>
     </template>"
     }
-
-
 
 Depending on the need, customer can add a different type of fields `template fields <../fields/templateFields.html>`__
 

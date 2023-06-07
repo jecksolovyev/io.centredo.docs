@@ -1,0 +1,7 @@
+Code,Description
+200,Successfully created
+400,Bad request
+401,Not authorized
+403,No access to mailbox
+404,Envelope not found
+422,Invalid request value

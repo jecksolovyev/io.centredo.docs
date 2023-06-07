@@ -1,31 +1,19 @@
-=============
-Authorization
-=============
-
-User should be authorize on the platform to work with API.
+=========================
+Create audit trail record
+=========================
 
 +---------------+--------------------------------------------------------------+
-|    Method     |                            POST                              |
+|    Method     |                             PUT                              |
 +---------------+--------------------------------------------------------------+
-|      URL      |                        ``api/login``                         |
+|      URL      |            ``api/v1/audittrail/ebvelope/{uuid}``             |
 +---------------+--------------------------------------------------------------+
 | content-type  |                      application/json                        |
 +---------------+--------------------------------------------------------------+
-|     Body      |          {"login":"email","password":"password"}             |
+|     Body      |                     {"text": "string"}                       |
 +---------------+--------------------------------------------------------------+
-
-In response user should get authorization token.
-
-**Response example (JSON):**
-
-.. code:: json
-
-  {"token":"b16b61fc-4706-4c90-a57d-fe0cd0dcd2f0"}
 
 **Response status codes**
 
 .. csv-table::
   :file: authorization.csv
   :widths:  10, 41
-
-Token will expire after 12 hours.

@@ -10,6 +10,9 @@ API methods
     methods/downloadEnvelopeZip.rst
     methods/envelopeFill.rst
     methods/envelopeSend.rst
+    methods/auditTrailEntryCreate.rst
+    methods/auditTrailGetByEnvelope.rst
+    methods/auditTrailDownloadPdf.rst
     methods/searchMailbox.rst
     methods/signDocument.rst
     methods/templateCreation.rst
@@ -17,9 +20,7 @@ API methods
     methods/account/users.rst
     methods/account/domains.rst
 
-
-.. hint::
-    All api requests will be send to: https://api.centredo.com/
+.. hint:: All api requests will be send to: https://api.platform_address_here
 
 Authorization endpoint
 ======================
@@ -30,8 +31,8 @@ Authorization endpoint
 +-----------+-------------------------------+-------------------------------------------------------------------------------------------------+
 
 
-How to send envelope (endpoints)
-================================
+Envelope related endpoints
+==========================
 
 +-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
 |**Method** |       **Request URL**                           |                          **Description**                                      |
@@ -51,6 +52,18 @@ How to send envelope (endpoints)
 | GET       | ``/api/v1/envelope/{envelopeUuid}/sign``        | `Sign document(s) in envelope <methods/signDocument.html>`__                  |
 +-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
 
+Envelope audit trail endpoints
+==============================
+
++-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
+|**Method** |       **Request URL**                           |                          **Description**                                      |
++===========+=================================================+===============================================================================+
+| PUT       | ``/api/v1/audittrail/envelope/{uuid}``          | `Create audit trail record <methods/auditTrailEntryCreate.html>`__            |
++-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
+| GET       | ``/api/v1/audittrail/envelope/{uuid}``          | `Get envelope audit trail <methods/auditTrailGetByEnvelope.html>`__           |
++-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
+| GET       | ``/api/v1/audittrail/pdf/{uuid}``               | `Export envelope audit trail PDF file <methods/auditTrailDownloadPdf.html>`__ |
++-----------+-------------------------------------------------+-------------------------------------------------------------------------------+
 
 Create template endpoint
 ========================
