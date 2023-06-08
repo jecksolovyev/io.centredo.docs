@@ -2,24 +2,6 @@
 API methods
 ===========
 
-.. toctree::
-
-    methods/authorization.rst
-    methods/checkEnvelopeStatus.rst
-    methods/documentsForSign.rst
-    methods/downloadEnvelopeZip.rst
-    methods/envelopeFill.rst
-    methods/envelopeSend.rst
-    methods/auditTrailEntryCreate.rst
-    methods/auditTrailGetByEnvelope.rst
-    methods/auditTrailDownloadPdf.rst
-    methods/searchMailbox.rst
-    methods/signDocument.rst
-    methods/templateCreation.rst
-    methods/uploadAttachment.rst
-    methods/account/users.rst
-    methods/account/domains.rst
-
 .. hint:: All api requests will be send to: https://api.platform_address_here
 
 Authorization endpoints
@@ -60,6 +42,9 @@ Envelope endpoints
    * - Method
      - URL
      - Description
+   * - PUT
+     - ``/api/v1/envelope/send``
+     - `Fill envelope <methods/envelopeFill.html>`__
    * - POST
      - ``/api/v1/envelope/send``
      - `Send envelope <methods/envelopeSend.html>`__
@@ -173,3 +158,21 @@ User/Profile endpoints
    * - DELETE
      - ``/api/v1/account/{accountUuid}/user``
      - `Account admin can delete many corporate users at once. In case of exception, no user will be deleted. <newtab::openapi/authApi.html#operation/deleteCorporateUsersUsingDELETE>`__
+
+.. toctree::
+
+   methods/authorization.rst
+   methods/templateCreation.rst
+   methods/envelopeFill.rst
+   methods/envelopeSend.rst
+   methods/uploadAttachment.rst
+   methods/documentsForSign.rst
+   methods/signDocument.rst
+   methods/downloadEnvelopeZip.rst
+   methods/auditTrailGetByEnvelope.rst
+   methods/auditTrailEntryCreate.rst
+   methods/auditTrailDownloadPdf.rst
+   methods/searchMailbox.rst
+   methods/checkEnvelopeStatus.rst
+   methods/account/users.rst
+   methods/account/domains.rst
