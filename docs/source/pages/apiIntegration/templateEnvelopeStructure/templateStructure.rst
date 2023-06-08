@@ -100,7 +100,6 @@ Template consists of two blocks:
         </flow>
     </template>
 
-
 .. csv-table::
   :file: templateStructureData.csv
   :widths:  10, 10
