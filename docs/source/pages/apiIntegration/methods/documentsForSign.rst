@@ -2,21 +2,30 @@
 Get document(s) for sign
 ========================
 
-.. toctree::
-
-Customer can sign document if document has signature field inside assigned to the particular customer. Using this endpoint customer can get
-the list of the documents to sign.
-
-To get documents list for sign customer should send the following api request.
+Customer can sign document if document has signature field inside assigned to the particular customer. Using this endpoint customer can get the list of the documents to sign. To get documents list for sign customer should send the following api request.
 
 Request
 =======
 
-.. csv-table::
-  :file: documentsForSign.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
 
-Depends on body of the request customer can get two type of the response:
+   * - Method
+     - POST
+   * - URL
+     - ``/api/v1/envelope/{envelopeUuid}/for-sign``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - envelopeUuid
+     - {uuid}
+   * - docIds
+     - (array[string])
+
+Depending on body of the request customer can get two type of the response:
 
 1. Send request with empty array in body - get all documents from the envleope with signature related to particular customer
 2. Send request with particular documentID in body - get particular document for sign
@@ -43,6 +52,18 @@ Status code: **200 OK**
 
 Description of the response data:
 
-.. csv-table::
-  :file: documentForSignResponse.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
+
+   * - documentId
+     - id of the document
+   * - pdf
+     - PDF binary data
+   * - pdfName
+     - Name of the docuemnt
+   * - signatureName
+     - Name of the signature field
+   * - xml
+     - Document in .xml format
+   * - xmlName
+     - Structured document name

@@ -3,7 +3,7 @@ Check envelope status
 =====================
 
 .. list-table::
-   :widths: 10 90
+   :widths: 15 85
 
    * - Method
      - GET
