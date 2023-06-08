@@ -2,10 +2,20 @@
 Search mailbox
 ==============
 
-.. toctree::
+.. list-table::
+   :widths: 10 90
 
-.. csv-table::
-  :file: searchMailbox.csv
-  :widths:  10, 41
+   * - Method
+     - GET
+   * - URL
+     - ``/api/v1/mailbox/search``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - q
+     - text, email or UUID
 
-For search mailbox customer can use mailbox alias, user email address or contact name.
+For search mailbox you can use mailbox alias, user email address or contact name.

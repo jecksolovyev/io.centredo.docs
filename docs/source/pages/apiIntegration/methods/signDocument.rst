@@ -2,18 +2,26 @@
 Sign document(s) with EDS
 =========================
 
-.. toctree::
-
-Customer can sign document if document has signature field inside assigned to the particular customer. Using this endpoint customer sign document(s) with EDS.
+You can sign document if document has signature field inside assigned to the particular user. Using this endpoint you can sign document(s) with EDS.
 
 Request
 =======
 
-To sign document send request to the following endpoint.
+.. list-table::
+   :widths: 10 90
 
-.. csv-table::
-  :file: signDocument.csv
-  :widths:  10, 41
+   * - Method
+     - PUT
+   * - URL
+     - ``/api/v1/envelope/{envelopeUuid}/sign``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - Body
+     - (array[documentId,signatureName,array with signature data,data (binary (base64) data with signature by which we sign document (part of signatures array),source (type of source we send (available sources: binary, text), (part of signatures array)),stamp (boolean)]))
 
 Request structure example
 =========================
@@ -33,7 +41,6 @@ Request structure example
             ]
         }
     ]
-
 
 Response
 ========

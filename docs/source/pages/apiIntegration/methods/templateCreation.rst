@@ -2,9 +2,21 @@
 Template creation
 =================
 
-.. csv-table::
-  :file: templateCreation.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
+
+   * - Method
+     - POST
+   * - URL
+     - ``/api/v1/template``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - Body
+     - "{""access"":""mailbox"",""categories"":[],""data"":""string""}"
 
 **JSON Body**
 
@@ -43,7 +55,7 @@ Template creation
     </template>"
     }
 
-Depending on the need, customer can add a different type of fields `template fields <../fields/templateFields.html>`__
+Depending on your needs, you can add different types of fields `template fields <../fields/templateFields.html>`__
 
 **RESPONSE**
 

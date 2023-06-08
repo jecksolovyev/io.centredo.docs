@@ -1,6 +1,0 @@
-Method,GET
-URL,``/api/v1/mailbox/search``
-authorization (required),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
-Mailbox (required),mailboxUuid
-content-type,application/json
-q,"Can be text, email, mailbox UUID"

@@ -1,10 +1,22 @@
 =============
-Send Envelope
+Send envelope
 =============
 
-.. csv-table::
-  :file: evnelopeSend.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
+
+   * - Method
+     - POST
+   * - URL
+     - ``/api/v1/envelope/send``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - Body
+     - "{""data"": ""string""}"
 
 For create and send envelope customer should know based on what template will be created envelope.
 
@@ -41,10 +53,10 @@ sendEnvelopeDto
 	}
 
 **RESPONSE**
-In response we got envelope uuid:
+Response returns envelope uuid:
 
 .. code-block:: JSON
 
     {"uuid":"89499ba2-287d-404c-87b0-342dc5b01b6a"}
 
-Customer can check envelope status by this uuid.
+You can check envelope status by this uuid.

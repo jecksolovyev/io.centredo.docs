@@ -8,7 +8,7 @@ Authorization
    * - Method
      - POST
    * - URL
-     - ``api/login``
+     - ``/api/login``
    * - content-type
      - application/json
    * - Body

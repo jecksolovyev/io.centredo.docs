@@ -2,13 +2,23 @@
 Upload attachment or external documents
 =======================================
 
-.. toctree::
+.. list-table::
+   :widths: 10 90
 
-.. csv-table::
-  :file: uploadAttachment.csv
-  :widths:  10, 41
+   * - Method
+     - POST
+   * - URL
+     - ``/api/v1/envelope/attachment``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - Body
+     - "string($binary)"
 
-For add file to document, customer should upload this file in binary format to our system by request above. In response on this request customer got data which he should use in envelope for add this file in document in the appropriate field.
+For add file to document, you should upload this file in binary format to our system by request above. In response on this request you will get data which should be used in envelope for add this file in document in the appropriate field.
 
 **RESPONSE**
 

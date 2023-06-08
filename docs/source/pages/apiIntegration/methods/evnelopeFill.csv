@@ -1,5 +1,0 @@
-Method,PUT
-URL,``/api/v1/envelope/mailbox/{uuid}/{action}``
-authorization(require),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
-content-type,application/json
-Body,"{""data"": ""string""}"

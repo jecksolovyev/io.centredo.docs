@@ -1,6 +1,0 @@
-Method,POST
-URL,``/api/v1/envelope/attachment``
-authorization (required),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__"
-Mailbox (required),mailboxUuid: mailbox id
-content-type,application/json
-body,"string($binary)"

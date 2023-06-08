@@ -1,12 +1,22 @@
 =============
-Fill Envelope
+Fill envelope
 =============
 
-To fill envelope customer should provide data to field which assigned to him by request below.
+To fill envelope you should provide data to field which assigned to him by request below.
 
-.. csv-table::
-  :file: evnelopeFill.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
+
+   * - Method
+     - PUT
+   * - URL
+     - ``/api/v1/envelope/mailbox/{uuid}/{action}``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - Body
+     - "{""data"": ""string""}"
 
 sendEnvelopeDTO
 ===============
