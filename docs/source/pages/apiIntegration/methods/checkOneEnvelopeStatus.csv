@@ -1,6 +1,0 @@
-Method,GET
-URL,``/api/v1/envelope/{uuid}``
-"uuid (path, required)",UUID of envelope to retrieve
-Authorization (required),"Bearer “token” – token, which get after `Authorization <methods/authorization.html>`__      "
-Mailbox (required),mailboxUuid: mailbox id
-content-type,application/json

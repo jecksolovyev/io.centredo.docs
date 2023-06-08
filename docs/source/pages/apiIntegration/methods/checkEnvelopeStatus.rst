@@ -2,25 +2,51 @@
 Check envelope status
 =====================
 
-.. toctree::
+.. list-table::
+   :widths: 10 90
 
-Customer can check envelope status by two ways:
+   * - Method
+     - GET
+   * - URL
+     - ``/api/v1/mailbox/{uuid}``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - q
+     - query parameter
+   * - archived
+     - boolean (default false)
+   * - expireDatePeriod
+     - ‘expirationDate’ period 
+   * - label
+     - {uuid},{uuid}
+   * - limit
+     - integer (default 25)
+   * - offset
+     - integer (number of envelopes to skip, default 0)
+   * - receiveDatePeriod
+     - ‘receiveDate’ period
+   * - scope
+     - inbox,outbox
+   * - sender
+     - {uuid}
+   * - sort
+     - asc/desc
+   * - status
+     - DRAFT,WAITING,COMPLETED,EXPIRED,CANCELLED
+   * - subject
+     - string
+   * - template
+     - {uuid},{uuid}
 
-1. Request short information about group of envelopes with specific filters.
-
-
-.. csv-table::
-   :file: checkEnvelopeStatus.csv
-   :widths:  10, 41
-
-In response customer will get short information about envelopes from this mailbox which match to filter criteria.
-For more information on this request was used filter by template
+In response you will get short information about envelopes from this mailbox which match to filter criteria. For more information on this request was used filter by template.
 
 **Request URL example**
 
-``https://api.centredo.com/api/v1/mailbox/837bc65e-4818-48f5-a933-2d00b24b6e12?receiveDatePeriod=&``
-``expireDatePeriod=&params=%5Bobject%20Object%5D&scope=outbox&archived=false&period=null&sender=&subject=&``
-``template=e5705211-51d1-4c34-9429-c537038b3c44&expireperiod=null&label=&limit=20&offset=0&sort=desc``
+``https://api.platform_address_here/api/v1/mailbox/837bc65e-4818-48f5-a933-2d00b24b6e12?receiveDatePeriod=&expireDatePeriod=&params=%5Bobject%20Object%5D&scope=outbox&archived=false&period=null&sender=&subject=&template=e5705211-51d1-4c34-9429-c537038b3c44&expireperiod=null&label=&limit=20&offset=0&sort=desc``
 
 **Response example:**
 Status code: 200 OK
@@ -100,19 +126,40 @@ Status code: 200 OK
 
 **Response status codes**
 
-.. csv-table::
-  :file: checkEnvelopeStatusCode.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
+   :header-rows: 1
 
+   * - Code
+     - Description
+   * - 200
+     - Success
+   * - 401
+     - Not authorized
+   * - 403
+     - Forbidden
+   * - 404
+     - Not found
 
-2. Request for full envelope with template.
+**Request for full envelope with template**
 
-.. csv-table::
-   :file: checkOneEnvelopeStatus.csv
-   :widths:  10, 41
+.. list-table::
+   :widths: 10 90
 
+   * - Method
+     - GET
+   * - URL
+     - ``/api/v1/mailbox/{uuid}``
+   * - Authorization
+     - Bearer {token}
+   * - content-type
+     - application/json
+   * - mailboxUuid
+     - {uuid}
+   * - uuid
+     - {uuid}
 
-In response customer will get full envelope and template.
+In response you will get full envelope and template.
 
 **Response example:**
 Status code: 200 OK
@@ -152,11 +199,19 @@ Status code: 200 OK
       }
     }
 
-
 **Response status codes**
 
-.. csv-table::
-  :file: checkOneEnvelopeStatusCode.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
+   :header-rows: 1
 
-From both of this request each customers who has access to this envelope can check his status.
+   * - Code
+     - Description
+   * - 200
+     - Success
+   * - 401
+     - Not authorized
+   * - 403
+     - Forbidden
+   * - 404
+     - Not found
