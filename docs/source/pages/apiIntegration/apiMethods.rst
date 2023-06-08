@@ -22,117 +22,105 @@ API methods
 
 .. hint:: All api requests will be send to: https://api.platform_address_here
 
-Authorization endpoint
-======================
-+----------+---------------+----------------------------------------------+
-|**Method**|**URL**        |**Description**                               |
-+==========+===============+==============================================+
-|POST      |``api/login``  |`Authorization <methods/authorization.html>`__|
-+----------+---------------+----------------------------------------------+
-
-Envelope related endpoints
-==========================
-
-+----------+--------------------------------------------+------------------------------------------------------------+
-|**Method**|**URL**                                     |**Description**                                             |
-+==========+============================================+============================================================+
-|POST      |``/api/v1/template``                        |`Create template <methods/templateCreation.html>`__         |
-+----------+--------------------------------------------+------------------------------------------------------------+
-|GET       |``/api/v1/mailbox/search``                  |`Search mailbox <methods/searchMailbox.html>`__             |
-+----------+--------------------------------------------+------------------------------------------------------------+
-|POST      |``/api/v1/envelope/send``                   |`Send envelope <methods/envelopeSend.html>`__               |
-+----------+--------------------------------------------+------------------------------------------------------------+
-|GET       |``/api/v1/mailbox/{uuid}``                  |`Check envelope status <methods/checkEnvelopeStatus.html>`__|
-+----------+--------------------------------------------+------------------------------------------------------------+
-|GET       |``/api/v1/envelope/{envelopeUuid}/zip``     |`Download documents <methods/downloadEnvelopeZip.html>`__   |
-+----------+--------------------------------------------+------------------------------------------------------------+
-|GET       |``/api/v1/envelope/{envelopeUuid}/for-sign``|`Get document(s) for sign <methods/documentsForSign.html>`__|
-+----------+--------------------------------------------+------------------------------------------------------------+
-|GET       |``/api/v1/envelope/{envelopeUuid}/sign``    |`Sign document(s) in envelope <methods/signDocument.html>`__|
-+----------+--------------------------------------------+------------------------------------------------------------+
-
-Envelope audit trail endpoints
-==============================
-
-+----------+---------------------------------------+-----------------------------------------------------------------------------+
-|**Method**|**URL**                                |**Description**                                                              |
-+==========+=======================================+=============================================================================+
-|PUT       |``/api/v1/audittrail/envelope/{uuid}`` |`Create audit trail record <methods/auditTrailEntryCreate.html>`__           |
-+----------+---------------------------------------+-----------------------------------------------------------------------------+
-|GET       | ``/api/v1/audittrail/envelope/{uuid}``|`Get envelope audit trail <methods/auditTrailGetByEnvelope.html>`__          |
-+----------+---------------------------------------+-----------------------------------------------------------------------------+
-|GET       | ``/api/v1/audittrail/pdf/{uuid}``     |`Export envelope audit trail PDF file <methods/auditTrailDownloadPdf.html>`__|
-+----------+---------------------------------------+-----------------------------------------------------------------------------+
-
-Create template endpoint
-========================
-
-+----------+--------------------+---------------------------------------------------+
-|**Method**|**URL**             |**Description**                                    |
-+==========+====================+===================================================+
-|POST      |``/api/v1/template``|`Create template <methods/templateCreation.html>`__|
-+----------+--------------------+---------------------------------------------------+
-
-Search mailbox endpoint
+Authorization endpoints
 =======================
 
-+----------+--------------------------+-----------------------------------------------+
-|**Method**|**URL**                   |**Description**                                |
-+==========+==========================+===============================================+
-|GET       |``/api/v1/mailbox/search``|`Search mailbox <methods/searchMailbox.html>`__|
-+----------+--------------------------+-----------------------------------------------+
-
-Upload attachment or external document endpoint
-===============================================
-
-+----------+-------------------------------+---------------------------------------------------------------------------+
-|**Method**|**URL**                        |**Description**                                                            |
-+==========+===============================+===========================================================================+
-|POST      |``/api/v1/envelope/attachment``|`Upload attachment or external documents <methods/uploadAttachment.html>`__|
-+----------+-------------------------------+---------------------------------------------------------------------------+
-
-Send envelope endpoint
-======================
-
-+----------+-------------------------+---------------------------------------------+
-|**Method**|**URL**                  |**Description**                              |
-+==========+=========================+=============================================+
-|POST      |``/api/v1/envelope/send``|`Send envelope <methods/envelopeSend.html>`__|
-+----------+-------------------------+---------------------------------------------+
-
-Check envelope status endpoint
-==============================
-
 .. list-table::
-   :widths: 1 45 54
-   :header-rows: 1
-
-   * - Method
-     - URL
-     - Description
-   * - GET
-     - ``/api/v1/mailbox/{uuid}``
-     - `Check envelope status <methods/checkEnvelopeStatus.html>`__
-
-Get completed document for print endpoint
-=========================================
-
-.. list-table::
-   :widths: 1 45 54
+   :widths: 10 40 50
    :header-rows: 1
 
    * - Method
      - URL
      - Description
    * - POST
+     - ``api/login``
+     - `Authorization <methods/authorization.html>`__
+
+Template endpoints
+==================
+
+.. list-table::
+   :widths: 10 40 50
+   :header-rows: 1
+
+   * - Method
+     - URL
+     - Description
+   * - POST
+     - ``/api/v1/template``
+     - `Create template <methods/templateCreation.html>`__
+
+Envelope endpoints
+==================
+
+.. list-table::
+   :widths: 10 40 50
+   :header-rows: 1
+
+   * - Method
+     - URL
+     - Description
+   * - POST
+     - ``/api/v1/envelope/send``
+     - `Send envelope <methods/envelopeSend.html>`__
+   * - POST
+     - ``/api/v1/envelope/attachment``
+     - `Upload attachment or external documents <methods/uploadAttachment.html>`__
+   * - GET
+     - ``/api/v1/envelope/{envelopeUuid}/for-sign``
+     - `Get document(s) for sign <methods/documentsForSign.html>`__
+   * - GET
+     - ``/api/v1/envelope/{envelopeUuid}/sign``
+     - `Sign document(s) in envelope <methods/signDocument.html>`__
+   * - GET
+     - ``/api/v1/envelope/{envelopeUuid}/zip``
+     - `Download documents <methods/downloadEnvelopeZip.html>`__
+   * - POST
      - ``/api/v1/envelope/{envelopeUuid}/for-print``
      - `Get document for print. Document should be completed. <openapi/authApi.html#operation/getDocumentPrintVersionUsingGET>`__
+
+Audit trail endpoints
+=====================
+
+.. list-table::
+   :widths: 10 40 50
+   :header-rows: 1
+
+   * - Method
+     - URL
+     - Description
+   * - PUT
+     - ``/api/v1/audittrail/envelope/{uuid}``
+     - `Create audit trail record <methods/auditTrailEntryCreate.html>`__
+   * - GET
+     - ``/api/v1/audittrail/envelope/{uuid}``
+     - `Get envelope audit trail <methods/auditTrailGetByEnvelope.html>`__
+   * - GET
+     - ``/api/v1/audittrail/pdf/{uuid}``
+     - `Export envelope audit trail PDF file <methods/auditTrailDownloadPdf.html>`__
+
+Mailbox endpoints
+=================
+
+.. list-table::
+   :widths: 10 40 50
+   :header-rows: 1
+
+   * - Method
+     - URL
+     - Description
+   * - GET
+     - ``/api/v1/mailbox/search``
+     - `Search mailbox <methods/searchMailbox.html>`__
+   * - GET
+     - ``/api/v1/mailbox/{uuid}``
+     - `Check envelope status <methods/checkEnvelopeStatus.html>`__
 
 Account endpoints
 =================
 
 .. list-table::
-   :widths: 1 45 54
+   :widths: 10 40 50
    :header-rows: 1
 
    * - Method
@@ -173,7 +161,7 @@ User/Profile endpoints
 ======================
 
 .. list-table::
-   :widths: 1 45 54
+   :widths: 10 40 50
    :header-rows: 1
 
    * - Method
