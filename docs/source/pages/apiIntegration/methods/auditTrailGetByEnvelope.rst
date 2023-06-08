@@ -5,7 +5,7 @@ Get envelope audit trail
 +---------------+--------------------------------------------------------------+
 |    Method     |                             GET                              |
 +---------------+--------------------------------------------------------------+
-|      URL      |            ``api/v1/audittrail/ebvelope/{uuid}``             |
+|      URL      |            ``api/v1/audittrail/envelope/{uuid}``             |
 +---------------+--------------------------------------------------------------+
 | content-type  |                      application/json                        |
 +---------------+--------------------------------------------------------------+
@@ -13,5 +13,5 @@ Get envelope audit trail
 **Response status codes**
 
 .. csv-table::
-  :file: authorization.csv
+  :file: auditTrailGetByEnvelope.csv
   :widths:  10, 41

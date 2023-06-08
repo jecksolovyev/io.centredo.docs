@@ -5,7 +5,7 @@ Create audit trail record
 +---------------+--------------------------------------------------------------+
 |    Method     |                             PUT                              |
 +---------------+--------------------------------------------------------------+
-|      URL      |            ``api/v1/audittrail/ebvelope/{uuid}``             |
+|      URL      |            ``api/v1/audittrail/envelope/{uuid}``             |
 +---------------+--------------------------------------------------------------+
 | content-type  |                      application/json                        |
 +---------------+--------------------------------------------------------------+
@@ -15,5 +15,5 @@ Create audit trail record
 **Response status codes**
 
 .. csv-table::
-  :file: authorization.csv
+  :file: auditTrailEntryCreate.csv
   :widths:  10, 41

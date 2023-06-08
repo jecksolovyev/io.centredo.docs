@@ -1,5 +1,4 @@
-Code,Description
-200,Successfully created
+200,Success
 400,Bad request
 401,Not authorized
 403,No access to mailbox
