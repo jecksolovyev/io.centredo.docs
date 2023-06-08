@@ -2,7 +2,7 @@
 Get document(s) for sign
 ========================
 
-Customer can sign document if document has signature field inside assigned to the particular customer. Using this endpoint customer can get the list of the documents to sign. To get documents list for sign customer should send the following api request.
+You can sign document if document has signature field inside assigned to the particular customer. Using this endpoint you can get the list of the documents to sign. To get documents list for sign you should send the following api request:
 
 Request
 =======
