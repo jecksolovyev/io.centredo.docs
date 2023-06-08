@@ -2,19 +2,19 @@
 Authorization
 =============
 
-User should be authorize on the platform to work with API.
+.. list-table::
+   :widths: 10 90
 
-+---------------+--------------------------------------------------------------+
-|    Method     |                            POST                              |
-+---------------+--------------------------------------------------------------+
-|      URL      |                        ``api/login``                         |
-+---------------+--------------------------------------------------------------+
-| content-type  |                      application/json                        |
-+---------------+--------------------------------------------------------------+
-|     Body      |          {"login":"email","password":"password"}             |
-+---------------+--------------------------------------------------------------+
+   * - Method
+     - POST
+   * - URL
+     - ``api/login``
+   * - content-type
+     - application/json
+   * - Body
+     - {"login":"email","password":"password"}
 
-In response user should get authorization token.
+Authorization token should return in response (expires in 12 hours).
 
 **Response example (JSON):**
 
@@ -24,8 +24,19 @@ In response user should get authorization token.
 
 **Response status codes**
 
-.. csv-table::
-  :file: authorization.csv
-  :widths:  10, 41
+.. list-table::
+   :widths: 10 90
+   :header-rows: 1
 
-Token will expire after 12 hours.
+   * - Code
+     - Description
+   * - 200
+     - Success
+   * - 201
+     - Created
+   * - 401
+     - Not authorized
+   * - 403
+     - Forbidden
+   * - 404
+     - Not found
