@@ -2,21 +2,15 @@
 Approve management
 ===================
 
-.. toctree::
-
 In this section we will discuss the following topics:
 
 1. How to Manage Approvals
-
 2. How to filter Approvals
-
 3. How to use Approvals folders
-
 4. How to check Approvals Flow
-
 5. How to complete or reject envelopes
 
-Approval is a module with the functionality of viewing the list, filter and search the list of envelopes for agreement
+Approval is a module with the functionality of viewing the list, filter and search the list of envelopes for approval.
 
 
 * Access to this menu is possible only in the presence of appropriate permissions
@@ -62,8 +56,4 @@ Approval is a module with the functionality of viewing the list, filter and sear
 How to approve or reject several approvals
 ==========================================
 
-On the approval list presented special functionality to approve or reject several approvals. To do this open tab "To approve" or "Urgent"
-select respective approvals you want to process and click on respective "Approve" or "Reject" icon in the table header. After this action
-modal window with comment area and confirmation button will appear. Add comment or leave it empty and confirm action.
-
-As soon as all approvals will be processed results will be displayed in the modal window.
+On the approval list presented special functionality to approve or reject several approvals. To do this open tab "To approve" or "Urgent" select respective approvals you want to process and click on respective "Approve" or "Reject" icon in the table header. After this action modal window with comment area and confirmation button will appear. Add comment or leave it empty and confirm action. As soon as all approvals will be processed results will be displayed in the modal window.
