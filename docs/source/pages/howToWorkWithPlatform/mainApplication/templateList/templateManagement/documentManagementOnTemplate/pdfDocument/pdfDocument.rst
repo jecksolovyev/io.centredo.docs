@@ -7,7 +7,7 @@ PDF Document
 What is PDF document?
 =====================
 
-It is a field which allows to upload an external PDF document directly on template level. Also it can be left empty to be uploaded later by the participants of envelope processing flow. It also can be signed with an EDS or e-ink signature by envelope flow participants. If such document was uploaded on template level, dynamic fields can be placed over it similar to structured document. We are working on implementing support of all dynamics fields except of file and dynamic table, currently only e-ink signature field support is added.
+It is a field which allows to upload an external PDF document directly on template level. Also it can be left empty to be uploaded later by the participants of envelope processing flow. It also can be signed with an EDS or e-ink signature by envelope flow participants. If such document was uploaded on template level, dynamic fields can be placed on it similar to structured document.
 
 How to add a PDF document to template?
 ======================================

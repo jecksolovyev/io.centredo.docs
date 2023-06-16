@@ -2,8 +2,6 @@
 Signature field
 ===============
 
-.. toctree::
-
 Signature field allows user to place e-ink signature on a document. It can be added to structured and PDF documents.
 
 How to add signature field to template

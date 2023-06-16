@@ -2,9 +2,7 @@
 Text field
 ==========
 
-.. toctree::
-
-Text field allows you to create dynamic text box which will be filled by participants of the envelope processing flow. It can be added to structured and PDF documents.
+Text field allows you to create dynamic input box which will be filled by participants of the envelope processing flow. It can be added to structured and PDF documents.
 
 How to add text field to template
 =================================
@@ -29,7 +27,7 @@ How to add text field to template
 
 4. Name - this is a name of a field
 5. Role name - this is a role which will be assgined to fill this field
-6. Placeholder - this text will be shown in the text box before anything is filled in (can be left empty, field name will be used instead)
+6. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 7. Optional - this attribute specifies if this field is mandatory to fill
 8. Multiline - this attribute specifies is this text field will be single or multi lined
 
