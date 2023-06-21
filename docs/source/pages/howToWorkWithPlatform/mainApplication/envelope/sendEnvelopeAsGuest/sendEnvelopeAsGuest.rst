@@ -2,8 +2,6 @@
 Send envelope without authorisation
 ===================================
 
-.. toctree::
-
 User is able to send envelope without authorisation. To use this functionality user has to do get special link (create link as authorised user or receive link from somebody).
 
 Flow of the initiation envelope without authorisation
@@ -41,14 +39,16 @@ How to create share template link?
 
 8. Copy link and send it to anybody who wants to initiate envelope with shared template
 
-You are able to disable current link, just click on "Disable access". This action remove access to possibility to create envelope using shared template link. Also you are able to create new template shared link by click on "Generate new link". It leads to impossibility to use old link but you can share new link and use it.
+.. note:: In same window you can find Embed code - it can be used to integrate envelope creation process to 3rd party services via iframe. Please note that you can add redirect url to the embed code, this page will open in a new browser tab after envelope is sent.
+
+You are able to revoke current link and code, just click on "Revoke link" button. This action removes possibility to create envelopes using shared template link and code. Also you are able to create new template shared link and code by click on "Generate new link". Link and cdoe are unique every time and revoked ones can not be recovered.
 
 How to send envelope without authorisation (for guests)?
 ========================================================
 
-To have possibility to send envelope without authorisation user has to have template shared link.
+To send envelope without authorisation user has to have template shared link or embedded iframe.
 
-1. Follow the template shared link. User observes limited functionality of envelope functionality (fill in fields, sign documents)
+1. Follow the template shared link (or to the iframe). User observes limited functionality of envelope functionality (fill in fields, sign documents)
 2. Fill in all required fields and signatures (button "Edit" changes to "Send")
 
 .. image:: pic_sendEnvelopeAsGuest/simpleEnvView.png
@@ -56,19 +56,13 @@ To have possibility to send envelope without authorisation user has to have temp
    :align: center
 
 3. Click on "Send" button
-4. Choose an option "Continue without registration"
-
-.. image:: pic_sendEnvelopeAsGuest/chooseWayAuthOrNot.png
-   :width: 400
-   :align: center
-
-5. Enter your email (user with this email shouldn't be created)
+4. Enter your email (user with this email shouldn't be created)
 
 .. image:: pic_sendEnvelopeAsGuest/enterEmail.png
    :width: 400
    :align: center
 
-6. Confirm envelope send. Success page will be displayed as soon as envelope will be send according to flow
+5. Confirm envelope send. Success page will be displayed as soon as envelope will be send according to flow
 
 .. image:: pic_sendEnvelopeAsGuest/successPage.png
    :width: 400
@@ -76,7 +70,8 @@ To have possibility to send envelope without authorisation user has to have temp
 
 How to send envelope without authorisation (for registered users)?
 ==================================================================
-To have possibility to send envelope without authorisation user has to have template shared link.
+
+To send envelope without authorisation user has to have template shared link or embedded iframe.
 
 1. Follow the template shared link
 2. Fill in all required fields and signatures (button "Edit" changes to "Send")
@@ -85,35 +80,34 @@ To have possibility to send envelope without authorisation user has to have temp
    :width: 400
    :align: center
 
-3. Click on "Send" button
-4. Choose an option "Continue without registration"
+3. Click on "Send" button.
 
-.. image:: pic_sendEnvelopeAsGuest/chooseWayAuthOrNot.png
+.. note:: If you are already logged in in other browser tab and have autodeposit mailbox enabled, it will automatically be used and envelope will be sent after this step. If you do not have autodeposit mailbox enabled, you will be prompted to select one of your mailboxes.
+
+.. image:: pic_sendEnvelopeAsGuest/chooseMailbox.png
    :width: 400
    :align: center
 
-5. Enter your email (user with this email should be registered on platform)
+4. Enter your email (user with this email should be registered on platform)
 
 .. image:: pic_sendEnvelopeAsGuest/enterEmail.png
    :width: 400
    :align: center
 
-6. Confirm envelope send. User observes modal window with possibility to complete authorisation
-
-.. image:: pic_sendEnvelopeAsGuest/goToAuth.png
-   :width: 400
-   :align: center
-
-7. Accept proposition to complete authorisation
-8. Enter valid credentials and sign in
+5. Enter valid credentials and sign in
 
 .. image:: pic_sendEnvelopeAsGuest/authForm.png
    :width: 400
    :align: center
 
-9. If customer has only one mailbox or has several mailboxes and auto deposit mailbox turned on then envelope will be automatically send and user will be redirected to envelope with full functionality
-10. If customer doesn't have mailboxes or has several mailboxes and auto deposit mailbox turned off then user will observe special modal window with proposition to choose mailbox or create new one
+.. note:: If you do not have autodeposit mailbox enabled, you will be prompted to select one.
 
 .. image:: pic_sendEnvelopeAsGuest/chooseMailbox.png
+   :width: 400
+   :align: center
+
+5. Success page will be displayed as soon as envelope will be send according to flow
+
+.. image:: pic_sendEnvelopeAsGuest/successPage.png
    :width: 400
    :align: center
