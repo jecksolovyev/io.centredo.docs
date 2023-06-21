@@ -62,7 +62,7 @@ To send envelope without authorisation user has to have template shared link or 
    :width: 400
    :align: center
 
-5. Confirm envelope send. Success page will be displayed as soon as envelope will be send according to flow
+5. Confirm envelope send. Success page will be displayed as soon as envelope will be sent according to the flow
 
 .. image:: pic_sendEnvelopeAsGuest/successPage.png
    :width: 400
@@ -106,7 +106,7 @@ To send envelope without authorisation user has to have template shared link or 
    :width: 400
    :align: center
 
-5. Success page will be displayed as soon as envelope will be send according to flow
+6. Success page will be displayed as soon as envelope will be sent according to the flow
 
 .. image:: pic_sendEnvelopeAsGuest/successPage.png
    :width: 400
