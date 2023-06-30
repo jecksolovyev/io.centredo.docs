@@ -10,9 +10,9 @@ Data from dictionary could be used in envelope.
 Create Dictionary Field
 =======================
 
-1. Navigate to https://staging.whitedoc.space/template/form/create
+1. Navigate to /template/form/create or template edition form
 
-2. Drag and drop dictionary field to the document.
+2. Place text cursor where you want field to be added and click on dictionary field in right menu in case of structured document or drag and drop dictionary field to the document in case of structured or PDF document
 
 3. Next window should appear:
 

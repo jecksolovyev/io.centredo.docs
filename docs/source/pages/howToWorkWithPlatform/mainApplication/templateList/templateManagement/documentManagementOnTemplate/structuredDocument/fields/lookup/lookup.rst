@@ -6,12 +6,12 @@ Lookup Field
 
 Lookup field automatically pulls a value from related dictionary.
 
-Create Lookup Field
-===================
+Add lookup field to structured or PDF document
+==============================================
 
-1. Navigate to https://staging.whitedoc.space/template/form/create
+1. Navigate to /template/form/create or template edition form
 
-2. Drag and drop lookup field to the document (note that at least one dictionary field should be added to the document for you to be able to add lookup fields).
+2. Place text cursor where you want field to be added and click on lookup field in right menu in case of structured document or drag and drop lookup field to the document in case of structured or PDF document (note that at least one dictionary field should be added to the document for you to be able to add lookup fields).
 
 3. Next window should appear:
 
@@ -37,10 +37,10 @@ Create Lookup Field
 
 12. Click on "Save" will add new lookup field.
 
-Edit Lookup Field
-=================
+Edit lookup field to structured or PDF document
+===============================================
 
-1. Navigate to https://staging.whitedoc.space/template/form/create
+1. Navigate to /template/form/create or template edition form
 
 2. Click on the lookup field in the document.
 
