@@ -38,9 +38,10 @@ On template configuration page you can set some template properties, such as tem
 3. Template access level. Property which allows you set access level of the template according to your needs. Detailed about access level :ref:`here <templateAccessLevel>`
 4. Subject and message of envelopes created from this template. If set on template level, it's impossible to change them on envelope level later
 
-.. note:: Advanced subject properties can be opened with properties button in Subject field. From ther you can configure dynamic envelope auto-subject for each envelope which will include data from specified dynamics field in the envelope.
+.. note:: Advanced subject properties can be opened with properties button in Subject field. From there you can configure dynamic envelope auto-subject for each envelope which will include data from specified dynamics field in the envelope.
 
 5. Envelope expiration property allows you to configure expiration period of envelopes created from template. If set on template level, it's impossible to change it on envelope level later
 6. Envelope delegation property denies or allows delegation of the actions with envelope. If set on template level, it's impossible to change it on envelope level later
 7. Envelope sending and sharing emails property denies or allows possibility to attach documents to envelope completion email or possibility to share envelope. If set on template level, it's impossible to change it on envelope level later
-8. Template cover. Preview of the template that will be visible mailboxes which have access to template. Can use custom inage or dynamicly generate preview of first page of the template
+8. Template cover. Preview of the template that will be visible mailboxes which have access to template. Can use custom image or dynamically generate preview of first page of the template
+9. Envelope archive files configuration. This feature enables you to configure an envelope archive that can be downloaded upon completion of the envelope. To read more about this functionality you can Detailed about access level :ref:`here <archiveConfiguration>`
