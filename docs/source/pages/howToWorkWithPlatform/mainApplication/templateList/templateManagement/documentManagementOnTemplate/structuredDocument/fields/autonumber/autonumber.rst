@@ -1,31 +1,34 @@
 ================
-Autonumber Field
+Autonumber field
 ================
 
-.. toctree::
+Autonumber field allows you to create static box which will indicate a number of envelope created from this template. It will increment by one with every new envelope automatically. It can be added to structured and PDF documents.
 
-Autonumber field allows you to add a sequence number which will automatically increment on each new envelope created from a template. It does not need to be filled manually. Numbering for each field will never restart, even if field was removed and then added again with same field name. For different field names there will be separate counters. Numbers of deleted draft also will not be reused.
+How to add autonumber field to template
+=======================================
 
-To add autonumber field you should place a cursor in the document and click on Autonumber field button, or drag it over the document.
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via drag & drop)
 
-.. image:: pic_autonumber/AutonumberButton.png
-   :width: 400
+.. image:: pic_autonumber/autonumberIcon.png
+   :width: 600
    :align: center
 
-Modal window with properties of the field will appear.
+2. To add field to PDF document, drag & drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
-.. image:: pic_autonumber/AutonumberAttributes.png
-   :width: 400
+.. image:: pic_autonumber/autonumberPDF.png
+   :width: 600
    :align: center
 
-1. Name - this is a name of a field
+3. Field creation form will appear, where you should set field attributes
 
-2. Prefix - this is text that will be appended to sequence number. You can enter up to 15 characters. Example will be shown in same modal window
+.. image:: pic_autonumber/autonumberModal.png
+   :width: 600
+   :align: center
 
-3. Search - this attribute specifies if this field should be eligible for mailbox page search
+4. Name - this is a name of a field
+5. Prefix - this attribute indicates a string value which will be appended to the number
+6. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
 
-When attributres are set you can click Save button and field will be added. You can click filed to see its properties and update them. Also you can delete the field in same menu.
-
-.. image:: pic_autonumber/AutonumberField.png
-   :width: 400
+.. image:: pic_autonumbert/autonumberStructured.png
+   :width: 600
    :align: center
