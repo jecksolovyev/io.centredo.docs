@@ -1,8 +1,6 @@
 =============
-Formula Field
+Formula field
 =============
-
-.. toctree::
 
 Dynamic formula field performs calculation based on arguments taken from other fields. Next functions are available for any argument fields in the document:
 

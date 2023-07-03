@@ -9,19 +9,19 @@ How to add date and time field to template
 
 1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via drag & drop)
 
-.. image:: pic_date/dateIcon.png
+.. image:: pic_dateAndTime/dateIcon.png
    :width: 600
    :align: center
 
 2. To add field to PDF document, drag & drop it to desired place in the document. It can be moved around afterwards
 
-.. image:: pic_date/datePDF.png
+.. image:: pic_dateAndTime/datePDF.png
    :width: 600
    :align: center
 
 3. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_date/dateModal.png
+.. image:: pic_dateAndTime/dateModal.png
    :width: 600
    :align: center
 
@@ -38,6 +38,6 @@ How to add date and time field to template
 
 12. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
 
-.. image:: pic_date/dateStructured.png
+.. image:: pic_dateAndTime/dateStructured.png
    :width: 600
    :align: center
