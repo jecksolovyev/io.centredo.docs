@@ -29,6 +29,6 @@ How to add autonumber field to template
 5. Prefix - this attribute indicates a string value which will be appended to the number
 6. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
 
-.. image:: pic_autonumbert/autonumberStructured.png
+.. image:: pic_autonumber/autonumberStructured.png
    :width: 600
    :align: center
