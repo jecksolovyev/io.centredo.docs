@@ -36,7 +36,8 @@ How to add text field to template
 9. Search - this attribute specifies if this field should be eligible for mailbox page search
 10. Min - minimum number of characters required for field (no limit is applied if left empty)
 11. Max - maximum number of characters required for field (standart limit is applied if left empty)
-12. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
+
+When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_text/textStructured.png
    :width: 600

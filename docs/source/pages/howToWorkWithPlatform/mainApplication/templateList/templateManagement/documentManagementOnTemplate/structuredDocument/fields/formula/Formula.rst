@@ -6,21 +6,21 @@ Formula field allows you to create static box which will show results of calcula
 
 Following operations are available for any argument fields in the document:
 
-1. SUM - returns arguments sum
-2. PRODUCT - returns result of arguments multiplication
-3. SUBTRACT - returns result of arguments substraction
-4. DIVIDE - returns result of arguments division
+1. **SUM** - returns arguments sum
+2. **PRODUCT** - returns result of arguments multiplication
+3. **SUBTRACT** - returns result of arguments substraction
+4. **DIVIDE** - returns result of arguments division
 
 Following operations can only be performed with a field inside a dynamic table (to specify table column for calculations select a field from this column):
 
-5. SUM table column - returns table column cell values sum
-6. COUNTA table column - returns number of non-empty cells in a column
-7. MIN table column - returns the smallest value in table column
-8. MAX table column - returns the largest value in table column
+5. **SUM table column** - returns table column cell values sum
+6. **COUNTA table column** - returns number of non-empty cells in a column
+7. **MIN table column** - returns the smallest value in table column
+8. **MAX table column** - returns the largest value in table column
 
-Next fields can be used as arguments in the Formula: Number, Currency, Dictionary, Lookup and Duplicate. Formula field itself also can be used as other formula`s argument.
+Next fields can be used as arguments in formulas: Number, Currency, Dictionary, Lookup, Duplicate and other Formula.
 
-.. note:: If you use Dictionary, Lookup or Duplicate of any of this fields, their contents will be parsed as numbers. All symbols except numbers and last dot will be ignored in calculations. If there are several dots only last one will be considered as decimal place separator, other dots will also be ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
+.. note:: If you use Dictionary, Lookup or their`s Duplicates, values will be parsed as numbers. All symbols except numbers and last period will be ignored in calculations. If there are several periods, only last one will be considered as decimal place separator, rest will ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
 How to add formula field to template
 ====================================
@@ -46,12 +46,14 @@ How to add formula field to template
 4. Name - this is a name of a field
 5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 6. Operation - type of operation which will be performed with arguments
-7. Argument (1, 2 and so on, they will appear after operation is selected) - arguments which will be used for calculation. They are parsed in strict order from first to last. When you click on argument input dropdown with available fields will appear where you can select them. Also it is possible to type in static value.
+7. Argument (1, 2 and so on, will appear after operation is selected) - arguments which will be used for calculation. They are parsed in strict order from first to last. If you will click on argument input, dropdown selector with available fields will appear. Static values can be typed in directly as well.
 
 .. note:: You can add more then 2 default arguments by clicking "+ add argument" link
 
 8. Precision - number of decimal places allowed in field (no limit is applied if left empty)
 9. Search - this attribute specifies if this field should be eligible for mailbox page search
+
+When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_formula/formulaStructured.png
    :width: 600

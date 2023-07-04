@@ -32,7 +32,9 @@ How to add dictionary field to template
 8. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined dictionary values
 9. Search - this attribute specifies if this field should be eligible for mailbox page search
 10. Dictionary - input for desired dictionary selection. Start typing dictionary name and available dictionaries list will appear
-11. Column name (appears after dictionary is selected) - maximum number of characters required for field (standart limit is applied if left empty)
+11. Column name (appears after dictionary is selected) - dropdown selector of a desired column
+
+When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_dictionary/dictionaryStructured.png
    :width: 600

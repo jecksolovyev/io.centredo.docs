@@ -28,7 +28,8 @@ How to add signature field to template
 4. Name - this is a name of a field
 5. Role name - this is a role which will be assgined to fill this field
 6. Placeholder - this text will be shown in the text box before anything is filled in (can be left empty, field name will be used instead)
-7. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
+
+When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_signature/signatureStructured.png
    :width: 600
