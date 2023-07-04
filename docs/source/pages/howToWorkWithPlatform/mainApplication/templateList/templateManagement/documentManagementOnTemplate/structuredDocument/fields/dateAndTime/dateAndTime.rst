@@ -34,7 +34,7 @@ How to add date and time field to template
 10. Min - minimal timestamp accepted by field (no limit is applied if left empty)
 11. Max - maximal timestamp accepted by field (no limit is applied if left empty)
 
-.. note:: Min and max fields only accept integers. They specify date offset in days. For example if min is 5 and max is 2, then date interval from 5 past days to 2 days in the future can be set. If min is 0 and max is 0 then only current date can be selected.
+.. note:: Min and max fields only accept integers. They specify date offset in days. For example if min is 0 and max is 1, then date interval from today to tomorrow can be set. If min is 0 and max is 0 then only current date can be selected. If set to min -1 and max 0 then range from yesterday to today will be available.
 
 12. When attributres are set you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu
 

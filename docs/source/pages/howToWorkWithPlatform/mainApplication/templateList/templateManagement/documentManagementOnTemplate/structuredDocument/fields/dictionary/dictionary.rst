@@ -2,66 +2,38 @@
 Dictionary field
 ================
 
-.. toctree::
+Dictionary field allows you to create dropdown selector of records from dictionary (table), e.g. list of employees (First name, last name, age, address).
 
-Dictionary is a list of records in a table form, e.g. list of employees (First name, Last name, Age, Address).
-Data from dictionary could be used in envelope.
+How to add dictionary field to template
+=======================================
 
-Create Dictionary Field
-=======================
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via drag & drop)
 
-1. Navigate to /template/form/create or template edition form
-
-2. Place text cursor where you want field to be added and click on dictionary field in right menu in case of structured document or drag and drop dictionary field to the document in case of structured or PDF document
-
-3. Next window should appear:
-
-.. image:: pic_dictionary/DictionaryCreationForm.png
+.. image:: pic_dictionary/dictionaryIcon.png
    :width: 600
    :align: center
 
-4. Fill the "Name" attribute of the field (should be unique per document).
+2. To add field to PDF document, drag & drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
-5. Select a role from "Role name" menu which will be filling this field.
-
-6. Fill the "Placeholder" attribute for this field (not mandatory, if you don't fill this field, name will be used as placeholder).
-
-7. Select "Optional" attribute status for this field. If it is enabled value in the field can be left empty.
-
-8. Select "Allow custom values" attribute status for this field. If it is enabled value in the field can be modified by hand instead of using only predefined values from dictionary.
-
-9. Select "Search" attribute status for this field. If it is enabled value in the field can be used for envelope search in mailbox.
-
-10. Choose "Document" from the list of documents.
-
-11. Choose input dictionary name in "Dictionary" field to select which dictionary will be used.
-
-12. Choose column from "Column name" list (it will appear after selecting a dictionary in previous step) of columns for this field to refer to.
-
-13. Click on "Save" will add new dictionary field.
-
-Edit Dictionary Field
-=====================
-
-1. Navigate to https://staging.whitedoc.space/template/form/create
-
-2. Click on the dictionary field in the document.
-
-3. Edit field form should appear on the right side:
-
-.. image:: pic_dictionary/DictionaryEditionForm.png
+.. image:: pic_dictionary/dictionaryPDF.png
    :width: 600
    :align: center
 
-4. Click on "Delete" button will delete field and close edit form.
+3. Field creation form will appear, where you should set field attributes
 
-5. Click on "Cancel" will close edit form.
+.. image:: pic_dictionary/dictionaryModal.png
+   :width: 600
+   :align: center
 
-6. You can change parameters the same way as described in "Create Dictionary Field".
+4. Name - this is a name of a field
+5. Role name - this is a role which will be assgined to fill this field
+6. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
+7. Optional - this attribute specifies if this field is mandatory to fill
+8. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined dictionary values
+9. Search - this attribute specifies if this field should be eligible for mailbox page search
+10. Dictionary - input for desired dictionary selection. Start typing dictionary name and available dictionaries list will appear
+11. Column name (appears after dictionary is selected) - maximum number of characters required for field (standart limit is applied if left empty)
 
-7. Click on "Save" will Save all the changes you made and close edit form.
-
-Dictionary Field in Envelope
-============================
-User has to select a value from drop-down menu. If "Allow custom values" attribute enabled user can enter custom values.
-After value was added to field and processing flow was continued value of dictionary field is blocked. Any updates in dictionary will not apply to this field.
+.. image:: pic_dictionary/dictionaryStructured.png
+   :width: 600
+   :align: center

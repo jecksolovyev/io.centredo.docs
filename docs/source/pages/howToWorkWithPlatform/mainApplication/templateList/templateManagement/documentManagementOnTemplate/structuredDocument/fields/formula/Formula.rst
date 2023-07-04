@@ -2,142 +2,57 @@
 Formula field
 =============
 
-Dynamic formula field performs calculation based on arguments taken from other fields. Next functions are available for any argument fields in the document:
+Formula field allows you to create static box which will show results of calculations where other dynamic fields (and static values) can be used as arguments. It can be added to structured and PDF documents.
 
-1. SUM - argument summation
-2. PRODUCT - multiplication of arguments
-3. SUBTRACT - returns the difference of arguments
-4. DIVIDE - returns the quotient of arguments
+Following operations are available for any argument fields in the document:
 
-Next functions can only be applied to a field within a table:
+1. SUM - returns arguments sum
+2. PRODUCT - returns result of arguments multiplication
+3. SUBTRACT - returns result of arguments substraction
+4. DIVIDE - returns result of arguments division
 
-5. SUM table column - summing arguments in a dynamic table column
-6. COUNTA table column -returns  number of non-empty cells in a column
-7. MIN table column - returns the smallest number in a set of arguments
-8. MAX table column - returns the largest value in a set of arguments
+Following operations can only be performed with a field inside a dynamic table (to specify table column for calculations select a field from this column):
+
+5. SUM table column - returns table column cell values sum
+6. COUNTA table column - returns number of non-empty cells in a column
+7. MIN table column - returns the smallest value in table column
+8. MAX table column - returns the largest value in table column
 
 Next fields can be used as arguments in the Formula: Number, Currency, Dictionary, Lookup and Duplicate. Formula field itself also can be used as other formula`s argument.
 
 .. note:: If you use Dictionary, Lookup or Duplicate of any of this fields, their contents will be parsed as numbers. All symbols except numbers and last dot will be ignored in calculations. If there are several dots only last one will be considered as decimal place separator, other dots will also be ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
-Create Formula Field
-====================
+How to add formula field to template
+====================================
 
-1. Create Template
-2. Go to template, create number field and currency field
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via drag & drop)
 
-.. image:: pic_formula/Screenshot_1.png
+.. image:: pic_formula/formulaIcon.png
    :width: 600
    :align: center
 
-3. Select formula field
+2. To add field to PDF document, drag & drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
-.. image:: pic_formula/Screenshot_11.png
+.. image:: pic_formula/formulaPDF.png
    :width: 600
    :align: center
 
-4. Select the SUM function, in the arguments field, select a numeric and currency fields
+3. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_formula/Screenshot_12.png
+.. image:: pic_formula/formulaModal.png
    :width: 600
    :align: center
 
-4. Save the formula field. Fill in the main fields of  template. Create a draft envelope
-5. Filling numeric and currency field
+4. Name - this is a name of a field
+5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
+6. Operation - type of operation which will be performed with arguments
+7. Argument (1, 2 and so on, they will appear after operation is selected) - arguments which will be used for calculation. They are parsed in strict order from first to last. When you click on argument input dropdown with available fields will appear where you can select them. Also it is possible to type in static value.
 
-.. image:: pic_formula/Screenshot_3.png
+.. note:: You can add more then 2 default arguments by clicking "+ add argument" link
+
+8. Precision - number of decimal places allowed in field (no limit is applied if left empty)
+9. Search - this attribute specifies if this field should be eligible for mailbox page search
+
+.. image:: pic_formula/formulaStructured.png
    :width: 600
    :align: center
-
-6. After filling fields, pay attention to  formula field
-
-.. image:: pic_formula/Screenshot_4.png
-   :width: 600
-   :align: center
-
-7. Send envelope
-
-In order to apply the SUM table column function, you must repeat the following steps:
-
-1. Create Template
-2. Go to template create  dynamic table, added numeric field to dynamic table
-
-.. image:: pic_formula/Screenshot_6.png
-   :width: 600
-   :align: center
-
-3. Select formula field,select the SUM table column, in the arguments field, select a numeric field.
-
-.. image:: pic_formula/Screenshot_122.png
-   :width: 600
-   :align: center
-
-4. Save the formula field. Fill in the main fields of  template. Create a draft envelope
-5. Add two rows to table, filling numeric field
-
-.. image:: pic_formula/Screenshot_8.png
-   :width: 600
-   :align: center
-
-6. After filling fields, pay attention to formula field
-
-.. image:: pic_formula/Screenshot_9.png
-   :width: 600
-   :align: center
-
-7. Send envelope
-
-.. note:: For users who will work through integrations, it is necessary to understand that the SUM table column function contains one attribute and looks like this: <formula precision="2" name="total">SUM({rowTotal})</formula>, but the SUM function has two arguments.
-
-   .. image:: pic_formula/Screenshot_10.png
-      :width: 600
-      :align: center
-
-
-In order to apply the COUNTA table column function, you must repeat the following steps:
-
-1. Create Template
-2. Create dynamic table field
-3. Add number field in table
-4. Select formula field, add argument
-
-.. image:: pic_formula/Screenshot_56.png
-   :width: 600
-   :align: center
-
-5. Fill in the main fields of template
-6. Create envelope
-7. Add rows to table. and fill number fields
-
-.. image:: pic_formula/Screenshot_01.png
-   :width: 600
-   :align: center
-
-8. COUNTA table column function counts the number of non-empty cells in a column
-
-In order to apply the MIN/MAX table column function, you must repeat the following steps:
-
-1. Create Template
-2. Create dynamic table field
-3. Add number field and currency field in table
-4. Select MIN table column formula, add argument
-
-.. image:: pic_formula/Screenshot_02.png
-     :width: 600
-     :align: center
-
-5. Select MAX table column function, add argument
-
-.. image:: pic_formula/Screenshot_03.png
-   :width: 600
-   :align: center
-
-6. Fill in the main fields of template
-7. Create envelope
-8. Add rows to table and fill in number fields
-
-.. image:: pic_formula/Screenshot_04.png
-   :width: 600
-   :align: center
-
-10. As a result, the field MIN table column formula - shows the minimum value and MAX table column function - the maximum
