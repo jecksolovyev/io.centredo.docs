@@ -30,7 +30,7 @@ How to add number field to template
 6. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 7. Optional - this attribute specifies if this field is mandatory to fill
 8. Search - this attribute specifies if this field should be eligible for mailbox page search
-9. Adapt to the local format - this attribute specifies if numbers will be formatted according to regional standard.
+9. Adapt to the local format - this attribute specifies if numbers will be formatted according to regional standard
 
 .. note:: Numbers in envelope view will be formatted according to standard of a region which is selected on User profile page. You can see formatting example under region selector on that page. Numbers in printable versions of the documents will always be formatted according to platform region standard.
 
