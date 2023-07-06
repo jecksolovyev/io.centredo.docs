@@ -52,6 +52,9 @@ How to add formula field to template
 
 8. Precision - number of decimal places allowed in field (no limit is applied if left empty)
 9. Search - this attribute specifies if this field should be eligible for mailbox page search
+10. Adapt to the local format - this attribute specifies if numbers will be formatted according to regional standard
+
+.. note:: Numbers in envelope view will be formatted according to standard of a region which is selected on User profile page. You can see formatting example under region selector on that page. Numbers in printable versions of the documents will always be formatted according to platform region standard.
 
 When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
