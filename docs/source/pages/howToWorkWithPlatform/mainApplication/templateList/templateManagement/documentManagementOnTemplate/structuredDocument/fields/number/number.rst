@@ -36,7 +36,7 @@ How to add number field to template
 
 10. Precision - number of decimal places allowed in field (no limit is applied if left empty)
 
-.. note:: If value inside the filed has more decimal places then allowd by precision attribute, all extra place will be just ignored. Nor rounding will be applied. E.g. if original value is 1.99 it will be changed to 1.9 if precision is set to 1 and will be changed to 1 with precision set to 0.
+.. note:: If value inside the field has more decimal places then allowed by precision attribute, all extra places will be trimmed. No rounding will be applied. E.g. if original value is 1.99 it will be changed to 1.9 if precision is set to 1 and will be changed to 1 if precision is set to 0.
 
 11. Min - minimal value allowed in field (no limit is applied if left empty)
 12. Max - maximal value allowed in field (no limit is applied if left empty)
