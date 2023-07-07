@@ -35,6 +35,9 @@ How to add number field to template
 .. note:: Numbers in envelope view will be formatted according to standard of a region which is selected on User profile page. You can see formatting example under region selector on that page. Numbers in printable versions of the documents will always be formatted according to platform region standard.
 
 10. Precision - number of decimal places allowed in field (no limit is applied if left empty)
+
+.. note:: If value inside the filed has more decimal places then allowd by precision attribute, all extra place will be just ignored. Nor rounding will be applied. E.g. if original value is 1.99 it will be changed to 1.9 if precision is set to 1 and will be changed to 1 with precision set to 0.
+
 11. Min - minimal value allowed in field (no limit is applied if left empty)
 12. Max - maximal value allowed in field (no limit is applied if left empty)
 
