@@ -2,141 +2,107 @@
 User profile
 ============
 
-**User profile** page allows:
+This page allows you to edit various settings of your user profile. To open user profile page navigate to https://platform_address/profile
 
-
-1. Update profile settings
-2. Register personal accounts
-3. Register company accounts
-4. Add logo for user profile
-5. Delete profile
-6. Creating and applying an electronic ink signature
-
-
-To open user profile page navigate to https://staging.whitedoc.space/profile .
-
-On **Settings** tab you can edit (1) First name (2) Last name, (3) change language, (4) change timezone, (7) change password, start process for (8) register personal account, start process for (9) register company account. Fields (5) Profile UUID, (6) e-Mail not editable.
+============
+Settings tab
+============
 
 .. image:: pic_userprofile/tabSettings.png
    :width: 600
    :align: center
 
-On **Danger zone** tab you can start process for (1) delete user profile.
+1. First name
+2. Last name
+3. Language - this is language which will be used in user interface
+4. Timezone - choose your time zone
+5. Display exact date - specifies if absolute (01.01.2023 12:12) or relative (fiwe minutes ago) time is used
+6. Region - specifies regional formats for dates and number, example is shown below the menu
+7. User UUID (can not be changed, only copied)
+8. Email (can not be changed, only copied)
+9. Auto deposit mailbox - specifies which mailbox will be used for incoming envelopes. If disabled - you will have to manually specify mailbox for each incoming envelope.
+10. Signature settings - here you can create or update tour e-ink signature
+11. Register personal account
+12. Register company account
 
-.. image:: pic_userprofile/tabDangerZone.png
-   :width: 600
-   :align: center
+Do not forget to click on Save changes button after editing anything on this page
 
-Edit profile settings
-=======================
+Personal account registration
+=============================
 
-1. To start edit (1) First name (2) Last name, just focus on necessary field which you want to edit, make changes in this field and click on "Save change" button
-
-.. image:: pic_userprofile/editName.png
-   :width: 600
-   :align: center
-
-2. To change password need select checkbox (1) otherwise fields (2), (3), (4) will be unavailable. After checkbox (1) selected input current password in field (2), new password input in field (3) for confirm new password repeat input new password in field (3). If all input data correct button (5) Save change will be available and you can confirm change password to click on this button
-
-.. image:: pic_userprofile/changePassword.png
-   :width: 600
-   :align: center
-
-3. If password successfully changed the notification message will show at the right corner of the page
-
-.. image:: pic_userprofile/changePasswordSuccess.png
-   :width: 600
-   :align: center
-
-4. To change language click on field (1) Language, after that will be open drop down menu where you can select language which supported our system. For confirm this changes click on (2) Save change button
-
-.. image:: pic_userprofile/changeLanguage.png
-   :width: 600
-   :align: center
-
-5. To change timezone click on field (1) Timezone, after that will be open drop down menu where you can select interested you timezone. For confirm this changes click on (2) Save change button
-
-.. image:: pic_userprofile/changeTimezone.png
-   :width: 600
-   :align: center
-
-6. To copy the (1) Profile UUID or (2) e-Mail click on button (3) Copy
-
-.. image:: pic_userprofile/copyData.png
-   :width: 600
-   :align: center
-
-
-7. If profile successfully edited the notification message will show at the right corner of the page
-
-.. image:: pic_userprofile/editNameSuccess.png
-   :width: 600
-   :align: center
-
-Register personal account
-=========================
-1. To register new personal account click on (1) Register personal account button
-2. Modal window of the personal account creation opens. Enter a name of the Account in field (2)
-3. Select checkbox (3) "I agree with Terms and conditions and Privacy policy"
-4. Click on the button (4) “Create” (the state of the “Create” button will change after name enters and selected checkbox)
+1. To register new personal account click on Register personal account button
+2. In opened window enter a name for the account
+3. Select checkbox "I agree with Terms and conditions and Privacy policy"
+4. Click on Create button (button will be enable when previous steps are done)
 
 .. image:: pic_userprofile/createPersonalAccount.png
    :width: 600
    :align: center
 
-5. After successful account creation, also created mailbox for this account with same name and in the right corner of the page will show message
+Company account registration
+============================
 
-.. image:: pic_userprofile/createPersonalAccountSuccess.png
-   :width: 600
-   :align: center
-
-Register company account
-========================
-
-1. To register new company account click on (1)Register company account button
-2. Modal window of the personal account creation opens. Enter a name of the Account in field(2)
-3. Enter Individual taxpayer number in field (3)
-4. Enter a name of the mailbox in field (4)
-5. Select checkbox (5)"I agree with Terms and conditions and Privacy policy"
-6. Click on the button (6)“Create” (the state of the “Create” button will change after name enters and selected checkbox)
+1. To register new personal account click on Register company account button
+2. In opened window enter a name, ITN and mailbox name for the account
+3. Select checkbox "I agree with Terms and conditions and Privacy policy"
+4. Click on Create button (button will be enable when previous steps are done)
 
 .. image:: pic_userprofile/createCompanyAccount.png
    :width: 600
    :align: center
 
-7. After successful account creation, also created mailbox for this account with same name and in the right corner of the page will show message
+Creating and applying an electronic ink signature
+=================================================
 
-.. image:: pic_userprofile/createPersonalAccountSuccess.png
+1. Go to user profile page
+2. Click on Replace signature button
+3. Draw your signature
+4. Alternatively, text can be used as signature
+5. Click on Save changes button on the account setting page
+
+Password updating
+=================
+
+.. image:: pic_userprofile/passwordSettings.png
    :width: 600
    :align: center
 
-Ability for users upload logos/photos
-=====================================
+1. Check Change password checkbox
+2. Enter current password
+3. Enter new password
+4. Confirm new password in second field
+5. Click on Save changes button
 
-User can add logo for their profile
+User icon upload
+================
 
-1. Go to user profile
-2. User  view " User icon settings"
-
-.. image:: pic_userprofile/Screenshot_12.png
+.. image:: pic_userprofile/userIconSettings.png
    :width: 600
    :align: center
 
-3. Click "Upload" button, user can choose any images. User can click the info icon and view params for images
+1. Click Upload button and select an image
+2. To see allowe image formats and size hover over info icon
 
-.. image:: pic_userprofile/Screenshot_1.png
+.. image:: pic_userprofile/userIconValidation.png
    :width: 600
    :align: center
 
-4. User can save image, if click "Save" button
-5. You can return default profile logo, when user click "Set default" button. In this case profile logo will consist on first letters of first and last name
+3. Click Save changes button to apply new icon
+4. You can return default profile logo with Set default link
 
-Delete user profile
-===================
+===============
+Danger zone tab
+===============
 
-To delete user profile go to Danger zone tab. User deletion profile process has steps:
+This page allows you to delete your user account. To open user profile page navigate to https://platform_address/profile?activeTab=dangerzone
 
-1. After User profile deletion will be deleted all Accounts where user has role "Account owner" and all data which related to these accounts.
+.. image:: pic_userprofile/tabDangerZone.png
+   :width: 600
+   :align: center
+	
+.. note:: Ability to remove own user profile can be restricted in instance settings. In such case there will be no Danger zone tab on Profile information page.
+
+1. After User profile deletion all Accounts with role "Account owner" will be deleted with all related data.
 2. User can keep all Accounts and all data which related to these accounts after User profile deletion.
 
 .. image:: pic_userprofile/deleteUserProfile.png
@@ -163,22 +129,7 @@ To delete user profile go to Danger zone tab. User deletion profile process has 
    :width: 600
    :align: center
 
-7. After successful user profile deletion in the right corner of the page will show message. For repair access to our application you should register new user
-
-.. image:: pic_userprofile/deleteUserProfileSuccess.png
-   :width: 600
-   :align: center
-
 .. note:: `Behaviour of data after deleting a user profile <delete_userProfile_behaviour.html>`_
-
-Creating and applying an electronic ink signature
-=================================================
-
-1. Go to user profile page
-2. You can view "Signature settings"
-3. Click "Replace signature" and you have opportunity handwritten signature or input text
-4. User can chose font and color for signature
-5. After creating signature user must click "Save change" on the account setting page
 
 ---------------------------------
 
