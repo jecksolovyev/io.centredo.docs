@@ -2,148 +2,89 @@
 Dictionary
 ==========
 
-.. toctree::
-
-Dictionary - is a list of records in a systematic form, e.g. list of employee(Name, Surname, Age, Address).
+Dictionary - is a table of records, e.g. list of employees (Name, Surname, Age, Address).
 
 Creating a dictionary
 =====================
 
-1. Navigate to https://staging.whitedoc.space/dictionary
-2. Click to create dictionary button
+.. note:: This functionality is blocked if mailbox has no permission. Dictionary editing is available only to mailbox which is an owner of this dictionary.
 
-.. image:: pic_dictionary/create_dictionary.png
+**Permissions:**
+*Dictionary manage* - allows to create new dictionaries, add columns, change columns order, edit columns, change name, description and access level of dictionaries.
+*Dictionary delete* - allow to delete dictionaries.
+*Dictionary row manage* - allow to create records and change values in records.
+*Dictionary row delete* - allow to delete records.
+
+1. Navigate to https://platform_address_here/dictionary
+2. Click on create dictionary button
+
+.. image:: pic_dictionary/newDictionary.png
    :width: 600
    :align: center
 
-Editing a dictionary
-====================
+3. New dictionary - default name of a dictionary. You can change it as needed
+4. Description - default description of a dictionary. You can change it as needed
 
-Dictionary editing is available only to mailbox that are owner of this dictionary. When user doesn't have permissions to do some operation - functionality is blocked.
+.. note:: Dictionary name max length is 128 characters. Dictionary description max length is 256 characters.
 
-**Permissions**:
+5. Allow filtered access - this attribute specifies if access to this dictionary will be filtered or full. If disabled - all records from a column will be available for choise in the envelope with dictionary field. If enabled - only values form matching rows will be returned. Values from other columns are used for row matching
+6. Access level (mailbox by default) - specifies which mailboxes will have access to the dictionary
 
-**Dictionary manage** - allow to create new dictionary, add column, change column order, edit columns, change name, description, access level of dictionary.
-**Dictionary delete** - allow to delete dictionary.
-**Dictionary row manage** - allow to create records and change value in records.
-**Dictionary row delete** - allow to delete records.
+**Mailbox** - dictionary is visible to current mailbox only. In envelopes with this dictionary field records from this dictionary will be available to current mailbox only. Roles with other mailboxes will not be able to select data from this dictionary field.
+**Account** - dictionary is visible to all mailboxes in this account. In envelopes with this dictionary field records from this dictionary will be available to mailboxes in current account. Roles with mailboxes from other accounts will not be able to select data from this dictionary field.
+**Public** - dictionary is visible to all mailboxes. In envelopes with this dictionary field records from this dictionary will be available to any mailbox. Roles with any mailbox will be able to select data from this dictionary field.
 
-Add column
-==========
+7. Click on Add row button to add new row
 
-1. Add column to dictionary
-
-.. image:: pic_dictionary/fill_dictionary_3.png
+.. image:: pic_dictionary/dictionary.png
    :width: 600
    :align: center
 
-2. Enter a column name. Columns can have the same names. Maximum length of the column name is 64 characters
+8. You can select rows with a chechmark. If any rows are selected, Delete rows button will appear which allow you to remove rows
+9. Click on Add column button to add new column
+10. Enter a column name (can be not unique). Maximum length of the column name is 64 characters
 
-.. image:: pic_dictionary/fill_dictionary_4.png
+.. image:: pic_dictionary/columnModal.png
    :width: 600
    :align: center
 
-.. image:: pic_dictionary/fill_dictionary_5.png
+11. Hover over column header to see column edition options (filter, rename and delete)
+
+.. image:: pic_dictionary/columnEdit.png
    :width: 600
    :align: center
-
-Edit column
-===========
-
-1. Click to edit icon on column name. Icon appear when user point to column name
-
-.. image:: pic_dictionary/fill_dictionary_6.png
-   :width: 600
-   :align: center
-
-2. Enter new column name
-
-.. image:: pic_dictionary/fill_dictionary_7.png
-   :width: 600
-   :align: center
-
-.. image:: pic_dictionary/fill_dictionary_8.png
-   :width: 600
-   :align: center
-
-Change column order
-===================
-
-1. Drag drag and drop icon and insert column to new position. Icon appear when user point to column name
-2. Drag column to new position
-3. Columns will be displayed in the same order on template on dictionary field
-
-Delete column
-=============
-
-1. Click to delete icon. Icon appear when user point to column name
-2. Confirm that you wanted to delete column
 
 .. note:: `Behaviour of dictionary field after deleting a dictionary column <delete_behaviour.html>`_
 
-Create empty record
-===================
+12. Columns can be rearrenged via drah & drop by this icon (same order will be used if dictionary field creation menu)
 
-Create empty record in dictionary. User can create multiple empty records by clicking to the 'Add row' button. Each click - new record.
-
-.. image:: pic_dictionary/fill_dictionary_1.png
+.. image:: pic_dictionary/columnDrag.png
    :width: 600
    :align: center
 
-.. image:: pic_dictionary/fill_dictionary_2.png
-   :width: 600
-   :align: center
+Editing a record
+================
 
-Edit record
-===========
-
-1. Click to table cell and start entering value to cell. Maximum length of the value is 256 characters
-2. Click checked and value will be applied, also you can click outside and value will be applied too
-3. Click cancel to reject changes and value will not change
-
-Delete record
-=============
-
-1. Set active checkbox or checkboxes in first table column
-2. Click to delete row button
-3. Confirm operation
+1. Click on a table cell and enter a value. Maximum length of the value is 256 characters
+2. Click checkmark to apply new value (also you can click outside of a cell)
+3. Click cancel to revert changes
 
 Filtering records
-==================
+=================
 
 Multiple filters connected by 'OR'. Filter types: Contains, Does not contain, Is equal, Is not equal, Is empty, Is not empty.
 
-1. Click to filter icon. Icon appear when user point to column name
-2. Set filter and enter value
-3. Column name with active filter will have the same color as filter
-4. Filters sort by column order
-5. To cancel filter - click to cancel icon on this filter
+1. Click on a filter icon. Icon appears when hovering over column header
+2. Select filter and enter value
+3. Click on Add button
+4. Column name with active filter will have the same color as filter
+5. Filters are sorted by column order
 
-Access level
-============
+Deleting a dictionary
+=====================
 
-Access levels are mailbox, account, public.
-
-**Mailbox** - dictionary is visible only in this mailbox scope. Envelope with dictionary field - records from this dictionary will be available only to this mailbox. Recipient from other mailbox can't select data from this dictionary.
-**Account** - dictionary is visible to all mailboxes in this account. Envelope with dictionary field - records from this dictionary will be available to all mailboxes in this account. Recipient from other account can't select data from this dictionary.
-**Public** - dictionary is visible to all mailboxes. Envelope with dictionary field - all mailboxes can use records from this dictionary.
-
-1. Click to select with access levels
-2. Chose new access level
-
-Edit dictionary name/description
-================================
-
-1. Click to edit icon
-2. Enter value and click check to apply changes or cancel to reject changes
-
-.. note:: Dictionary name - maximum length is 128 characters. Dictionary description - maximum length is 256 characters.
-
-Delete dictionary
-=================
-
-1. Click to delete icon
-2. Confirm operation
+1. Click on a delete icon on according dictionary on a dictionary list page
+2. Confirm your action
 
 .. note:: `Behaviour of dictionary field after deletion a dictionary <delete_behaviour.html>`_
 

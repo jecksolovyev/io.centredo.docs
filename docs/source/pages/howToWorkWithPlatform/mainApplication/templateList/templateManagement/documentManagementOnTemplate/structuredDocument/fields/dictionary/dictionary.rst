@@ -33,6 +33,20 @@ How to add dictionary field to template
 9. Search - this attribute specifies if this field should be eligible for mailbox page search
 10. Dictionary - input for desired dictionary selection. Start typing dictionary name and available dictionaries list will appear
 11. Column name (appears after dictionary is selected) - dropdown selector of a desired column
+12. Filtering (icon in dictionary name field) - opens filtered access options menu. Appears only if filtered access is allowed for selected dictionary
+
+.. image:: pic_dictionary/filteringModal.png
+   :width: 600
+   :align: center
+
+13. Column name - name of a column in a dictionary which will be used for filteringModal
+
+.. note:: Value from this column will be used to find a matching row in a column selected in dictionary during envelope processing flow.
+
+14. Filter by role mailbox - this attribute specifies if filtering should be applied by role (if enabled) or by field value (if disabled)
+15. Field name (changes to role name if previous attribute is enabled) - field which will be used to specify a row by value from column selected in column name (13).
+
+.. note:: If filtering by role is enabled and field becomes role name selector, it selects a role mailbox UUID of which will be used to find a matching row in dictionary. In this case, column with mailbox UUIDs should be selected in column name (13) field for matching.
 
 When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
