@@ -133,10 +133,33 @@ To add alias(es) to the mailbox:
    :width: 600
    :align: center
 
+Dashboard customization
+=======================
+
+To create custom dashboard instead of default one switch to tab "Dashboard" tab by click on "Dashboard" heading
+
+Dashboard page in mailbox contains:
+
+1. Editor area where you able to enter your HTML code which will replace default dashboard
+2. Checkbox to activate custom dashboard
+3. Button "Save" changes
+
+.. image:: pic_mailboxes/dashboard.png
+   :width: 600
+   :align: center
+
+If user decides to customize dashboard it's necessary to put content to html area, set checkbox in active state and save changes. Than dashboard will be changed to custom HTML for this specific mailbox and all users who has access to mailbox will see custom dashboard.
+
+.. image:: pic_mailboxes/customDashboard.png
+   :width: 600
+   :align: center
+
+.. note:: `Custom HTML can not be more than 16 mb size`_
+
 Danger zone
 ===========
 
-To unassign all users from mailbox or delete mailbox switch to "Danger Zone" tab by click on "Danger Zone" heading
+To remove all users from mailbox or delete mailbox switch to "Danger Zone" tab by click on "Danger Zone" heading
 
 .. image:: pic_mailboxes/mailboxesDangerZone.png
    :width: 600
@@ -146,10 +169,10 @@ To unassign all users from mailbox or delete mailbox switch to "Danger Zone" tab
    :width: 600
    :align: center
 
-Unassgin users from mailbox
-===========================
+Remove users from mailbox
+=========================
 
-1. To unassign all users from mailbox (remove all permissions to the particular mailbox from the all users who has it except the user who do the action) click on the button "Deactivate"
+1. To remove all users from mailbox (remove all permissions to the particular mailbox from the all users who has it except the user who do the action) click on the button "Deactivate"
 2. Confirm the decision and users will be unassigned
 
 Delete mailbox
