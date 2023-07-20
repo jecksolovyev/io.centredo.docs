@@ -39,7 +39,7 @@ How to add dictionary field to template
    :width: 600
    :align: center
 
-13. Column name - name of a column in a dictionary which will be used for filteringModal
+13. Column name - name of a column in a dictionary which will be used for filtering
 
 .. note:: Value from this column will be used to find a matching row in a column selected in dictionary during envelope processing flow.
 
@@ -48,7 +48,7 @@ How to add dictionary field to template
 
 .. note:: If filtering by role is enabled and field becomes role name selector, it selects a role mailbox UUID of which will be used to find a matching row in dictionary. In this case, column with mailbox UUIDs should be selected in column name (13) field for matching.
 
-When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_dictionary/dictionaryStructured.png
    :width: 600

@@ -2,8 +2,6 @@
 Yes/No field
 ============
 
-.. toctree::
-
 Yes/No is a field which can be used for selection of the one of two predefined values. You can customize options value in the way you need. It looks like button with two options of "Yes" and "No" values. After selection the value from the button will be changed to regular text with particular value.
 
 Yes/No field addition to the document

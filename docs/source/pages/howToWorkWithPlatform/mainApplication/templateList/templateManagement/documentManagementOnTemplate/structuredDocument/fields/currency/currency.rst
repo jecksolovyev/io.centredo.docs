@@ -37,7 +37,7 @@ How to add currency field to template
 10. Min - minimal value allowed in field (no limit is applied if left empty)
 11. Max - maximal value allowed in field (no limit is applied if left empty)
 
-When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_currency/currencyStructured.png
    :width: 600

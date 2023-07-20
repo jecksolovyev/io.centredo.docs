@@ -37,7 +37,7 @@ How to add lookup field to template
 10. Related to - dropdown selector of a desired parent dictionary
 11. Column name - dropdown selector of a desired column in a parent dictionary
 
-When all attributres are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_lookup/lookupStructured.png
    :width: 600

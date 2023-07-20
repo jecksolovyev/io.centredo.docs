@@ -7,4 +7,3 @@ EDS
    envelope/digitalSignatureOnEnvelope.rst
    download/downloadTheSignedData.rst
    listingPage/digitalMassSigningOfEnvelopes.rst
-   

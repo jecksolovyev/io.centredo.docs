@@ -12,36 +12,23 @@ Create Duplicate Field
 ======================
 
 1. Open template for edition and open document for edition
-
 2. Drag and drop duplicate-field to the document
-
 3. Form should appear
-
 4. Fill the name of the field (Should be unique per document)
-
 5. Choose document from list of documents with allowed fields for duplicating
-
 6. Choose which field should use duplicate field to set value
-
 7. Click save
-
 8. Field added
 
 Edit Duplicate Field
 ====================
 
 1. Open template for edition and open document for edition
-
 2. Click on the duplicate field in the document
-
 3. Edit field form should appear on the right side
-
 4. Click on "Delete" button will delete field and close edit form
-
 5. Click on Cancel will close edit form
-
 6. You can change parameters the same way as described in "Create Duplicate Field"
-
 7. Click on "Save" will Save all the changes you mad and close edit form
 
 Duplicate Field Template
