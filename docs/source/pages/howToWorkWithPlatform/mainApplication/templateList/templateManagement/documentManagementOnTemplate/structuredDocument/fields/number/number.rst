@@ -41,6 +41,8 @@ How to add number field to template
 11. Min - minimal value allowed in field (no limit is applied if left empty)
 12. Max - maximal value allowed in field (no limit is applied if left empty)
 
+.. warning:: Maximum allowed character count for number field is 15 (according to `IEEE 754 <http://https://en.wikipedia.org/wiki/IEEE_754>`_). Please note this includes decimal places. This means that if your field has precision attribute set to 3 and you insert a value 999999999999999 or more characters, it will be converted to 999999999999.000.
+
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_number/numberStructured.png
