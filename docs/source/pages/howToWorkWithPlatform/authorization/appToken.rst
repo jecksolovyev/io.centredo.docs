@@ -4,6 +4,8 @@
 Application tokens
 ==================
 
+.. note:: This feature can be disabled by instance administrator. In this case all existing tokens will stop working and possibility to create new ones will be disabled. If feature will be reenabled later, tokens created before disabling will become active again (if they are not expired by that time).
+
 You can create authorization tokens for use with API and 3rd party integrations. To do so:
 
 1. Go to /profile?activeTab=application-tokens page
