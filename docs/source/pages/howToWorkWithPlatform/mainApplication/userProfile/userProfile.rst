@@ -107,27 +107,27 @@ This page allows you to delete your user account. To open user profile page navi
 	
 .. note:: Ability to remove own user profile can be restricted in instance settings. In such case there will be no Danger zone tab on Profile information page.
 
-After User profile deletion all Accounts with role "Account owner" will be deleted with all related data. User can keep all Accounts and all data which related to these accounts after User profile deletion.
+After User profile deletion all Accounts with role "Account owner" will be deleted with all related data. User can keep all Accounts and all related data after User profile deletion.
 
 .. image:: pic_userprofile/deleteUserProfile.png
    :width: 600
    :align: center
 
-**Delete User profile, Accounts and all related data**
+**Delete User profile with Accounts and all related data**
 
-1. Click on (1) Delete button
-2. Enter the e-Mail in upper case to the field (2) in the modal window which opens after click on “Delete” button
-3. Click on button (4) Confirm for confirm decision to delete user profile, Accounts and Mailboxes
-4. After deletion user profile you will be logout and redirected to login page
+1. Click on Delete (1) button
+2. Enter your e-Mail in upper case in the field (2) in the modal window which opens after click on Delete (1) button
+3. Click on Confirm (4) button
+4. After deletion of User profile you will be loged out and redirected to login page
 
-**Delete User profile, keep Accounts and all related data**
+**Delete User profile while keeping Accounts and all related data**
 
-1. Before delete user profile you should assign a new account owner to all accounts where you have this role(Account owner)
-2. After that you should go to Danger zone tab in user profile page and click on (1) Delete button
-3. Enter the e-Mail in upper case to the field (2) in the modal window which opens after click on “Delete” button
-4. Select checkbox (3) Keep Account and Mailboxes
-5. Click on button (4) Confirm for confirm decision to delete user profile
-6. If all Accounts where you have role "Account owner" has other owners your profile will be deleted, you will logout and redirected to login page, otherwise you will observe error message in the right corner of the page
+1. Before deleting User profile you should assign a new account owner to all accounts where you have role Account owner role
+2. After that you should go to Danger zone tab in user profile page and click on Delete (1) button
+3. Enter your e-Mail in upper case to the field (2) in the modal window which opens after click on Delete (1) button
+4. Tick Keep Account and Mailboxes (3) checkbox
+5. Click on Confirm (4) button
+6. If all Accounts where you have Account owner role has other owners your profile will be deleted, you will be loged out and redirected to login page. Otherwise you will see an error message in the right corner of the page
 
 .. image:: pic_userprofile/errorKeepAccount.png
    :width: 600

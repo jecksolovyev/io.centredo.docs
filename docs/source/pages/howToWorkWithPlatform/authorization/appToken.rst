@@ -4,7 +4,7 @@
 Application tokens
 ==================
 
-.. note:: This feature can be disabled by instance administrator. In this case all existing tokens will stop working and possibility to create new ones will be disabled. If feature will be reenabled later, tokens created before disabling will become active again (if they are not expired by that time).
+.. note:: This feature can be disabled by instance administrator. In such case possibility to create new tokens will be disabled. All previously existing tokens will continue beeing valid (up to expiration date).
 
 You can create authorization tokens for use with API and 3rd party integrations. To do so:
 

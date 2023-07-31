@@ -23,7 +23,7 @@ Role configuration interface for AUTO flow contain the following information:
 2. Role name — name which will be displayed to the user in the template and envelopes. It is a mandatory field
 3. Role mailbox — mailbox of the role to which envelope will be sent. If set on template level, it's impossible to change it on envelope level later
 
-.. note:: You can specify exact mailbox or restrict mailbox selection to contacts only on envelope level in this field.
+.. note:: You can specify exact mailbox or restrict mailbox selection to contacts only on envelope level in this field. Also names of every role including Sender can be changed to any text value up to 40 characters max.
 
 4. Role type — type of role and according to the type user will be obligated to make some actions in envelope. There are 4 types of roles available:
 
