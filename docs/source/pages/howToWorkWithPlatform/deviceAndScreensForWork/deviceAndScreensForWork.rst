@@ -41,7 +41,7 @@ User messages
  "Oops... Screen resolution you use is too small to work comfortable.
  Please, expand your browser window on full screen and decrease page scale:
  on Windows and Linux - press on Ctrl + Minus (-)
- on macOS - press on ⌘ + Minus (-)
+ on macOS - press on command button on keyboard + Minus (-)
  Thank you! We are working to solve this."
 
 .. image:: ./pic_deviceAndScreensForWork/desktopSmallScreen.png
