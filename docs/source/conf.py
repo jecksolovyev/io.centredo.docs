@@ -57,6 +57,8 @@ exclude_patterns = []
 html_theme = 'bootstrap'
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
+latex_engine = 'xelatex'
+
 # def setup(app):
 #     app.add_stylesheet('theme_overrides.css')
 #     app.add_javascript('ultra_custom.js')
