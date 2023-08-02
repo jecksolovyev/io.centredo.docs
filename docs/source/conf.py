@@ -24,7 +24,7 @@ copyright = '2023, DocStudio'
 author = 'DocStudio'
 
 # The full version, including alpha/beta/rc tags
-release = '1.27'
+release = '86'
 
 
 # -- General configuration ---------------------------------------------------
