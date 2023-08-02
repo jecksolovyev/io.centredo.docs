@@ -6,15 +6,15 @@ Fields
    text/text.rst
    number/number.rst
    currency/currency.rst
-   dateAndTime/dateAndTime.rst
+   dateandtime/dateandtime.rst
    dictionary/dictionary.rst
-   attachment/attachment.rst
+   file/file.rst
    table/table.rst
    signature/signature.rst
-   checkBox/checkBox.rst
-   yesNo/yesNoField.rst
+   checkbox/checkbox.rst
+   yesno/yesnoField.rst
    lookup/lookup.rst
-   digitalSignature/eds.rst
+   eds/eds.rst
    duplicate/duplicate.rst
    formula/Formula.rst
    autonumber/autonumber.rst

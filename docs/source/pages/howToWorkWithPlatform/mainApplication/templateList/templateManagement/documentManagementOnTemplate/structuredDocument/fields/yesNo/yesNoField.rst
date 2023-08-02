@@ -2,36 +2,36 @@
 Yes/No field
 ============
 
-Yes/No is a field which can be used for selection of the one of two predefined values. You can customize options value in the way you need. It looks like button with two options of "Yes" and "No" values. After selection the value from the button will be changed to regular text with particular value.
+Yes/no is a field which allows you to create a selection of two predefined values. You can customize default "Yes" and "No" options. It looks like button with two options of "Yes" and "No" values. After selection the value of the button will be changed to regular text with selected value.
 
-Yes/No field addition to the document
-=====================================
+How to add yes/no field to the document
+=======================================
 
-To add Yes/No field to the document drag and drop it to the document from the fields bar. Fill required fields and select required data (name, role, yes option and no option).
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via drag & drop)
 
-.. image:: pic_yesNo/defaultAdditionView.png
-   :width: 200
+.. image:: pic_yesno/yesnoIcon.png
+   :width: 600
    :align: center
 
-By default values "Yes" and "No" prefilled, but you can customize it and enter value you need. Restrictions of the value: minimum 1 symbol, maximum 50 symbols.
+2. To add field to PDF document, drag & drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
-.. image:: pic_yesNo/customAdditionView.png
-   :width: 200
+.. image:: pic_yesno/yesnoPDF.png
+   :width: 600
    :align: center
 
-Yes/No field in the envelope
-============================
+3. Field creation form will appear, where you should set field attributes
 
-In the envelope Yes/No field looks like two buttons. Properties of the Yes/No field: maximum size of the Yes/No field is 200 px, and 100 px for one option.
-
-.. image:: pic_yesNo/yesNoNotSelected.png
-   :width: 100
+.. image:: pic_yesno/yesnoModal.png
+   :width: 600
    :align: center
 
-Only one option can be selected.
+4. Name - this is a name of a field
+5. Role name - this is a role which will be assgined to fill this field
+6. Option 1 - first option available for selection
+7. Option 2 - second option available for selection
 
-.. image:: pic_yesNo/yesNoSelected.png
-   :width: 100
+When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+
+.. image:: pic_yesno/yesnoStructured.png
+   :width: 600
    :align: center
-
-When value is selected and document is sent, it converts to text in the envelope and looks like static text with background colored according to assigned role.

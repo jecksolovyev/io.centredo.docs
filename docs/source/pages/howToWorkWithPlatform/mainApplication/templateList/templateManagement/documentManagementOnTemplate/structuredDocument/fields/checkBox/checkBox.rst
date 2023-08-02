@@ -2,25 +2,36 @@
 Checkbox field
 ==============
 
-.. toctree::
+Checkbox is a field which allows you to create a dynamic checkbox. It can be checked or left unchecked by participants of the envelope processing flow.
 
-Checkbox is a field that can be checked or left unchecked in the envelope.
+How to add checkbox field to the document
+=========================================
 
-Checkbox field addition to the document
-=======================================
+1. To add field to structured document, place text cursor where you want field to be added and click its button (alternatively it can be placed via drag & drop)
 
-To add Checkbox field to the document drag and drop it to the document from the fields bar. Fill required fields and select required data (name, role, search and required attributes).
-
-.. image:: pic_checkBox/checkBoxModal.png
-   :width: 200
+.. image:: pic_checkbox/checkboxIcon.png
+   :width: 600
    :align: center
 
-Checkbox field in the envelope
-==============================
-In the envelope Checkbox field looks like regular checkbox. It has grey borders by default or red borders if Required  attribute was enabled.
+2. To add field to PDF document, drag & drop it to desired place in the document. It can be moved around and resized by lower left corner afterwards
 
-.. image:: pic_checkBox/checkBox.png
-   :width: 100
+.. image:: pic_checkbox/checkboxPDF.png
+   :width: 600
    :align: center
 
-If checkbox was marked as required, envelope can not be sent until checkbox is checked. If required attribute was not enabled checkbox remains optional.
+3. Field creation form will appear, where you should set field attributes
+
+.. image:: pic_checkbox/checkboxModal.png
+   :width: 600
+   :align: center
+
+4. Name - this is a name of a field
+5. Role name - this is a role which will be assgined to fill this field
+6. Search - this attribute specifies if this field should be eligible for mailbox page search
+7. Required - this attribute specifies if this checkbox is mandatory to check
+
+When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+
+.. image:: pic_checkbox/checkboxStructured.png
+   :width: 600
+   :align: center

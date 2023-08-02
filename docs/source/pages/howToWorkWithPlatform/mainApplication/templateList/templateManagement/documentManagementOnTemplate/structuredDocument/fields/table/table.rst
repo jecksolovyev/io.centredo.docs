@@ -1,12 +1,10 @@
 ===========
-Table Field
+Table field
 ===========
-
-.. toctree::
 
 Table field allows user to add dynamic data to the document. Also it allows to prepare table of exact needed size for participant of the envelope processing flow. Each table can have up to 120 columns and each column can be resized (min width is 30 pixels).
 
-Create Table Field
+Create table field
 ===================
 
 1. Navigate to /template/form/create
@@ -18,13 +16,13 @@ Create Table Field
 7. Fill the quantity of the columns of the table (up to 120)
 8. Click save
 
-Fill the Table with fields
+Fill the table with fields
 ==========================
 
 1. Add table to the document
 2. Drag and drop needed fields to the table cells, set and save field properties. Next fields can be added to the Table: Text, Number, Currency, Date and time, E-ink signature, Dictionary, Lookup and Duplicate fields. Adding new table inside other table is not supported
 
-Edit Table Field properties
+Edit table field properties
 ===========================
 
 1. Navigate to /template/form/create
@@ -37,7 +35,7 @@ Edit Table Field properties
 
 .. note:: If you want to hide certain columns of the table in its initial state you can click on according column, enable "Initially hidden" attribute in column properties and click "Save". Note that this is supported only for columns which have optional dynamic fields in them. Columns with static text, non-optional fields or empty cells can not be hidden. On the envelope view user will be able to show such columns from the menu on the right end of the table (only columns which have optional fields assigned for viewing user will be presented). If hidden column fields will not be filled during document processing these columns will be excluded from the final version of the document.
 
-Edit Table field content
+Edit table field content
 ========================
 
 1. Add table to the document
