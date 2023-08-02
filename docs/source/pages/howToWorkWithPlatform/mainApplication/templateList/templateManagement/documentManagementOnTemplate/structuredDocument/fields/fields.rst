@@ -6,12 +6,12 @@ Fields
    text/text.rst
    number/number.rst
    currency/currency.rst
-   dateandtime/dateandtime.rst
+   dateandtime/dateAndTime.rst
    dictionary/dictionary.rst
    file/file.rst
    table/table.rst
    signature/signature.rst
-   checkbox/checkbox.rst
+   checkbox/checkBox.rst
    yesno/yesnoField.rst
    lookup/lookup.rst
    eds/eds.rst
