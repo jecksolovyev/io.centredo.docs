@@ -2,13 +2,11 @@
 Integration page
 ================
 
-.. toctree::
-
 Each customers who want to turn on integration can do that on  `integration page </admin/integrations/list>`_.
 On this page customer can turned integration for all mailboxes in same account one by one. When customer open this page
 and he has mailbox all field will be pre-filled(except: "Notify by email")
 
-.. image:: pic_integrationPage/integrationPage_1.jpg
+.. image:: pic_integrationPage/integrationPage_1.png
    :width: 1000
    :align: center
 
@@ -29,13 +27,15 @@ In the third field customer can provide email address where will be send all not
 Connection details(3)
 =====================
 
-Data in connection details (3) block automatically generated according to connection protocol, credential from this block should be use for connect to ftp server. Customer can copy each this parameters by click on copy button.
-Customer can't change any parameters except password. For change password customer should click on reset button, after that we will generate new password.
+Data in connection details (3) block is automatically generated for connection protocols FTPS and SFTP except password, it will be generated after save button click, credential from this block should be used for connect to ftp server. Customer can copy each parameter by clicking on copy button.
+Customer can't change any parameters except password for FTPS and SFTP. To change password customer should click on reset button, after that we will generate new password.
+
+For AS2 protocol only Self URL and Self certificate will be created, the rest of the fields need to be filled in.
 
 Default rules(4)
 ================
 
-#. Get incoming envelope on the Website and put the copy to the FTP
+#. Get incoming envelope on the Website and put the copy to the FTPS, SFTP or AS2 (depends on protocol you chose)
 #. Get incoming envelope on the Website and send notification email
 #. Autoreject incoming envelopes
 
@@ -45,7 +45,7 @@ Customer can select only one of three default rules. When customer select 3 rule
 Conversion rules list(5)
 ========================
 
-By default conversion rule list is empty. For create new rule need click on "Add new rule" button, after that we redirect customer to create conversion rule.
+By default conversion rule list is empty. To create new rule just click on "Add new rule" button, after that you will be redirected to conversion rule creation form.
 All new rules will be shown on this list. User can turn on/turn off each rules from this list.
 Each existed conversion rules can be updated, deleted or cloned, for that customer should open this rule by click on rule name.
 

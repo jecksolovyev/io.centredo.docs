@@ -2,8 +2,6 @@
 Conversion rule info
 ====================
 
-.. toctree::
-
 WDExtensions
 ============
 

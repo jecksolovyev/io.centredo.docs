@@ -2,8 +2,6 @@
 Conversion rule
 ===============
 
-.. toctree::
-
 Conversion rule enable convert document from customer format to whitedoc format and can make reverse conversion. For that customer should create conversion rule and depends on his selection on this page
 he can create conversion rule for incoming and outgoing documents. Also, if customer open existed conversion rule he can update, delete or clone this rule.
 
@@ -44,25 +42,25 @@ Conversion rule creation process for outgoing document
 Conversion rule creation process for incoming document
 ======================================================
 
-.. image:: pic_ConversionRuleCard/conversionRulePage_2.jpg
+.. image:: pic_ConversionRuleCard/conversionRulePage_2.png
    :width: 1000
    :align: center
 
-1. For create conversion rule for incoming document customer should select checkbox(3)
+1. To create conversion rule for incoming document customer should select checkbox(3)
 
 2. In field (1) customer can provide rule name or leave default name
 
 3. In field (4) customer should provide name, this name will be part of full name for all converted documents. Full name will be consist name from field(4)+time when this document was converted if document with similar name has been already created. You can customize name using special variables for naming pattern:
 
-3.1. {mailboxUuid} - mailbox UUID which is using integration functionality
+- {mailboxUuid} - mailbox UUID which is using integration functionality
 
-3.2. {envelopeUuid} - envelope UUID of the envelope which has been created on platform
+- {envelopeUuid} - envelope UUID of the envelope which has been created on platform
 
-3.3. {randomNumber} - random number
+- {randomNumber} - random number
 
-3.4. {templateUuid} - template UUID on platform using which envelope has been created
+- {templateUuid} - template UUID on platform using which envelope has been created
 
-3.5. {date dateFormat} - date of the envelope receiving in format you need (dateFormat can be DDMMYYYY or any of available date formats)
+- {date dateFormat} - date of the envelope receiving in format you need (dateFormat can be DDMMYYYY or any of available date formats)
 
 4. In field (5) customer should provide templateUUID which match to incoming document
 
@@ -77,6 +75,18 @@ Conversion rule creation process for incoming document
 9. Customer can turn on conversion rule from this page, for that need move toggle(2) to the left side and click on button Save(11). After that to all incoming documents will be able this conversion rule
 
 .. important:: **Please note!** `Conversion rule info <conversionRuleInfo.html>`_
+
+**You might want to receive envelope archive to your server according to protocol you've chosen.**
+
+.. image:: pic_ConversionRuleCard/conversionRulePage_3.png
+   :width: 1000
+   :align: center
+
+1. Enter template UUID you want to make integration with
+
+2. Set toggle (12) in active state to activate ZIP archive functionality
+
+3. Chose archive type you want to send as soon as envelope will be COMPLETED
 
 Working with existed conversion rules
 =====================================
