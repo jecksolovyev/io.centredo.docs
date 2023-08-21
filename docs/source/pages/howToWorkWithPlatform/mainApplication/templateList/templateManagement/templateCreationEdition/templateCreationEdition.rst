@@ -39,7 +39,7 @@ On template configuration page you can set some template properties, such as tem
 4. Template Access - property which allows you to set access level of the template according to your needs. You can read more about this functionality :ref:`here <templateAccessLevel>`
 5. Envelope Properties - subject and message of envelopes created from a template. If set on template level, it's impossible to change it on envelope level later
 
-.. note:: Advanced subject properties can be opened with properties button in Subject field. From there you can configure dynamic envelope auto-subject for each envelope which will include data from specified dynamics field in the envelope.
+.. note:: Advanced subject properties can be opened with properties button in Subject field. You can configure dynamic envelope auto-subject for each envelope which will include data from specified dynamic fields in the envelope. More info on this topic can be found :ref:`here <autoSubject>`.
 
 6. Envelope expiry day - allows you to configure expiration period of envelopes created from template. If set on template level, it's impossible to change it on envelope level later
 7. Envelope delegation - allows or denies delegation of the envelope. If set on template level, it's impossible to change it on envelope level later
