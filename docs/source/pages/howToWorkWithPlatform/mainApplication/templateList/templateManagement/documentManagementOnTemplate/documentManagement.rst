@@ -22,7 +22,7 @@ This section describes all functionality of document editor. Document editor pag
 12. **Page break** allows to set a mark after which new page will be started in the printed version of the document. In the digital version it is marked as a grey line
 13. **Split document** allows to split document vertically on two equal parts. All content which has been added before applying split option will be added to the left part of the document
 14. **Document options** allows to open context menu with document options. Allowed options: Clone, Delete, Page size, Page orientation
-15. **Right side bar menu** allows to add dynamic field, configure template details and template flow. Menu opens by click or opened by default for screen resolution bigger than 1920p
+15. **Right side bar menu** allows to add :ref:`dynamic fields <fields>`, configure template details and template flow. Menu opens by click or opened by default for screen resolution bigger than 1920p
 16. **Document editor area** where you can add text, images, tables and dynamic fields
 
 ---------------------------------
@@ -34,3 +34,4 @@ This section describes all functionality of document editor. Document editor pag
     structuredDocument/structuredDocument.rst
     externalDocument/externalDocument.rst
     pdfDocument/pdfDocument.rst
+    fields/fields.rst

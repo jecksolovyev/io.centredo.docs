@@ -7,7 +7,7 @@ Subject autoformat
 Envelope subject can be configured to contain data from dynamic fields in the envelope. Please note that it means that envelope subject will change during envelope processing flow steps, if fields assigned to role other then sender are used in the subject.
 
 How to configure subject autoformat?
-=======================
+====================================
 
 1. Click on subject configuration icon, form will open
 

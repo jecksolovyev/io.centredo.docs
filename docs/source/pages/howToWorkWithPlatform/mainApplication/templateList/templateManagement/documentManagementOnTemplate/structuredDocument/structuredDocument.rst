@@ -2,10 +2,7 @@
 Structured document
 ===================
 
-Structured document is a document which you can fill in with static (simple text, tables, images and links) and dynamic
-data (fields). Static data does not change from envelope to envelope, when dynamic data can be modified.
-
-Structured document is added by default within template creation action but you can easily add new structured documents to template.
+Structured document is a document which you can fill in with static (simple text, tables, images and links) and dynamic (fields) data. Static data does not change from envelope to envelope, dynamic data can be modified. Structured document is added to new templates by default and additional structured documents can be added manually.
 
 How to add a structured document?
 =================================
@@ -35,7 +32,6 @@ How to delete a structured document?
 ====================================
 
 1. Navigate to needed document
-
 2. Expand the menu near the document and click Delete
 
 .. image:: pic_addDocument/deleteDocument.png
@@ -52,7 +48,6 @@ How to clone a structured document?
 ===================================
 
 1. Navigate to needed document
-
 2. Expand the menu near the document and click Clone
 
 .. image:: pic_addDocument/cloneDocument.png
@@ -66,4 +61,3 @@ How to clone a structured document?
     linksInsideDocument/linksInsideDocument.rst
     imagesInsideDocument/imagesInsideDocument.rst
     tablesInsideDocument/tablesInsideDocument.rst
-    fields/fields.rst
