@@ -4,17 +4,12 @@
 Dashboard overview
 ==================
 
-.. toctree::
-
-On dashboard user has two blocks for quick actions, first one is quick send of file as copy or for sign and second one
-is template creation
+Dashboard has two blocks for quick actions - quick send of file as copy or for sign and template creation.
 
 How to send external document using quick send functionality?
 =============================================================
 
-If you want to send external document (such as image, document, archive) to somebody in quick way you may use quick send functionality.
-
-To do this follow instructions:
+If you want to send external document (such as image, document, archive) to anyone in a quick way you can use quick send functionality. To do so:
 
 1. Open dashboard and click on button "Upload document" in quick send block
 
@@ -22,39 +17,35 @@ To do this follow instructions:
    :width: 400
    :align: center
 
-2. As soon as you click on "Upload document" modal window for drag and drop files opens and over it opens file manager of you computer. Where you can select files to upload (you're able to upload any quantity of files, but limit of the all of them shouldn't be more than 25MB and each file shouldn't be more than 5MB or another limits if instance you're using has one)
+2. After click on "Upload document" button modal window will open. Here you can upload file for quick send (5MB per file max and 25MB total max)
 
 .. image:: pic_dashboardOverview/dragAndDropModal.png
    :width: 400
    :align: center
 
-3. When you select files and confirm selection on your file manages you can observe all files in the list on screenshot above
+3. After file upload you can see all files in the list on screenshot above
+4. To continue quick send click "Next" button. You will be redirected to the envelope properties page, where you need to fill envelope details
 
-4. To continue quick send click "Next" button. You will be redirected to the envelope properties page, where you have to clarify
-envelope details such as: subject, message (optional), recipients (it could be e-ink, EDS (if instance you're working on supports this type of signature) signers or copy roles)
-
-.. image:: pic_dashboardOverview/envCreationModal.png
+.. image:: pic_dashboardOverview/envCreationModal1.png
    :width: 400
    :align: center
 
-5. You can specify signature type Qualified or e-ink signature. If instance you're working on doesn't support Qualified signature you will not be able to signature type selector. If you also want to sing document(s) you can click on checkbox "I want to sign an envelope" and after envelope creation you will be able to sign envelope
+5. You can select EDS or E-ink signature type (some can be disabled depending on instance settings). If you also want to sing document(s) you can click on checkbox "I want to sign an envelope" to be added as one of signers
 
 .. image:: pic_dashboardOverview/envCreationModal2.png
    :width: 400
    :align: center
 
-6. To clarify recipients you have to click on input against to respective role type (Signers or Send a copy) and write recipients emails divide them by enter or space button on keyboard
+6. To specify recipients you have to click on the input against to respective role type (Signers or Send a copy) and type recipients emails (they can be divided by enter or space buttons on keyboard)
 
 .. image:: pic_dashboardOverview/envCreationModal3.png
    :width: 400
    :align: center
 
-7. After entering email you are able to observe full content of the email on mouse hover
+7. After entering emails you will be see all contents of the email on mouse hover
 
 .. image:: pic_dashboardOverview/envCreationModal4.png
    :width: 400
    :align: center
 
-8. When you finish all required actions with envelope properties you may click on "Send" button and envelope will be created.
-If you select checkbox "I want to sign an envelope" and Qualified signature type, EDS signature modal window opens automatically when envelope will be created and
-you have to sign all documents. If you don't select checkbox you will be just redirected to envelope.
+8. When you will finish all required actions with envelope properties you can click "Send" button and envelope will be sent. If "I want to sign an envelope" checkbox was selected you will be automatically redirected to envelope signing modal window

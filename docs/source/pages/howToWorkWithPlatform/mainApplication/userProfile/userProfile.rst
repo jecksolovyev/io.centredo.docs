@@ -95,6 +95,26 @@ User icon upload
 3. Click Save changes button to apply new icon
 4. You can return default profile logo with Set default link
 
+==============
+Forwarding tab
+==============
+
+.. note:: This functionality will be disabled if you do not have 2012 mailbox level permission (Delegate envelopes).
+
+.. image:: pic_userprofile/tabForwarding.png
+   :width: 600
+   :align: center
+
+In this section you can configure automatic forwarding of all incoming envelopes. To do so:
+
+1. Select a target mailbox which will be a delegate of yours
+2. Select effective from date - it will specify a start date of the forwarding period (can be left empty to start period immediately)
+3. Select effective until date - it will specify an end date of the forwarding period (can be left empty to make period indefinite)
+4. Enable "Active forwarding" toggle
+5. Click on "Save changes" button
+
+Forwarding is configured now. If you wish to disable it at some point later, you can disable "Active forwarding" toggle and click on "Save changes" button.
+
 ===============
 Danger zone tab
 ===============

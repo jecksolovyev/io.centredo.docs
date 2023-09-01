@@ -46,12 +46,28 @@ Add new mailbox
    :width: 600
    :align: center
 
+Generate a report by mailbox
+============================
+
+If you want to get xlsx file with report by mailboxes you have to do the following:
+
+1. Open platform
+2. Got to Admin Panel
+3. Open tab 'Mailboxes' and select all necessary records
+4. Click on button with document icon (button called "Generate report")
+5. After click you will see the message that report will be send to you email after generation
+6. Follow to email address
+7. Open email you got
+8. Click on button "Download"
+
+Now you can open the file on your computer
+
 Check users assigned to mailbox
 ===============================
 
 To see the list of users which have access to the mailbox click on the link with number in the column "Users". After this action you will be redirected to the page page with perdefined filter by Mailbox.
 
-Edit mailbox
+Mailbox edit
 ============
 
 Edition interface allows update name of the mailbox, add and remove aliases to the mailbox, copy the mailboxs UUID, unassign all users with access to the mailbox and delete mailbox. To open mailbox edit form click on the settings icon.
@@ -59,6 +75,10 @@ Edition interface allows update name of the mailbox, add and remove aliases to t
 .. image:: pic_mailboxes/mailboxesOpenEditionForm.png
    :width: 600
    :align: center
+
+============
+Settings tab
+============
 
 Edit mailbox name
 =================
@@ -82,10 +102,9 @@ After successful edition of the mailbox the notification message will show at th
 
 You can hide visibility of your mailbox for system members.To do this, activate the toggle: "Hide name/aliases from other accounts". When the toggle is active mailbox name or alias can be found only by users who have access to this account.
 
-.. image:: pic_mailboxes/Screenshot_15.png
+.. image:: pic_mailboxes/mailboxesHideAliases.png
    :width: 600
    :align: center
-
 
 Copy mailbox UUID
 =================
@@ -133,12 +152,28 @@ To add alias(es) to the mailbox:
    :width: 600
    :align: center
 
-Dashboard customization
-=======================
+Envelope forwarding configuration
+=================================
 
-To create custom dashboard instead of default one switch to tab "Dashboard" tab by click on "Dashboard" heading
+.. image:: pic_mailboxes/mailboxesForwarding.png
+   :width: 600
+   :align: center
 
-Dashboard page in mailbox contains:
+In this section you can configure automatic forwarding of all incoming envelopes. To do so:
+
+1. Select a target mailbox which will be a delegate of yours
+2. Select effective from date - it will specify a start date of the forwarding period (can be left empty to start period immediately)
+3. Select effective until date - it will specify an end date of the forwarding period (can be left empty to make period indefinite)
+4. Enable "Active forwarding" toggle
+5. Click on "Save changes" button
+
+Forwarding is configured now. If you wish to disable it at some point later, you can disable "Active forwarding" toggle and click on "Save changes" button.
+
+=============
+Dashboard tab
+=============
+
+To create custom dashboard instead of default one switch to tab "Dashboard" which contains:
 
 1. Editor area where you able to enter your HTML code which will replace default dashboard
 2. Checkbox to activate custom dashboard
@@ -148,7 +183,7 @@ Dashboard page in mailbox contains:
    :width: 600
    :align: center
 
-If user decides to customize dashboard it's necessary to put content to html area, set checkbox in active state and save changes. Than dashboard will be changed to custom HTML for this specific mailbox and all users who has access to mailbox will see custom dashboard.
+If you want to customize dashboard it's necessary to put content to html area, set checkbox in active state and save changes. Than dashboard will be changed to custom HTML for this specific mailbox and all users who has access to mailbox will see custom dashboard.
 
 .. image:: pic_mailboxes/customDashboard.png
    :width: 600
@@ -156,8 +191,9 @@ If user decides to customize dashboard it's necessary to put content to html are
 
 .. note:: `Custom HTML can not be more than 16 mb size`_
 
-Danger zone
-===========
+===============
+Danger zone tab
+===============
 
 To remove all users from mailbox or delete mailbox switch to "Danger Zone" tab by click on "Danger Zone" heading
 
@@ -185,21 +221,3 @@ Delete mailbox
 .. note:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
 
 .. include:: delete_mailbox_behaviour.rst
-
-How to generate report by mailboxes?
-====================================
-
-.. toctree::
-
-If you want to get xlsx file with report by mailboxes you have to do the following:
-
-1. Open platform
-2. Got to Admin Panel
-3. Open tab 'Mailboxes' and select all necessary records
-4. Click on button with document icon (button called "Generate report")
-5. After click you will see the message that report will be send to you email after generation
-6. Follow to email address
-7. Open email you got
-8. Click on button "Download"
-
-Now you can open the file on your computer

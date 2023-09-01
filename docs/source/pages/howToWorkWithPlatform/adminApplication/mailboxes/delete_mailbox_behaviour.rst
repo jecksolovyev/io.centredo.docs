@@ -1,13 +1,9 @@
 Delete mailbox behaviour
 ========================
 
-.. toctree::
-
-1. Deleted mailbox can't be restored.
-
-2. Mailbox is disappearing from mailbox list at admin panel on mailbox page.
-
-3. If user try to use deleted mailbox - he receive 410 error and will be redirected to first mailbox to which he has access. If user hasn't have access to any mailboxes he will be redirected to profile and all application will be blocked except profile and admin page(if he has access to any account).
+1. Deleted mailbox can't be restored
+2. Mailbox will disappear from mailbox list at admin panel on mailbox page
+3. If user tries to use deleted mailbox he will receive error 410 and will be redirected to first mailbox to which he has access. If user has no access to any of mailboxes he will be redirected to user profile page and all functionality will be blocked except profile and admin pages (if there is access to any account)
 
 .. image:: pic_mailboxes/disabledProfileView.png
    :width: 600
