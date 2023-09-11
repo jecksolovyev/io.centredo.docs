@@ -36,7 +36,7 @@ Template creation
 	<documents>
 		<document id=\"4a61f258-fd9d-406c-b47e-81c90d4e5c47\">
 			<info>
-				<title>New Document</title>
+				<title>New document</title>
 			</info>
 			<body>
 				<div class=\"editor-div\">Structured document</div>
@@ -77,7 +77,7 @@ Depending on your needs, you can add different types of fields `template fields 
         <documents>
             <document id=\"4a61f258-fd9d-406c-b47e-81c90d4e5c47\">
                 <info>
-                    <title>New Document</title>
+                    <title>New document</title>
                 </info>
                 <body>
                     <div class=\"editor-div\">Structured document</div>

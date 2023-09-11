@@ -69,7 +69,7 @@ Template consists of two blocks:
         <documents>
             <document id=\"ef247568-559a-4ec1-9ecc-6b44c9fb8215\">
                 <info>
-                    <title>New Document</title>
+                    <title>New document</title>
                 </info>
                 <body>
                     <div class=\"editor-div\">

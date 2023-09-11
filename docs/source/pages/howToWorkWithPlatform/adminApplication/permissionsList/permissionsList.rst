@@ -112,7 +112,7 @@ Mailbox permissions
    * - envelopeListView
      - 2004
      - Allows to view envelopes list and elements on dashboard which related to envelope list (counters and wwaiting for you block)
-   * - envelopeListView
+   * - envelopeDelegate
      - 2012
      - Allows to delegate envelopes and configure automatic forwarding rule for mailbox
    * - categoryManage
