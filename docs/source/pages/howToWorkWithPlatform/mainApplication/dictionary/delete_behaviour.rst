@@ -1,11 +1,10 @@
-Behaviour of dictionary field after deleting a dictionary column or a dictionary
-================================================================================
+Dictionary field behavior after dictionary or dictionary column deletion
+========================================================================
+
 **Template**
 
-When dictionary or dictionary column are deleted - such template will be invalid(need to select new dictionary or dictionary column in dictionary field at this template).
+When dictionary or dictionary column is deleted, such template will become invalid (new dictionary or dictionary column should be selected in dictionary field properties).
 
 **Envelope**
 
-When dictionary or dictionary column are deleted - dictionary field in processing envelopes will be disabled and envelope with such
-field will be expired automatically after expiration date, except case when was specified allow custom value attribute.
-In such case dictionary field will work as text field and user can enter text value to dictionary field, without binding to column values.
+When dictionary or dictionary column is deleted, dictionary field will be disabled in processing envelopes and envelope with such field will be expired automatically after expiration date. Exception is case where custom value are allowed. In such case dictionary field will work as text field and custom text value can be entered in it.

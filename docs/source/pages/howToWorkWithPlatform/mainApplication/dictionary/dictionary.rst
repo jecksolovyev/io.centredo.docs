@@ -12,11 +12,8 @@ Creating a dictionary
 **Permissions:**
 
 *Dictionary manage* - allows to create new dictionaries, add columns, change columns order, edit columns, change name, description and access level of dictionaries.
-
 *Dictionary delete* - allow to delete dictionaries.
-
 *Dictionary row manage* - allow to create records and change values in records.
-
 *Dictionary row delete* - allow to delete records.
 
 1. Navigate to https://platform_address_here/dictionary
@@ -38,9 +35,7 @@ Creating a dictionary
 7. Access level (mailbox by default) - specifies which mailboxes will have access to the dictionary
 
 *Mailbox* - dictionary is visible to current mailbox only. In envelopes with this dictionary field records from this dictionary will be available to current mailbox only. Roles with other mailboxes will not be able to select data from this dictionary field.
-
 *Account* - dictionary is visible to all mailboxes in this account. In envelopes with this dictionary field records from this dictionary will be available to mailboxes in current account. Roles with mailboxes from other accounts will not be able to select data from this dictionary field.
-
 *Public* - dictionary is visible to all mailboxes. In envelopes with this dictionary field records from this dictionary will be available to any mailbox. Roles with any mailbox will be able to select data from this dictionary field.
 
 8. Click on Add row button to add new row
@@ -52,7 +47,9 @@ Creating a dictionary
    :width: 600
    :align: center
 
-12. Hover over column header to see column edition options (filter, rename and delete)
+12. Hover over column header to see column edition options (copy column UUID, filter, rename and delete)
+
+.. note:: If column is less then 300 px in width these options will be truncated to a single dropdown menu.
 
 .. image:: pic_dictionary/columnEdit.png
    :width: 600
