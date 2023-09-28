@@ -1,4 +1,4 @@
-Template Dynamic Fields
+Template dynamic fields
 =======================
 
 +--------------------------------------------------------------------------------------------------------+
@@ -100,17 +100,17 @@ Values: exact value from template attribute valueYes or from template attribute 
     </table>
 
 +--------------------------------------------------------------------------------------------------------------------------------------------+
-|**Attachment field**                                                                                                                        |
+|**File field**                                                                                                                              |
 +============================================================================================================================================+
 |`<field type="attachment" name="fieldName" roleId="Uuid" placeholder="Some text" attachmentType="all | document | image | archive"></field>`|
 +--------------------------------------------------------------------------------------------------------------------------------------------+
 
 AttachmentType should be one of the presented above (all, document, image, archive). Supported document types:
 
-1) All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar
-2) Document: .pdf
-3) File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
-4) Image: .png, .jpg, .jpeg
+1) All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
+2) File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg
+3) PDF document: .pdf
+4) Image: .png, .jpg, .jpeg, .tiff, .tif
 5) Archive: .zip, .7z, .rar
 
 +----------------------------------------------------------------+

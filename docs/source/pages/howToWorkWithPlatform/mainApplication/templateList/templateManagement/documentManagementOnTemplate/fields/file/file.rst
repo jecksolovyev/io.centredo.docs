@@ -24,10 +24,10 @@ How to add file field to template
 5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
 7. File extension - this attribute specifies file extensions which will be allowed by field. Next options are available:
-   1. All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .zip, .7z, .rar
-   2. File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg 
-   3. PDF Document: .pdf
-   4. Image: .png, .jpg, .jpeg
+   1. All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
+   2. File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg
+   3. PDF document: .pdf
+   4. Image: .png, .jpg, .jpeg, .tiff, .tif
    5. Archive: .zip, .7z, .rar
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.

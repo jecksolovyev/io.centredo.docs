@@ -4,10 +4,8 @@
 Images inside document
 ======================
 
-.. toctree::
-
-How to add image to document
-============================
+How to add an image to the document
+===================================
 
 1. Open document for edition
 2. Set focus on document body (it's necessary to understand where exactly we have to add image)
@@ -17,11 +15,11 @@ How to add image to document
    :width: 400
    :align: center
 
-4. Select file in folder manager (allowed files extensions are .png, .jpg, .jpeg) and confirm
+4. Select file in folder manager (allowed files extensions are .png, .jpg and .jpeg) and confirm
 5. Image added to document to the place where cursor was
 
-Image properties edition
-========================
+How to edit image properties
+============================
 
 1. To do that click on image and set image width using special image size input
 
@@ -36,8 +34,8 @@ Image properties edition
 * You can set positioning for image using default positioning tool of editor.
 * You can't add image to table (static or dynamic).
 
-How to delete image?
-====================
+How to remove an image from the document
+========================================
 
 1. Click on image and click on delete icon in the menu
 
@@ -48,10 +46,10 @@ How to delete image?
 2. Set cursor of mouse behind the image and click "Backspace" button on Windows or Linux or "Delete" button on Mac
 3. Set cursor of mouse in front of the image and click "Delete" button
 
-Restriction related to image sizes
-==================================
+Image size restrictions
+=======================
 
-According ot document structure we have restrictions for image size and resolution.
+According to the document structure we have next restrictions:
 
-* You can't upload image with size more than 5 MB.
-* You can't upload image with resolution bigger than 1024x768 px.
+1. Max allowed image size is 5 MB
+2. Max allowed image resolution is 1024 × 768

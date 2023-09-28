@@ -13,4 +13,3 @@ Sometimes the user may have problems with the selection of the Qualification Sig
 .. image:: pic_common_error/crypto-lib-err-2.png
    :width: 400
    :align: center
-

@@ -34,10 +34,10 @@ How to add an external document to template?
 5. Click on "External" button. After this document will appear under default first structured document (assigned to Sender by default)
 6. In the template editor you can edit document properties, such as role, optionality or allowed file extensions:
 
-* All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .png, .jpg, .jpeg, .zip, .7z, .rar
-* File - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps
+* All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
+* File - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg
 * PDF document - .pdf
-* Image - .png, .jpg, .jpeg
+* Image - .png, .jpg, .jpeg, .tiff, .tif
 * Archive - .zip, .7z, .rar
 
 6. You also can add EDS and e-ink fields to such document
